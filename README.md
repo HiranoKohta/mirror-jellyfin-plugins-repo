@@ -1,15 +1,25 @@
 Official Jellyfin Plugin Repositories
+
 manifest.json
 
+
 Collection 3rd-Party Plugin Repositories
+
 all-3rd-party-plugin.json
+
  
 Official Jellyfin Plugin Repositories + 3rd-Party Plugin Repositories
+
 all-in-one-plugins.json
 
+
 Official Jellyfin Plugin Repositories
+
 https://repo.jellyfin.org/files/plugin/manifest.json
+
+
 3rd-Party Plugin Repositories
+
 https://raw.githubusercontent.com/9p4/jellyfin-plugin-sso/manifest-release/manifest.json
 https://raw.githubusercontent.com/AlexSat/jellyfin-sort-by-raw-name-plugin/master/manifest.json
 https://raw.githubusercontent.com/ankenyr/jellyfin-plugin-repo/master/manifest.json
