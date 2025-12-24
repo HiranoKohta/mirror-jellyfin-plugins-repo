@@ -2528,7 +2528,7 @@
       },
       {
         "changelog": "Nightly build\n",
-        "checksum": "d25269f2b22d779fb8fe3ab6277b8c0d",
+        "checksum": "68b497c9bdd00921359dbf17e435c938",
         "sourceUrl": "https://github.com/9p4/jellyfin-plugin-sso/releases/download/nightly/sso-authentication_0.0.0.9000.zip",
         "targetAbi": "10.11.0.0",
         "timestamp": "2022-07-01T01:20:33Z",
@@ -4455,6 +4455,14 @@
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/master/images/logo.jpg",
     "versions": [
        {
+        "version": "10.11.14.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.14.0/Jellyfin.Plugin.SmartLists_v10.11.14.0.zip",
+        "checksum": "A6B8F632AC7F8D62B5B83B3E621E0F1B",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.14.0 -->\n\n## What's Changed\n### New Features\n* Added support for Playlists in rule fields\n### Bug Fixes\n* Fix API doc generation error\n### Other Changes\n* Added plugin shortcut in the main sidebar.\n\n## New Contributors\n* @RedStylzZ made their first contribution in https://github.com/jyourstone/jellyfin-smartlists-plugin/pull/242\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.13.0...v10.11.14.0",
+        "timestamp": "2025-12-20" 
+      },
+      {
         "version": "10.11.13.0",
         "targetAbi": "10.11.0",
         "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.13.0/Jellyfin.Plugin.SmartLists_v10.11.13.0.zip",
@@ -4877,6 +4885,14 @@
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/master/images/logo.jpg",
     "versions": [
        {
+        "version": "10.11.14.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.14.0/Jellyfin.Plugin.SmartLists_v10.11.14.0.zip",
+        "checksum": "A6B8F632AC7F8D62B5B83B3E621E0F1B",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.14.0 -->\n\n## What's Changed\n### New Features\n* Added support for Playlists in rule fields\n### Bug Fixes\n* Fix API doc generation error\n### Other Changes\n* Added plugin shortcut in the main sidebar.\n\n## New Contributors\n* @RedStylzZ made their first contribution in https://github.com/jyourstone/jellyfin-smartlists-plugin/pull/242\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.13.0...v10.11.14.0",
+        "timestamp": "2025-12-20" 
+      },
+      {
         "version": "10.11.13.0",
         "targetAbi": "10.11.0",
         "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.13.0/Jellyfin.Plugin.SmartLists_v10.11.13.0.zip",
@@ -5672,7 +5688,7 @@
     "imageUrl": "https://raw.githubusercontent.com/lachlandcp/jellyfin-editors-choice-plugin/main/logo.png",
     "versions": [
        {
-        "version": "1.4.2",
+        "version": "1.4.2.0",
         "changelog": "Fix version mismatch",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://github.com/lachlandcp/jellyfin-editors-choice-plugin/releases/download/1.4.2/EditorsChoicePlugin.v1.4.2.zip",
@@ -6075,6 +6091,22 @@
     "owner": "lstb1t",
     "versions": [
        {
+        "changelog": "## [0.24.7.8] - 2025-12-23\n\n### 🐛 Bug Fixes\n\n- Dont refresh metadata for episodes on insert\n",
+        "checksum": "584ef732068c31eaad1a89e26916ea8b",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.24.7.8/gelato_0.24.7.8.zip",
+        "targetAbi": "10.11.0.0",
+        "timestamp": "2025-12-23T11:35:35Z",
+        "version": "0.24.7.8" 
+      },
+      {
+        "changelog": "## [0.24.7.7] - 2025-12-23\n\n### 🐛 Bug Fixes\n\n- Dont refresh metadata for episodes on insert\n",
+        "checksum": "774e3f454f938d7b15bfc7c89c8c51c4",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.24.7.7/gelato_0.24.7.7.zip",
+        "targetAbi": "10.11.0.0",
+        "timestamp": "2025-12-23T10:03:53Z",
+        "version": "0.24.7.7" 
+      },
+      {
         "changelog": "## [0.24.7.6] - 2025-12-10\n\n### 🐛 Bug Fixes\n\n- Add movie recommended\n",
         "checksum": "89824303a14beb6dc79b5e42fe1a2103",
         "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.24.7.6/gelato_0.24.7.6.zip",
@@ -6297,14 +6329,6 @@
         "targetAbi": "10.11.0.0",
         "timestamp": "2025-11-24T16:53:08Z",
         "version": "0.24.3.1" 
-      },
-      {
-        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at main -->\n\n\n\n**Full Changelog**: https://github.com/lostb1t/Gelato/compare/v0.24.2.0...v0.24.3.0",
-        "checksum": "fd2be495ff890c9e0cc92c8e1c4a487d",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.24.3.0/gelato_0.24.3.0.zip",
-        "targetAbi": "10.11.0.0",
-        "timestamp": "2025-11-24T09:01:43Z",
-        "version": "0.24.3.0" 
       } 
     ] 
   },
@@ -6747,6 +6771,14 @@
     "imageUrl": "https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/master/images/icon.png",
     "versions": [
        {
+        "changelog": "- Fix Log spam for watchlist\n - Update AutoSeasonRequestMonitor.cs\n - Initial Commit - Issue reporter rough Integration\n - fixed some UI issues\n - Added config and checks\n - Added Season and Episode selection\n - removed files not present\n - Added Jellyseerr issue reporting to README\n - old mapping for textual problem types were removed\n - Add missing Jellyseerr report issue translations and fix modal backdrop visibility\n - Fix Translations for Issue Reporting\n - Add onClose handler to Jellyseerr modal for cleanup\n - Sync Jellyseerr requests with watchlist items",
+        "targetAbi": "10.11.0.0",
+        "version": "9.8.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/9.8.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "checksum": "380B6985EFE8676A87F6096FCECB410C",
+        "timestamp": "2025-12-20T14:04:23" 
+      },
+      {
         "changelog": "- Update configPage.html\n - Revert \"Add File Size and Watched % for BoxSets and Playlists\"\n - Add centralized observer management and performance helpers\n - Fix elsewhere where it does not consider filtered services",
         "targetAbi": "10.11.0.0",
         "version": "9.7.1.0",
@@ -6948,6 +6980,14 @@
     "imageUrl": "https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/master/images/icon.png",
     "versions": [
        {
+        "changelog": "- Fix Log spam for watchlist\n - Update AutoSeasonRequestMonitor.cs\n - Initial Commit - Issue reporter rough Integration\n - fixed some UI issues\n - Added config and checks\n - Added Season and Episode selection\n - removed files not present\n - Added Jellyseerr issue reporting to README\n - old mapping for textual problem types were removed\n - Add missing Jellyseerr report issue translations and fix modal backdrop visibility\n - Fix Translations for Issue Reporting\n - Add onClose handler to Jellyseerr modal for cleanup\n - Sync Jellyseerr requests with watchlist items",
+        "targetAbi": "10.11.0.0",
+        "version": "9.8.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/9.8.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "checksum": "380B6985EFE8676A87F6096FCECB410C",
+        "timestamp": "2025-12-20T14:04:23" 
+      },
+      {
         "changelog": "- Update configPage.html\n - Revert \"Add File Size and Watched % for BoxSets and Playlists\"\n - Add centralized observer management and performance helpers\n - Fix elsewhere where it does not consider filtered services",
         "targetAbi": "10.11.0.0",
         "version": "9.7.1.0",
@@ -10293,6 +10333,83 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-custom-tabs/main/src/logo.png",
     "versions": [
        {
+        "version": "0.2.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.5.0/Release-10.10.7.zip",
+        "checksum": "FD60DACD303183F5058394AA108D82E6",
+        "timestamp": "2025-11-03T22:24:54",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "0.2.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.5.0/Release-10.11.0.zip",
+        "checksum": "E64F7CB88E85F384AB99763C6FDEAC2D",
+        "timestamp": "2025-11-03T22:24:54",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "0.2.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.1.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.5.0/Release-10.11.1.zip",
+        "checksum": "2FF28A1147BA610D581E15A886A5EBAC",
+        "timestamp": "2025-11-03T22:24:54",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "0.2.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.2.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.5.0/Release-10.11.2.zip",
+        "checksum": "F5FDDE13A0DC5D62BE2D1FA934998A2D",
+        "timestamp": "2025-11-03T22:24:54",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "0.2.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.3.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.5.0/Release-10.11.3.zip",
+        "checksum": "272475C05D312A31C3F97898C96B9E16",
+        "timestamp": "2025-11-03T22:24:54",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "0.2.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.4.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.5.0/Release-10.11.4.zip",
+        "checksum": "94576CC6AC19C764AE1E965BD645F335",
+        "timestamp": "2025-11-03T22:24:54",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "0.2.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.5.0/Release-10.11.5.zip",
+        "checksum": "143845C247CFF10E96C145C0E331B854",
+        "timestamp": "2025-11-03T22:24:54",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
         "version": "0.2.4.0",
         "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.4",
         "targetAbi": "10.10.7.0",
@@ -10634,6 +10751,83 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-collection-sections/main/src/logo.png",
     "versions": [
        {
+        "version": "2.3.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.5.0/Release-10.10.7.zip",
+        "checksum": "40BBE9BCCC544ECD7A600179943C9646",
+        "timestamp": "2025-11-03T22:24:52",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.3.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.5.0/Release-10.11.0.zip",
+        "checksum": "2F42A397B9D96B01B18FB4C923FEFB1E",
+        "timestamp": "2025-11-03T22:24:52",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.3.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.1.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.5.0/Release-10.11.1.zip",
+        "checksum": "2933F024F428EA3CEA6AC0C893AF2E2B",
+        "timestamp": "2025-11-03T22:24:52",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.3.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.2.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.5.0/Release-10.11.2.zip",
+        "checksum": "BAC97B5B0CA8E9048DB4F06DB64A3715",
+        "timestamp": "2025-11-03T22:24:52",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.3.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.3.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.5.0/Release-10.11.3.zip",
+        "checksum": "9043005CCEBB216B7EE3C05355B9AD37",
+        "timestamp": "2025-11-03T22:24:52",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.3.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.4.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.5.0/Release-10.11.4.zip",
+        "checksum": "FBC54B729D840C2DD6DDA019026D00C7",
+        "timestamp": "2025-11-03T22:24:52",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.3.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.5.0/Release-10.11.5.zip",
+        "checksum": "A7F0996D17DA22C76299F4FE9D1E28E2",
+        "timestamp": "2025-11-03T22:24:52",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
         "version": "2.3.4.0",
         "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.4",
         "targetAbi": "10.10.7.0",
@@ -10953,6 +11147,83 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-file-transformation/main/src/logo.png",
     "versions": [
        {
+        "version": "2.5.2.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.2.0/Release-10.10.7.zip",
+        "checksum": "EC703C9AFE77548EC68695B35CF6DAC9",
+        "timestamp": "2025-11-28T20:39:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.5.2.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.2.0/Release-10.11.0.zip",
+        "checksum": "35D2FF8475DC40E0456036998FF2F1F8",
+        "timestamp": "2025-11-28T20:39:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.5.2.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.1.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.2.0/Release-10.11.1.zip",
+        "checksum": "03FF70EF3F6D57D7BABFFEC499253D2C",
+        "timestamp": "2025-11-28T20:39:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.5.2.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.2.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.2.0/Release-10.11.2.zip",
+        "checksum": "4565CD298F8A7ED721FA977F75A9D50C",
+        "timestamp": "2025-11-28T20:39:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.5.2.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.3.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.2.0/Release-10.11.3.zip",
+        "checksum": "21F38EECF4D158658FD71270CAFABE43",
+        "timestamp": "2025-11-28T20:39:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.5.2.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.4.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.2.0/Release-10.11.4.zip",
+        "checksum": "DFA6CEB6B22F431877CECBC4B5092D6C",
+        "timestamp": "2025-11-28T20:39:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.5.2.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.2.0/Release-10.11.5.zip",
+        "checksum": "78A208169F4949F642F61A125D601D2C",
+        "timestamp": "2025-11-28T20:39:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
         "version": "2.5.1.0",
         "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.4",
         "targetAbi": "10.10.7.0",
@@ -11437,6 +11708,160 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-media-bar/main/src/logo.png",
     "versions": [
        {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Missed some more upstream improvements",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.6.0/Release-10.10.7.zip",
+        "checksum": "588648069F8A90B55ACA358EC7352DE7",
+        "timestamp": "2025-12-19T13:24:38",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Missed some more upstream improvements",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.6.0/Release-10.11.0.zip",
+        "checksum": "FC2F4C24FD44E91D2F98518B848BBD3C",
+        "timestamp": "2025-12-19T13:24:38",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Missed some more upstream improvements",
+        "targetAbi": "10.11.1.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.6.0/Release-10.11.1.zip",
+        "checksum": "E50B56DC1601B97A371919EF1F7CEA87",
+        "timestamp": "2025-12-19T13:24:38",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Missed some more upstream improvements",
+        "targetAbi": "10.11.2.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.6.0/Release-10.11.2.zip",
+        "checksum": "69A0428E1E5118794F5E0834452676EC",
+        "timestamp": "2025-12-19T13:24:38",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Missed some more upstream improvements",
+        "targetAbi": "10.11.3.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.6.0/Release-10.11.3.zip",
+        "checksum": "8565E308F3FA5F976C666A800D7EB159",
+        "timestamp": "2025-12-19T13:24:38",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Missed some more upstream improvements",
+        "targetAbi": "10.11.4.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.6.0/Release-10.11.4.zip",
+        "checksum": "AF53B29F65BA2B33918ADA6909F6360B",
+        "timestamp": "2025-12-19T13:24:38",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Missed some more upstream improvements",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.6.0/Release-10.11.5.zip",
+        "checksum": "4B0BCF9D6C8E04F077889996FE749C24",
+        "timestamp": "2025-12-19T13:24:38",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n- Merged with upstream improvements",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.5.0/Release-10.10.7.zip",
+        "checksum": "46CB53CF61539E19E19DDF104524694E",
+        "timestamp": "2025-12-07T16:16:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n- Merged with upstream improvements",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.5.0/Release-10.11.0.zip",
+        "checksum": "D38D0D7B2802FE020484FFD4E8EE3602",
+        "timestamp": "2025-12-07T16:16:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n- Merged with upstream improvements",
+        "targetAbi": "10.11.1.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.5.0/Release-10.11.1.zip",
+        "checksum": "663863656D3E28F8E6CEAB9F907C97F6",
+        "timestamp": "2025-12-07T16:16:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n- Merged with upstream improvements",
+        "targetAbi": "10.11.2.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.5.0/Release-10.11.2.zip",
+        "checksum": "74059F5BBEC6AD973638F61923F66735",
+        "timestamp": "2025-12-07T16:16:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n- Merged with upstream improvements",
+        "targetAbi": "10.11.3.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.5.0/Release-10.11.3.zip",
+        "checksum": "3118D3EA16DA06997564BF19EB11C9D8",
+        "timestamp": "2025-12-07T16:16:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n- Merged with upstream improvements",
+        "targetAbi": "10.11.4.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.5.0/Release-10.11.4.zip",
+        "checksum": "AD2FD0C70789AF725495A6A2BD53C11D",
+        "timestamp": "2025-12-07T16:16:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.5.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n- Merged with upstream improvements",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.5.0/Release-10.11.5.zip",
+        "checksum": "10F0C702B40099812E76C081CD7ABA6B",
+        "timestamp": "2025-12-07T16:16:29",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
         "version": "2.4.4.0",
         "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.4",
         "targetAbi": "10.10.7.0",
@@ -11855,6 +12280,83 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-pages/main/src/logo.png",
     "versions": [
        {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.6.0/Release-10.10.7.zip",
+        "checksum": "5C70E73D2A182C00E463D3116D708A5C",
+        "timestamp": "2025-11-11T22:05:46",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.6.0/Release-10.11.0.zip",
+        "checksum": "BF61A3F60932D88ECBE4F04722A59275",
+        "timestamp": "2025-11-11T22:05:46",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.1.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.6.0/Release-10.11.1.zip",
+        "checksum": "9B100327959EE1A33854252BE03E83A0",
+        "timestamp": "2025-11-11T22:05:46",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.2.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.6.0/Release-10.11.2.zip",
+        "checksum": "A357DB168C2B83064149AD40605ED421",
+        "timestamp": "2025-11-11T22:05:46",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.3.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.6.0/Release-10.11.3.zip",
+        "checksum": "46BB727C382BA02C9EA2E207E02369F2",
+        "timestamp": "2025-11-11T22:05:46",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.4.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.6.0/Release-10.11.4.zip",
+        "checksum": "91F625ACFABAEDFAF1075A6191AFF13C",
+        "timestamp": "2025-11-11T22:05:46",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.6.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.6.0/Release-10.11.5.zip",
+        "checksum": "74DBB4A595FD1510F3B3437530CA0BE8",
+        "timestamp": "2025-11-11T22:05:46",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
         "version": "2.4.5.0",
         "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.4",
         "targetAbi": "10.10.7.0",
@@ -12273,6 +12775,83 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-home-sections/main/src/logo.png",
     "versions": [
        {
+        "version": "2.4.14.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n\r\n⚡ Performance Improvements\r\n\r\n- Optimized Latest Shows,Genre and Watch Again sections to avoid using N+1 complexity algorithms (PR #163,@gageorsburn)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue with usernames not being passed as url encoded to Jellyseerr (PR #160,@WoolMagician)\r\n- Sort \"My Requests\" section without media type grouping (PR #162,@ZorudaRinku)\r\n- Fixed #142; Allow the user to choose with Radarr release types to consider in \"Upcoming\" (PR #164,@AdamWHY2K)",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.4.14.0/Release-10.10.7.zip",
+        "checksum": "D1936130047011240EFEE1B387AB82DA",
+        "timestamp": "2025-12-17T15:22:28",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.14.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n\r\n⚡ Performance Improvements\r\n\r\n- Optimized Latest Shows,Genre and Watch Again sections to avoid using N+1 complexity algorithms (PR #163,@gageorsburn)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue with usernames not being passed as url encoded to Jellyseerr (PR #160,@WoolMagician)\r\n- Sort \"My Requests\" section without media type grouping (PR #162,@ZorudaRinku)\r\n- Fixed #142; Allow the user to choose with Radarr release types to consider in \"Upcoming\" (PR #164,@AdamWHY2K)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.4.14.0/Release-10.11.0.zip",
+        "checksum": "BC6015C82CAC87C5D1E3E1490539BBDC",
+        "timestamp": "2025-12-17T15:22:28",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.14.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n\r\n⚡ Performance Improvements\r\n\r\n- Optimized Latest Shows,Genre and Watch Again sections to avoid using N+1 complexity algorithms (PR #163,@gageorsburn)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue with usernames not being passed as url encoded to Jellyseerr (PR #160,@WoolMagician)\r\n- Sort \"My Requests\" section without media type grouping (PR #162,@ZorudaRinku)\r\n- Fixed #142; Allow the user to choose with Radarr release types to consider in \"Upcoming\" (PR #164,@AdamWHY2K)",
+        "targetAbi": "10.11.1.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.4.14.0/Release-10.11.1.zip",
+        "checksum": "4770B0F00A38F76DAD8DE395A9968773",
+        "timestamp": "2025-12-17T15:22:28",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.14.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n\r\n⚡ Performance Improvements\r\n\r\n- Optimized Latest Shows,Genre and Watch Again sections to avoid using N+1 complexity algorithms (PR #163,@gageorsburn)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue with usernames not being passed as url encoded to Jellyseerr (PR #160,@WoolMagician)\r\n- Sort \"My Requests\" section without media type grouping (PR #162,@ZorudaRinku)\r\n- Fixed #142; Allow the user to choose with Radarr release types to consider in \"Upcoming\" (PR #164,@AdamWHY2K)",
+        "targetAbi": "10.11.2.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.4.14.0/Release-10.11.2.zip",
+        "checksum": "A55A994BBF59961FA809C02629C70EDF",
+        "timestamp": "2025-12-17T15:22:28",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.14.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n\r\n⚡ Performance Improvements\r\n\r\n- Optimized Latest Shows,Genre and Watch Again sections to avoid using N+1 complexity algorithms (PR #163,@gageorsburn)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue with usernames not being passed as url encoded to Jellyseerr (PR #160,@WoolMagician)\r\n- Sort \"My Requests\" section without media type grouping (PR #162,@ZorudaRinku)\r\n- Fixed #142; Allow the user to choose with Radarr release types to consider in \"Upcoming\" (PR #164,@AdamWHY2K)",
+        "targetAbi": "10.11.3.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.4.14.0/Release-10.11.3.zip",
+        "checksum": "E243D66B2BA8E3B5E0B75B799FF78E7C",
+        "timestamp": "2025-12-17T15:22:28",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.14.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n\r\n⚡ Performance Improvements\r\n\r\n- Optimized Latest Shows,Genre and Watch Again sections to avoid using N+1 complexity algorithms (PR #163,@gageorsburn)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue with usernames not being passed as url encoded to Jellyseerr (PR #160,@WoolMagician)\r\n- Sort \"My Requests\" section without media type grouping (PR #162,@ZorudaRinku)\r\n- Fixed #142; Allow the user to choose with Radarr release types to consider in \"Upcoming\" (PR #164,@AdamWHY2K)",
+        "targetAbi": "10.11.4.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.4.14.0/Release-10.11.4.zip",
+        "checksum": "3085652BFED9E83BB98515DD0A88078F",
+        "timestamp": "2025-12-17T15:22:28",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
+        "version": "2.4.14.0",
+        "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.5\r\n\r\n⚡ Performance Improvements\r\n\r\n- Optimized Latest Shows,Genre and Watch Again sections to avoid using N+1 complexity algorithms (PR #163,@gageorsburn)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue with usernames not being passed as url encoded to Jellyseerr (PR #160,@WoolMagician)\r\n- Sort \"My Requests\" section without media type grouping (PR #162,@ZorudaRinku)\r\n- Fixed #142; Allow the user to choose with Radarr release types to consider in \"Upcoming\" (PR #164,@AdamWHY2K)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.4.14.0/Release-10.11.5.zip",
+        "checksum": "92AB313B2B8892810089B15FB08F82DB",
+        "timestamp": "2025-12-17T15:22:28",
+        "dependencies": [
+           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90" 
+        ] 
+      },
+      {
         "version": "2.4.13.0",
         "changelog": "✨ New Features\r\n\r\n- Updated to support 10.11.4\r\n- PR#155 - Added support for internal/external jellyseerr urls. Thanks @botagas",
         "targetAbi": "10.10.7.0",
