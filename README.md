@@ -16,7 +16,7 @@ all-in-one-plugins.json
 
 
 
-Official Jellyfin Plugin Repositories
+Official Jellyfin Plugin Mirror
 
 https://repo.jellyfin.org/files/plugin/manifest.json
 
