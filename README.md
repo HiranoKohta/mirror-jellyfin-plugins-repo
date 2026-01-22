@@ -68,8 +68,6 @@ https://raw.githubusercontent.com/jwueller/jellyfin-repository/master/manifest.j
 
 https://raw.githubusercontent.com/jyourstone/jellyfin-plugin-manifest/main/manifest.json
 
-https://raw.githubusercontent.com/jyourstone/jellyfin-plugin-manifest/master/manifest.json
-
 https://raw.githubusercontent.com/kamilkosek/jellyfin-plugin-provider-stuff/main/manifest.json
 
 https://raw.githubusercontent.com/KeksBombe/jellyfin-plugin-auto-collections/refs/heads/main/manifest.json
@@ -85,8 +83,6 @@ https://raw.githubusercontent.com/lostb1t/jellyfin-plugin-collection-import/main
 https://raw.githubusercontent.com/luall0/jellyfin-luall0-plugins/refs/heads/main/manifest.json
 
 https://raw.githubusercontent.com/n00bcodr/jellyfin-plugins/main/10.11/manifest.json
-
-https://raw.githubusercontent.com/n00bcodr/jellyfin-plugins/main/10.11/manifest.json 
 
 https://raw.githubusercontent.com/Namo2/InPlayerEpisodePreview/master/manifest.json
 
