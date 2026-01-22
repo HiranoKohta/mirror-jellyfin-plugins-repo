@@ -1,0 +1,93 @@
+[
+  {
+    "guid": "975dde10-724f-4b72-8efc-91a1cb2d9510",
+    "name": "Playlist Generator",
+    "overview": "Generate a daily personalized playlist",
+    "description": "Uses your listening history to generate a daily playlist of songs you might like",
+    "owner": "Eeeeelias",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/Eeeeelias/playlist-generator/refs/heads/main/images/logo.png",
+    "versions": [
+      {
+        "version": "1.4.3.0",
+        "changelog": "Add multiuser support",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.4.3.0/PlaylistGenerator_1.4.3.0.zip",
+        "checksum": "9aeb65a15ce1a6efd5cd3ddd344d12ba",
+        "timestamp": "2026-01-04T12:42:27Z"
+      },
+      {
+        "version": "1.4.2.1",
+        "changelog": "Add Assembly Version",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.4.2.1/PlaylistGenerator_1.4.2.1.zip",
+        "checksum": "7e20b38f966252f8ed54a7be63b7a47f",
+        "timestamp": "2025-12-11T17:11:33Z"
+      },
+      {
+        "version": "1.4.2.0",
+        "changelog": "Updated music recommendations",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.4.2.0/PlaylistGenerator_1.4.2.0.zip",
+        "checksum": "d5477259c42f97ac837b7e0ff037de04",
+        "timestamp": "2025-12-10T18:53:01Z"
+      },
+      {
+        "version": "1.4.1.0",
+        "changelog": "Added Jellyfin 10.11.0 compatability",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.4.1.0/PlaylistGenerator_1.4.1.0.zip",
+        "checksum": "c315035ece2c18b511f7372563002501",
+        "timestamp": "2025-10-24T15:47:12Z"
+      },
+      {
+        "version": "1.4.0.0",
+        "changelog": "Added ability to select libraries",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.4.0.0/v1.4.0.0-release.zip",
+        "checksum": "11c479fa6e59cabe648dbd8f47d1950d",
+        "timestamp": "2025-09-29T21:23:20Z"
+      },
+      {
+        "version": "1.3.0.1",
+        "changelog": "Fix packaged binary",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.3.0.1/v1.3.0.1-release.zip",
+        "checksum": "7ab27979c9a4174d06662a5783ace95d",
+        "timestamp": "2025-08-04T20:54:28Z"
+      },
+      {
+        "version": "1.3.0.0",
+        "changelog": "Querying only Music libraries",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.3.0.0/v1.3.0.0-release.zip",
+        "checksum": "e950ceb1e1117a60b70de7eb8289d54d",
+        "timestamp": "2025-08-04T20:28:38Z"
+      },
+      {
+        "version": "1.2.0.0",
+        "changelog": "Added penalties to the scoring method for better recommendations",
+        "targetAbi": "10.10.6.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.2.0.0/v1.2.0.0-release.zip",
+        "checksum": "7fe0209336c8e615b15494dd6373d2ba",
+        "timestamp": "2025-03-28T15:54:13Z"
+      },
+      {
+        "version": "1.1.0.0",
+        "changelog": "Added Playback Reporting information to the recommendation system",
+        "targetAbi": "10.10.6.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.1.0.0/v1.1.0.0-release.zip",
+        "checksum": "f836fc7f376cb4de7f050265de60fc4c",
+        "timestamp": "2025-03-26T21:14:54Z"
+      },
+      {
+        "version": "1.0.0.0",
+        "changelog": "First release",
+        "targetAbi": "10.10.6.0",
+        "sourceUrl": "https://github.com/Eeeeelias/playlist-generator/releases/download/v1.0.0.0/Release.zip",
+        "checksum": "5964befe9ef478a4a135e17cc95a2664",
+        "timestamp": "2025-03-26T15:09:35Z"
+      }
+    ]
+  }
+]

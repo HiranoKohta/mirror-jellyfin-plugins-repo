@@ -1,0 +1,459 @@
+[
+    {
+        "guid": "ef35f6b1-7fe6-44ca-a215-232089fb9bc7",
+        "name": "MyShows",
+        "description": "Scrobble your watched shows with MyShows.me.\n",
+        "overview": "Scrobble your watched shows with MyShows.me",
+        "owner": "shemanaev",
+        "category": "General",
+        "imageUrl": "https://raw.githubusercontent.com/shemanaev/jellyfin-plugin-repo/master/images/myshows.png",
+        "versions": [
+            {
+                "version": "5.1.0.0",
+                "changelog": "Update for 10.9 compatibility\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-myshows/releases/download/v5.1.0.0/myshows_5.1.0.0.zip",
+                "checksum": "775646d9f99da312b72333b593234481",
+                "timestamp": "2024-05-13T15:43:03Z"
+            },
+            {
+                "version": "5.0.0.0",
+                "changelog": "Update for 10.8 compatibility\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-myshows/releases/download/v5.0.0.0/myshows_5.0.0.0.zip",
+                "checksum": "65a23c93fd6e75fb138c23f518b13fc5",
+                "timestamp": "2022-03-29T17:52:17Z"
+            },
+            {
+                "version": "4.0.0.1",
+                "changelog": "Fixed NPE\n",
+                "targetAbi": "10.7.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-myshows/releases/download/v4.0.0.1/MyShows.zip",
+                "checksum": "982846e7829b8c83137d9a537772e8e1",
+                "timestamp": "2021-06-23T13:06:51Z"
+            },
+            {
+                "version": "4.0.0.0",
+                "changelog": "Updated for 10.7.\n",
+                "targetAbi": "10.7.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-myshows/releases/download/v4.0.0.0/MyShows.zip",
+                "checksum": "376acb275cf41f47ac17318ad218073a",
+                "timestamp": "2021-03-12T10:52:09Z"
+            },
+            {
+                "version": "3.0.0.2",
+                "changelog": "Updated for 10.6. Again.\n",
+                "targetAbi": "10.6.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-myshows/releases/download/v3.0.0.2/myshows_3.0.0.2.zip",
+                "checksum": "82df53b10fe20091b7f0fe93f76a2dea",
+                "timestamp": "2020-07-21T11:01:30Z"
+            },
+            {
+                "version": "3.0.0.1",
+                "changelog": "Updated for 10.6\n",
+                "targetAbi": "10.6.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-myshows/releases/download/v3.0.0.1/myshows_3.0.0.1.zip",
+                "checksum": "9d48799769da765ab432c0c54e1b54ac",
+                "timestamp": "2020-07-19T13:01:11Z"
+            }
+        ]
+    },
+    {
+        "guid": "eb5d7894-8eef-4b36-aa6f-5d124e828ce1",
+        "name": "Webhooks",
+        "description": "Supports couple of webhook types including Plex one.\n",
+        "overview": "Webhooks. Flexible and robust",
+        "owner": "shemanaev",
+        "category": "General",
+        "imageUrl": "https://raw.githubusercontent.com/shemanaev/jellyfin-plugin-repo/master/images/webhooks.png",
+        "versions": [
+            {
+                "version": "3.9.0.0",
+                "changelog": "Jellyfin 10.11 compatibility\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.9.0.0/webhooks_3.9.0.0.zip",
+                "checksum": "258fbb50e380ad5a51a8f5cdcb6921d4",
+                "timestamp": "2025-10-19T10:28:24Z"
+            },
+            {
+                "version": "3.8.0.0",
+                "changelog": "Jellyfin 10.10 compatibility\n",
+                "targetAbi": "10.10.3.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.8.0.0/webhooks_3.8.0.0.zip",
+                "checksum": "aba7dad81846e488ad44046cb2d53612",
+                "timestamp": "2024-12-17T10:40:23Z"
+            },
+            {
+                "version": "3.7.0.0",
+                "changelog": "Jellyfin 10.9 compatibility\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.7.0.0/webhooks_3.7.0.0.zip",
+                "checksum": "fc7846f8c205a5430a542f775e9bc0df",
+                "timestamp": "2024-05-13T15:41:28Z"
+            },
+            {
+                "version": "3.6.2.0",
+                "changelog": "Fix user filtering\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.6.2.0/webhooks_3.6.2.0.zip",
+                "checksum": "363d77475c9daee51de2a14d1ed42414",
+                "timestamp": "2024-01-28T19:24:10Z"
+            },
+            {
+                "version": "3.6.1.0",
+                "changelog": "Fix NPE in library events\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.6.1.0/webhooks_3.6.1.0.zip",
+                "checksum": "3e488465bd578ea1d5cadcdfe6c44cbd",
+                "timestamp": "2024-01-27T16:14:47Z"
+            },
+            {
+                "version": "3.6.0.0",
+                "changelog": "Add playback progress event Add workaround for players that doesn't send stop event\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.6.0.0/webhooks_3.6.0.0.zip",
+                "checksum": "43738397ce738d64a7c7ec611b1c09d2",
+                "timestamp": "2023-08-02T16:57:48Z"
+            },
+            {
+                "version": "3.5.0.0",
+                "changelog": "Add session playstate to payload\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.5.0.0/webhooks_3.5.0.0.zip",
+                "checksum": "90be1df1316beccda23fdcf499985368",
+                "timestamp": "2023-07-18T19:01:43Z"
+            },
+            {
+                "version": "3.4.0.0",
+                "changelog": "Add optional series field for episode events\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.4.0.0/webhooks_3.4.0.0.zip",
+                "checksum": "cc738b2689e6e37d5ee00ca34c990ea1",
+                "timestamp": "2023-07-18T08:07:36Z"
+            },
+            {
+                "version": "3.3.0.0",
+                "changelog": "Fix NPE when DLNA session starts\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.3.0.0/webhooks_3.3.0.0.zip",
+                "checksum": "5a472b1b213fd3a953dec2def5f76f47",
+                "timestamp": "2022-09-24T06:37:51Z"
+            },
+            {
+                "version": "3.2.0.0",
+                "changelog": "Fix playback events firing multiple times\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.2.0.0/webhooks_3.2.0.0.zip",
+                "checksum": "0c7e851d48f753bb4dcb71427c9a825b",
+                "timestamp": "2022-05-23T16:24:54Z"
+            },
+            {
+                "version": "3.1.0.0",
+                "changelog": "Add new event types\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.1.0.0/webhooks_3.1.0.0.zip",
+                "checksum": "a2c46c9603612a3230ee923c5abb3519",
+                "timestamp": "2022-05-22T11:49:23Z"
+            },
+            {
+                "version": "3.0.0.0",
+                "changelog": "Update for 10.8 compatibility\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v3.0.0.0/webhooks_3.0.0.0.zip",
+                "checksum": "8b0f2f8044b4062d87a2f7da5012e050",
+                "timestamp": "2022-03-29T17:59:14Z"
+            },
+            {
+                "version": "2.0.0.0",
+                "changelog": "Updated for 10.7.\n",
+                "targetAbi": "10.7.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v2.0.0.0/Webhooks.zip",
+                "checksum": "434ea564c4fc82886a8fdc209fa7673e",
+                "timestamp": "2021-03-12T11:42:14Z"
+            },
+            {
+                "version": "1.0.0.4",
+                "changelog": "Added more null checks.\n",
+                "targetAbi": "10.6.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v1.0.0.4/Webhooks.zip",
+                "checksum": "f972c1e286fc934f3dc6fa121cd7c163",
+                "timestamp": "2020-12-29T12:00:57Z"
+            },
+            {
+                "version": "1.0.0.3",
+                "changelog": "Fixed Live TV handling.\n",
+                "targetAbi": "10.6.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v1.0.0.3/Webhooks.zip",
+                "checksum": "7660b83630847aca31a50ac821a4a72e",
+                "timestamp": "2020-12-15T10:16:29Z"
+            },
+            {
+                "version": "1.0.0.2",
+                "changelog": "Updated for 10.6. Again.\n",
+                "targetAbi": "10.6.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v1.0.0.2/webhooks_1.0.0.2.zip",
+                "checksum": "dd96904828aafb50b68687a691848652",
+                "timestamp": "2020-07-21T11:14:01Z"
+            },
+            {
+                "version": "1.0.0.1",
+                "changelog": "Updated for 10.6\n",
+                "targetAbi": "10.6.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-webhooks/releases/download/v1.0.0.1/webhooks_1.0.0.1.zip",
+                "checksum": "ec3c2297916eb7044adcd6cd919e0bfc",
+                "timestamp": "2020-07-19T13:01:36Z"
+            }
+        ]
+    },
+    {
+        "guid": "607fee77-97eb-41fe-bf22-26844d99ffb0",
+        "name": "Media Cleaner",
+        "description": "Keep your storage clean without hassle. Works with movies and series.\n",
+        "overview": "Delete played media after specified time",
+        "owner": "shemanaev",
+        "category": "General",
+        "imageUrl": "https://raw.githubusercontent.com/shemanaev/jellyfin-plugin-repo/master/images/media-cleaner.png",
+        "versions": [
+            {
+                "version": "2.24.0.0",
+                "changelog": "Add the ability to keep the first/last episode/season of the show\n",
+                "targetAbi": "10.11.3.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.24.0.0/media-cleaner_2.24.0.0.zip",
+                "checksum": "d5a8fdcb531553f8c6e9e677cd7522cb",
+                "timestamp": "2025-12-15T18:02:08Z"
+            },
+            {
+                "version": "2.23.0.0",
+                "changelog": "Fix some broken series meta data handling\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.23.0.0/media-cleaner_2.23.0.0.zip",
+                "checksum": "799cd0d656dc88ec34feb92c4b60a567",
+                "timestamp": "2025-12-15T16:24:20Z"
+            },
+            {
+                "version": "2.22.0.0",
+                "changelog": "Jellyfin 10.11 compatibility\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.22.0.0/media-cleaner_2.22.0.0.zip",
+                "checksum": "374b89f01ca596c663927ac623f8da4b",
+                "timestamp": "2025-10-19T09:23:09Z"
+            },
+            {
+                "version": "2.21.0.0",
+                "changelog": "Add tag exclusion system (luigidotmoe)\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.21.0.0/media-cleaner_2.21.0.0.zip",
+                "checksum": "76f898496aca7a6a062ff52848d1f5c6",
+                "timestamp": "2025-06-01T12:13:58Z"
+            },
+            {
+                "version": "2.20.0.0",
+                "changelog": "Old plays should be checked first (NicolaSmaniotto) Add option to allow deletion of items played before being added (luigidotmoe)\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.20.0.0/media-cleaner_2.20.0.0.zip",
+                "checksum": "361f276beb4ed78bfecf2f5228c418e2",
+                "timestamp": "2025-05-25T18:13:08Z"
+            },
+            {
+                "version": "2.19.0.0",
+                "changelog": "Add log level switch to troubleshooting tab\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.19.0.0/media-cleaner_2.19.0.0.zip",
+                "checksum": "434ef4cef09dc63b703063b63a9081ae",
+                "timestamp": "2024-11-10T12:02:00Z"
+            },
+            {
+                "version": "2.18.0.0",
+                "changelog": "New option to ignore old plays\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.18.0.0/media-cleaner_2.18.0.0.zip",
+                "checksum": "17147fe9b9ce93323b4d62dfbac42124",
+                "timestamp": "2024-09-28T17:31:13Z"
+            },
+            {
+                "version": "2.17.0.0",
+                "changelog": "Check creation date for unwatched items\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.17.0.0/media-cleaner_2.17.0.0.zip",
+                "checksum": "61ea3fba8beaf26ac561df0e5a930414",
+                "timestamp": "2024-07-11T19:02:06Z"
+            },
+            {
+                "version": "2.16.0.0",
+                "changelog": "10.9 compatibility\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.16.0.0/media-cleaner_2.16.0.0.zip",
+                "checksum": "8bceb65c4b0e454a64b2df7b4ecc1cb1",
+                "timestamp": "2024-05-13T17:06:23Z"
+            },
+            {
+                "version": "2.15.0.0",
+                "changelog": "Fix delete not played behaviour\n",
+                "targetAbi": "10.8.11.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.15.0.0/media-cleaner_2.15.0.0.zip",
+                "checksum": "b06791949621e8866e88afbde7ca7271",
+                "timestamp": "2024-02-27T15:51:01Z"
+            },
+            {
+                "version": "2.14.0.0",
+                "changelog": "Use UTC time for comparison in expiry filters Use local time in displayed dates\n",
+                "targetAbi": "10.8.11.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.14.0.0/media-cleaner_2.14.0.0.zip",
+                "checksum": "52b956edb40c6d661c8e1ec2479f9e75",
+                "timestamp": "2024-02-26T06:40:05Z"
+            },
+            {
+                "version": "2.13.0.0",
+                "changelog": "Fix not played cleanup\n",
+                "targetAbi": "10.8.11.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.13.0.0/media-cleaner_2.13.0.0.zip",
+                "checksum": "a63edd1d5bca165346a4a5b41b934fb4",
+                "timestamp": "2024-02-25T14:44:27Z"
+            },
+            {
+                "version": "2.12.0.0",
+                "changelog": "Add color coding to levels in log viewer Add full name in logs Add cleanup of old unplayed items\n",
+                "targetAbi": "10.8.11.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.12.0.0/media-cleaner_2.12.0.0.zip",
+                "checksum": "55dc82c31304c7697713d86fd3026ec1",
+                "timestamp": "2024-02-25T09:06:53Z"
+            },
+            {
+                "version": "2.11.0.0",
+                "changelog": "Ignore plays that happened before the item was added\n",
+                "targetAbi": "10.8.11.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.11.0.0/media-cleaner_2.11.0.0.zip",
+                "checksum": "394880350246a85c965a5bc5f8a7916b",
+                "timestamp": "2024-02-04T07:17:25Z"
+            },
+            {
+                "version": "2.10.0.0",
+                "changelog": "Add exception for ytdl-sub when deleting series\n",
+                "targetAbi": "10.8.11.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.10.0.0/media-cleaner_2.10.0.0.zip",
+                "checksum": "0f112eef6faf65f3b3e03e49405352a5",
+                "timestamp": "2024-01-28T08:10:31Z"
+            },
+            {
+                "version": "2.9.0.0",
+                "changelog": "Add new \"keep while\" option: Any user (latest playback)\n",
+                "targetAbi": "10.8.11.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.9.0.0/media-cleaner_2.9.0.0.zip",
+                "checksum": "55c245d72b252ccac7024cb8a0190e7a",
+                "timestamp": "2023-11-25T16:56:21Z"
+            },
+            {
+                "version": "2.8.0.0",
+                "changelog": "Add support for audio and audio books\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.8.0.0/media-cleaner_2.8.0.0.zip",
+                "checksum": "d369e12ccba74a9c7c9c8b3fa7033bcf",
+                "timestamp": "2023-10-14T08:58:35Z"
+            },
+            {
+                "version": "2.7.0.0",
+                "changelog": "Add options to cleanup when all users have played the item\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.7.0.0/media-cleaner_2.7.0.0.zip",
+                "checksum": "5227513fee932ca293678b2b818aed00",
+                "timestamp": "2023-08-10T18:17:10Z"
+            },
+            {
+                "version": "2.6.1.0",
+                "changelog": "Add PlayedDate log Fix NPE\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.6.1.0/media-cleaner_2.6.1.0.zip",
+                "checksum": "1efd30bacc2302bcdb0431348eb6d1e4",
+                "timestamp": "2023-02-23T18:12:50Z"
+            },
+            {
+                "version": "2.6.0.0",
+                "changelog": "Add \"mark as unplayed\" Add html rendered log view\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.6.0.0/media-cleaner_2.6.0.0.zip",
+                "checksum": "20435b4a022004436c4dd3949dfaf0c7",
+                "timestamp": "2022-12-13T07:08:01Z"
+            },
+            {
+                "version": "2.5.2.0",
+                "changelog": "Fix NPE on deletion\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.5.2.0/media-cleaner_2.5.2.0.zip",
+                "checksum": "134f56267fe07bf66765b6b5ce7cc5a0",
+                "timestamp": "2022-12-12T18:55:50Z"
+            },
+            {
+                "version": "2.5.1.0",
+                "changelog": "Some fixes in troubleshooting section\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.5.1.0/media-cleaner_2.5.1.0.zip",
+                "checksum": "3fd8ae2c41a3d450002e9375a61d6012",
+                "timestamp": "2022-09-20T10:38:32Z"
+            },
+            {
+                "version": "2.5.0.0",
+                "changelog": "Add troubleshooting section\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.5.0.0/media-cleaner_2.5.0.0.zip",
+                "checksum": "fbd615816620457391f9227c93b0f871",
+                "timestamp": "2022-09-19T19:58:42Z"
+            },
+            {
+                "version": "2.4.0.0",
+                "changelog": "Add new option for series keeping\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.4.0.0/media-cleaner_2.4.0.0.zip",
+                "checksum": "55d2b5e97db91a8ebecc36744c4f7ae0",
+                "timestamp": "2022-09-12T14:52:34Z"
+            },
+            {
+                "version": "2.3.1.0",
+                "changelog": "Fix tabs navigation in JMP\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.3.1.0/media-cleaner_2.3.1.0.zip",
+                "checksum": "1af4f70888a403b3a3fe1e4e9087b3ac",
+                "timestamp": "2022-09-05T07:56:25Z"
+            },
+            {
+                "version": "2.3.0.0",
+                "changelog": "Fix series virtual episodes messing with detection\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.3.0.0/media-cleaner_2.3.0.0.zip",
+                "checksum": "1131ebe0111294d8289aa293b6b7cb39",
+                "timestamp": "2022-08-02T10:02:05Z"
+            },
+            {
+                "version": "2.2.0.0",
+                "changelog": "Add locations inclusion\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.2.0.0/media-cleaner_2.2.0.0.zip",
+                "checksum": "dc887777c3e560a7b556c9fca6d0bc55",
+                "timestamp": "2022-05-08T09:41:24Z"
+            },
+            {
+                "version": "2.1.0.0",
+                "changelog": "Add locations exclusion Add Video type support (used in Photos libraries)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.1.0.0/media-cleaner_2.1.0.0.zip",
+                "checksum": "44ee9455df2d451c08dcfb581f70e579",
+                "timestamp": "2022-04-12T14:26:56Z"
+            },
+            {
+                "version": "2.0.0.0",
+                "changelog": "Update for 10.8 compatibility\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v2.0.0.0/media-cleaner_2.0.0.0.zip",
+                "checksum": "0ad21092f148c978fbfecfc181d308c6",
+                "timestamp": "2022-03-29T17:56:36Z"
+            },
+            {
+                "version": "1.0.0.0",
+                "changelog": "Initial version.\n",
+                "targetAbi": "10.7.0.0",
+                "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v1.0.0.0/MediaCleaner.zip",
+                "checksum": "1943e6f07fe5ce85a4642f68f4c9cc55",
+                "timestamp": "2021-07-18T09:24:02Z"
+            }
+        ]
+    }
+]

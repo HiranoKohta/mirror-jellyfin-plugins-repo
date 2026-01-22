@@ -1,0 +1,125 @@
+[
+  {
+    "guid": "a4df60c5-6ab4-412a-8f79-2cab93fb2bc5",
+    "name": "Jellynext",
+    "description": "A Jellyfin plugin that creates per-user virtual libraries for personalized Trakt recommendations and new seasons. Seamlessly integrates with Radarr and Sonarr to trigger one-click downloads directly from Jellyfin.",
+    "overview": "Trakt recommendations sync with Sonarr/Radarr support.",
+    "owner": "luall0",
+    "category": "MoviesAndShows",
+    "imageUrl": "https://raw.githubusercontent.com/luall0/jellynext/main/images/jellynext_logo_full.png",
+    "versions": [
+      {
+        "checksum": "acf4da864123b6910995f13597cdc1f5",
+        "changelog": "\n### Bug Fixes\n\n- **Trending movies downloads**: Fixed download failure when playing trending movies\n  - PlaybackInterceptor now correctly handles global content paths ()\n  - Detects global content types and uses configured  for cache lookup\n  - Previously failed because path parsing expected per-user GUID, not \"global\" keyword",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.2.1.1/jellynext-v1.2.1.1.zip",
+        "timestamp": "2025-12-26 17:35:28",
+        "version": "1.2.1.1"
+      },
+      {
+        "checksum": "4a9222b0cb0dda517959622c834bd173",
+        "changelog": "\n### Improvements\n\n- **Modular Configuration UI**: Refactored configuration page into maintainable tab-based architecture\n  - Split 1843-line monolithic  into modular components (317-line main shell + 4 tab files)\n  - Each tab isolated: , , ,  (~40-865 lines each)\n  - New  serves tab resources from embedded resources via REST endpoints\n  - Eager loading strategy ensures all tabs loaded before population\n  - Proper async load order prevents race conditions (load tabs → config → users → populate UI)\n\n### Bug Fixes\n\n- **Configuration save errors**: Fixed JSON deserialization errors when saving with unconfigured Radarr/Sonarr\n  - Changed  and  from  to  (nullable)\n  - Added validation in  and  before using profile IDs\n  - Fixed JavaScript to properly handle empty select values (avoid  → )\n- **Race condition in trending settings**: Fixed issue where user selection was lost on page reload\n  -  now returns promise to ensure dropdown is populated before setting selected value\n  - Prevents accidental overwrite of  with null\n\n### Technical\n\n- Updated CLAUDE.md with configuration page architecture patterns and load order requirements",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.2.1.0/jellynext-v1.2.1.0.zip",
+        "timestamp": "2025-11-17 18:42:04",
+        "version": "1.2.1.0"
+      },
+      {
+        "checksum": "e436bc694e0c2294fbc50fc3e37689fd",
+        "changelog": "\n### Features\n\n- **Download Integration Modes**: Complete overhaul of download system with three pluggable integration modes\n  - **Native Mode** (default): Direct Radarr/Sonarr API integration for granular control\n  - **Jellyseerr Mode**: Centralized request management with approval workflows and multi-user tracking\n  - **Webhook Mode**: Custom HTTP webhooks for complete flexibility and external system integration\n  - Factory pattern () selects provider based on configuration\n  - All modes support anime detection and per-season TV downloads\n\n- **Jellyseerr Integration**: Full integration with Jellyseerr request management system\n  - **Automatic user import**: Jellyfin users auto-imported to Jellyseerr on first request with REQUEST-only permissions\n  - **Per-user attribution**: All requests tracked per-user via  header\n  - **Approval workflows**: Respects Jellyseerr approval settings and request quotas\n  - **Configuration modes**:\n    - Default mode: Uses Jellyseerr's default Radarr/Sonarr server and profile settings\n    - Manual mode: Explicit server and profile selection from UI dropdowns\n  - **Server/profile selection**: UI dynamically loads Radarr/Sonarr servers and quality profiles from Jellyseerr\n  - **Anime support**: Optional separate anime profile for TV shows detected via Trakt genres\n  - **GUID normalization**: Handles UUID format differences between Jellyseerr (no hyphens) and Jellyfin (standard format)\n  - **Connection testing**: Test Jellyseerr connection and validate API key from plugin settings\n  - New service:  for API communication\n  - New controller:  for UI configuration\n  - New models: , , , , \n\n- **Webhook Integration**: Custom HTTP webhook support for external integrations\n  - **Flexible HTTP methods**: GET, POST, PUT, PATCH support\n  - **Dynamic placeholders**: Replace variables in URLs, headers, and payloads\n    - Movies: , , , , \n    - TV Shows: All movie placeholders + , , \n  - **Custom headers**: Add authentication, API keys, or any custom headers with placeholder support\n  - **JSON payload templates**: Fully customizable request body with default templates included\n  - **Separate configurations**: Independent settings for movies vs TV shows\n  - **Use cases**: Discord/Slack notifications, custom download systems, third-party automation\n  - New service:  implementing \n  - New configuration fields: , , , , , , \n  - New model:  for custom header configuration\n  - Comprehensive documentation: New  guide with examples and troubleshooting\n\n### Improvements\n\n- **Download Provider Architecture**: Pluggable provider system for extensibility\n  -  interface defines contract for all download providers\n  - : Implements direct Radarr/Sonarr integration\n  - : Implements Jellyseerr API integration\n  - : Implements custom HTTP webhook integration\n  - : Factory pattern selects provider based on  enum\n  -  uses factory to route download requests\n\n- **Configuration UI Enhancements**: Redesigned download integration section\n  - **Visual integration selector**: Card-based UI with icons and descriptions for each mode\n  - **Dynamic sections**: UI shows/hides relevant settings based on selected integration mode\n  - **Webhook UI**: Interactive payload editors with placeholder insertion buttons\n  - **Header management**: Add/remove custom headers dynamically for webhook requests\n  - **Payload reset**: Quick reset to default payload templates\n  - **Real-time validation**: Client-side validation for URLs, headers, and JSON payloads\n\n- **Documentation**: Comprehensive guides for all integration modes\n  - Updated README.md with three integration modes in setup guide\n  - New WEBHOOK.md with complete webhook integration guide including:\n    - Configuration examples (GET, POST, authentication, Discord/Slack)\n    - Building custom webhook endpoints (Python Flask, Node.js Express)\n    - Troubleshooting guide\n    - Security considerations\n    - Advanced usage patterns\n  - Updated CLAUDE.md with download provider architecture\n  - FAQ updates covering all three integration modes\n\n### Technical Changes\n\n- **New enum**:  with values: , , \n- **Configuration migration**: Changed from  boolean to  enum (backward compatible)\n- **Service registration**: All download providers registered in \n- **API Controllers**:\n  - : Connection testing, server/profile retrieval\n  - Enhanced error handling and logging across all providers\n- **Models**:\n  - : Jellyseerr request model with media IDs and user tracking\n  - : User model for auto-import functionality\n  -  / : Server configuration models\n  - : Custom header model for webhook requests\n- **HTTP Client**: All providers use  for Cloudflare bypass compatibility",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.2.0.0/jellynext-v1.2.0.0.zip",
+        "timestamp": "2025-11-14 18:15:48",
+        "version": "1.2.0.0"
+      },
+      {
+        "checksum": "d80d161630197aa3af6a46a26bfda13f",
+        "changelog": "\n### Improvements\n\n- **Configuration UI Redesign**: Complete overhaul of plugin settings interface with native Jellyfin tab styling\n  - **Tab-based layout**: Organized settings into 4 tabs (General, Trakt, Trending, Downloads)\n  - **Native Jellyfin styling**: Uses  and  classes matching Jellyfin's UI patterns\n  - **Unified save button**: Single save button now handles all settings including per-user Trakt configurations\n  - **Improved UX**: Removed redundant \"Save User Settings\" button, cleaner tab navigation\n\n- **Virtual Library Management**: Enhanced global content directory handling\n  - **Automatic cleanup**: Trending movies directory now automatically flushed when feature is disabled\n  - **Consistent state**: Prevents stale content from appearing in global libraries after configuration changes",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.1.2.0/jellynext-v1.1.2.0.zip",
+        "timestamp": "2025-11-10 04:55:42",
+        "version": "1.1.2.0"
+      },
+      {
+        "checksum": "b9f2cb0f138bfd5eeb4882b6f0dcb59a",
+        "changelog": "\n### Improvements\n\n- **Shows Cache Refactoring**: Complete overhaul of season-level caching system\n  - **Hybrid architecture**: Global show/season metadata cache + per-user watch progress tracking\n  - **Incremental sync**: History-based delta syncing via  endpoint reduces API load\n  - **Smart caching**: Ended shows cache all seasons immediately, ongoing shows only cache complete seasons\n  - **Automatic sync mode**:  automatically detects first run and falls back to full sync\n  - **In-memory timestamps**: Last sync timestamp no longer persisted to config (triggers full sync on restart for data freshness)\n  - **Zero duplicate API calls**: Both RecommendationsProvider and NextSeasonsProvider read from same cache\n  - **Progressive discovery**: As users watch episodes, incremental sync detects progression and triggers next season recommendations\n\n- **Next Seasons Provider Enhancement**: Improved reliability and efficiency\n  - **Sync-first approach**: Calls  before fetching content\n  - **Cache-only reads**: Retrieves watched progress + season metadata entirely from cache (no duplicate Trakt API calls)\n  - **Dynamic fetching**: If next season not in cache for ongoing shows, fetches latest from Trakt API and checks season count\n  - **Better library deduplication**: Uses LocalLibraryService to exclude shows already in Jellyfin library\n\n- **Recommendations Provider Optimization**: Uses ShowsCacheService for season counts to avoid duplicate API calls\n\n- **Configuration Simplification**: Removed  setting (no longer needed with new cache architecture)\n\n### Technical Changes\n\n- **New models**:\n  - : Global show/season metadata (Title, Year, IDs, Status, Genres, Seasons dictionary)\n  - : Season-level data (SeasonNumber, EpisodeCount, AiredEpisodes, FirstAired, IsComplete property)\n  - : For parsing  endpoint\n  - : Episode metadata for history items\n\n- **Deleted files**:\n  -  (replaced by )\n  -  (replaced by  + )\n\n- **API additions**:\n  - : Fetches watch history with automatic pagination support (100 items/page)\n  - : Enhanced with  parameter for genre data\n\n- **Service registration**: Updated  to use  instead of ",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.1.1.0/jellynext-v1.1.1.0.zip",
+        "timestamp": "2025-11-10 03:28:34",
+        "version": "1.1.1.0"
+      },
+      {
+        "checksum": "b1ed961e237a13848a89dad9deedb110",
+        "changelog": "\n### Bug Fixes\n\n- **Jellyfin 10.11.0 Compatibility**: Pin SDK to exact version 10.11.0 to ensure compatibility across all 10.11.x releases\n  - Changed  and  dependencies from  to \n  - Fixes  on Jellyfin servers running 10.11.0 and 10.11.1\n  - Plugin now works on Jellyfin 10.11.0+",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.1.0.3/jellynext-v1.1.0.3.zip",
+        "timestamp": "2025-11-09 05:10:51",
+        "version": "1.1.0.3"
+      },
+      {
+        "checksum": "1d02da645b835828d6ded3bf902e0cc3",
+        "changelog": "\n### Documentation\n\n- **Enhanced Setup Instructions**: Added detailed virtual library path discovery instructions\n  - Included example log output showing exact paths for each content type\n  - Clarified Docker path usage ()\n  - Added step-by-step guide for finding jellynext-virtual directory via Jellyfin logs after Trakt user configuration\n  - Improved user experience for first-time setup",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.1.0.2/jellynext-v1.1.0.2.zip",
+        "timestamp": "2025-11-08 15:08:41",
+        "version": "1.1.0.2"
+      },
+      {
+        "checksum": "8ed82e10a9047bf2ac3eae416a60ea4d",
+        "changelog": "\n### Bug Fixes\n\n- **Configuration Save Error**: Fix  when saving configuration with trending movies disabled\n  -  is now only included in configuration POST when trending is enabled and a valid user is selected\n  - Prevents empty string from being parsed as GUID when trending movies is not configured",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.1.0.1/jellynext-v1.1.0.1.zip",
+        "timestamp": "2025-11-08 13:09:33",
+        "version": "1.1.0.1"
+      },
+      {
+        "checksum": "863e68bd52de1ebfc4a63e9fa5c52224",
+        "changelog": "\n### Features\n\n- **Trending Movies (Global)**: Added global trending movies feature visible to all users\n  - New global content type: \n  - Non-personalized trending movies from Trakt\n  - Configurable via Dashboard → Plugins → JellyNext → Trending Movies (Global)\n  - Settings:\n    - Enable/disable toggle\n    - Source user selection (which Trakt account to use for API access)\n    - Limit: 1-100 movies (default: 50)\n  - Virtual library path: \n  - Directory automatically created on plugin startup when enabled\n  - Supports same one-click Radarr download functionality as per-user recommendations\n\n### Improvements\n\n- **Global Content Architecture**: Extended virtual library system to support both per-user and global content types\n  - New helper method:  to distinguish content types\n  -  now handles both per-user () and global () paths\n  - Automatic directory initialization for global content types\n  - Setup instructions now include global libraries when enabled\n- **Trakt API**: Added  method to fetch trending movies with configurable limits\n- **New Provider**:  implements  for modular trending movies support\n- **Documentation**: Updated CLAUDE.md and README.md with global content architecture and trending movies feature",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.1.0.0/jellynext-v1.1.0.0.zip",
+        "timestamp": "2025-11-08 07:54:50",
+        "version": "1.1.0.0"
+      },
+      {
+        "checksum": "dcf4e1d542362b12631539d1f58426ad",
+        "changelog": "\n### Features\n\n- **Per-User Recommendation Limits**: Added configurable limits for movie and show recommendations (1-100, default: 50)\n  - New settings:  and  in per-user configuration\n  - Configurable via Dashboard → Plugins → JellyNext → User Settings\n  - Validated on both client and server with  to enforce 1-100 range\n  - Each user can control how many recommendations they want to fetch",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.0.3.0/jellynext-v1.0.3.0.zip",
+        "timestamp": "2025-11-08 06:49:45",
+        "version": "1.0.3.0"
+      },
+      {
+        "checksum": "702376199b40c1bdc63785c131b762fd",
+        "changelog": "\n### Features\n\n- **Short Dummy Video Option**: Added configurable 2-second dummy video for automatic playback stop on all clients\n  - New setting:  (default: enabled)\n  - When enabled: Uses 2-second video that auto-stops playback even on clients without API support\n  - When disabled: Uses 1-hour video (prevents \"watched\" status but requires manual stop)\n  - Configurable via Dashboard → Plugins → JellyNext → Playback Settings\n  - New embedded resource:  (~5KB vs ~2MB for long version)\n\n### Improvements\n\n- **Automatic Stub Refresh on Config Change**: Virtual library stub files now automatically rebuild when dummy video setting is changed\n  - Validates stub file content matches current configuration on each sync\n  - Flushes and rebuilds directory if mismatch detected\n  - Ensures consistent experience across all virtual items\n- **Better Client Compatibility**: Short dummy video provides automatic stop on clients that don't support Jellyfin's playback control API",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.0.2.0/jellynext-v1.0.2.0.zip",
+        "timestamp": "2025-11-08 06:31:12",
+        "version": "1.0.2.0"
+      },
+      {
+        "checksum": "cf5317a20bf3a44a2ae8c9b2a75cc449",
+        "changelog": "\n### Features\n\n- **Configurable Playback Stop Delay**: Added setting to configure delay before stopping playback of virtual items (default: 2 seconds, range: 0-30)\n  - Allows users to adjust timing for clients that need more initialization time\n  - Configurable via Dashboard → Plugins → JellyNext → Playback Settings\n\n### Improvements\n\n- **Reduced Default Playback Delay**: Changed default playback stop delay from 5 seconds to 2 seconds for faster user experience\n- **Enhanced Documentation**: Added comprehensive \"Playback Stop Behavior\" section to README explaining:\n  - How automatic playback stop works\n  - Client compatibility information\n  - Instructions for clients that don't support automatic stop\n  - Clarification that download triggers immediately regardless of stop behavior",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.0.1.0/jellynext-v1.0.1.0.zip",
+        "timestamp": "2025-11-08 05:47:12",
+        "version": "1.0.1.0"
+      },
+      {
+        "checksum": "07af99c67789620fc1667b88018fb986",
+        "changelog": "\n### Bug Fixes\n\n- **Sonarr Integration**: Fix series monitoring update failure caused by missing  field in API requests",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.0.0.1/jellynext-v1.0.0.1.zip",
+        "timestamp": "2025-11-08 03:25:30",
+        "version": "1.0.0.1"
+      },
+      {
+        "checksum": "dce95e7612056892291fb1422dd3ab38",
+        "changelog": "\n### Features\n\n- **Per-User Trakt Integration**: OAuth 2.0 device flow authentication with automatic token refresh\n- **Virtual Libraries**: Three dedicated libraries per user (Movie Recommendations, Show Recommendations, Next Seasons)\n- **One-Click Downloads**: Automatic Radarr/Sonarr integration triggered by playback attempts\n- **Per-Season TV Downloads**: Granular control to download specific seasons only\n- **Anime Detection**: Automatic routing to separate Sonarr anime folder based on Trakt genres\n- **Smart Caching**: Configurable content cache (6hr default) and ended shows cache (7 day default)\n- **Per-User Settings**: Granular sync control (movies, shows, next seasons), content filtering (collected, watchlisted), performance options (season 1 limit)\n- **Automatic Sync**: Background sync task (6hr interval) with startup sync (5s after start)\n- **iOS/tvOS Compatibility**: FFprobe-compatible dummy video files prevent client crashes\n- **Native Jellyfin Integration**: Standard .strm file naming with TMDB/TVDB metadata providers\n- **Configuration UI**: Web-based admin interface for Trakt/Radarr/Sonarr setup and user management",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/luall0/jellynext/releases/download/v1.0.0.0/jellynext-v1.0.0.0.zip",
+        "timestamp": "2025-11-08 02:46:05",
+        "version": "1.0.0.0"
+      }
+    ]
+  }
+]

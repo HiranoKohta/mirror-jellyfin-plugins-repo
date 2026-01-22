@@ -1,0 +1,36 @@
+[
+  {
+    "category": "General",
+    "guid": "bdbfd97c-ccd9-4226-b28c-b272f5a1617c",
+    "name": "SortByRawName",
+    "description": "Replace sorting by Name: sort by title name without transliteration.",
+    "owner": "AlexSat",
+    "overview": "Brings back version 10.8 sorting.",
+    "versions": [
+      {
+        "checksum": "ad092c675d1a069b80bd37d5736408b8",
+        "changelog": "Replace SortName sorting without transliteration",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/AlexSat/jellyfin-sort-by-raw-name-plugin/releases/download/v1.0/10.9.7-sort-by-raw-name_1.0.0.0.zip",
+        "timestamp": "2024-07-02 00:00:00",
+        "version": "1.0.0.0"
+      },
+      {
+        "checksum": "b77cca3ae26e506eed5d3a1f1fde6f62",
+        "changelog": "Replace SortName sorting without transliteration\nFixed not working sorting\n",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/AlexSat/jellyfin-sort-by-raw-name-plugin/releases/download/v2.0/10.9.7-sort-by-raw-name_2.0.0.0.zip",
+        "timestamp": "2024-07-26 01:35:00",
+        "version": "2.0.0.0"
+      },
+      {
+        "checksum": "4f62a2c0a90236425e2bd611786f1e0e",
+        "changelog": "Replace SortName sorting without transliteration\n - Fixed not working sorting\n - Just cosmetic: change version only\n",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://github.com/AlexSat/jellyfin-sort-by-raw-name-plugin/releases/download/v3.0/10.9.7-sort-by-raw-name_3.0.0.0.zip",
+        "timestamp": "2024-07-26 13:35:00",
+        "version": "3.0.0.0"
+      }
+    ]
+  }
+]

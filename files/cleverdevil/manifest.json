@@ -1,0 +1,69 @@
+[
+  {
+    "guid": "b9f0c474-e9a8-4292-ae41-eb3c1542f4cd",
+    "name": "Plexyfin",
+    "description": "Syncs collections, artwork, and their metadata from your Plex Media Server to Jellyfin.",
+    "overview": "Plugin for Jellyfin that syncs collections and artwork from Plex to Jellyfin",
+    "imageUrl": "https://raw.githubusercontent.com/cleverdevil/plexyfin/main/metadata/stable/banner.jpg",
+    "owner": "cleverdevil",
+    "category": "Metadata",
+    "versions": [
+      {
+        "version": "0.6.2.0",
+        "changelog": "- Fix compatibility with Jellyfin 10.11 by using compatibility helper for GetItemList/GetItemsResult API\n- Fix TV show episode poster sync for Jellyfin 10.11+\n- Add diagnostic logging for version info, configuration, and compatibility method detection\n- Add retry logic with exponential backoff for file locking issues during collection sync",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://github.com/cleverdevil/plexyfin/releases/download/v0.6.2.0/Plexyfin_0.6.2.0.zip",
+        "checksum": "f5608ec3b65fcda126532aa45929355a",
+        "timestamp": "2025-11-26T20:18:55Z"
+      },
+      {
+        "version": "0.6.1.0",
+        "changelog": "- Fix mixed media collections (movies + TV shows) being clobbered during sync\n- Add episode sync functionality\n- Implement parallel processing for improved performance\n- Fix compatibility with Jellyfin 10.10+ by replacing deprecated GetItemList with GetItemsResult\n- Add support for multiple versions of media items (cross-library duplicates and same-library editions)\n- Implement filesystem-based matching to handle different Plex/Jellyfin mount points",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cleverdevil/plexyfin/releases/download/v0.6.1.0/Plexyfin_0.6.1.0.zip",
+        "checksum": "94e5727c63641763823a7cef149496c5",
+        "timestamp": "2025-09-15T20:10:21Z"
+      },
+      {
+        "version": "0.5.3.1",
+        "changelog": "- Fix scheduled sync logic to run when any sync tasks are enabled (not just collections)",
+        "targetAbi": "10.9.9.0",
+        "sourceUrl": "https://github.com/cleverdevil/plexyfin/releases/download/v0.5.3.1/Plexyfin_0.5.3.1.zip",
+        "checksum": "d21b2efa520b57b23811ba809fbc480d",
+        "timestamp": "2025-05-31T09:00:00Z"
+      },
+      {
+        "version": "0.5.3.0",
+        "changelog": "- Fixed scheduled sync not working when collection sync is disabled (issue #6)\n- Added notification to restart Jellyfin when scheduled sync settings change\n- Improved scheduled sync configuration UI with helpful instructions\n- Use external IDs for more reliable Plex-Jellyfin matching (issue #7)\n- Removed unused Jellyfin Base URL configuration option\n- Fixed scheduled sync note visibility in dark themes",
+        "targetAbi": "10.9.9.0",
+        "sourceUrl": "https://github.com/cleverdevil/plexyfin/releases/download/v0.5.3.0/Plexyfin_0.5.3.0.zip",
+        "checksum": "2da3bbc1a56687c815ff69902f21e0ff",
+        "timestamp": "2025-05-31T01:38:00Z"
+      },
+      {
+        "version": "0.5.2.0",
+        "changelog": "- Add image clearing before saving during sync\n- Clear all Primary and Backdrop images before saving new ones\n- Add robust error handling for file operations\n- Add warning messages about image deletion to UI and docs\n- Remove the test artwork functionality",
+        "targetAbi": "10.9.9.0",
+        "sourceUrl": "https://github.com/cleverdevil/plexyfin/releases/download/v0.5.2.0/Plexyfin_0.5.2.0.zip",
+        "checksum": "c470782535f33877fa2bd1ba12dba2c2",
+        "timestamp": "2025-05-13T01:39:48Z"
+      },
+      {
+        "version": "0.5.1.0",
+        "changelog": "Simplifies collection syncs and adds correct sync for sort titles",
+        "targetAbi": "10.9.9.0",
+        "sourceUrl": "https://github.com/cleverdevil/plexyfin/releases/download/v0.5.1.0/Plexyfin_0.5.1.0.zip",
+        "checksum": "4e75d04c89a9e3d7c37dd8e72ac8d6a8",
+        "timestamp": "2025-05-03T05:24:20Z"
+      },
+      {
+        "version": "0.5.0.0",
+        "changelog": "- Removed watch state synchronization for a more focused plugin\n- Improved collection sync with better progress tracking\n- Added dry run capability for testing synchronization\n- Improved UI progress display with more informative updates",
+        "targetAbi": "10.9.9.0",
+        "sourceUrl": "https://github.com/cleverdevil/plexyfin/releases/download/v0.5.0.0/plexyfin_0.5.0.0.zip",
+        "checksum": "186b9b3a4291c375c7151d654b3c22fa",
+        "timestamp": "2025-04-25T16:00:00Z"
+      }
+    ]
+  }
+]

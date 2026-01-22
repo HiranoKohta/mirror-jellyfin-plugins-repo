@@ -1,0 +1,293 @@
+[
+  {
+    "guid": "ed04e975-f906-4b58-a250-705550810623",
+    "name": "MyAnimeList",
+    "description": "MyAnimeList metadata provider",
+    "overview": "MyAnimeList metadata provider",
+    "owner": "Ryan Dash",
+    "category": "Anime",
+    "imageUrl": "",
+    "versions": [
+      {
+        "version": "6.3.9.1",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.9.1",
+        "targetAbi": "10.11.5",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.9.1/myanimelist_6.3.9.1.zip",
+        "checksum": "6d8495e55013bbb950c22008498f9075",
+        "timestamp": "2026-01-11T00:41:03Z"
+      },
+      {
+        "version": "6.3.9",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.9",
+        "targetAbi": "10.11.5",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.9/myanimelist_6.3.9.zip",
+        "checksum": "2054e6989594cb61026adf20c159e8c8",
+        "timestamp": "2026-01-09T23:50:41Z"
+      },
+      {
+        "version": "6.3.8",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.8",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.8/myanimelist_6.3.8.zip",
+        "checksum": "24b77e5a6a44a11c35e0cc40caddeba6",
+        "timestamp": "2025-10-28T21:20:25Z"
+      },
+      {
+        "version": "6.3.7",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.7",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.7/myanimelist_6.3.7.zip",
+        "checksum": "de67ee50ec0952b407e3ff9d0917768b",
+        "timestamp": "2025-10-25T16:00:30Z"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.6",
+        "checksum": "3ba704b705178b6da29a712c412ddd4b",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.6/myanimelist_6.3.6.zip",
+        "targetAbi": "10.11.0",
+        "timestamp": "2025-10-22T01:33:30Z",
+        "version": "6.3.6"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.5",
+        "checksum": "1f2078db325f6e97762e0053f8aad989",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.5/myanimelist_6.3.5.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-10-15T22:29:17Z",
+        "version": "6.3.5"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.4",
+        "checksum": "353d02c91ccecf392a0f8a4006d65885",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.4/myanimelist_6.3.4.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-09-28T18:01:33Z",
+        "version": "6.3.4"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.3",
+        "checksum": "cd04e986266864e3845217a0936443d8",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.3/myanimelist_6.3.3.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-09-19T03:00:06Z",
+        "version": "6.3.3"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.2",
+        "checksum": "da26b64d5f78ada048c1484befe1b079",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.2/myanimelist_6.3.2.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-09-19T02:52:35Z",
+        "version": "6.3.2"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.1",
+        "checksum": "f7a73997e544e6749ba0b38706ec8885",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.1/myanimelist_6.3.1.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-09-14T21:15:25Z",
+        "version": "6.3.1"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.3.0",
+        "checksum": "493387e0001553a547332800cb505336",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.3.0/myanimelist_6.3.0.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-09-13T19:23:17Z",
+        "version": "6.3.0"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.2.4",
+        "checksum": "a10a0584a25bbee1992436442dfd568f",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.2.4/myanimelist_6.2.4.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-09-03T16:43:20Z",
+        "version": "6.2.4"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.2.3",
+        "checksum": "3a8d25bbc64642886bbd130f45b8a43e",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.2.3/myanimelist_6.2.3.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-08-22T05:40:44Z",
+        "version": "6.2.3"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.2.3",
+        "checksum": "480cd5ef4acc575c6c137b3154fa24bf",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.2.3/myanimelist_6.2.3.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-08-22T05:39:24Z",
+        "version": "6.2.3"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.2.3",
+        "checksum": "fe159f700c825a5e3beecdd500b6e508",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.2.3/myanimelist_6.2.3.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-08-22T05:32:38Z",
+        "version": "6.2.3"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.2.2",
+        "checksum": "8fff6b779d6559d87c78bd34f01d69f0",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.2.2/myanimelist_6.2.2.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-07-04T15:47:15Z",
+        "version": "6.2.2"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.2.1",
+        "checksum": "afd893310c24fbccedb1438d6cac11ce",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.2.1/myanimelist_6.2.1.zip",
+        "targetAbi": "10.10.7",
+        "timestamp": "2025-04-08T00:15:15Z",
+        "version": "6.2.1"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.1.1",
+        "checksum": "d2eb14fad342150752e2b47ae6d61c0d",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.1.1/myanimelist_6.1.1.zip",
+        "targetAbi": "10.10.5",
+        "timestamp": "2025-02-01T00:47:42Z",
+        "version": "6.1.1"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.1",
+        "checksum": "47b7a4b97163c94dd3be44a2d89c672a",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.1/myanimelist_6.1.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2025-01-26T03:22:16Z",
+        "version": "6.1"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.0",
+        "checksum": "9b4628e75dba342ea2ad1cb06a181e5b",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.0/myanimelist_6.0.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2025-01-21T01:36:07Z",
+        "version": "6.0"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.9",
+        "checksum": "af5493a60d5f4dcdba7817126e6ffb1a",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.9/myanimelist_5.9.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-29T07:48:02Z",
+        "version": "5.9"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.8",
+        "checksum": "1a87ac29f0420ca338a592b293dbd992",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.8/myanimelist_5.8.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-25T22:27:41Z",
+        "version": "5.8"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.7",
+        "checksum": "60d7c1d913634e48b40a4982e57a9b13",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.7/myanimelist_5.7.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-17T07:09:42Z",
+        "version": "5.7"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.6",
+        "checksum": "eb3611ede252c6b7f7b35f7f52b64d6d",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.6/myanimelist_5.6.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-17T05:04:44Z",
+        "version": "5.6"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.5",
+        "checksum": "b2f55871f0785151841495554b94b700",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.5/myanimelist_5.5.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-12T07:03:55Z",
+        "version": "5.5"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.4",
+        "checksum": "1e4fbfab34dd16970c052493bd9d8d9e",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.4/myanimelist_5.4.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-11T02:30:37Z",
+        "version": "5.4"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.3",
+        "checksum": "2a251051bcecbd57d67364634430412d",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.3/myanimelist_5.3.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-08T19:59:17Z",
+        "version": "5.3"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.2",
+        "checksum": "f22a6948365697d5687c594814bbf00a",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.2/myanimelist_5.2.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-07T23:02:01Z",
+        "version": "5.2"
+      },
+      {
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v5.0.0.2",
+        "checksum": "5da4e99c939754c0ec8c4f92bb9160a3",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.0.0.2/myanimelist_5.0.0.2.zip",
+        "targetAbi": "10.10.3",
+        "timestamp": "2024-12-07T22:33:00Z",
+        "version": "5.0.0.2"
+      },
+      {
+        "changelog": "Make Anitomy a requirement",
+        "checksum": "EFF88D3693111B0F41254E0DD577AC32",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5.1/myanimelist_5.0.0.1.zip",
+        "targetAbi": "10.10.3.0",
+        "timestamp": "2024-12-07 00:00:00",
+        "version": "5.0.0.1"
+      },
+      {
+        "changelog": "Cleaned up a lot of log errors, Add episode provider",
+        "checksum": "F5E62D5AD537BC55CF8CA264F0D68F67",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v5/myanimelist_5.0.0.0.zip",
+        "targetAbi": "10.10.3.0",
+        "timestamp": "2024-12-07 00:00:00",
+        "version": "5.0.0.0"
+      },
+      {
+        "changelog": "Use correct images, Add season provider with hacky solution",
+        "checksum": "5EAFD6A6DC85EC8E4AF3F1D81DCC7476",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v4/myanimelist_4.0.0.0.zip",
+        "targetAbi": "10.10.3.0",
+        "timestamp": "2024-12-04 00:00:00",
+        "version": "4.0.0.0"
+      },
+      {
+        "changelog": "Code Cleanup",
+        "checksum": "4CFB160A3820B6160D7DDA797ED07D34",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v3/myanimelist_3.0.0.0.zip",
+        "targetAbi": "10.9.10.0",
+        "timestamp": "2024-08-30 00:00:00",
+        "version": "3.0.0.0"
+      },
+      {
+        "changelog": "Fix TooManyRequests bug",
+        "checksum": "468D453942126A79688F38C7FB204F38",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v2/myanimelist_2.0.0.0.zip",
+        "targetAbi": "10.9.9.0",
+        "timestamp": "2024-08-26 00:00:00",
+        "version": "2.0.0.0"
+      },
+      {
+        "changelog": "Added Basics",
+        "checksum": "FFFBE453F1360360804CE060DE1C8A4C",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v1/myanimelist_1.0.0.0.zip",
+        "targetAbi": "10.9.9.0",
+        "timestamp": "2024-08-24 00:00:00",
+        "version": "1.0.0.0"
+      }
+    ]
+  }
+]

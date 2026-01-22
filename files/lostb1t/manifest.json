@@ -1,0 +1,485 @@
+[
+    {
+        "guid": "1e9e5d38-6e67-4615-8719-e98a5c34f004",
+        "name": "Streamyfin",
+        "overview": "",
+        "description": "",
+        "owner": "lostb1t",
+        "category": "General",
+        "imageUrl": "https://raw.githubusercontent.com/streamyfin/jellyfin-plugin-streamyfin/main/logo.png",
+        "versions": [
+            {
+                "version": "0.66.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.66.0.0)\n",
+                "targetAbi": "10.11.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.66.0.0/streamyfin-0.66.0.0.zip",
+                "checksum": "6c4daa669154318ba2b73ba2289ecf2c",
+                "timestamp": "2025-12-29T13:06:31Z"
+            },
+            {
+                "version": "0.65.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.65.0.0)\n",
+                "targetAbi": "10.11.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.65.0.0/streamyfin-0.65.0.0.zip",
+                "checksum": "62887664a97b779546b084e5fea83ed3",
+                "timestamp": "2025-12-29T00:54:57Z"
+            },
+            {
+                "version": "0.64.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.64.0.0)\n",
+                "targetAbi": "10.11.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.64.0.0/streamyfin-0.64.0.0.zip",
+                "checksum": "2b0775552fca37c334c60e71b1bcf532",
+                "timestamp": "2025-10-10T16:15:31Z"
+            },
+            {
+                "version": "0.63.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.63.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.63.0.0/streamyfin-0.63.0.0.zip",
+                "checksum": "f665791a8e159bf95fef6c2cfb10dec4",
+                "timestamp": "2025-10-09T08:43:28Z"
+            },
+            {
+                "version": "0.62.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.62.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.62.0.0/streamyfin-0.62.0.0.zip",
+                "checksum": "855510ec0b5c15b8942cbce60ff6af0d",
+                "timestamp": "2025-09-14T15:24:59Z"
+            },
+            {
+                "version": "0.61.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.61.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.61.0.0/streamyfin-0.61.0.0.zip",
+                "checksum": "6eea09268fee5524aa3e16a8e61541e8",
+                "timestamp": "2025-09-14T15:11:56Z"
+            },
+            {
+                "version": "0.60.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.60.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.60.0.0/streamyfin-0.60.0.0.zip",
+                "checksum": "77e74bcd8feb5d455e151cf5573d1bb1",
+                "timestamp": "2025-09-13T15:35:21Z"
+            },
+            {
+                "version": "0.59.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.59.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.59.0.0/streamyfin-0.59.0.0.zip",
+                "checksum": "ce59af6104a9a5a88692069217e27a8d",
+                "timestamp": "2025-09-13T14:48:36Z"
+            },
+            {
+                "version": "0.58.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.58.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.58.0.0/streamyfin-0.58.0.0.zip",
+                "checksum": "3195b1a3b1978df417b3e217b6ae16ac",
+                "timestamp": "2025-08-07T03:50:13Z"
+            },
+            {
+                "version": "0.57.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.57.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.57.0.0/streamyfin-0.57.0.0.zip",
+                "checksum": "9b995cd4515d6eb44c8e0dd0eece7193",
+                "timestamp": "2025-08-06T15:16:40Z"
+            },
+            {
+                "version": "0.56.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.56.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.56.0.0/streamyfin-0.56.0.0.zip",
+                "checksum": "e846f18a279c9d3d9bd834b12ad262b1",
+                "timestamp": "2025-06-12T23:52:54Z"
+            },
+            {
+                "version": "0.55.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.55.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.55.0.0/streamyfin-0.55.0.0.zip",
+                "checksum": "a82a15752df9bab1bde8509add377bc9",
+                "timestamp": "2025-06-12T16:41:24Z"
+            },
+            {
+                "version": "0.54.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.54.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.54.0.0/streamyfin-0.54.0.0.zip",
+                "checksum": "c76ff5066dfad32fe403fb2e787fea69",
+                "timestamp": "2025-06-12T16:36:29Z"
+            },
+            {
+                "version": "0.53.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.53.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.53.0.0/streamyfin-0.53.0.0.zip",
+                "checksum": "2f88fd6f32959595fc774c6d9a53e8b6",
+                "timestamp": "2025-06-08T00:25:40Z"
+            },
+            {
+                "version": "0.52.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.52.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.52.0.0/streamyfin-0.52.0.0.zip",
+                "checksum": "921645acf992ae542b35a35ce22983b0",
+                "timestamp": "2025-05-31T17:12:53Z"
+            },
+            {
+                "version": "0.51.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.51.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.51.0.0/streamyfin-0.51.0.0.zip",
+                "checksum": "4f55aca3871e0c0398f4ac51c963d7de",
+                "timestamp": "2025-03-29T12:02:50Z"
+            },
+            {
+                "version": "0.50.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.50.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.50.0.0/streamyfin-0.50.0.0.zip",
+                "checksum": "3cc06ae7113a82e838c77744672c77d0",
+                "timestamp": "2025-03-27T01:48:58Z"
+            },
+            {
+                "version": "0.49.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.49.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.49.0.0/streamyfin-0.49.0.0.zip",
+                "checksum": "a4653965212d259d26bafc7df69a20be",
+                "timestamp": "2025-03-27T00:26:37Z"
+            },
+            {
+                "version": "0.48.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.48.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.48.0.0/streamyfin-0.48.0.0.zip",
+                "checksum": "7a074261039b63f4c99379cec2b3d5de",
+                "timestamp": "2025-03-25T07:17:11Z"
+            },
+            {
+                "version": "0.47.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.47.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.47.0.0/streamyfin-0.47.0.0.zip",
+                "checksum": "7ba1f6e6ace0a0baeccf1cbe62f20342",
+                "timestamp": "2025-03-22T15:13:04Z"
+            },
+            {
+                "version": "0.46.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.46.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.46.0.0/streamyfin-0.46.0.0.zip",
+                "checksum": "3b6cf66fe33d946d2888f6ba74b9e0a8",
+                "timestamp": "2025-03-20T17:40:39Z"
+            },
+            {
+                "version": "0.45.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.45.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.45.0.0/streamyfin-0.45.0.0.zip",
+                "checksum": "45d2b77d9cc5a078b7aca70847e0d0ed",
+                "timestamp": "2025-03-20T12:47:58Z"
+            },
+            {
+                "version": "0.44.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.44.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.44.0.0/streamyfin-0.44.0.0.zip",
+                "checksum": "d34dd36b89a0ed177d09b4e7186da410",
+                "timestamp": "2025-03-16T20:37:04Z"
+            },
+            {
+                "version": "0.43.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.43.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.43.0.0/streamyfin-0.43.0.0.zip",
+                "checksum": "de9ef32c02bc57b22c0f8a12fa90de58",
+                "timestamp": "2025-03-15T17:59:54Z"
+            },
+            {
+                "version": "0.42.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.42.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.42.0.0/streamyfin-0.42.0.0.zip",
+                "checksum": "3db798db1eea4d701d98797cc2d07d0a",
+                "timestamp": "2025-03-11T16:47:51Z"
+            },
+            {
+                "version": "0.41.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.41.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.41.0.0/streamyfin-0.41.0.0.zip",
+                "checksum": "4723c0a29398603a2fb26aad69fe5f81",
+                "timestamp": "2025-03-11T04:04:39Z"
+            },
+            {
+                "version": "0.40.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.40.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.40.0.0/streamyfin-0.40.0.0.zip",
+                "checksum": "86e98ad9c651e60117d814d50ab34a0e",
+                "timestamp": "2025-02-14T19:45:59Z"
+            },
+            {
+                "version": "0.39.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.39.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.39.0.0/streamyfin-0.39.0.0.zip",
+                "checksum": "31d5e9e7e88652bbfcbf0f06f90867b8",
+                "timestamp": "2025-01-24T07:56:25Z"
+            },
+            {
+                "version": "0.38.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.38.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.38.0.0/streamyfin-0.38.0.0.zip",
+                "checksum": "bceab8d2bda2644b75ecaa6040e989af",
+                "timestamp": "2025-01-22T06:30:48Z"
+            },
+            {
+                "version": "0.37.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.37.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.37.0.0/streamyfin-0.37.0.0.zip",
+                "checksum": "254c9359fd6bcadea6e368a611e64c9a",
+                "timestamp": "2025-01-16T09:36:54Z"
+            },
+            {
+                "version": "0.36.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.36.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.36.0.0/streamyfin-0.36.0.0.zip",
+                "checksum": "f641b85c3433074375f1e70700304ed4",
+                "timestamp": "2025-01-15T10:26:53Z"
+            },
+            {
+                "version": "0.35.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.35.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.35.0.0/streamyfin-0.35.0.0.zip",
+                "checksum": "b8395bab9008055078ab37750668e622",
+                "timestamp": "2025-01-15T09:13:24Z"
+            },
+            {
+                "version": "0.34.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.34.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.34.0.0/streamyfin-0.34.0.0.zip",
+                "checksum": "26bbf7b2d160f1e9ea6e9f6ba2ad4ce3",
+                "timestamp": "2025-01-13T09:22:08Z"
+            },
+            {
+                "version": "0.33.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.33.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.33.0.0/streamyfin-0.33.0.0.zip",
+                "checksum": "ca230dd9b06e4775124003ce7ac7f2e9",
+                "timestamp": "2025-01-12T19:58:28Z"
+            },
+            {
+                "version": "0.32.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.32.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.32.0.0/streamyfin-0.32.0.0.zip",
+                "checksum": "4e4dc97c7d5d01c7e07501d88e88288f",
+                "timestamp": "2025-01-10T07:36:24Z"
+            },
+            {
+                "version": "0.31.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.31.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.31.0.0/streamyfin-0.31.0.0.zip",
+                "checksum": "4ef3e7fefe984e247e30951c6a7c4c76",
+                "timestamp": "2025-01-10T07:05:22Z"
+            },
+            {
+                "version": "0.29.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.29.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.29.0.0/streamyfin-0.29.0.0.zip",
+                "checksum": "8c408feba7dc2fcae8253a8584e4c93b",
+                "timestamp": "2025-01-09T15:43:46Z"
+            },
+            {
+                "version": "0.28.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.28.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.28.0.0/streamyfin-0.28.0.0.zip",
+                "checksum": "b3a45e9337ab306a863cadf34b3d00be",
+                "timestamp": "2025-01-09T14:02:27Z"
+            },
+            {
+                "version": "0.27.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.27.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.27.0.0/streamyfin-0.27.0.0.zip",
+                "checksum": "8596a65f3ef6b248aa6ac02984044c8f",
+                "timestamp": "2024-09-09T09:37:42Z"
+            },
+            {
+                "version": "0.26.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.26.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.26.0.0/streamyfin-0.26.0.0.zip",
+                "checksum": "290c193f359d091c5a1bea383ab270b1",
+                "timestamp": "2024-09-09T08:39:39Z"
+            },
+            {
+                "version": "0.25.0.0",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.25.0.0)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.25.0.0/streamyfin-0.25.0.0.zip",
+                "checksum": "9598389d7536299508c2ac5765508f0b",
+                "timestamp": "2024-09-07T08:33:45Z"
+            },
+            {
+                "version": "0.24",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.24)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.24/streamyfin-0.24.zip",
+                "checksum": "8b03634505e25f445c45358973f80cac",
+                "timestamp": "2024-08-29T14:45:15Z"
+            },
+            {
+                "version": "0.23",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.23)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.23/streamyfin-0.23.zip",
+                "checksum": "334650e991c92d4a9afb15a136a37eaa",
+                "timestamp": "2024-08-29T14:12:59Z"
+            },
+            {
+                "version": "0.22",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.22)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.22/streamyfin-0.22.zip",
+                "checksum": "84f784f0e18f0456382bf24c32eeda32",
+                "timestamp": "2024-08-29T14:05:50Z"
+            },
+            {
+                "version": "0.21",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.21)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.21/streamyfin-0.21.zip",
+                "checksum": "e0d7ef05ea2afe3bcf9fa3ab3501e37a",
+                "timestamp": "2024-08-29T14:00:46Z"
+            },
+            {
+                "version": "0.20",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.20)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.20/streamyfin-0.20.zip",
+                "checksum": "0163d767c72e319cff96e260e5f33a1b",
+                "timestamp": "2024-08-29T13:58:04Z"
+            },
+            {
+                "version": "0.19",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.19)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.19/streamyfin-0.19.zip",
+                "checksum": "004e7cbc6ab2f34907ed333a3589f188",
+                "timestamp": "2024-08-29T12:54:35Z"
+            },
+            {
+                "version": "0.15",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.15)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.15/streamyfin-0.15.zip",
+                "checksum": "8db25bec324151e83cb731c8a4ce9769",
+                "timestamp": "2024-08-25T16:27:01Z"
+            },
+            {
+                "version": "0.14",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.14)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.14/streamyfin-0.14.zip",
+                "checksum": "6403e63ad91cbadd9b36b805bd96f93f",
+                "timestamp": "2024-08-25T16:17:10Z"
+            },
+            {
+                "version": "0.13",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.13)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.13/streamyfin-0.13.zip",
+                "checksum": "c4579190fded4bb2f1ec3e5e020af7d7",
+                "timestamp": "2024-08-25T12:39:48Z"
+            },
+            {
+                "version": "0.12",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.12)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.12/streamyfin-0.12.zip",
+                "checksum": "8cf1b7a39ef8936ff26a72f12776abb0",
+                "timestamp": "2024-08-25T10:09:18Z"
+            },
+            {
+                "version": "0.10",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.10)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.10/streamyfin-0.10.zip",
+                "checksum": "00300eaca81c3793329cd9d4f08697fa",
+                "timestamp": "2024-08-25T09:55:02Z"
+            },
+            {
+                "version": "0.9",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.9)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.9/streamyfin-0.9.zip",
+                "checksum": "44a99eaae04ff92addc9ce74b767e31f",
+                "timestamp": "2024-08-25T09:48:59Z"
+            },
+            {
+                "version": "0.8",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.8)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.8/streamyfin-0.8.zip",
+                "checksum": "61b184fa7d018b06f13ed0cb3508e810",
+                "timestamp": "2024-08-25T09:35:55Z"
+            },
+            {
+                "version": "0.7",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.7)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.7/streamyfin-0.7.zip",
+                "checksum": "6d311f0715c715e82d9a15899be63916",
+                "timestamp": "2024-08-25T09:31:26Z"
+            },
+            {
+                "version": "0.6",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.6)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.6/streamyfin-0.6.zip",
+                "checksum": "6b71c6ed52ba0979d0cf720bbd8819c0",
+                "timestamp": "2024-08-22T14:54:28Z"
+            },
+            {
+                "version": "0.5",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.5)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.5/streamyfin-0.5.zip",
+                "checksum": "7b337b0994af2feab0885c51a6ca8788",
+                "timestamp": "2024-08-22T14:39:46Z"
+            },
+            {
+                "version": "0.4",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.4)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.4/streamyfin-0.4.zip",
+                "checksum": "a29c8b76b02ddeb5f071c1401974e6c6",
+                "timestamp": "2024-08-22T14:35:48Z"
+            },
+            {
+                "version": "0.3",
+                "changelog": "- See the full changelog at [GitHub](https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/tag/0.3)\n",
+                "targetAbi": "10.9.9.0",
+                "sourceUrl": "https://github.com/lostb1t/jellyfin-plugin-streamyfin/releases/download/0.3/streamyfin-0.3.zip",
+                "checksum": "a79d41843f71e2762a89e6563e5bda28",
+                "timestamp": "2024-08-22T13:56:05Z"
+            }
+        ]
+    }
+]

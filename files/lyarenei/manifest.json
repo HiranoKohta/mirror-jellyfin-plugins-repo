@@ -1,0 +1,281 @@
+[
+    {
+        "guid": "a9f62a44-fea5-46c3-ac26-55abba29c7c8",
+        "name": "Apple Music",
+        "description": "Apple Music artist and album images and metadata provider.\n",
+        "overview": "Fetch images and metadata from Apple Music.",
+        "owner": "lyarenei",
+        "category": "Metadata",
+        "imageUrl": "https://repo.xkrivo.net/jellyfin/apple-music/image.png",
+        "image": "image.png",
+        "versions": [
+            {
+                "version": "3.0.5.1",
+                "changelog": "Fix:\n  - Album artwork being pulled if artist did not have one\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_3.0.5.1.zip",
+                "checksum": "80c5b9ab641493185a538fd0e73b92ef",
+                "timestamp": "2025-10-15T17:59:28Z"
+            },
+            {
+                "version": "3.0.4.9",
+                "changelog": "Maintenance:\n  - Rename `iTunes` to `Apple Music` in code\n  - Clean up web scraping implementation (should now be more reliable)\n  - Update dependencies\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_3.0.4.9.zip",
+                "checksum": "7a901cc548f9d02c10823d2b0f4a724e",
+                "timestamp": "2025-08-23T07:02:58Z"
+            },
+            {
+                "version": "3.0.2.1",
+                "changelog": "Fix album images having black background.\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_3.0.2.1.zip",
+                "checksum": "055c3a53138f27d53fe43ae5ad872415",
+                "timestamp": "2025-06-05T20:33:57Z"
+            },
+            {
+                "version": "3.0.1.0",
+                "changelog": "Do not fetch Apple Music generic image for artists without image.\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_3.0.1.0.zip",
+                "checksum": "659a3b5ea6e9b376bcd8c57531750be2",
+                "timestamp": "2025-05-27T17:06:34Z"
+            },
+            {
+                "version": "3.0.0.0",
+                "changelog": "Compatibility for Jellyfin 10.10.x\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_3.0.0.0.zip",
+                "checksum": "818c005d88f325a29d84c98849b4a4ca",
+                "timestamp": "2024-10-30T20:21:36Z"
+            },
+            {
+                "version": "2.0.0.2",
+                "changelog": "Compatibility for Jellyfin 10.9.x\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_2.0.0.2.zip",
+                "checksum": "23eb16fb8f02dcde3d9dd317a50240f4",
+                "timestamp": "2024-10-16T21:17:01Z"
+            },
+            {
+                "version": "1.0.1.3",
+                "changelog": "Improve album identifications\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_1.0.1.3.zip",
+                "checksum": "28c5fa8ec07dfbba8a12844e3aff0525",
+                "timestamp": "2023-05-12T06:58:20Z"
+            },
+            {
+                "version": "1.0.0.0",
+                "changelog": "1.0.0.0:\n  * First release\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/apple-music/apple-music_1.0.0.0.zip",
+                "checksum": "c1e8da9ca3ff3eb9a812ade88913dac4",
+                "timestamp": "2023-05-12T06:27:06Z"
+            }
+        ]
+    },
+    {
+        "guid": "59b20823-aafe-454c-a393-17427f518631",
+        "name": "ListenBrainz",
+        "description": "A plugin to send your music listening activity on Jellyfin to ListenBrainz.\n",
+        "overview": "Track your music habits with ListenBrainz.",
+        "owner": "lyarenei",
+        "category": "General",
+        "imageUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/image.svg",
+        "versions": [
+            {
+                "version": "6.0.1.1",
+                "changelog": "Maintenance\n  - Compatibility for Jellyfin 10.11.0\n  - Use local recording MBIDs when available (fallback to MusicBrainz lookup if not)\n",
+                "targetAbi": "10.11.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_6.0.1.1.zip",
+                "checksum": "7a7e4fee01ce2db1f99d75110c2fe721",
+                "timestamp": "2025-10-20T16:50:32Z"
+            },
+            {
+                "version": "5.2.0.4",
+                "changelog": "Maintenance/fix\n  - Reimplementation of loved sync task (#124 @lyarenei)\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_5.2.0.4.zip",
+                "checksum": "06fdb04e10ceb7c1947e1b005ff1c9d5",
+                "timestamp": "2025-05-11T07:16:56Z"
+            },
+            {
+                "version": "5.1.2.1",
+                "changelog": "Fix\n  - Issue with server crashing (#122 @lyarenei)\n\nIf you have installed previous version (5.1.1.3) and experiencing server crash, you will need to manually remove the plugin version and install this one.\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_5.1.2.1.zip",
+                "checksum": "e9581a4ab9c4132fbfba3e27b255e7d6",
+                "timestamp": "2025-03-02T09:27:01Z"
+            },
+            {
+                "version": "5.1.0.0",
+                "changelog": "New\n  - Listen backup feature (#102 @lyarenei)\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_5.1.0.0.zip",
+                "checksum": "24a8a2c6c6c108e6bfc521bca81924e6",
+                "timestamp": "2025-02-20T11:39:53Z"
+            },
+            {
+                "version": "5.0.2.0",
+                "changelog": "Fix\n  - Incorrect timestamp and meta-data for repeated listens in cache (#113 @Maxr1998)\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_5.0.2.0.zip",
+                "checksum": "f4dacae6145a1923695f08c961599918",
+                "timestamp": "2024-12-08T22:27:39Z"
+            },
+            {
+                "version": "5.0.1.0",
+                "changelog": "Fix\n  - Submission of multiple artist MBIDs (#109 @moisespr123)\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_5.0.1.0.zip",
+                "checksum": "ba6c376522e1d9a407fc4989b9821955",
+                "timestamp": "2024-12-07T23:08:47Z"
+            },
+            {
+                "version": "5.0.0.2",
+                "changelog": "Maintenance\n  - Compatibility for Jellyfin 10.10 (#108 @lyarenei)\n",
+                "targetAbi": "10.10.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_5.0.0.2.zip",
+                "checksum": "f9b617362673b6ab08df3efbf6863497",
+                "timestamp": "2024-10-31T05:53:52Z"
+            },
+            {
+                "version": "4.0.2.0",
+                "changelog": "Fix\n  - Submission of multiple artist MBIDs (#103 @moisespr123)\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_4.0.2.0.zip",
+                "checksum": "faa537052310057afba8b5dc1326f98b",
+                "timestamp": "2024-09-24T19:09:51Z"
+            },
+            {
+                "version": "4.0.1.0",
+                "changelog": "Fix\n  - Handle exceptions during loved/favorite sync (LB -> JF) (#98 @lyarenei)\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_4.0.1.0.zip",
+                "checksum": "40936138acf21b5e0eba9965777509fc",
+                "timestamp": "2024-06-25T16:48:17Z"
+            },
+            {
+                "version": "4.0.0.2",
+                "changelog": "Maintenance\n  - Compatibility update for Jellyfin 10.9 (#93 @lyarenei)\n",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_4.0.0.2.zip",
+                "checksum": "44155043a3c526e400596ca6fb4b21d1",
+                "timestamp": "2024-05-11T19:51:35Z"
+            },
+            {
+                "version": "3.4.2.0",
+                "changelog": "Fix\n  - Fix handling expections in favorite sync (backport of #98) (#99 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.4.2.0.zip",
+                "checksum": "95f17c3a74691bd11d915bf1ecd95ea4",
+                "timestamp": "2024-06-25T16:55:41Z"
+            },
+            {
+                "version": "3.4.1.0",
+                "changelog": "Maintenance\n  - Revert back to custom MusicBrainz client to avoid dependency conflicts (#89 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.4.1.0.zip",
+                "checksum": "068d90f4aef7648f0ba79ab3014d0dfc",
+                "timestamp": "2024-02-23T19:52:46Z"
+            },
+            {
+                "version": "3.3.2.0",
+                "changelog": "Fix\n  - Various fixes for listens cache (#68 @lyarenei)\n  - Fix error propagation, so listen cache works as intended (#73 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.3.2.0.zip",
+                "checksum": "a1cda1d8963c06528c01689f12607d1e",
+                "timestamp": "2024-01-30T09:37:26Z"
+            },
+            {
+                "version": "3.3.1.0",
+                "changelog": "Fix\n  - Fix json property names (#72 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.3.1.0.zip",
+                "checksum": "baf0cf35ee9bd6eefef5304aeb1da76a",
+                "timestamp": "2024-01-26T21:22:54Z"
+            },
+            {
+                "version": "3.3.0.0",
+                "changelog": "New\n  - Send ISRC in the additional metadata (#69 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.3.0.0.zip",
+                "checksum": "f232a60cea12ccfbbb4b1aad2b2144fa",
+                "timestamp": "2024-01-22T14:37:17Z"
+            },
+            {
+                "version": "3.2.1.0",
+                "changelog": "Fixed\n  - Server crash when syncing favorite uses MSID and fails (#67 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.2.1.0.zip",
+                "checksum": "4ac4b9596ab4aa8852f621fd24e02c7f",
+                "timestamp": "2024-01-19T11:46:31Z"
+            },
+            {
+                "version": "3.2.0.0",
+                "changelog": "New\n  - Respect ListenBrainz API rate limits (#54 @lyarenei)\n  - Implement MSID fallback for syncing favorites if MBID is not available (#59 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.2.0.0.zip",
+                "checksum": "007b525bc0c4beec6c80fd946aedc622",
+                "timestamp": "2023-12-11T14:13:24Z"
+            },
+            {
+                "version": "3.1.2.0",
+                "changelog": "Fix\n  - Missing score field in JSON when the feedback was neutral (#55 @lyarenei)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.1.2.0.zip",
+                "checksum": "0bb977c005e922eb6566483d7c845c27",
+                "timestamp": "2023-11-11T10:36:54Z"
+            },
+            {
+                "version": "3.1.1.0",
+                "changelog": "Fix\n  - Failing resubmit job (create cache file on first ever init) (#48 @lyarenei)\n  - Failing submissions due to different MBID separator ('/' instead of ';')\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.1.1.0.zip",
+                "checksum": "725f2160f5784639cbf9cd178866a668",
+                "timestamp": "2023-10-03T18:47:25Z"
+            },
+            {
+                "version": "3.1.0.1",
+                "changelog": "New\n  - Select which libraries to exclude from submitting listens (#41 @lyarenei)\n\nMaintenance\n  - Improvements to submit and resubmit process (#46 @Maxr1998)\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.1.0.1.zip",
+                "checksum": "fe9a0ccc12848d85676f59699fb09abe",
+                "timestamp": "2023-08-17T17:51:21Z"
+            },
+            {
+                "version": "3.0.2.0",
+                "changelog": "Fix: Correctly store user API token.\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.0.2.0.zip",
+                "checksum": "cdc6c26f270207a65205efbee3f964b8",
+                "timestamp": "2023-08-13T09:19:45Z"
+            },
+            {
+                "version": "3.0.1.0",
+                "changelog": "Temporary fix: correctly resolve plugin data path - fixes listen cache and migration\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.0.1.0.zip",
+                "checksum": "a4f0c60977ef85189703ab521ec64c3a",
+                "timestamp": "2023-08-06T15:39:12Z"
+            },
+            {
+                "version": "3.0.0.0",
+                "changelog": "Maintenance - complete plugin rewrite\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_3.0.0.0.zip",
+                "checksum": "8b3311a2208dbf2b7e5dbdefb1b68d9a",
+                "timestamp": "2023-08-05T14:11:37Z"
+            },
+            {
+                "version": "2.3.0.0",
+                "changelog": "Re-release on new repo\n",
+                "targetAbi": "10.8.0.0",
+                "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_2.3.0.0.zip",
+                "checksum": "27ff3ac6cfbb6f6a5877c241bbdf96a2",
+                "timestamp": "2023-05-12T09:31:30Z"
+            }
+        ]
+    }
+]
