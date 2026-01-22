@@ -1189,166 +1189,166 @@
     "category": "MoviesAndShows",
     "imageUrl": "https://repo.jellyfin.org/releases/plugin/images/jellyfin-plugin-tvdb.png",
     "versions": [
-       {
+      {
         "version": "20.0.0.0",
         "changelog": "- Jellyfin 10.11 support (#211) @crobibero",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_20.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v20/thetvdb_20.0.0.0.zip",
         "checksum": "b122c754609d18993d85fa7f2b9f1432",
-        "timestamp": "2025-10-20T01:25:49Z" 
+        "timestamp": "2025-10-20T01:25:49Z"
       },
       {
         "version": "19.0.0.0",
         "changelog": "- Improved null handling for tvdb provider (#207) @systemcrash\n\n### New features and improvements ###\n- Added missing season type 'alttwo' (#200) @Kianda\n\n### Bug Fixes ###\n- Handle empty ParentIndexNumber (#209) @Shadowghost",
         "targetAbi": "10.10.6.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_19.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v19/thetvdb_19.0.0.0.zip",
         "checksum": "81cf892de2c6803f7e90da407b694492",
-        "timestamp": "2025-02-25T03:41:03Z" 
+        "timestamp": "2025-02-25T03:41:03Z"
       },
       {
         "version": "18.0.0.0",
         "changelog": "### Bug Fixes ###\n- Increase robustness of retrieving tmdb id (again) (#194) @scampower3\n- Fix orphaned episodes deletion (#195) @scampower3\n- Queue refresh after adding child (#196) @scampower3",
         "targetAbi": "10.10.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_18.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v18/thetvdb_18.0.0.0.zip",
         "checksum": "8c809397e621a1d0622f6c2f3594ed7f",
-        "timestamp": "2024-11-03T15:14:50Z" 
+        "timestamp": "2024-11-03T15:14:50Z"
       },
       {
         "version": "17.0.0.0",
         "changelog": "### Bug Fixes ###\n- Fix update task (#193) @scampower3\n- Moves includeOriginalCountryInTags to the correct setting group. (#191) @scampower3",
         "targetAbi": "10.10.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_17.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v17/thetvdb_17.0.0.0.zip",
         "checksum": "53533ea6b2284ea5129f85e0dc902102",
-        "timestamp": "2024-10-30T14:37:53Z" 
+        "timestamp": "2024-10-30T14:37:53Z"
       },
       {
         "version": "16.0.0.0",
         "changelog": "- Fix 10.10 nullability (#186) @crobibero\n\n### New features and improvements ###\n- Remove All Missing Episodes On Refresh (#176) @scampower3\n- Add original countries of series or movies as tags (#184) @scampower3\n- Move to IExternalUrlProvider (#179) @scampower3\n- Add people provider (#173) @scampower3\n\n### Bug Fixes ###\n- Only generate url when there is externalId for season (#190) @scampower3\n- Update Season provider to use SeriesDisplayOrder field (#180) @scampower3\n- Filter for Movie Ids in remote id search (#187) @scampower3\n- Fix IsMatch logic (#188) @scampower3\n- Update all items returned from GetItemList (#178) @scampower3\n\n### Code or Repo Maintenance ###\n- Use Named Tuple (#177) @scampower3\n- Remove MaxSearchResults (#174) @scampower3\n\n### Dependency updates ###\n- Update dependency Microsoft.Extensions.Http to 8.0.1 (#181) @renovate",
         "targetAbi": "10.10.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_16.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v16/thetvdb_16.0.0.0.zip",
         "checksum": "3d4b4139faaf54abb81605d95616706a",
-        "timestamp": "2024-10-29T23:40:31Z" 
+        "timestamp": "2024-10-29T23:40:31Z"
       },
       {
         "version": "15.0.0.0",
         "changelog": "### Bug Fixes ###\n- Set ContentRatings list to be nullable (#171) @scampower3",
         "targetAbi": "10.9.9.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_15.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v15/thetvdb_15.0.0.0.zip",
         "checksum": "88ab211743cb3137f7ce7d41f8d15a67",
-        "timestamp": "2024-08-05T15:05:15Z" 
+        "timestamp": "2024-08-05T15:05:15Z"
       },
       {
         "version": "14.0.0.0",
         "changelog": "### Major features and improvements ###\n- Add Movie support (#164) @scampower3\n\n### New features and improvements ###\n- Add support for movie and season for check for metadata update task. Add additional configurations. (#169) @scampower3\n- Season support with extended season client (#165) @scampower3\n- Add Tvdb Collection Ids (#162) @scampower3\n\n### Bug Fixes ###\n- Fix movie remote id ProviderName (#167) @scampower3\n- Skip Characters with person name is null / Handle null RemoteIds (#160) @scampower3\n- Add season url (#161) @scampower3\n- Add option to fallback to original language (#156) @scampower3\n\n### Dependency updates ###\n- Update dependency Tvdb.Sdk to v4.7.10 (#158) @renovate",
         "targetAbi": "10.9.9.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_14.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v14/thetvdb_14.0.0.0.zip",
         "checksum": "29985fb6c99b25dc177380eee5158c69",
-        "timestamp": "2024-08-05T13:22:09Z" 
+        "timestamp": "2024-08-05T13:22:09Z"
       },
       {
         "version": "13.0.0.0",
         "changelog": "- Simplify Series Handling in Missing Episode Provider (#151) @scampower3\n- Use official instead of default (#149) @scampower3\n\n### Bug Fixes ###\n- Fix Specials being added during season refresh when IncludeMissingSpecials is disabled (#152) @scampower3\n- Set DeleteFileLocation = false (#153) @scampower3\n- Fix Language mapping for unique cases (#145) @scampower3\n- Get season id according to selected display order. (#147) @scampower3",
         "targetAbi": "10.9.5.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_13.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v13/thetvdb_13.0.0.0.zip",
         "checksum": "45cfe2c675736d5597c09bfd993f3788",
-        "timestamp": "2024-06-06T12:49:14Z" 
+        "timestamp": "2024-06-06T12:49:14Z"
       },
       {
         "version": "12.0.0.0",
         "changelog": "### New features and improvements ###\n- Adds a option to include specials for missing episode provider (#144) @scampower3\n- Add support for regional,alternate,altdvd orders (#139) @scampower3\n- Add support for different display order for missing episode provider (#140) @scampower3\n- Add support for clearart and clearlogo for series images (#138) @scampower3\n- Add fallback languages (#136) @rlauuzo\n\n### Bug Fixes ###\n- Display order change fix,Cache collision fix,restrict airsbefore/after to aired display order (#143) @scampower3\n- Fix retrieval of episode num for virtual episode. (#142) @scampower3\n\n### Documentation updates ###\n- Bump .NET version in docs (#135) @scampower3\n\n### Dependency updates ###\n- Update dependency Microsoft.Extensions.Http to v8 (#81) @renovate",
         "targetAbi": "10.9.2.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_12.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v12/thetvdb_12.0.0.0.zip",
         "checksum": "1bcc5b7aa8c2a3ee9322b7e261a2ec28",
-        "timestamp": "2024-05-22T13:44:32Z" 
+        "timestamp": "2024-05-22T13:44:32Z"
       },
       {
         "version": "11.0.0.0",
         "changelog": "- 10.9 (#134) @crobibero\n- Use ILocalizationManager instead of forming own country and iso6392 lists (#128) @scampower3\n- Don't retrieve tvdbId for episode if there is tvdbid already provided (#127) @scampower3\n- Prevent images with no language tag to have same priority as matched language (#126) @scampower3\n- Grab non alias name instead of first one that matches the language (#125) @scampower3\n- Fixes some cache key clashes and other improvements. (#123) @scampower3\n- Fixes some poorly named variables and label \"for\" tag fixes (#122) @scampower3\n- Remove required from the input for API key (#121) @scampower3\n- Add cache time configurations (#120) @scampower3\n- Add Caching for api calls (#118) @scampower3\n- Fix: Combine original titles for multi episode files (#117) @scampower3\n- Fixes issues retrieving episode metadata (#116) @scampower3\n- Improvements and fixes tvdb sdk 4.7.9.1 + PR #112 (#115) @BobSilent\n\n### Major features and improvements ###\n- Tvdb v4 migration (#93) @scampower3\n\n### New features and improvements ###\n- Feat: Add a polling task to check for update via the update api endpoint (#124) @scampower3\n\n### Bug Fixes ###\n- Update to Tvdb sdk 4.7.9.1 (#113) @scampower3\n- Fix duplicate entries Missing and not Missing (#106) @BobSilent\n- Fixes for tvdb v4 migration (#110) @BobSilent\n- Don't require user pin (#108) @crobibero\n\n### Code or Repo Maintenance ###\n- Make Tvdb Client usage more resilient and robust (#112) @BobSilent\n- Add the project's api key (#107) @crobibero\n- Update link to Jellyfin website (#103) @methbkts",
         "targetAbi": "10.9.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/thetvdb/thetvdb_11.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v11/thetvdb_11.0.0.0.zip",
         "checksum": "42a42a1d50886556960e774083b75629",
-        "timestamp": "2024-05-11T19:29:00Z" 
+        "timestamp": "2024-05-11T19:29:00Z"
       },
       {
         "version": "10.0.0.0",
         "changelog": "- Reduce log noise (#85) @IDisposable\n- Enriched Logging with series name (#84) @JPVenson\n\n### New features and improvements ###\n- Combine Title and Overview of combined episodes. (#86) @haydenstith",
         "targetAbi": "10.8.10.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_10.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v10/thetvdb_10.0.0.0.zip",
         "checksum": "e01c639fcbe9a5c3e76944819a8bb66d",
-        "timestamp": "2023-06-19T20:21:14Z" 
+        "timestamp": "2023-06-19T20:21:14Z"
       },
       {
         "version": "9.0.0.0",
         "changelog": "### Bug Fixes ###\n- Fix GetAllEpisodes breaking library scan on missing Episode Data (#83) @Hayajiro\n\n### Code or Repo Maintenance ###\n- Use meta ci (#67) @crobibero\n\n### CI & build changes ###\n- fix: meta ci workflows (#72) @h1dden-da3m0n\n- Use meta ci (#67) @crobibero",
         "targetAbi": "10.8.8.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_9.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v9/thetvdb_9.0.0.0.zip",
         "checksum": "0d2585a599b2a0deb0c614577bc3a175",
-        "timestamp": "2023-01-16T03:36:51Z" 
+        "timestamp": "2023-01-16T03:36:51Z"
       },
       {
         "version": "8.0.0.0",
         "changelog": "### Code or Repo Maintenance ###\n- Use BaseItemKind (#59) @crobibero\n- update ruleset (#55) @crobibero\n\n### Dependency updates ###\n- chore(deps): bump Microsoft.Extensions.Http from 5.0.0 to 6.0.0 (#54) @dependabot",
         "targetAbi": "10.8.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_8.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v8/thetvdb_8.0.0.0.zip",
         "checksum": "5b9ee28119c60dffeff67952d67ba67a",
-        "timestamp": "2022-01-08T17:25:42Z" 
+        "timestamp": "2022-01-08T17:25:42Z"
       },
       {
         "version": "7.0.0.0",
         "changelog": "- 10.8 support (#52) @crobibero",
         "targetAbi": "10.8.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_7.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v7/thetvdb_7.0.0.0.zip",
         "checksum": "7ae213ac5c4d86ee968a0b7c69755393",
-        "timestamp": "2021-11-01T21:04:06Z" 
+        "timestamp": "2021-11-01T21:04:06Z"
       },
       {
         "version": "6.0.0.0",
         "changelog": "### Bug Fixes ###\n- Changed NormalizationForm to FormC (#45) @sushilicious\n\n### CI & build changes ###\n- Update ci (#42) @h1dden-da3m0n",
         "targetAbi": "10.7.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_6.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v6/thetvdb_6.0.0.0.zip",
         "checksum": "0d2bcfa13da7e10efa8874b445f92ba6",
-        "timestamp": "2021-08-07T21:24:50Z" 
+        "timestamp": "2021-08-07T21:24:50Z"
       },
       {
         "version": "5.0.0.0",
         "changelog": "* fix catching exceptions\n",
         "targetAbi": "10.7.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_5.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v5/thetvdb_5.0.0.0.zip",
         "checksum": "ad07e5890042799642e4056ebf5620c0",
-        "timestamp": "2021-05-14T12:01:21Z" 
+        "timestamp": "2021-05-14T12:01:21Z"
       },
       {
         "version": "4.0.0.0",
         "changelog": "Fix getting metadata\n",
         "targetAbi": "10.7.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_4.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v4/thetvdb_4.0.0.0.zip",
         "checksum": "97e82c193bf8c70c28158bdd4abb638d",
-        "timestamp": "2021-04-18T19:10:58Z" 
+        "timestamp": "2021-04-18T19:10:58Z"
       },
       {
         "version": "3.0.0.0",
         "changelog": "Fix getting metadata",
         "targetAbi": "10.7.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_3.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v3/thetvdb_3.0.0.0.zip",
         "checksum": "108bb40691f7b08ebd28f78afd7d196f",
-        "timestamp": "2021-03-11T05:41:03Z" 
+        "timestamp": "2021-03-11T05:41:03Z"
       },
       {
         "version": "2.0.0.0",
         "changelog": "Remove from Jellyfin core.\n",
         "targetAbi": "10.7.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_2.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v2/thetvdb_2.0.0.0.zip",
         "checksum": "e46cee334476a1b475e5c553171c4cb6",
-        "timestamp": "2020-12-16T20:03:28Z" 
+        "timestamp": "2020-12-16T20:03:28Z"
       },
       {
         "version": "1.0.0.0",
         "changelog": "Remove from Jellyfin core.\n",
         "targetAbi": "10.7.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_1.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-tvdb/releases/download/v1/thetvdb_1.0.0.0.zip",
         "checksum": "5a3dca5c0db4824d83bfd4e7e2b7bf11",
-        "timestamp": "2020-12-06T02:56:40Z" 
-      } 
+        "timestamp": "2020-12-06T02:56:40Z"
+      }
     ] 
   },
   {
@@ -2254,86 +2254,86 @@
     "category": "General",
     "imageUrl": "",
     "versions": [
-       {
+      {
         "version": "10.0.0.0",
         "changelog": "- Encode header values (#174) @crobibero\n- Avoid invalid PlayCommand start index (#175) @crobibero",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_10.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v10/dlna_10.0.0.0.zip",
         "checksum": "c96dbf59c9daf5af1ccc09bea68eca2c",
-        "timestamp": "2025-10-25T15:29:13Z" 
+        "timestamp": "2025-10-25T15:29:13Z"
       },
       {
         "version": "9.0.0.0",
         "changelog": "- 10.11 support (#163) @crobibero\n- add emby-button class to the help button (#155) @Krafting\n- fix resolution for ts (#146) @tomty89\n- Fix typo in client discovery interval help text (#149) @AnAnalogGuy\n- Strip URL parameters (#137) @Vebryn",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_9.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v9/dlna_9.0.0.0.zip",
         "checksum": "5e43bdec93a8e19bd9cf840a44066c80",
-        "timestamp": "2025-10-20T01:25:51Z" 
+        "timestamp": "2025-10-20T01:25:51Z"
       },
       {
         "version": "8.0.0.0",
         "changelog": "- Revert collection expression (#132) @crobibero",
         "targetAbi": "10.10.6.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_8.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v8/dlna_8.0.0.0.zip",
         "checksum": "9424fec869f91fa3de4844a06226f852",
-        "timestamp": "2025-03-17T03:03:55Z" 
+        "timestamp": "2025-03-17T03:03:55Z"
       },
       {
         "version": "7.0.0.0",
         "changelog": "- Fix: ChildCount When Viewing Folders in Directory (GetBrowse) (#128) @tfink419\n- Add rules,fix issues and cleanup (#96) @Shadowghost\n- Disable DirectStream for video playback (#124) @ACertainCoder",
         "targetAbi": "10.10.6.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_7.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v7/dlna_7.0.0.0.zip",
         "checksum": "720670a424cfa32bca014a0179d64027",
-        "timestamp": "2025-03-12T19:16:10Z" 
+        "timestamp": "2025-03-12T19:16:10Z"
       },
       {
         "version": "6.0.0.0",
         "changelog": "- fix: add the icons to the compiled resources (#109) (#114) @FelixPetriconi\n- fix: adjusted typo in configuration page title (#112) @shindai\n- Only split user agent if it can be split (#95) @Shadowghost",
         "targetAbi": "10.10.3.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_6.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v6/dlna_6.0.0.0.zip",
         "checksum": "f553041c6685d619d4eeb8927bd85c14",
-        "timestamp": "2024-12-19T22:17:07Z" 
+        "timestamp": "2024-12-19T22:17:07Z"
       },
       {
         "version": "5.0.0.0",
         "changelog": "- Fix Bigscreen compatibility issues (#83) @Nullcaller\n- Add additional profile logging (#93) @disgustipated\n- Fix TTL not following SsdpConstants (#88) @Nullcaller",
         "targetAbi": "10.10.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_5.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v5/dlna_5.0.0.0.zip",
         "checksum": "4f40f49f8b402a13ff90dc5f1aea5abd",
-        "timestamp": "2024-11-03T15:14:46Z" 
+        "timestamp": "2024-11-03T15:14:46Z"
       },
       {
         "version": "4.0.0.0",
         "changelog": "- Fixes for 10.10 (#84) @crobibero\n- Standardize bind IPs in ssdp and dlnahost (#82) @disgustipated\n- Revert lg profile friendly name (#77) @disgustipated\n- Add baseurl to descriptoruri (#75) @disgustipated\n\n### Dependency updates ###\n- Update dotnet monorepo (#79) @renovate",
         "targetAbi": "10.10.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_4.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v4/dlna_4.0.0.0.zip",
         "checksum": "c4cfe0a8b24f1a60224b4dec56b380a8",
-        "timestamp": "2024-10-27T13:15:22Z" 
+        "timestamp": "2024-10-27T13:15:22Z"
       },
       {
         "version": "3.0.0.0",
         "changelog": "- restore video transcoding (#68) @flashka07\n- Update dependency Microsoft.AspNetCore.Authorization to v8.0.8 (#54) @renovate\n- Set publisher uri to http (#62) @disgustipated\n- Remove . from friendlyname for identifying LG TVs (#60) @disgustipated",
         "targetAbi": "10.9.10.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_3.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v3/dlna_3.0.0.0.zip",
         "checksum": "2b88fb8b370650f1cedca0a3a6d4a050",
-        "timestamp": "2024-10-26T22:25:45Z" 
+        "timestamp": "2024-10-26T22:25:45Z"
       },
       {
         "version": "2.0.0.0",
         "changelog": "- Fixed ListenToSocketInternal so it works after Jellyfin 10.9.2 (#51) @ms-afk\n\n### Dependency updates ###\n- Update dependency Microsoft.AspNetCore.Authorization to v8.0.5 (#47) @renovate\n- Update dependency Microsoft.AspNetCore.Authorization to v8.0.4 (#37) @renovate",
         "targetAbi": "10.9.2.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_2.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v2/dlna_2.0.0.0.zip",
         "checksum": "2d5352445ed378318fee7aec39e12d15",
-        "timestamp": "2024-05-26T20:40:15Z" 
+        "timestamp": "2024-05-26T20:40:15Z"
       },
       {
         "version": "1.0.0.0",
         "changelog": "",
         "targetAbi": "10.9.0.0",
-        "sourceUrl": "https://repo.jellyfin.org/files/plugin/dlna/dlna_1.0.0.0.zip",
+        "sourceUrl": "https://github.com/jellyfin/jellyfin-plugin-dlna/releases/download/v1/dlna_1.0.0.0.zip",
         "checksum": "0c8214c6350767f03de192602916313f",
-        "timestamp": "2024-05-11T20:08:01Z" 
-      } 
+        "timestamp": "2024-05-11T20:08:01Z"
+      }
     ] 
   },
   {
