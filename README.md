@@ -14,7 +14,7 @@ mirror-all-official-plugins.json
 ================================================
 
 
-Collection 3rd-Party Plugin Repositories
+3rd-Party Plugin Repositories
 
 all-3rd-party-plugin.json
 
@@ -22,7 +22,7 @@ all-3rd-party-plugin.json
 ================================================
 
 
-Collection 3rd-Party Plugin Repositories with  Plugins in GitHubMirror
+3rd-Party Plugin Repositories with  Plugins in GitHubMirror
 
 mirror-all-3rd-party-plugin.json
 
