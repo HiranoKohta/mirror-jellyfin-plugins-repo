@@ -3087,6 +3087,14 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.25.2.0",
+        "checksum": "200c98e8b92148f4f7f41374e5dcd1e8",
+        "changelog": "## [0.25.2.0] - 2026-01-23\n\n### 🚀 Features\n\n- Check if user as access on insert\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.2.0/gelato_0.25.2.0.zip",
+        "timestamp": "2026-01-23T16:06:27Z"
+      },
+      {
         "version": "0.25.1.9",
         "checksum": "9dde0f61907426cbae269c0cc7fc53ba",
         "changelog": "## [0.25.1.9] - 2026-01-23\n\n### 🐛 Bug Fixes\n\n- Save users to stream, so that probe data os shared\n",
@@ -3317,14 +3325,6 @@
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.24.6.5/gelato_0.24.6.5.zip",
         "timestamp": "2025-12-03T16:43:03Z"
-      },
-      {
-        "version": "0.24.6.4",
-        "checksum": "8f0e3218ddca92f253ad74a23b2a3817",
-        "changelog": "## [0.24.6.4] - 2025-12-03\n\n### 🐛 Bug Fixes\n\n- Check ffor streams only whennitem is a video when inserting\n",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.24.6.4/gelato_0.24.6.4.zip",
-        "timestamp": "2025-12-03T07:34:46Z"
       }
     ]
   },
