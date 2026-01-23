@@ -3,9 +3,11 @@ Official Jellyfin Plugin Repositories
 all-official-plugins.json
 
 
+
 Official Jellyfish Plugin Repositories with  Plugins in GitHubMirror
 
 mirror-all-official-plugins.json
+
 
 
 
@@ -14,9 +16,11 @@ Collection 3rd-Party Plugin Repositories
 all-3rd-party-plugin.json
 
 
+
 Collection 3rd-Party Plugin Repositories with  Plugins in GitHubMirror
 
 mirror-all-3rd-party-plugin.json
+
 
  
 Official Jellyfin Plugin Repositories + 3rd-Party Plugin Repositories
@@ -24,14 +28,19 @@ Official Jellyfin Plugin Repositories + 3rd-Party Plugin Repositories
 all-in-one-plugins.json
 
 
+
 Official Jellyfin Plugin Repositories + 3rd-Party Plugin Repositories with  Plugins in GitHubMirror
 
 mirror-all-in-one-plugins.json
 
 
+================================================
+
+
 Official Jellyfin Plugin Mirror
 
 https://repo.jellyfin.org/files/plugin/manifest.json
+
 
 
 
