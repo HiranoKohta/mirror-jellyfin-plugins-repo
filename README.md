@@ -1,4 +1,4 @@
-Log of the last update of the plugin mirror
+Log of the last update of the plugins mirror
 
 https://homenas.dns-cloud.net/jellyfin/mirror-log.html
 
