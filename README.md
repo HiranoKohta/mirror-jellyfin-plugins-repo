@@ -1,3 +1,8 @@
+Log of the last update of the plugin mirror
+
+https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-log.html
+
+
 Official Jellyfin Plugin Repositories
 
 all-official-plugins.json
