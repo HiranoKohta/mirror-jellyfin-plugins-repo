@@ -1,6 +1,6 @@
 Log of the last update of the plugin mirror
 
-https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-log.html
+https://homenas.dns-cloud.net/jellyfin/mirror-log.html
 
 
 ================================================
