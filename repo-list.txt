@@ -41,9 +41,7 @@ https://raw.githubusercontent.com/lostb1t/Gelato/refs/heads/gh-pages/repository.
 https://raw.githubusercontent.com/lostb1t/jellyfin-plugin-collection-import/main/manifest.json
 https://raw.githubusercontent.com/luall0/jellyfin-luall0-plugins/refs/heads/main/manifest.json
 https://raw.githubusercontent.com/n00bcodr/jellyfin-plugins/main/10.10/manifest.json
-https://raw.githubusercontent.com/n00bcodr/jellyfin-plugins/main/10.10/manifest.json 
 https://raw.githubusercontent.com/n00bcodr/jellyfin-plugins/main/10.11/manifest.json
-https://raw.githubusercontent.com/n00bcodr/jellyfin-plugins/main/10.11/manifest.json 
 https://raw.githubusercontent.com/nicknsy/jellyscrub/main/manifest.json
 https://raw.githubusercontent.com/rdpharr/jellyfin-plugin-localrecs/main/manifest.json
 https://raw.githubusercontent.com/ryandash/jellyfin-plugin-myanimelist/main/manifest.json
