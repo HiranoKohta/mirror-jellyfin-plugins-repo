@@ -1,3 +1,11 @@
+Log of the last update of the plugins mirror
+
+https://homenas.dns-cloud.net/jellyfin/mirror-log.html
+
+
+================================================
+
+
 Official Jellyfin Plugin Repositories
 
 all-official-plugins.json
