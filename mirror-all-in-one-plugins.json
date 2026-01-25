@@ -1947,14 +1947,6 @@
         "timestamp": "2022-01-08T17:24:12Z"
       },
       {
-        "version": "2.0.0.0",
-        "checksum": "2ee42cc03d0e4f754fabb1321b005a5a",
-        "changelog": "### Code or Repo Maintenance ###\n- 10.8 support (#1) @crobibero",
-        "targetAbi": "10.8.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/OPDS/2.0.0.0/opds_2.0.0.0.zip",
-        "timestamp": "2021-11-01T20:51:30Z"
-      },
-      {
         "version": "1.0.0.0",
         "checksum": "717b7a03366af88d39a987610406cfb5",
         "changelog": "",
@@ -2434,6 +2426,24 @@
         "targetAbi": "10.10.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/LrcLib%20Lyrics/2.0.0.0/lrclib_2.0.0.0.zip",
         "timestamp": "2024-10-29T00:27:05Z"
+      }
+    ]
+  },
+  {
+    "name": "Google Books",
+    "guid": "7a9f4890-b216-4d75-a0e4-4c9f29ed5217",
+    "category": "Books",
+    "description": "Pulls book metadata and cover images from Google Books.\n",
+    "overview": "Google Books Metadata Provider",
+    "owner": "jellyfin",
+    "versions": [
+      {
+        "version": "1.0.0.0",
+        "checksum": "3ab915e6a4ceef9020717c253b1db5d7",
+        "changelog": "Initial Release",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Google%20Books/1.0.0.0/google-books_1.0.0.0.zip",
+        "timestamp": "2026-01-25T15:06:31Z"
       }
     ]
   },
