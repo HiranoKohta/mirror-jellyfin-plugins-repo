@@ -2,7 +2,7 @@ Log of the last update of the plugins mirror
 
 https://homenas.dns-cloud.net/jellyfin/mirror-log.html
 
-[https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-log.html](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-log.html)
+https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-log.html
 
 
 ================================================
