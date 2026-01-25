@@ -1947,6 +1947,14 @@
         "timestamp": "2022-01-08T17:24:12Z"
       },
       {
+        "version": "2.0.0.0",
+        "checksum": "2ee42cc03d0e4f754fabb1321b005a5a",
+        "changelog": "### Code or Repo Maintenance ###\n- 10.8 support (#1) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/OPDS/2.0.0.0/opds_2.0.0.0.zip",
+        "timestamp": "2021-11-01T20:51:30Z"
+      },
+      {
         "version": "1.0.0.0",
         "checksum": "717b7a03366af88d39a987610406cfb5",
         "changelog": "",
