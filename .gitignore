@@ -2,7 +2,7 @@
 # Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
 ################################################################################
 
-/source/bin
 /.vs
+/source/bin
 /source/obj
 /source/.vs
