@@ -8,8 +8,8 @@ http://HiranoKohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html
 
 
 Official Jellyfin Plugin Repositories
-[
-all-official-plugins.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-official-plugins.json)
+
+[all-official-plugins.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-official-plugins.json)
 
 
 ================================================
