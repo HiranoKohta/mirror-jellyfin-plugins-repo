@@ -1,61 +1,124 @@
-Log of the last update of the plugins mirror:
+_______
+English
+=======
+
+This Jellyfin plugin mirror is intended for those who, for some reason, have the regulator block the sites of the original repositories.
 
 
-[mirror-log.html](http://HiranoKohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html)
+There are 2 types of mirrors in total.:
+
+	1. Repository catalog only
+
+	2. The repository catalog and all its plugins
 
 
-================================================
+Also, each type is divided into 3 types according to the plugins it contains.
+
+	1. Plugins from the official repository
+
+	2. Plugins from unofficial repositories
+
+	3. Plugins from all repositories
 
 
-Official Jellyfin Plugin Repositories
+Mirror of the official repository catalog:
 
-[all-official-plugins.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-official-plugins.json)
-
-
-================================================
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-official-plugins.json
 
 
-3rd-Party Plugin Repositories
+Mirror of the unofficial repository catalog:
 
-[all-3rd-party-plugin.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-3rd-party-plugin.json)
-
-
-================================================
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-3rd-party-plugin.json
 
 
-Official Jellyfin Plugin Repositories + 3rd-Party Plugin Repositories
+Mirror of official and unofficial repository catalogs:
 
-[all-in-one-plugins.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-in-one-plugins.json)
-
-
-================================================
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-in-one-plugins.json
 
 
-Official Jellyfish Plugin Repositories with  Plugins in GitHubMirror
+Mirror of the official repository catalog with all the plugins included in it:
 
-[mirror-all-official-plugins.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-official-plugins.json)
-
-
-================================================
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-official-plugins.json
 
 
-3rd-Party Plugin Repositories with  Plugins in GitHubMirror
+Mirror of a catalog of unofficial repositories with all the plugins included in them:
 
-[mirror-all-3rd-party-plugin.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-3rd-party-plugin.json)
-
-
-================================================
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-3rd-party-plugin.json
 
 
-Official Jellyfin Plugin Repositories + 3rd-Party Plugin Repositories with  Plugins in GitHubMirror
+Mirror of official and unofficial repository catalogs with all their plugins:
 
-[mirror-all-in-one-plugins.json](https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-in-one-plugins.json)
-
-
-================================================
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-in-one-plugins.json
 
 
-List of include repositories:
+A list of all repositories included in the mirror:
 
-[repo-list.txt](http://HiranoKohta.github.io/mirror-jellyfin-plugins-repo/repo-list.txt)
+[repo-list.txt](http://hiranokohta.github.io/mirror-jellyfin-plugins-repo/repo-list.txt)
 
+
+Log of the latest update of the repository and plugin mirrors:
+
+[mirror-log.html](http://hiranokohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html)
+_______
+_______
+Russian
+=======
+
+Это зеркало плагинов Jellyfin предназначено для тех, у кого по каким либо причинам регулятор блокирует сайты оригинальных репозиториев.
+
+
+Всего здесь находится 2 типа зеркал:
+
+	1. Только каталог репозитория
+
+	2. Каталог репозитория и все входящие в него плагины
+
+
+Так же каждый тип делится на 3 вида по содержащимся в нем плагинам
+
+	1. Плагины из официального репозитория
+
+	2. Плагины из неофициальных репозиториев
+
+	3. Плагины из всех репозиториев
+
+
+Зеркало каталога официального репозитория:
+
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-official-plugins.json
+
+
+Зеркало каталога неофициальных репозиториев:
+
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-3rd-party-plugin.json
+
+
+Зеркало каталогов официального и неофициальных репозиториев:
+
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/all-in-one-plugins.json
+
+
+Зеркало каталога официального репозитория со всеми входящими в него плагинами:
+
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-official-plugins.json
+
+
+Зеркало каталога неофициальных репозиториев со всеми входящими в них плагинами:
+
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-3rd-party-plugin.json
+
+
+Зеркало каталогов официального и неофициальных репозиториев со всеми входящими в них плагинами:
+
+	https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-in-one-plugins.json
+
+
+Список всех репозиториев входящих в зеркало:
+
+[repo-list.txt](http://hiranokohta.github.io/mirror-jellyfin-plugins-repo/repo-list.txt)
+
+
+Журнал последнего обновления зеркала репозиториев и плагинов:
+
+[mirror-log.html](http://hiranokohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html)
+_______
