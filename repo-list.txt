@@ -1,6 +1,6 @@
 ﻿https://repo.jellyfin.org/files/plugin/manifest.json
-https://github.com/lachlandcp/jellyfin-editors-choice-plugin/raw/main/manifest.json
-https://noonamer.github.io/Jellyfin.Plugin.LocalPosters/repository.json
+https://raw.githubusercontent.com/lachlandcp/jellyfin-editors-choice-plugin/main/manifest.json
+https://raw.githubusercontent.com/Jellyfin.Plugin.LocalPosters/main/repository.json
 https://raw.githubusercontent.com/9p4/jellyfin-plugin-sso/manifest-release/manifest.json
 https://raw.githubusercontent.com/AlexSat/jellyfin-sort-by-raw-name-plugin/master/manifest.json
 https://raw.githubusercontent.com/CherryFloors/jellyfin-plugin-cinemamode/main/manifest.json
