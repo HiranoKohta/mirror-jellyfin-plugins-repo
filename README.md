@@ -1,7 +1,7 @@
 Log of the last update of the plugins mirror:
 
 
-http://HiranoKohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html
+[mirror-log.html](http://HiranoKohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html)
 
 
 ================================================
@@ -57,5 +57,5 @@ Official Jellyfin Plugin Repositories + 3rd-Party Plugin Repositories with  Plug
 
 List of include repositories:
 
-http://HiranoKohta.github.io/mirror-jellyfin-plugins-repo/repo-list.txt
+[repo-list.txt](http://HiranoKohta.github.io/mirror-jellyfin-plugins-repo/repo-list.txt)
 
