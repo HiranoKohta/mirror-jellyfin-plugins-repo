@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JellyfinPluginsMirror": {
+      "commandName": "Project",
+      "hotReloadEnabled": false
+    }
+  }
+}
