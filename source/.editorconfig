@@ -1,0 +1,7 @@
+﻿[*.vb]
+
+# SYSLIB0014: Тип или член устарел
+dotnet_diagnostic.SYSLIB0014.severity = none
+
+# IDE0002: Упрощение доступа для членов
+dotnet_diagnostic.IDE0002.severity = silent
