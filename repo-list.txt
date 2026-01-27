@@ -20,6 +20,8 @@ https://raw.githubusercontent.com/Fovty/HoverTrailer/master/manifest.json
 https://raw.githubusercontent.com/GrandguyJS/media-upload-plugin/main/manifest.json
 https://raw.githubusercontent.com/hexxone/TeleJelly/dist/manifest.json
 https://raw.githubusercontent.com/iankiller77/MyAnimeSync/main/manifest.json
+https://raw.githubusercontent.com/intro-skipper/manifest/main/10.10/manifest.json
+https://raw.githubusercontent.com/intro-skipper/manifest/main/10.11/manifest.json
 https://raw.githubusercontent.com/ImLacy/Jellyfin-CustomLogo/refs/heads/main/manifest.json
 https://raw.githubusercontent.com/JellyboxAD/Jellyfin.Plugin.StreamLimit/main/manifest.json
 https://raw.githubusercontent.com/jon4hz/jellyfin-plugin-jellysleep/main/manifest.json
