@@ -1,7 +1,8 @@
 _______
 English
 =======
-
+English is not my native language, so the text may not have machine translation accuracy, I'm sorry.
+_______
 This Jellyfin plugin mirror is intended for those who, for some reason, have the regulator block the sites of the original repositories.
 
 
@@ -59,6 +60,31 @@ A list of all repositories included in the mirror:
 Log of the latest update of the repository and plugin mirrors:
 
 [mirror-log.html](http://hiranokohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html)
+_______
+If the plug-in section does not open in your Jellyfin server settings (this may be due to blocking the resource where the repository is located), then you can manually edit the file. Jellyfin/config/system.xml
+
+To do this, do the following:
+
+1. Stop the Jellyfin server.
+
+2. Open the settings file specified above.
+
+3. Find the section responsible for the repository.
+
+4. Enter a link to the repository there.
+
+5. Close the file by saving the changes.
+
+6. Launch the Jellyfin server.
+```
+<PluginRepositories>
+	<RepositoryInfo>
+		<Name>Mirror All In One Plugins</Name>
+		<Url>https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-in-one-plugins.json</Url>
+		<Enabled>true</Enabled>
+	</RepositoryInfo>
+</PluginRepositories>
+```
 _______
 _______
 Russian
@@ -121,4 +147,33 @@ Russian
 Журнал последнего обновления зеркала репозиториев и плагинов:
 
 [mirror-log.html](http://hiranokohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html)
+_______
+
+Если у вас в настройках сервера Jellyfin не открывается раздел с плагинами (такое может быть из-за блокировки ресурса на котором расположен репозиторий),
+тогда можно вручную отредактировать файл Jellyfin/config/system.xml
+
+
+Для этого нужно сделать следующее:
+
+1. Остановить сервер Jellyfin.
+
+2. Открыть файл настроек указанный выше.
+
+3. Найти раздел отвечающий за репозиторий.
+
+4. Вписать туда ссылку на репозиторий.
+
+5. Закрыть файл сохранив изменения.
+
+6. Запустить сервер Jellyfin.
+
+```
+<PluginRepositories>
+	<RepositoryInfo>
+		<Name>Mirror All In One Plugins</Name>
+		<Url>https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-in-one-plugins.json</Url>
+		<Enabled>true</Enabled>
+	</RepositoryInfo>
+</PluginRepositories>
+```
 _______
