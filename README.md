@@ -80,7 +80,7 @@ To do this, do the following:
 <PluginRepositories>
 	<RepositoryInfo>
 		<Name>Mirror All In One Plugins</Name>
-		<Url>https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-in-one-plugins.json</Url>
+		<Url>https://repo.jellyfin.org/files/plugin/manifest.json</Url>
 		<Enabled>true</Enabled>
 	</RepositoryInfo>
 </PluginRepositories>
@@ -171,7 +171,7 @@ _______
 <PluginRepositories>
 	<RepositoryInfo>
 		<Name>Mirror All In One Plugins</Name>
-		<Url>https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/mirror-all-in-one-plugins.json</Url>
+		<Url>https://repo.jellyfin.org/files/plugin/manifest.json</Url>
 		<Enabled>true</Enabled>
 	</RepositoryInfo>
 </PluginRepositories>
