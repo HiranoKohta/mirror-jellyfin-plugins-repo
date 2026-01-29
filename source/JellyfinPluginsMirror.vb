@@ -5,6 +5,7 @@ Imports System.IO
 Imports System.Net
 Imports System.Net.Http
 Imports System.Net.Mime.MediaTypeNames
+'Imports System.Net.WebRequestMethods
 Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Text.RegularExpressions
@@ -77,8 +78,8 @@ Module JellyfinPluginsMirror
         FileName = Path.Combine(Path.GetTempPath, "jellyfin.svg")
         If DownloadFile(Url, FileName) Then
             Text = IO.File.ReadAllText(FileName, System.Text.Encoding.UTF8)
-            RegExp = Regex.Match(Text, "\>(\d+\.\d+\.\d+)\<")
-            UserAgetVersion = RegExp.Groups(1).Value
+            RegExp = Regex.Match(Text, "\>(\d+\.\d+)\.\d+\<")
+            UserAgetVersion = RegExp.Groups(1).Value ' & "0"
             '====================
             StringLog = String.Format("Jellyfin version: {0}", UserAgetVersion)
             Console.WriteLine(StringLog)
@@ -181,6 +182,7 @@ Module JellyfinPluginsMirror
         Maniafest = Path.Combine(Path.GetTempPath, "manifest.json")
         For I = 0 To Urls.Length - 1
             UrlPlugin = Urls(I)
+            UrlPlugin = "https://intro-skipper.org/manifest.json"
             If UrlPlugin.Length > 0 Then
                 If DownloadFile(UrlPlugin, Maniafest) Then
                     If UrlPlugin.Contains(OFFICIAL_REPO) Then
