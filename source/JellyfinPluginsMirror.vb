@@ -399,25 +399,29 @@ Module JellyfinPluginsMirror
         Dim L As Long, D As Long = 0
         Dim P As Single = 0
         Dim FileStreamer As FileStream
+        Dim MyHttpWebRequest As HttpWebRequest
+        Dim MyHttpWebResponse As HttpWebResponse
+        Dim ResponseUrl As String = Url
         DownloadFile = False
         FileStreamer = New FileStream(FileName, IO.FileMode.Create)
         Call ConsoleProgressBar(0)
         Try
             ' Запрос клиента
-            Dim MyHttpWebRequest As HttpWebRequest = HttpWebRequest.Create(Url)
-            MyHttpWebRequest.UserAgent = "Jellyfin-Server/" & UserAgetVersion
-            MyHttpWebRequest.Accept = "*/*"
-            'MyHttpWebRequest.Headers.Add("Accept-Language", "ru-RU,ru;q=1")
-            'MyHttpWebRequest.Headers.Add("Accept-Encoding", "")
-            'MyHttpWebRequest.Headers.Add("DNT", "1")
-            MyHttpWebRequest.ContinueTimeout = 5000
-            MyHttpWebRequest.Timeout = 5000
-            MyHttpWebRequest.ReadWriteTimeout = 5000
-            Dim MyHttpWebResponse As HttpWebResponse = MyHttpWebRequest.GetResponse()
+            Do
+                Url = ResponseUrl
+                MyHttpWebRequest = HttpWebRequest.Create(Url)
+                MyHttpWebRequest.UserAgent = "Jellyfin-Server/" & UserAgetVersion
+                MyHttpWebRequest.Accept = "*/*"
+                MyHttpWebRequest.ContinueTimeout = 5000
+                MyHttpWebRequest.Timeout = 5000
+                MyHttpWebRequest.ReadWriteTimeout = 5000
+                MyHttpWebResponse = MyHttpWebRequest.GetResponse()
+                ResponseUrl = MyHttpWebResponse.ResponseUri.ToString
+            Loop Until ResponseUrl = Url
             ' Ответ сервера
             L = MyHttpWebResponse.ContentLength
-            Dim Content As String = MyHttpWebResponse.Headers.Get("Content-Disposition")
-            Dim Ext As String = Path.GetExtension(FileName)
+            'Dim Content As String = MyHttpWebResponse.Headers.Get("Content-Disposition")
+            'Dim Ext As String = Path.GetExtension(FileName)
             Dim bBuffer(READ_BUFF - 1) As Byte
             Using reader As New BinaryReader(MyHttpWebResponse.GetResponseStream())
                 Do
