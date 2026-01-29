@@ -1,4 +1,5 @@
 ﻿Imports System
+Imports System.Drawing
 Imports System.Formats
 Imports System.IO
 Imports System.Net
@@ -6,11 +7,13 @@ Imports System.Net.Http
 Imports System.Net.Mime.MediaTypeNames
 Imports System.Security.Cryptography
 Imports System.Text
+Imports System.Text.RegularExpressions
 Imports System.Web
 
 Module JellyfinPluginsMirror
 
     Private Const READ_BUFF As Integer = 1024
+    Private Const RELEASE As String = "https://github.com/jellyfin/jellyfin/releases.atom"
     Private Const REPO_URL As String = "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main"
     Private Const REPO_PATH As String = "H:\GitHub\mirror-jellyfin-plugins-repo"
     Private Const REPO_LIST As String = "repo-list.txt"
@@ -24,6 +27,7 @@ Module JellyfinPluginsMirror
     Private UnOfficialVersion As Integer = 0
     Private IsOfficialRepository As Boolean
     Private IsUnOfficialRepository As Boolean
+    Private UserAgetVersion As String = "0.0.0"
 
     Private Structure Plugin
         Public Artifacts As String
@@ -54,9 +58,8 @@ Module JellyfinPluginsMirror
     End Enum
 
     Sub Main()
-        Dim StringLog As String, FileName As String
-        Dim RepoList As String = Path.Combine(Path.GetTempPath, REPO_LIST)
-        Dim Url As String = REPO_URL & "/" & REPO_LIST
+        Dim StringLog As String, FileName As String, Text As String, Url As String
+        Dim RegExp As Match
         Dim LogFile As String = Path.Combine(REPO_PATH, MIRROR_LOG)
         File.Delete(LogFile)
         Console.Clear()
@@ -70,12 +73,26 @@ Module JellyfinPluginsMirror
         Console.WriteLine(StringLog)
         Call OutLog(StringLog)
         '====================
+        Url = RELEASE
+        FileName = Path.Combine(Path.GetTempPath, "jellyfin.svg")
+        If DownloadFile(Url, FileName) Then
+            Text = IO.File.ReadAllText(FileName, System.Text.Encoding.UTF8)
+            RegExp = Regex.Match(Text, "\>(\d+\.\d+\.\d+)\<")
+            UserAgetVersion = RegExp.Groups(1).Value
+            '====================
+            StringLog = String.Format(vbCrLf & "Jellyfin version: {0}", UserAgetVersion)
+            Console.WriteLine(StringLog)
+            Call OutLog(StringLog)
+        End If
+        '====================
         StringLog = String.Format(vbCrLf & "Loading list from {0}", Url)
         Console.WriteLine(StringLog)
         Call OutLog(StringLog)
         '====================
-        If DownloadFile(Url, RepoList) Then
-            Urls = IO.File.ReadAllLines(RepoList, System.Text.Encoding.UTF8)
+        Url = REPO_URL & "/" & REPO_LIST
+        FileName = Path.Combine(Path.GetTempPath, REPO_LIST)
+        If DownloadFile(Url, FileName) Then
+            Urls = IO.File.ReadAllLines(FileName, System.Text.Encoding.UTF8)
             Console.ForegroundColor = ConsoleColor.White
             '====================
             StringLog = String.Format("Loading {0} repository.", Urls.Length)
@@ -163,7 +180,8 @@ Module JellyfinPluginsMirror
         ReDim Plugins(-1)
         Maniafest = Path.Combine(Path.GetTempPath, "manifest.json")
         For I = 0 To Urls.Length - 1
-            UrlPlugin = Urls(I)
+            'UrlPlugin = Urls(I)
+            UrlPlugin = "https://intro-skipper.org/manifest.json"
             If UrlPlugin.Length > 0 Then
                 If DownloadFile(UrlPlugin, Maniafest) Then
                     If UrlPlugin.Contains(OFFICIAL_REPO) Then
@@ -172,16 +190,16 @@ Module JellyfinPluginsMirror
                         IsUnOfficialRepository = True
                     End If
                     Console.ForegroundColor = ConsoleColor.Green
-                        '====================
-                        StringLog = String.Format(vbCrLf & vbCrLf & "{0}. {1} - {2}", I + 1, UrlPlugin, "OK.")
-                        Console.WriteLine(StringLog)
-                        Call OutLog(StringLog)
-                        '====================
-                        JsonArray = IO.File.ReadAllLines(Maniafest, System.Text.Encoding.UTF8)
-                        Call GetPlugins(JsonArray)
-                        File.Delete(Maniafest)
-                    Else
-                        Console.ForegroundColor = ConsoleColor.Red
+                    '====================
+                    StringLog = String.Format(vbCrLf & vbCrLf & "{0}. {1} - {2}", I + 1, UrlPlugin, "OK.")
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                    '====================
+                    JsonArray = IO.File.ReadAllLines(Maniafest, System.Text.Encoding.UTF8)
+                    Call GetPlugins(JsonArray)
+                    File.Delete(Maniafest)
+                Else
+                    Console.ForegroundColor = ConsoleColor.Red
                     '====================
                     StringLog = String.Format(vbCrLf & vbCrLf & "{0}. {1} - {2}", I + 1, UrlPlugin, "Failed download!")
                     Console.WriteLine(StringLog)
@@ -386,11 +404,11 @@ Module JellyfinPluginsMirror
         Try
             ' Запрос клиента
             Dim MyHttpWebRequest As HttpWebRequest = HttpWebRequest.Create(Url)
-            MyHttpWebRequest.UserAgent = "Mozilla/5.0 (Windows NT 6.1; rv:21.0) Gecko/20100101 Firefox/21.0"
-            MyHttpWebRequest.Accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
-            MyHttpWebRequest.Headers.Add("Accept-Language", "ru-RU,ru;q=1")
-            MyHttpWebRequest.Headers.Add("Accept-Encoding", "")
-            MyHttpWebRequest.Headers.Add("DNT", "1")
+            MyHttpWebRequest.UserAgent = "Jellyfin-Server/" & UserAgetVersion
+            MyHttpWebRequest.Accept = "*/*"
+            'MyHttpWebRequest.Headers.Add("Accept-Language", "ru-RU,ru;q=1")
+            'MyHttpWebRequest.Headers.Add("Accept-Encoding", "")
+            'MyHttpWebRequest.Headers.Add("DNT", "1")
             MyHttpWebRequest.ContinueTimeout = 5000
             MyHttpWebRequest.Timeout = 5000
             MyHttpWebRequest.ReadWriteTimeout = 5000
