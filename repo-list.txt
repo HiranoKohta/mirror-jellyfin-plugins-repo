@@ -51,6 +51,9 @@ https://raw.githubusercontent.com/ThePornDatabase/Jellyfin.Plugin.ThePornDB/main
 https://raw.githubusercontent.com/TheXaman/jellyfin-plugin-languageTags/main/manifest.json
 https://raw.githubusercontent.com/vosmiic/jellyfin-ani-sync/master/manifest.json
 https://raw.githubusercontent.com/ztffn/Jellyfin-Roulette/main/manifest.json
-https://cdn.jsdelivr.net/gh/intro-skipper/manifest@f3f55c7596b191f15b68453dcd0bf70ea12e720e/10.11/manifest.json
+https://raw.githubusercontent.com/intro-skipper/manifest/main/10.8/manifest.json
+https://raw.githubusercontent.com/intro-skipper/manifest/main/10.9/manifest.json
+https://raw.githubusercontent.com/intro-skipper/manifest/main/10.10/manifest.json
+https://raw.githubusercontent.com/intro-skipper/manifest/main/10.11/manifest.json
 https://www.iamparadox.dev/jellyfin/plugins/manifest.json
 https://repo.xkrivo.net/jellyfin/manifest.json
