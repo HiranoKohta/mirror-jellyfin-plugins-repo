@@ -386,7 +386,7 @@ Module JellyfinPluginsMirror
         Try
             ' Запрос клиента
             Dim MyHttpWebRequest As HttpWebRequest = HttpWebRequest.Create(Url)
-            MyHttpWebRequest.UserAgent = "Jellyfin"
+            MyHttpWebRequest.UserAgent = "Jellyfin Server"
             MyHttpWebRequest.Accept = "*/*"
             MyHttpWebRequest.ContinueTimeout = 5000
             MyHttpWebRequest.Timeout = 5000
