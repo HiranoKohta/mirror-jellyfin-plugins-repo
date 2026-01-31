@@ -850,6 +850,14 @@
         "timestamp": "2022-01-08T17:25:18Z"
       },
       {
+        "version": "8.0.0.0",
+        "checksum": "a45b5384f3bb81a86f7b4fd4da18a644",
+        "changelog": "- 10.8 support (#47) @crobibero\n- Fix #36: Save button has wrong text (#40) @danimart1991\n\n### New features and improvements ###\n- Strip Collection string multilanguage (#43) @danimart1991\n- Fix #38: NullReferenceException on Collection Name (#41) @danimart1991\n\n### Dependency updates ###\n- chore(deps): bump release-drafter/release-drafter from v5.14.0 to v5.15.0 (#39) @dependabot\n\n### CI & build changes ###\n- chore(ci): builds, releas drafter and more (#34) @h1dden-da3m0n",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/tmdb-box-sets/tmdb-box-sets_8.0.0.0.zip",
+        "timestamp": "2021-11-01T21:03:17Z"
+      },
+      {
         "version": "7.0.0.0",
         "checksum": "1551792e6af4d36f2cead01153c73cf0",
         "changelog": "changelog\n",
@@ -987,6 +995,14 @@
         "targetAbi": "10.8.0.0",
         "sourceUrl": "https://repo.jellyfin.org/releases/plugin/trakt/trakt_14.0.0.0.zip",
         "timestamp": "2022-01-08T17:25:30Z"
+      },
+      {
+        "version": "13.0.0.0",
+        "checksum": "408b38f1335ee1f947890752004cb017",
+        "changelog": "### CI & build changes ###\n- Update ci (#85) @h1dden-da3m0n\n\n### Code or Repo Maintenance ###\n- 10.8 support (#91) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/trakt/trakt_13.0.0.0.zip",
+        "timestamp": "2021-11-01T21:03:41Z"
       },
       {
         "version": "12.0.0.0",
@@ -1139,6 +1155,14 @@
         "timestamp": "2022-01-07T21:16:19Z"
       },
       {
+        "version": "4.0.0.0",
+        "checksum": "4dccac26c6470cebc25cb8d6e4201b4d",
+        "changelog": "### Code or Repo Maintenance ###\n- 10.8 support (#13) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/cover-art-archive/cover-art-archive_4.0.0.0.zip",
+        "timestamp": "2021-11-01T20:57:28Z"
+      },
+      {
         "version": "3.0.0.0",
         "checksum": "ca0ae1e2575cae9cb8d9f0164b8ab92c",
         "changelog": "### New features and improvements ###\n- chore: plugin images (#5) @h1dden-da3m0n\n\n### Dependency updates ###\n- chore(deps): bump release-drafter/release-drafter from v5.14.0 to v5.15.0 (#4) @dependabot\n\n### CI & build changes ###\n- Update ci (#9) @h1dden-da3m0n\n- Create release prep PR on release draft update (#7) @oddstr13\n- Add analyzers and remove all warnings (#3) @crobibero\n- Let there be CI (#2) @oddstr13",
@@ -1276,6 +1300,14 @@
         "targetAbi": "10.8.0.0",
         "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_8.0.0.0.zip",
         "timestamp": "2022-01-08T17:25:42Z"
+      },
+      {
+        "version": "7.0.0.0",
+        "checksum": "7ae213ac5c4d86ee968a0b7c69755393",
+        "changelog": "- 10.8 support (#52) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/thetvdb/thetvdb_7.0.0.0.zip",
+        "timestamp": "2021-11-01T21:04:06Z"
       },
       {
         "version": "6.0.0.0",
@@ -1669,6 +1701,14 @@
         "timestamp": "2022-01-08T17:26:09Z"
       },
       {
+        "version": "9.0.0.0",
+        "checksum": "2fa1bbe23392945f56f8ed716c8bb932",
+        "changelog": "### Bug Fixes ###\n- tv-maze -> tvmaze in release-drafter config (#28) @oddstr13\n\n### Code or Repo Maintenance ###\n- 10.8 support (#32) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/tvmaze/tvmaze_9.0.0.0.zip",
+        "timestamp": "2021-11-01T21:04:34Z"
+      },
+      {
         "version": "8.0.0.0",
         "checksum": "cd7944e30bd7e6237279cb8458777fc0",
         "changelog": "- chore(deps): bump TvMaze.Api.Client from 0.1.71 to 0.1.72 (#21) @dependabot\n\n### CI & build changes ###\n- Update ci (#24) @h1dden-da3m0n\n\n### Code or Repo Maintenance ###\n- chore: plugin images (#22) @h1dden-da3m0n",
@@ -1800,6 +1840,14 @@
         "timestamp": "2022-01-08T17:26:30Z"
       },
       {
+        "version": "9.0.0.0",
+        "checksum": "7346b010d59f3833b5f5920ab503063c",
+        "changelog": "### Bug Fixes ###\n- Don't filter on userId for UserCreated notification type (#76) @crobibero\n\n### Code or Repo Maintenance ###\n- Fix CI (#79) @crobibero\n- 10.8 support (#69) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/webhook/webhook_9.0.0.0.zip",
+        "timestamp": "2021-11-01T14:32:52Z"
+      },
+      {
         "version": "8.0.0.0",
         "checksum": "8a84683a9b52090229b2da2dabcd3d91",
         "changelog": "### New features and improvements ###\n- Add UserDataSaved event handler (#70) @crobibero",
@@ -1897,6 +1945,14 @@
         "targetAbi": "10.8.0.0",
         "sourceUrl": "https://repo.jellyfin.org/releases/plugin/opds/opds_3.0.0.0.zip",
         "timestamp": "2022-01-08T17:24:12Z"
+      },
+      {
+        "version": "2.0.0.0",
+        "checksum": "2ee42cc03d0e4f754fabb1321b005a5a",
+        "changelog": "### Code or Repo Maintenance ###\n- 10.8 support (#1) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/opds/opds_2.0.0.0.zip",
+        "timestamp": "2021-11-01T20:51:30Z"
       },
       {
         "version": "1.0.0.0",
