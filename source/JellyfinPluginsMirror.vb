@@ -114,7 +114,7 @@ Module JellyfinPluginsMirror
 
             If OfficialVersion > 0 Then
                 FileName = "mirror-all-official-plugins.json"
-                Call CreateManifest(Repositori.Official, False, FileName)
+                Call CreateManifest(Repositori.Official, True, FileName)
                 StringLog = String.Format("Create {0}", FileName)
                 Console.WriteLine(StringLog)
                 Call OutLog(StringLog)
@@ -122,7 +122,7 @@ Module JellyfinPluginsMirror
 
             If UnOfficialVersion > 0 Then
                 FileName = "mirror-all-3rd-party-plugin.json"
-                Call CreateManifest(Repositori.UnOffical, False, FileName)
+                Call CreateManifest(Repositori.UnOffical, True, FileName)
                 StringLog = String.Format("Create {0}", FileName)
                 Console.WriteLine(StringLog)
                 Call OutLog(StringLog)
@@ -130,7 +130,7 @@ Module JellyfinPluginsMirror
 
             If OfficialVersion > 0 And UnOfficialVersion > 0 Then
                 FileName = "mirror-all-in-one-plugins.json"
-                Call CreateManifest(Repositori.All, False, FileName)
+                Call CreateManifest(Repositori.All, True, FileName)
                 StringLog = String.Format("Create {0}", FileName)
                 Console.WriteLine(StringLog)
                 Call OutLog(StringLog)
