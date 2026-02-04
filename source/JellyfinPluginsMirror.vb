@@ -123,40 +123,40 @@ Module JellyfinPluginsMirror
 
                 If IsUnOfficialRepository Then
                     FileName = "all-3rd-party-plugin.json"
-                    Call CreateManifest(Repositori.Official, False, FileName)
-                    StringLog = String.Format("Create {0}", FileName)
+                Call CreateManifest(Repositori.UnOffical, False, FileName)
+                StringLog = String.Format("Create {0}", FileName)
                     Console.WriteLine(StringLog)
                     Call OutLog(StringLog)
                 End If
 
                 If IsOfficialRepository And IsUnOfficialRepository Then
                     FileName = "all-in-one-plugins.json"
-                    Call CreateManifest(Repositori.Official, False, FileName)
-                    StringLog = String.Format("Create {0}", FileName)
+                Call CreateManifest(Repositori.All, False, FileName)
+                StringLog = String.Format("Create {0}", FileName)
                     Console.WriteLine(StringLog)
                     Call OutLog(StringLog)
                 End If
 
                 If OfficialVersion > 0 Then
                     FileName = "mirror-all-official-plugins.json"
-                    Call CreateManifest(Repositori.Official, False, FileName)
-                    StringLog = String.Format("Create {0}", FileName)
+                Call CreateManifest(Repositori.Official, True, FileName)
+                StringLog = String.Format("Create {0}", FileName)
                     Console.WriteLine(StringLog)
                     Call OutLog(StringLog)
                 End If
 
                 If UnOfficialVersion > 0 Then
                     FileName = "mirror-all-3rd-party-plugin.json"
-                    Call CreateManifest(Repositori.Official, False, FileName)
-                    StringLog = String.Format("Create {0}", FileName)
+                Call CreateManifest(Repositori.UnOffical, True, FileName)
+                StringLog = String.Format("Create {0}", FileName)
                     Console.WriteLine(StringLog)
                     Call OutLog(StringLog)
                 End If
 
                 If OfficialVersion > 0 And UnOfficialVersion > 0 Then
                     FileName = "mirror-all-in-one-plugins.json"
-                    Call CreateManifest(Repositori.Official, False, FileName)
-                    StringLog = String.Format("Create {0}", FileName)
+                Call CreateManifest(Repositori.All, True, FileName)
+                StringLog = String.Format("Create {0}", FileName)
                     Console.WriteLine(StringLog)
                     Call OutLog(StringLog)
                 End If
@@ -407,6 +407,7 @@ Module JellyfinPluginsMirror
         Dim iBytesRead As Integer
         Dim L As Long, D As Long = 0
         Dim P As Single = 0
+        Dim ResponseUrl As String = Url
         Dim FileStreamer As FileStream
         Dim MyHttpWebRequest As HttpWebRequest
         Dim MyHttpWebResponse As HttpWebResponse
@@ -415,41 +416,41 @@ Module JellyfinPluginsMirror
         FileStreamer = New FileStream(FileName, IO.FileMode.Create)
         Call ConsoleProgressBar(0)
         Try
-            ' Запрос клиента
-            MyHttpWebRequest = HttpWebRequest.Create(Url)
-            MyHttpWebRequest.UserAgent = "Jellyfin-Server/" & JellyfinVer
-            MyHttpWebRequest.Accept = "*/*"
-            MyHttpWebRequest.ContinueTimeout = 5000
-            MyHttpWebRequest.Timeout = 5000
-            MyHttpWebRequest.ReadWriteTimeout = 5000
-            MyHttpWebResponse = MyHttpWebRequest.GetResponse()
+            Do
+                ' Запрос клиента
+                Url = ResponseUrl
+                MyHttpWebRequest = HttpWebRequest.Create(Url)
+                MyHttpWebRequest.UserAgent = "Jellyfin-Server/" & JellyfinVer
+                MyHttpWebRequest.Accept = "*/*"
+                MyHttpWebRequest.ContinueTimeout = 5000
+                MyHttpWebRequest.Timeout = 5000
+                MyHttpWebRequest.ReadWriteTimeout = 5000
+                MyHttpWebResponse = MyHttpWebRequest.GetResponse()
+                ResponseUrl = MyHttpWebResponse.ResponseUri.ToString
+                L = MyHttpWebResponse.ContentLength
+            Loop Until Url = ResponseUrl
             ' Ответ сервера
-            L = MyHttpWebResponse.ContentLength
-            If L > 0 Then
-                'Загрузка файла
-                Using reader As New BinaryReader(MyHttpWebResponse.GetResponseStream())
-                    Do
-                        ' Используем чтение потока данных
-                        iBytesRead = reader.Read(bBuffer, 0, READ_BUFF)
-                        ' Записываем полученный блок в файл
-                        FileStreamer.Write(bBuffer, 0, iBytesRead)
-                        D += iBytesRead
-                        P = D / L * 100
-                        '==============================
-                        'ПрогрессБар
-                        Call ConsoleProgressBar(P)
-                        '==============================
-                    Loop Until iBytesRead = 0
-                End Using
-                Call ConsoleProgressBar(100)
-                DownloadFile = True
-            Else
-                'Если редирект и версия неопределена, значит это запрос версии
-                If IsNothing(JellyfinVer) Then
-                    JellyfinVer = RegularExpressions.Regex.Match(MyHttpWebResponse.ResponseUri.ToString, "v(\d+\.\d+\.\d+)").Groups(1).Value
-                    DownloadFile = True
-                End If
+            'Если редирект и версия неопределена, значит это запрос версии
+            If IsNothing(JellyfinVer) Then
+                JellyfinVer = RegularExpressions.Regex.Match(MyHttpWebResponse.ResponseUri.ToString, "v(\d+\.\d+)\.\d+").Groups(1).Value
             End If
+            'Загрузка файла
+            Using reader As New BinaryReader(MyHttpWebResponse.GetResponseStream())
+                Do
+                    ' Используем чтение потока данных
+                    iBytesRead = reader.Read(bBuffer, 0, READ_BUFF)
+                    ' Записываем полученный блок в файл
+                    FileStreamer.Write(bBuffer, 0, iBytesRead)
+                    D += iBytesRead
+                    P = D / L * 100
+                    '==============================
+                    'ПрогрессБар
+                    Call ConsoleProgressBar(P)
+                    '==============================
+                Loop Until iBytesRead = 0
+            End Using
+            Call ConsoleProgressBar(100)
+            DownloadFile = True
             FileStreamer.Close()
         Catch ex As Exception
             FileStreamer.Close()
@@ -610,16 +611,18 @@ Module JellyfinPluginsMirror
         Dim BarWidth As Integer = Console.WindowWidth - 5
         Dim CurrentColor As ConsoleColor = Console.ForegroundColor
         Dim Bar As String
-        Value = Value / 100
-        If Value > 1 Then
-            Bar = Space(Console.WindowWidth)
-        Else
-            Bar = StrDup(CInt(Value * BarWidth), "▓") & StrDup(BarWidth - CInt(Value * BarWidth), "░") & Format(Value, "0%").PadLeft(5)
+        If Not Value < 0 Then
+            Value = Value / 100
+            If Value > 1 Then
+                Bar = Space(Console.WindowWidth)
+            Else
+                Bar = StrDup(CInt(Value * BarWidth), "▓") & StrDup(BarWidth - CInt(Value * BarWidth), "░") & Format(Value, "0%").PadLeft(5)
+            End If
+            Console.ForegroundColor = Color
+            Console.Write(Bar)
+            Console.SetCursorPosition(0, CursorRowPosition)
+            Console.ForegroundColor = CurrentColor
         End If
-        Console.ForegroundColor = Color
-        Console.Write(Bar)
-        Console.SetCursorPosition(0, CursorRowPosition)
-        Console.ForegroundColor = CurrentColor
     End Sub
 
 End Module
