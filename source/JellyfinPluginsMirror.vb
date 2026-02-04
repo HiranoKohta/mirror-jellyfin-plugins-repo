@@ -11,6 +11,7 @@ Imports System.Web
 Module JellyfinPluginsMirror
 
     Private Const READ_BUFF As Integer = 1024
+    Private Const VERSION_URL As String = "https://github.com/jellyfin/jellyfin/releases/latest"
     Private Const REPO_URL As String = "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main"
     Private Const REPO_PATH As String = "H:\GitHub\mirror-jellyfin-plugins-repo"
     Private Const REPO_LIST As String = "repo-list.txt"
@@ -18,6 +19,7 @@ Module JellyfinPluginsMirror
     Private Const PLUGINS_PATH As String = REPO_PATH & "\files"
     Private Const OFFICIAL_REPO As String = "repo.jellyfin.org"
 
+    Private JellyfinVer As String
     Private Urls() As String
     Private Plugins() As Plugin
     Private OfficialVersion As Integer = 0
@@ -53,12 +55,22 @@ Module JellyfinPluginsMirror
         UnOffical = 2
     End Enum
 
+    '========================================
+    'Принудительная установка версии Jellyfin
+    '----------------------------------------
+    'JellyfinPluginsMirror.exe /v 10.10.0
+    '========================================
     Sub Main()
-        Dim StringLog As String, FileName As String
-        Dim RepoList As String = Path.Combine(Path.GetTempPath, REPO_LIST)
-        Dim Url As String = REPO_URL & "/" & REPO_LIST
+        Dim StringLog As String, FileName As String, Url As String
         Dim LogFile As String = Path.Combine(REPO_PATH, MIRROR_LOG)
-        File.Delete(LogFile)
+        Dim Arg() As String = Split(Command(), "/")
+        IO.File.Delete(LogFile)
+        For Each A In Arg
+            Select Case True
+                Case A.ToUpper.StartsWith("V")
+                    JellyfinVer = A.Substring(1).Trim
+            End Select
+        Next
         Console.Clear()
         Console.CursorVisible = False
         Console.Title = "Jellyfin Plugins Mirror"
@@ -70,84 +82,97 @@ Module JellyfinPluginsMirror
         Console.WriteLine(StringLog)
         Call OutLog(StringLog)
         '====================
+        FileName = Path.Combine(Path.GetTempPath, "LastVersion.html")
+        Url = VERSION_URL
+        'Запрос текущей версии Jellyfin
+        Call DownloadFile(Url, FileName)
+        FileName = Path.Combine(Path.GetTempPath, REPO_LIST)
+        '====================
+        StringLog = String.Format("Jellyfin v{0}", JellyfinVer)
+        Console.WriteLine(StringLog)
+        Call OutLog(StringLog)
+        '====================
+        ' Загрузка списка репозиториев
+        '====================
         StringLog = String.Format(vbCrLf & "Loading list from {0}", Url)
         Console.WriteLine(StringLog)
         Call OutLog(StringLog)
         '====================
-        If DownloadFile(Url, RepoList) Then
-            Urls = IO.File.ReadAllLines(RepoList, System.Text.Encoding.UTF8)
+        Url = REPO_URL & "/" & REPO_LIST
+        If DownloadFile(Url, FileName) Then
+                Urls = IO.File.ReadAllLines(FileName, System.Text.Encoding.UTF8)
+                Console.ForegroundColor = ConsoleColor.White
+                '====================
+                StringLog = String.Format("Loading {0} repository.", Urls.Length)
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+                '====================
+                Call Start()
+                StringLog = vbCrLf
+                Console.ForegroundColor = ConsoleColor.White
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+
+                If IsOfficialRepository Then
+                    FileName = "all-official-plugins.json"
+                    Call CreateManifest(Repositori.Official, False, FileName)
+                    StringLog = String.Format("Create {0}", FileName)
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                End If
+
+                If IsUnOfficialRepository Then
+                    FileName = "all-3rd-party-plugin.json"
+                    Call CreateManifest(Repositori.Official, False, FileName)
+                    StringLog = String.Format("Create {0}", FileName)
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                End If
+
+                If IsOfficialRepository And IsUnOfficialRepository Then
+                    FileName = "all-in-one-plugins.json"
+                    Call CreateManifest(Repositori.Official, False, FileName)
+                    StringLog = String.Format("Create {0}", FileName)
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                End If
+
+                If OfficialVersion > 0 Then
+                    FileName = "mirror-all-official-plugins.json"
+                    Call CreateManifest(Repositori.Official, False, FileName)
+                    StringLog = String.Format("Create {0}", FileName)
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                End If
+
+                If UnOfficialVersion > 0 Then
+                    FileName = "mirror-all-3rd-party-plugin.json"
+                    Call CreateManifest(Repositori.Official, False, FileName)
+                    StringLog = String.Format("Create {0}", FileName)
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                End If
+
+                If OfficialVersion > 0 And UnOfficialVersion > 0 Then
+                    FileName = "mirror-all-in-one-plugins.json"
+                    Call CreateManifest(Repositori.Official, False, FileName)
+                    StringLog = String.Format("Create {0}", FileName)
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                End If
+
+                StringLog = String.Format(vbCrLf & "Update plugins mirror completed.")
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+            Else
+                Console.ForegroundColor = ConsoleColor.Red
+                '====================
+                StringLog = String.Format(vbCrLf & "Failed download! Continuation is impossible.")
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+            End If
             Console.ForegroundColor = ConsoleColor.White
-            '====================
-            StringLog = String.Format("Loading {0} repository.", Urls.Length)
-            Console.WriteLine(StringLog)
-            Call OutLog(StringLog)
-            '====================
-            Call Start()
-            StringLog = vbCrLf
-            Console.ForegroundColor = ConsoleColor.White
-            Console.WriteLine(StringLog)
-            Call OutLog(StringLog)
-
-            If IsOfficialRepository Then
-                FileName = "all-official-plugins.json"
-                Call CreateManifest(Repositori.Official, False, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            End If
-
-            If IsUnOfficialRepository Then
-                FileName = "all-3rd-party-plugin.json"
-                Call CreateManifest(Repositori.UnOffical, False, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            End If
-
-            If IsOfficialRepository And IsUnOfficialRepository Then
-                FileName = "all-in-one-plugins.json"
-                Call CreateManifest(Repositori.All, False, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            End If
-
-            If OfficialVersion > 0 Then
-                FileName = "mirror-all-official-plugins.json"
-                Call CreateManifest(Repositori.Official, True, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            End If
-
-            If UnOfficialVersion > 0 Then
-                FileName = "mirror-all-3rd-party-plugin.json"
-                Call CreateManifest(Repositori.UnOffical, True, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            End If
-
-            If OfficialVersion > 0 And UnOfficialVersion > 0 Then
-                FileName = "mirror-all-in-one-plugins.json"
-                Call CreateManifest(Repositori.All, True, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            End If
-
-            StringLog = String.Format(vbCrLf & "Update plugins mirror completed.")
-            Console.WriteLine(StringLog)
-            Call OutLog(StringLog)
-        Else
-            Console.ForegroundColor = ConsoleColor.Red
-            '====================
-            StringLog = String.Format(vbCrLf & "Failed download! Continuation is impossible.")
-            Console.WriteLine(StringLog)
-            Call OutLog(StringLog)
-        End If
-        Console.ForegroundColor = ConsoleColor.White
-        StringLog = String.Format("Finish updating in {0}", Format(Now, "yyyy-MM-dd HH:mm:ss"))
+            StringLog = String.Format("Finish updating in {0}", Format(Now, "yyyy-MM-dd HH:mm:ss"))
         Console.WriteLine(StringLog)
         Call OutLog(StringLog)
         Console.ResetColor()
@@ -162,6 +187,9 @@ Module JellyfinPluginsMirror
         Dim JsonArray() As String
         ReDim Plugins(-1)
         Maniafest = Path.Combine(Path.GetTempPath, "manifest.json")
+        '===== Для теста репозитория =====
+        'Urls = {"https://intro-skipper.org/manifest.json"}
+        '=================================
         For I = 0 To Urls.Length - 1
             UrlPlugin = Urls(I)
             If UrlPlugin.Length > 0 Then
@@ -172,16 +200,16 @@ Module JellyfinPluginsMirror
                         IsUnOfficialRepository = True
                     End If
                     Console.ForegroundColor = ConsoleColor.Green
-                        '====================
-                        StringLog = String.Format(vbCrLf & vbCrLf & "{0}. {1} - {2}", I + 1, UrlPlugin, "OK.")
-                        Console.WriteLine(StringLog)
-                        Call OutLog(StringLog)
-                        '====================
-                        JsonArray = IO.File.ReadAllLines(Maniafest, System.Text.Encoding.UTF8)
-                        Call GetPlugins(JsonArray)
-                        File.Delete(Maniafest)
-                    Else
-                        Console.ForegroundColor = ConsoleColor.Red
+                    '====================
+                    StringLog = String.Format(vbCrLf & vbCrLf & "{0}. {1} - {2}", I + 1, UrlPlugin, "OK.")
+                    Console.WriteLine(StringLog)
+                    Call OutLog(StringLog)
+                    '====================
+                    JsonArray = IO.File.ReadAllLines(Maniafest, System.Text.Encoding.UTF8)
+                    Call GetPlugins(JsonArray)
+                    File.Delete(Maniafest)
+                Else
+                    Console.ForegroundColor = ConsoleColor.Red
                     '====================
                     StringLog = String.Format(vbCrLf & vbCrLf & "{0}. {1} - {2}", I + 1, UrlPlugin, "Failed download!")
                     Console.WriteLine(StringLog)
@@ -380,38 +408,49 @@ Module JellyfinPluginsMirror
         Dim L As Long, D As Long = 0
         Dim P As Single = 0
         Dim FileStreamer As FileStream
+        Dim MyHttpWebRequest As HttpWebRequest
+        Dim MyHttpWebResponse As HttpWebResponse
+        Dim bBuffer(READ_BUFF - 1) As Byte
         DownloadFile = False
         FileStreamer = New FileStream(FileName, IO.FileMode.Create)
         Call ConsoleProgressBar(0)
         Try
             ' Запрос клиента
-            Dim MyHttpWebRequest As HttpWebRequest = HttpWebRequest.Create(Url)
-            MyHttpWebRequest.UserAgent = "Jellyfin Server"
+            MyHttpWebRequest = HttpWebRequest.Create(Url)
+            MyHttpWebRequest.UserAgent = "Jellyfin-Server/" & JellyfinVer
             MyHttpWebRequest.Accept = "*/*"
             MyHttpWebRequest.ContinueTimeout = 5000
             MyHttpWebRequest.Timeout = 5000
             MyHttpWebRequest.ReadWriteTimeout = 5000
-            Dim MyHttpWebResponse As HttpWebResponse = MyHttpWebRequest.GetResponse()
+            MyHttpWebResponse = MyHttpWebRequest.GetResponse()
             ' Ответ сервера
             L = MyHttpWebResponse.ContentLength
-            Dim bBuffer(READ_BUFF - 1) As Byte
-            Using reader As New BinaryReader(MyHttpWebResponse.GetResponseStream())
-                Do
-                    ' Используем чтение потока данных
-                    iBytesRead = reader.Read(bBuffer, 0, READ_BUFF)
-                    ' Записываем полученный блок в файл
-                    FileStreamer.Write(bBuffer, 0, iBytesRead)
-                    D += iBytesRead
-                    P = D / L * 100
-                    '==============================
-                    'ПрогрессБар
-                    Call ConsoleProgressBar(P)
-                    '==============================
-                Loop Until iBytesRead = 0
-            End Using
-            Call ConsoleProgressBar(100)
+            If L > 0 Then
+                'Загрузка файла
+                Using reader As New BinaryReader(MyHttpWebResponse.GetResponseStream())
+                    Do
+                        ' Используем чтение потока данных
+                        iBytesRead = reader.Read(bBuffer, 0, READ_BUFF)
+                        ' Записываем полученный блок в файл
+                        FileStreamer.Write(bBuffer, 0, iBytesRead)
+                        D += iBytesRead
+                        P = D / L * 100
+                        '==============================
+                        'ПрогрессБар
+                        Call ConsoleProgressBar(P)
+                        '==============================
+                    Loop Until iBytesRead = 0
+                End Using
+                Call ConsoleProgressBar(100)
+                DownloadFile = True
+            Else
+                'Если редирект и версия неопределена, значит это запрос версии
+                If IsNothing(JellyfinVer) Then
+                    JellyfinVer = RegularExpressions.Regex.Match(MyHttpWebResponse.ResponseUri.ToString, "v(\d+\.\d+\.\d+)").Groups(1).Value
+                    DownloadFile = True
+                End If
+            End If
             FileStreamer.Close()
-            DownloadFile = True
         Catch ex As Exception
             FileStreamer.Close()
             IO.File.Delete(FileName)
