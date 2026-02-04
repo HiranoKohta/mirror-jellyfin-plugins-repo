@@ -422,17 +422,17 @@ Module JellyfinPluginsMirror
                 MyHttpWebRequest = HttpWebRequest.Create(Url)
                 MyHttpWebRequest.UserAgent = "Jellyfin-Server/" & JellyfinVer
                 MyHttpWebRequest.Accept = "*/*"
-                MyHttpWebRequest.ContinueTimeout = 5000
                 MyHttpWebRequest.Timeout = 5000
+                MyHttpWebRequest.ContinueTimeout = 5000
                 MyHttpWebRequest.ReadWriteTimeout = 5000
                 MyHttpWebResponse = MyHttpWebRequest.GetResponse()
                 ResponseUrl = MyHttpWebResponse.ResponseUri.ToString
                 L = MyHttpWebResponse.ContentLength
             Loop Until Url = ResponseUrl
             ' Ответ сервера
-            'Если редирект и версия неопределена, значит это запрос версии
+            'Если неопределена, значит это запрос версии
             If IsNothing(JellyfinVer) Then
-                JellyfinVer = RegularExpressions.Regex.Match(MyHttpWebResponse.ResponseUri.ToString, "v(\d+\.\d+)\.\d+").Groups(1).Value
+                JellyfinVer = RegularExpressions.Regex.Match(MyHttpWebResponse.ResponseUri.ToString, "v(\d+\.\d+\.\d+)").Groups(1).Value
             End If
             'Загрузка файла
             Using reader As New BinaryReader(MyHttpWebResponse.GetResponseStream())
