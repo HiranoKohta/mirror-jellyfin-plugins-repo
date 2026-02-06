@@ -100,79 +100,79 @@ Module JellyfinPluginsMirror
         '====================
         Url = REPO_URL & "/" & REPO_LIST
         If DownloadFile(Url, FileName) Then
-                Urls = IO.File.ReadAllLines(FileName, System.Text.Encoding.UTF8)
-                Console.ForegroundColor = ConsoleColor.White
-                '====================
-                StringLog = String.Format("Loading {0} repository.", Urls.Length)
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-                '====================
-                Call Start()
-                StringLog = vbCrLf
-                Console.ForegroundColor = ConsoleColor.White
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-
-                If IsOfficialRepository Then
-                    FileName = "all-official-plugins.json"
-                    Call CreateManifest(Repositori.Official, False, FileName)
-                    StringLog = String.Format("Create {0}", FileName)
-                    Console.WriteLine(StringLog)
-                    Call OutLog(StringLog)
-                End If
-
-                If IsUnOfficialRepository Then
-                    FileName = "all-3rd-party-plugin.json"
-                Call CreateManifest(Repositori.UnOffical, False, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                    Console.WriteLine(StringLog)
-                    Call OutLog(StringLog)
-                End If
-
-                If IsOfficialRepository And IsUnOfficialRepository Then
-                    FileName = "all-in-one-plugins.json"
-                Call CreateManifest(Repositori.All, False, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                    Console.WriteLine(StringLog)
-                    Call OutLog(StringLog)
-                End If
-
-                If OfficialVersion > 0 Then
-                    FileName = "mirror-all-official-plugins.json"
-                Call CreateManifest(Repositori.Official, True, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                    Console.WriteLine(StringLog)
-                    Call OutLog(StringLog)
-                End If
-
-                If UnOfficialVersion > 0 Then
-                    FileName = "mirror-all-3rd-party-plugin.json"
-                Call CreateManifest(Repositori.UnOffical, True, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                    Console.WriteLine(StringLog)
-                    Call OutLog(StringLog)
-                End If
-
-                If OfficialVersion > 0 And UnOfficialVersion > 0 Then
-                    FileName = "mirror-all-in-one-plugins.json"
-                Call CreateManifest(Repositori.All, True, FileName)
-                StringLog = String.Format("Create {0}", FileName)
-                    Console.WriteLine(StringLog)
-                    Call OutLog(StringLog)
-                End If
-
-                StringLog = String.Format(vbCrLf & "Update plugins mirror completed.")
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            Else
-                Console.ForegroundColor = ConsoleColor.Red
-                '====================
-                StringLog = String.Format(vbCrLf & "Failed download! Continuation is impossible.")
-                Console.WriteLine(StringLog)
-                Call OutLog(StringLog)
-            End If
+            Urls = IO.File.ReadAllLines(FileName, System.Text.Encoding.UTF8)
             Console.ForegroundColor = ConsoleColor.White
-            StringLog = String.Format("Finish updating in {0}", Format(Now, "yyyy-MM-dd HH:mm:ss"))
+            '====================
+            StringLog = String.Format("Loading {0} repository.", Urls.Length)
+            Console.WriteLine(StringLog)
+            Call OutLog(StringLog)
+            '====================
+            Call Start()
+            StringLog = vbCrLf
+            Console.ForegroundColor = ConsoleColor.White
+            Console.WriteLine(StringLog)
+            Call OutLog(StringLog)
+
+            If IsOfficialRepository Then
+                FileName = "all-official-plugins.json"
+                StringLog = String.Format("Create {0}", FileName)
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+                Call CreateManifest(Repositori.Official, False, FileName)
+            End If
+
+            If IsUnOfficialRepository Then
+                FileName = "all-3rd-party-plugin.json"
+                StringLog = String.Format("Create {0}", FileName)
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+                Call CreateManifest(Repositori.UnOffical, False, FileName)
+            End If
+
+            If IsOfficialRepository And IsUnOfficialRepository Then
+                FileName = "all-in-one-plugins.json"
+                StringLog = String.Format("Create {0}", FileName)
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+                Call CreateManifest(Repositori.All, False, FileName)
+            End If
+
+            If OfficialVersion > 0 Then
+                FileName = "mirror-all-official-plugins.json"
+                StringLog = String.Format("Create {0}", FileName)
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+                Call CreateManifest(Repositori.Official, True, FileName)
+            End If
+
+            If UnOfficialVersion > 0 Then
+                FileName = "mirror-all-3rd-party-plugin.json"
+                StringLog = String.Format("Create {0}", FileName)
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+                Call CreateManifest(Repositori.UnOffical, True, FileName)
+            End If
+
+            If OfficialVersion > 0 And UnOfficialVersion > 0 Then
+                FileName = "mirror-all-in-one-plugins.json"
+                StringLog = String.Format("Create {0}", FileName)
+                Console.WriteLine(StringLog)
+                Call OutLog(StringLog)
+                Call CreateManifest(Repositori.All, True, FileName)
+            End If
+
+            StringLog = String.Format(vbCrLf & "Update plugins mirror completed.")
+            Console.WriteLine(StringLog)
+            Call OutLog(StringLog)
+        Else
+            Console.ForegroundColor = ConsoleColor.Red
+            '====================
+            StringLog = String.Format(vbCrLf & "Failed download! Continuation is impossible.")
+            Console.WriteLine(StringLog)
+            Call OutLog(StringLog)
+        End If
+        Console.ForegroundColor = ConsoleColor.White
+        StringLog = String.Format("Finish updating in {0}", Format(Now, "yyyy-MM-dd HH:mm:ss"))
         Console.WriteLine(StringLog)
         Call OutLog(StringLog)
         Console.ResetColor()
