@@ -52,5 +52,6 @@ https://raw.githubusercontent.com/TheXaman/jellyfin-plugin-languageTags/main/man
 https://raw.githubusercontent.com/vosmiic/jellyfin-ani-sync/master/manifest.json
 https://raw.githubusercontent.com/ztffn/Jellyfin-Roulette/main/manifest.json
 https://www.iamparadox.dev/jellyfin/plugins/manifest.json
+https://files.firecore.com/jellyfin/manifest.json
 https://repo.xkrivo.net/jellyfin/manifest.json
 https://intro-skipper.org/manifest.json
