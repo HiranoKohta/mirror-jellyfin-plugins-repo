@@ -71,7 +71,7 @@ To do this, do the following:
 
 3. Find the section responsible for the repository.
 
-4. Enter a link to the repository there.
+4. Enter a link to an alternative repository there.
 
 5. Close the file by saving the changes.
 
@@ -161,7 +161,7 @@ _______
 
 3. Найти раздел отвечающий за репозиторий.
 
-4. Вписать туда ссылку на репозиторий.
+4. Вписать туда ссылку на альтернативный репозиторий.
 
 5. Закрыть файл сохранив изменения.
 
