@@ -3,7 +3,7 @@ English
 =======
 English is not my native language, so the text may not have machine translation accuracy, I'm sorry.
 _______
-This Jellyfin plugin mirror is intended for those who, for some reason, have the regulator block the sites of the original repositories.
+This Jellyfin plugin mirror is intended for those who, for some reason, have the provider block the sites of the original repositories.
 
 
 There are 2 types of mirrors in total.:
@@ -90,7 +90,7 @@ _______
 Russian
 =======
 
-Это зеркало плагинов Jellyfin предназначено для тех, у кого по каким либо причинам регулятор блокирует сайты оригинальных репозиториев.
+Это зеркало плагинов Jellyfin предназначено для тех, у кого по каким либо причинам провайдер блокирует сайты оригинальных репозиториев.
 
 
 Всего здесь находится 2 типа зеркал:
