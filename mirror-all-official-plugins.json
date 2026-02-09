@@ -850,6 +850,14 @@
         "timestamp": "2022-01-08T17:25:18Z"
       },
       {
+        "version": "8.0.0.0",
+        "checksum": "a45b5384f3bb81a86f7b4fd4da18a644",
+        "changelog": "- 10.8 support (#47) @crobibero\n- Fix #36: Save button has wrong text (#40) @danimart1991\n\n### New features and improvements ###\n- Strip Collection string multilanguage (#43) @danimart1991\n- Fix #38: NullReferenceException on Collection Name (#41) @danimart1991\n\n### Dependency updates ###\n- chore(deps): bump release-drafter/release-drafter from v5.14.0 to v5.15.0 (#39) @dependabot\n\n### CI & build changes ###\n- chore(ci): builds, releas drafter and more (#34) @h1dden-da3m0n",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/TMDb%20Box%20Sets/8.0.0.0/tmdb-box-sets_8.0.0.0.zip",
+        "timestamp": "2021-11-01T21:03:17Z"
+      },
+      {
         "version": "7.0.0.0",
         "checksum": "1551792e6af4d36f2cead01153c73cf0",
         "changelog": "changelog\n",
@@ -1937,6 +1945,14 @@
         "targetAbi": "10.8.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/OPDS/3.0.0.0/opds_3.0.0.0.zip",
         "timestamp": "2022-01-08T17:24:12Z"
+      },
+      {
+        "version": "2.0.0.0",
+        "checksum": "2ee42cc03d0e4f754fabb1321b005a5a",
+        "changelog": "### Code or Repo Maintenance ###\n- 10.8 support (#1) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/OPDS/2.0.0.0/opds_2.0.0.0.zip",
+        "timestamp": "2021-11-01T20:51:30Z"
       },
       {
         "version": "1.0.0.0",
