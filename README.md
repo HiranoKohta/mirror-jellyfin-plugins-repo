@@ -61,7 +61,7 @@ Log of the latest update of the repository and plugin mirrors:
 
 [mirror-log.html](http://hiranokohta.github.io/mirror-jellyfin-plugins-repo/mirror-log.html)
 _______
-If the plug-in section does not open in your Jellyfin server settings (this may be due to blocking the resource where the repository is located), then you can manually edit the file. Jellyfin/config/system.xml
+If the plug-in section does not open in your Jellyfin server settings (this may be due to blocking the resource where the repository is located), then you can manually edit the file. Jellyfin/config/system.xml (/etc/jellyfin/system.xml)
 
 To do this, do the following:
 
@@ -150,7 +150,7 @@ Russian
 _______
 
 Если у вас в настройках сервера Jellyfin не открывается раздел с плагинами (такое может быть из-за блокировки ресурса на котором расположен репозиторий),
-тогда можно вручную отредактировать файл Jellyfin/config/system.xml
+тогда можно вручную отредактировать файл Jellyfin/config/system.xml (/etc/jellyfin/system.xml)
 
 
 Для этого нужно сделать следующее:
