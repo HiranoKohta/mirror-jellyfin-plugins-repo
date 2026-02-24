@@ -97,7 +97,7 @@
       },
       {
         "version": "0.0.0.9000",
-        "checksum": "b8e65701ede316138932ca2582f48421",
+        "checksum": "b0b16a4012d67d935220e0e674cbdc36",
         "changelog": "Nightly build\n",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/9p4/SSO%20Authentication/0.0.0.9000/sso-authentication_0.0.0.9000.zip",
@@ -502,14 +502,6 @@
         "timestamp": "2025-08-09T00:00:00Z"
       },
       {
-        "version": "1.0.0.5",
-        "checksum": "e14ed0100239285a169ffd3ef0aeba28",
-        "changelog": "- Add Auth notifications - Fix bug",
-        "targetAbi": "10.9.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/cedev-1/Discord%20Notifier/1.0.0.5/Jellyfin.Plugin.DiscordNotifier-v1.0.0.5.zip",
-        "timestamp": "2025-07-03T00:00:00Z"
-      },
-      {
         "version": "1.0.0.0",
         "checksum": "eb850654291b41025ea2f7f5359117fb",
         "changelog": "- Initial release",
@@ -810,6 +802,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/logo.png",
     "versions": [
       {
+        "version": "1.8.0.0",
+        "checksum": "c7d7ae1ec34070bc89811d94493c333c",
+        "changelog": "- feat: add summer, spring, carnival and cherry blossom themes\n- fix: some improvements and bug fixes",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/1.8.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-02-21T15:44:23Z"
+      },
+      {
+        "version": "1.7.0.0",
+        "checksum": "ff5f1554c0c81c28e72115ebbdc2bdc4",
+        "changelog": "- feat: add customizable auto seasonal list via config page\n- feat: add new season theme 'resurrection' by Bioflash257",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/1.7.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-02-17T00:24:10Z"
+      },
+      {
         "version": "1.6.3.0",
         "checksum": "4671cbecd5fe0c59a81c430b6f2403f9",
         "changelog": "- fix path issue on subpath installations",
@@ -916,6 +924,22 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/logo.png",
     "versions": [
+      {
+        "version": "1.6.6.0",
+        "checksum": "d8f30797ce246212d1ebdd6ffd4aa3ff",
+        "changelog": "- feat: add static backdrop also for video backdrops\n- fix: renaming issue of settings (avoiding conflict with other plugins)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/1.6.6.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-02-19T18:03:48Z"
+      },
+      {
+        "version": "1.6.5.0",
+        "checksum": "c48d3998b8f783bd44c7ad47c906c531",
+        "changelog": "- refactored seasonal UI settings\n- fix local trailer/backdrop issue that could potentially cause Jellyfin WebSockets to be 'crowded out'",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/1.6.5.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-02-17T00:17:05Z"
+      },
       {
         "version": "1.6.4.0",
         "checksum": "6bb0eea92f9b226a99e3f643a0fafc44",
@@ -1654,6 +1678,14 @@
     "owner": "Eeeeelias",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/logo.png",
     "versions": [
+      {
+        "version": "1.5.0.0",
+        "checksum": "20ee2180105ae93c6dd758f6938509fa",
+        "changelog": "Remove disliked songs",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/1.5.0.0/PlaylistGenerator_1.5.0.0.zip",
+        "timestamp": "2026-02-23T12:13:45Z"
+      },
       {
         "version": "1.4.3.0",
         "checksum": "9aeb65a15ce1a6efd5cd3ddd344d12ba",
@@ -2604,6 +2636,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jyourstone/SmartLists/logo.jpg",
     "versions": [
       {
+        "version": "10.11.22.0",
+        "checksum": "af3be72e877e376a60ce2be155e01656",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.22.0 -->\n\n## What's Changed\n### New Features\n* Added support for grabbing external lists from MDBList, IMDb, Trakt, and TMDB\n* Added support for sorting by External List Order\n* Added support for including extras\n* Added Last Episode Air Date sorting option\n### Bug Fixes\n* The equal/not equal operators now work properly with list fields, such as Studios.\n### Other Changes\n* Improved music collection cover generation\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.21.0...v10.11.22.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jyourstone/SmartLists/10.11.22.0/Jellyfin.Plugin.SmartLists_v10.11.22.0.zip",
+        "timestamp": "2026-02-20"
+      },
+      {
         "version": "10.11.21.0",
         "checksum": "bdb881719829e9e545ebe8d4c7e01646",
         "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.21.0 -->\n\n## What's Changed\n### New Features\n* Added new 'Library Name' field\n* You can now bulk convert playlists/collections\n* Added support for automated backups in settings\n### Other Changes\n* Optimized rule field extraction logic - Major increase in performance\n* Minor UX fixes\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.20.0...v10.11.21.0",
@@ -3389,6 +3429,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/LinFor%20&%20skrashevich/%d0%9a%d0%b8%d0%bd%d0%be%d0%9f%d0%be%d0%b8%d1%81%d0%ba/25f8c0315e6ccb2aa6c2642e48f2c9e9.png",
     "versions": [
       {
+        "version": "10.10.3.0",
+        "checksum": "de4cf02e03339d61933a6869bf6be6f4",
+        "changelog": "Исправлена совместимость с 10.10.*",
+        "targetAbi": "10.10.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/LinFor%20&%20skrashevich/%d0%9a%d0%b8%d0%bd%d0%be%d0%9f%d0%be%d0%b8%d1%81%d0%ba/10.10.3.0/jellyfin-plugin-kinopoisk_10.10.3.0.zip",
+        "timestamp": "2026-02-18T07:38:15Z"
+      },
+      {
         "version": "10.10.2.0",
         "checksum": "4cd0b8b5fe5db078b74eb472146773ac",
         "changelog": "Исправлена совместимость с 10.11.(0-4)",
@@ -3599,6 +3647,150 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.5.1",
+        "checksum": "262664224c65f361d2fb6981a862f511",
+        "changelog": "## [0.26.5.1] - 2026-02-23\n\n### 🐛 Bug Fixes\n\n- Remove hardcoded subtitle oang\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.5.1/gelato_0.26.5.1.zip",
+        "timestamp": "2026-02-23T17:50:04Z"
+      },
+      {
+        "version": "0.26.5.0",
+        "checksum": "9f2e1b75ad37d33c8e57b232123ee718",
+        "changelog": "## [0.26.5.0] - 2026-02-23\n\n### 🚀 Features\n\n- Move user configs to own tab\n- Prewarm subtitles\n\n### 🐛 Bug Fixes\n\n- Remove deprecated remote subs flag\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.5.0/gelato_0.26.5.0.zip",
+        "timestamp": "2026-02-23T17:24:24Z"
+      },
+      {
+        "version": "0.26.4.0",
+        "checksum": "05606951ad8c24b83f5a08fc9cfb83cb",
+        "changelog": "## [0.26.4.0] - 2026-02-23\n\n### 🚀 Features\n\n- Implement subtitle provider integration including an gelato subtitle provider (#112)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.4.0/gelato_0.26.4.0.zip",
+        "timestamp": "2026-02-23T13:38:49Z"
+      },
+      {
+        "version": "0.26.3.0",
+        "checksum": "ab3f2d1d3879432df6cce1399a2403b6",
+        "changelog": "## [0.26.3.0] - 2026-02-22\n\n### 🚀 Features\n\n- Add support for segment providers and add introdb provider (#110)\n\n### 🚜 Refactor\n\n- Code cleanup and null checks (#109)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.3.0/gelato_0.26.3.0.zip",
+        "timestamp": "2026-02-22T10:50:11Z"
+      },
+      {
+        "version": "0.26.2.2",
+        "checksum": "ba0eb9d1fcb6041d6c3069ddde145f6c",
+        "changelog": "## [0.26.2.2] - 2026-02-21\n\n### 🐛 Bug Fixes\n\n- Add item counts to stream filter\n- Added missing closing tag (#108)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.2.2/gelato_0.26.2.2.zip",
+        "timestamp": "2026-02-21T06:51:55Z"
+      },
+      {
+        "version": "0.26.2.1",
+        "checksum": "62dbb77235e7c1387251ece3a031d820",
+        "changelog": "## [0.26.2.1] - 2026-02-20\n\n### 🐛 Bug Fixes\n\n- Added GetResumeItemsLegacy route to stream filter\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.2.1/gelato_0.26.2.1.zip",
+        "timestamp": "2026-02-20T17:53:30Z"
+      },
+      {
+        "version": "0.26.2.0",
+        "checksum": "5904a8a9298df4148819098c160b89a7",
+        "changelog": "## [0.26.2.0] - 2026-02-20\n\n### 🚀 Features\n\n- Use import task from plugin ui for feedback\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.2.0/gelato_0.26.2.0.zip",
+        "timestamp": "2026-02-20T15:36:18Z"
+      },
+      {
+        "version": "0.26.1.10",
+        "checksum": "6dd054039e9848993300eeee4c158144",
+        "changelog": "## [0.26.1.10] - 2026-02-20\n\n### 🐛 Bug Fixes\n\n- Use correct stream ids\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.10/gelato_0.26.1.10.zip",
+        "timestamp": "2026-02-20T14:58:18Z"
+      },
+      {
+        "version": "0.26.1.9",
+        "checksum": "636fde18d1341575513a1326d261f8db",
+        "changelog": "## [0.26.1.9] - 2026-02-20\n\n### 🐛 Bug Fixes\n\n- Revert import logic to 0.25\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.9/gelato_0.26.1.9.zip",
+        "timestamp": "2026-02-20T14:54:12Z"
+      },
+      {
+        "version": "0.26.1.8",
+        "checksum": "5724440f78f29b4e64d9a1bb30869a31",
+        "changelog": "## [0.26.1.8] - 2026-02-20\n\n### 🐛 Bug Fixes\n\n- Lock the tage field to prevent it from being modified\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.8/gelato_0.26.1.8.zip",
+        "timestamp": "2026-02-20T12:59:53Z"
+      },
+      {
+        "version": "0.26.1.7",
+        "checksum": "f0323ce96be4e05729af5897a80db323",
+        "changelog": "## [0.26.1.7] - 2026-02-20\n\n### 🐛 Bug Fixes\n\n- Validate library after import so collections dont dissapear\n- Catalog import form save not persisting\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.7/gelato_0.26.1.7.zip",
+        "timestamp": "2026-02-20T09:12:08Z"
+      },
+      {
+        "version": "0.26.1.6",
+        "checksum": "27caf03f727e85678a4a19a79c295e82",
+        "changelog": "## [0.26.1.6] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Revert item creation to 0.25\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.6/gelato_0.26.1.6.zip",
+        "timestamp": "2026-02-19T19:35:02Z"
+      },
+      {
+        "version": "0.26.1.5",
+        "checksum": "151c4054b2be2bc36b1b10437e642002",
+        "changelog": "## [0.26.1.5] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Revert item creation to 0.25\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.5/gelato_0.26.1.5.zip",
+        "timestamp": "2026-02-19T19:26:20Z"
+      },
+      {
+        "version": "0.26.1.4",
+        "checksum": "a9e28aaa59ff6b546b0b86fdcffaa4dd",
+        "changelog": "## [0.26.1.4] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Catalog form\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.4/gelato_0.26.1.4.zip",
+        "timestamp": "2026-02-19T18:55:12Z"
+      },
+      {
+        "version": "0.26.1.3",
+        "checksum": "b17043ec8085d1030d7fbd5615d7f61a",
+        "changelog": "## [0.26.1.3] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Also purge 0.25 streams\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.3/gelato_0.26.1.3.zip",
+        "timestamp": "2026-02-19T16:26:03Z"
+      },
+      {
+        "version": "0.26.1.2",
+        "checksum": "9b691d550fb50f5a526608c7bbc939ef",
+        "changelog": "## [0.26.1.2] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Mark existing stream as a non virtual\n- Remove stale catalog from importer\n\n### 🚜 Refactor\n\n- Import form\n\n### 🎨 Styling\n\n- Typo\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.2/gelato_0.26.1.2.zip",
+        "timestamp": "2026-02-19T13:59:32Z"
+      },
+      {
+        "version": "0.26.1.1",
+        "checksum": "54257512efeec787de31f5c41e82aaef",
+        "changelog": "## [0.26.1.1] - 2026-02-18\n\n### 🐛 Bug Fixes\n\n- Force bump\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.1/gelato_0.26.1.1.zip",
+        "timestamp": "2026-02-18T21:02:17Z"
+      },
+      {
+        "version": "0.26.1.0",
+        "checksum": "49589d0d19b2bf6113b4e577c20920f0",
+        "changelog": "## [0.26.1.0] - 2026-02-18\n\n### 🚀 Features\n\n- Revert strm and add support for playlists (#103)\n- Migrate Palco caching services to Gelato (#102)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.1.0/gelato_0.26.1.0.zip",
+        "timestamp": "2026-02-18T18:16:35Z"
+      },
+      {
         "version": "0.25.7.0",
         "checksum": "5c93fe9a2ad9260bd27b4a46ae47f56d",
         "changelog": "## [0.25.7.0] - 2026-02-14\n\n### 🚀 Features\n\n- Dont cache if no streams\n",
@@ -3663,14 +3855,6 @@
         "timestamp": "2026-02-03T11:34:44Z"
       },
       {
-        "version": "0.25.3.10",
-        "checksum": "942976facef092ca9bf004f205e521b3",
-        "changelog": "## [0.25.3.10] - 2026-02-01\n\n### 🐛 Bug Fixes\n\n- Mark virtual if no mediasources\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.10/gelato_0.25.3.10.zip",
-        "timestamp": "2026-02-01T13:01:01Z"
-      },
-      {
         "version": "0.25.3.9",
         "checksum": "ad2bd6420204a2af49b738bbd231fca2",
         "changelog": "## [0.25.3.9] - 2026-02-01\n\n### 🐛 Bug Fixes\n\n- Purge task\n",
@@ -3685,142 +3869,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.8/gelato_0.25.3.8.zip",
         "timestamp": "2026-02-01T08:57:55Z"
-      },
-      {
-        "version": "0.25.3.7",
-        "checksum": "270a8ebbc97e9499a6c8a40855abc277",
-        "changelog": "## [0.25.3.7] - 2026-02-01\n\n### 🐛 Bug Fixes\n\n- PresentationUniqueKey generation\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.7/gelato_0.25.3.7.zip",
-        "timestamp": "2026-02-01T08:01:15Z"
-      },
-      {
-        "version": "0.25.3.6",
-        "checksum": "a5ad41d0586e5cd8d71fa921a4b6b1f9",
-        "changelog": "## [0.25.3.6] - 2026-01-30\n\n### 🚜 Refactor\n\n- Meta imports\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.6/gelato_0.25.3.6.zip",
-        "timestamp": "2026-01-30T17:44:49Z"
-      },
-      {
-        "version": "0.25.3.5",
-        "checksum": "9cd280274cb33fb6fc6ecb6700e59084",
-        "changelog": "## [0.25.3.5] - 2026-01-29\n\n### 🚜 Refactor\n\n- Purge task\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.5/gelato_0.25.3.5.zip",
-        "timestamp": "2026-01-29T18:24:21Z"
-      },
-      {
-        "version": "0.25.3.4",
-        "checksum": "08bd1439e645325827c064d046bf808e",
-        "changelog": "## [0.25.3.4] - 2026-01-29\n\n### 🚜 Refactor\n\n- Purge task\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.4/gelato_0.25.3.4.zip",
-        "timestamp": "2026-01-29T18:13:36Z"
-      },
-      {
-        "version": "0.25.3.3",
-        "checksum": "cd205c0f5d6ad827e751e83818dc499b",
-        "changelog": "## [0.25.3.3] - 2026-01-27\n\n### 🐛 Bug Fixes\n\n- Remove wonky catalog pagination import check\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.3/gelato_0.25.3.3.zip",
-        "timestamp": "2026-01-27T12:22:38Z"
-      },
-      {
-        "version": "0.25.3.2",
-        "checksum": "e3b949515d0263842c867c53059607ee",
-        "changelog": "## [0.25.3.2] - 2026-01-25\n\n### 🐛 Bug Fixes\n\n- Typo\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.2/gelato_0.25.3.2.zip",
-        "timestamp": "2026-01-25T19:00:26Z"
-      },
-      {
-        "version": "0.25.3.1",
-        "checksum": "980a58789a583d3ac5dd30eb682d8e83",
-        "changelog": "## [0.25.3.1] - 2026-01-23\n\n### 🐛 Bug Fixes\n\n- Check existing tripping over type\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.1/gelato_0.25.3.1.zip",
-        "timestamp": "2026-01-23T19:09:53Z"
-      },
-      {
-        "version": "0.25.3.0",
-        "checksum": "94a7d7ee81b0215275b6a7f0d13cc7a0",
-        "changelog": "## [0.25.3.0] - 2026-01-23\n\n### 🚀 Features\n\n- Check if user as access on insert\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.0/gelato_0.25.3.0.zip",
-        "timestamp": "2026-01-23T18:28:22Z"
-      },
-      {
-        "version": "0.25.2.0",
-        "checksum": "200c98e8b92148f4f7f41374e5dcd1e8",
-        "changelog": "## [0.25.2.0] - 2026-01-23\n\n### 🚀 Features\n\n- Check if user as access on insert\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.2.0/gelato_0.25.2.0.zip",
-        "timestamp": "2026-01-23T16:06:27Z"
-      },
-      {
-        "version": "0.25.1.9",
-        "checksum": "9dde0f61907426cbae269c0cc7fc53ba",
-        "changelog": "## [0.25.1.9] - 2026-01-23\n\n### 🐛 Bug Fixes\n\n- Save users to stream, so that probe data os shared\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.9/gelato_0.25.1.9.zip",
-        "timestamp": "2026-01-23T12:33:56Z"
-      },
-      {
-        "version": "0.25.1.8",
-        "checksum": "faac3a2dd9fcfe3a07b3b7bc471d7e3c",
-        "changelog": "## [0.25.1.8] - 2026-01-23\n\n### 🐛 Bug Fixes\n\n- Dont refresh streams for non user\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.8/gelato_0.25.1.8.zip",
-        "timestamp": "2026-01-23T11:55:35Z"
-      },
-      {
-        "version": "0.25.1.7",
-        "checksum": "dc4c60c050cbb500e78a9afe6652edf1",
-        "changelog": "## [0.25.1.7] - 2026-01-23\n\n### ⚙️ Miscellaneous Tasks\n\n- More stream logging\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.7/gelato_0.25.1.7.zip",
-        "timestamp": "2026-01-23T10:53:57Z"
-      },
-      {
-        "version": "0.25.1.6",
-        "checksum": "a9013788c34c9e2b15a44d9a58eae44e",
-        "changelog": "## [0.25.1.6] - 2026-01-20\n\n### 🐛 Bug Fixes\n\n- Reset linked children to clewr ghost versions\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.6/gelato_0.25.1.6.zip",
-        "timestamp": "2026-01-20T20:19:33Z"
-      },
-      {
-        "version": "0.25.1.5",
-        "checksum": "f9c851d36fa2497ea8ee44b2cd77f7ed",
-        "changelog": "## [0.25.1.5] - 2026-01-20\n\n### 🐛 Bug Fixes\n\n- Legacy placeholder path\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.5/gelato_0.25.1.5.zip",
-        "timestamp": "2026-01-20T18:40:50Z"
-      },
-      {
-        "version": "0.25.1.4",
-        "checksum": "5bf7fbdf36d9c55b0f49f33d35d13b64",
-        "changelog": "## [0.25.1.4] - 2026-01-20\n\n### 🐛 Bug Fixes\n\n- Remove stub when streams avaiable\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.4/gelato_0.25.1.4.zip",
-        "timestamp": "2026-01-20T12:36:08Z"
-      },
-      {
-        "version": "0.25.1.3",
-        "checksum": "6fc4379d4d86b01dd05600d772259ff4",
-        "changelog": "## [0.25.1.3] - 2026-01-20\n\n### 🐛 Bug Fixes\n\n- Revert stream handling\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.3/gelato_0.25.1.3.zip",
-        "timestamp": "2026-01-20T11:21:49Z"
-      },
-      {
-        "version": "0.25.1.2",
-        "checksum": "91330cba88c8bae1c83ac9fdf09daa50",
-        "changelog": "## [0.25.1.2] - 2026-01-20\n\n### 🐛 Bug Fixes\n\n- Add ReattachUserDataAsync for Jellyfin 10.11.6 compatibility (#88)\n\n### ⚙️ Miscellaneous Tasks\n\n- *(release)* Bump version to v0.25.1.2\n- *(release)* Bump version to v0.25.1.2\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.1.2/gelato_0.25.1.2.zip",
-        "timestamp": "2026-01-20T10:28:25Z"
       }
     ]
   },
@@ -6092,6 +6140,14 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "6.4.0.0",
+        "checksum": "b1c24106a0408822c31e3e67f5d1517e",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.4.0.0",
+        "targetAbi": "10.11.6",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/6.4.0.0/myanimelist_6.4.0.0.zip",
+        "timestamp": "2026-02-20T03:06:13Z"
+      },
       {
         "version": "6.3.10.2",
         "checksum": "e338025c62759c4b3e2ce1d3299fc53f",
@@ -9008,6 +9064,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/logo.png",
     "versions": [
       {
+        "version": "1.10.11.15",
+        "checksum": "72274e68e40858311059a93a19dc7304",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.15)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/1.10.11.15/intro-skipper-v1.10.11.15.zip",
+        "timestamp": "2026-02-20T19:16:11Z"
+      },
+      {
         "version": "1.10.11.14",
         "checksum": "dc5104987d5978008bd86f63934bea4a",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.14)\n",
@@ -9026,6 +9090,25 @@
     ]
   },
   {
+    "name": "Segment Editor",
+    "guid": "ace21d44-a4e5-4a85-ae75-acd2e24a9574",
+    "category": "MoviesAndShows",
+    "description": "Packages the Segment Editor web app (built from intro-skipper/segment-editor) as a Jellyfin server plugin",
+    "overview": "Segment editing UI embedded as a plugin page",
+    "owner": "Intro Skipper",
+    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
+    "versions": [
+      {
+        "version": "0.1.4.0",
+        "checksum": "4bcf70b69603dc0d527c66d125fe692f",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.4.0/segment-editor-plugin-v0.1.4.0.zip",
+        "timestamp": "2026-02-22T11:25:45Z"
+      }
+    ]
+  },
+  {
     "name": "EDL Creator",
     "guid": "6b0e323a-4aee-4b10-813f-1e060488ae90",
     "category": "MoviesAndShows",
@@ -9037,7 +9120,7 @@
       {
         "version": "0.5.0.0",
         "checksum": "de00b28cbfe51e1d6665083b3e76d6ec",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-edl/blob/10.10.2/CHANGELOG.md)",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-edl/blob/main/CHANGELOG.md)",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper%20(forked%20from%20Endrl)/EDL%20Creator/0.5.0.0/Jellyfin.Plugin.Edl-0.5.0.zip",
         "timestamp": "2025-10-21T21:05:45Z"
