@@ -1155,6 +1155,14 @@
         "timestamp": "2022-01-07T21:16:19Z"
       },
       {
+        "version": "4.0.0.0",
+        "checksum": "4dccac26c6470cebc25cb8d6e4201b4d",
+        "changelog": "### Code or Repo Maintenance ###\n- 10.8 support (#13) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Cover%20Art%20Archive/4.0.0.0/cover-art-archive_4.0.0.0.zip",
+        "timestamp": "2021-11-01T20:57:28Z"
+      },
+      {
         "version": "3.0.0.0",
         "checksum": "ca0ae1e2575cae9cb8d9f0164b8ab92c",
         "changelog": "### New features and improvements ###\n- chore: plugin images (#5) @h1dden-da3m0n\n\n### Dependency updates ###\n- chore(deps): bump release-drafter/release-drafter from v5.14.0 to v5.15.0 (#4) @dependabot\n\n### CI & build changes ###\n- Update ci (#9) @h1dden-da3m0n\n- Create release prep PR on release draft update (#7) @oddstr13\n- Add analyzers and remove all warnings (#3) @crobibero\n- Let there be CI (#2) @oddstr13",
@@ -1693,6 +1701,14 @@
         "timestamp": "2022-01-08T17:26:09Z"
       },
       {
+        "version": "9.0.0.0",
+        "checksum": "2fa1bbe23392945f56f8ed716c8bb932",
+        "changelog": "### Bug Fixes ###\n- tv-maze -> tvmaze in release-drafter config (#28) @oddstr13\n\n### Code or Repo Maintenance ###\n- 10.8 support (#32) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/TVmaze/9.0.0.0/tvmaze_9.0.0.0.zip",
+        "timestamp": "2021-11-01T21:04:34Z"
+      },
+      {
         "version": "8.0.0.0",
         "checksum": "cd7944e30bd7e6237279cb8458777fc0",
         "changelog": "- chore(deps): bump TvMaze.Api.Client from 0.1.71 to 0.1.72 (#21) @dependabot\n\n### CI & build changes ###\n- Update ci (#24) @h1dden-da3m0n\n\n### Code or Repo Maintenance ###\n- chore: plugin images (#22) @h1dden-da3m0n",
@@ -1822,6 +1838,14 @@
         "targetAbi": "10.8.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Webhook/10.0.0.0/webhook_10.0.0.0.zip",
         "timestamp": "2022-01-08T17:26:30Z"
+      },
+      {
+        "version": "9.0.0.0",
+        "checksum": "7346b010d59f3833b5f5920ab503063c",
+        "changelog": "### Bug Fixes ###\n- Don't filter on userId for UserCreated notification type (#76) @crobibero\n\n### Code or Repo Maintenance ###\n- Fix CI (#79) @crobibero\n- 10.8 support (#69) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Webhook/9.0.0.0/webhook_9.0.0.0.zip",
+        "timestamp": "2021-11-01T14:32:52Z"
       },
       {
         "version": "8.0.0.0",
@@ -2950,6 +2974,14 @@
         "targetAbi": "10.9.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/cedev-1/Discord%20Notifier/1.5.0.0/Jellyfin.Plugin.DiscordNotifier-v1.5.0.0.zip",
         "timestamp": "2025-08-09T00:00:00Z"
+      },
+      {
+        "version": "1.0.0.5",
+        "checksum": "e14ed0100239285a169ffd3ef0aeba28",
+        "changelog": "- Add Auth notifications - Fix bug",
+        "targetAbi": "10.9.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/cedev-1/Discord%20Notifier/1.0.0.5/Jellyfin.Plugin.DiscordNotifier-v1.0.0.5.zip",
+        "timestamp": "2025-07-03T00:00:00Z"
       },
       {
         "version": "1.0.0.0",
@@ -4128,6 +4160,14 @@
     "owner": "Eeeeelias",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/logo.png",
     "versions": [
+      {
+        "version": "1.5.0.1",
+        "checksum": "b6109a711fa7e6ea1a65d027772c113f",
+        "changelog": "Fix crash when missing enough similar songs",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/1.5.0.1/PlaylistGenerator_1.5.0.1.zip",
+        "timestamp": "2026-02-28T08:57:42Z"
+      },
       {
         "version": "1.5.0.0",
         "checksum": "20ee2180105ae93c6dd758f6938509fa",
@@ -6097,6 +6137,38 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.6.1",
+        "checksum": "db6db697c46098d9da1e1ba8062f5d55",
+        "changelog": "## [0.26.6.1] - 2026-02-26\n\n### 🐛 Bug Fixes\n\n- Return of the delete and download option\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.1/gelato_0.26.6.1.zip",
+        "timestamp": "2026-02-26T16:41:21Z"
+      },
+      {
+        "version": "0.26.6.0",
+        "checksum": "94b3dc1f0109952e5ccddbe9f97dd7c3",
+        "changelog": "## [0.26.6.0] - 2026-02-25\n\n### 🚀 Features\n\n- Base catalog import progress on the catalog items\n- Add settings item to main menu (#116)\n\n### 🐛 Bug Fixes\n\n- Show correct default in settings (#115)\n- Automatically created collections show duplicates (streams) #118\n\n### 🚜 Refactor\n\n- Filter out streams on everything except single item queries\n\n### ⚙️ Miscellaneous Tasks\n\n- Add pr and main builds (#107)\n- Remove unused service\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.0/gelato_0.26.6.0.zip",
+        "timestamp": "2026-02-25T14:36:13Z"
+      },
+      {
+        "version": "0.26.5.3",
+        "checksum": "12396e05ad42feb63829e316574ab1fc",
+        "changelog": "## [0.26.5.3] - 2026-02-24\n\n### 🐛 Bug Fixes\n\n- Base season premiere date off first episode\n- Dont call inner on AddToCollectionAsync to prevent deadlocks\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.5.3/gelato_0.26.5.3.zip",
+        "timestamp": "2026-02-24T07:21:57Z"
+      },
+      {
+        "version": "0.26.5.2",
+        "checksum": "714a6f9152ccaad235703960078c52b3",
+        "changelog": "## [0.26.5.2] - 2026-02-23\n\n### 🐛 Bug Fixes\n\n- Series meta resolve during insertion\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.5.2/gelato_0.26.5.2.zip",
+        "timestamp": "2026-02-23T21:11:15Z"
+      },
+      {
         "version": "0.26.5.1",
         "checksum": "262664224c65f361d2fb6981a862f511",
         "changelog": "## [0.26.5.1] - 2026-02-23\n\n### 🐛 Bug Fixes\n\n- Remove hardcoded subtitle oang\n",
@@ -6287,38 +6359,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.5.0/gelato_0.25.5.0.zip",
         "timestamp": "2026-02-06T11:14:36Z"
-      },
-      {
-        "version": "0.25.4.1",
-        "checksum": "c0c8b46408bf18a179b699852e9d821f",
-        "changelog": "## [0.25.4.1] - 2026-02-05\n\n### 🐛 Bug Fixes\n\n- Playstate for episodes\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.4.1/gelato_0.25.4.1.zip",
-        "timestamp": "2026-02-05T11:24:04Z"
-      },
-      {
-        "version": "0.25.4.0",
-        "checksum": "3476f70c150c363fb49ad5eb6161d8b1",
-        "changelog": "## [0.25.4.0] - 2026-02-03\n\n### 🚀 Features\n\n- Ignore people search for movie and shows types\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.4.0/gelato_0.25.4.0.zip",
-        "timestamp": "2026-02-03T11:34:44Z"
-      },
-      {
-        "version": "0.25.3.9",
-        "checksum": "ad2bd6420204a2af49b738bbd231fca2",
-        "changelog": "## [0.25.3.9] - 2026-02-01\n\n### 🐛 Bug Fixes\n\n- Purge task\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.9/gelato_0.25.3.9.zip",
-        "timestamp": "2026-02-01T09:39:06Z"
-      },
-      {
-        "version": "0.25.3.8",
-        "checksum": "c12dd425db06cad9fd396b8a47170f9d",
-        "changelog": "## [0.25.3.8] - 2026-02-01\n\n### 🐛 Bug Fixes\n\n- Purge task\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.25.3.8/gelato_0.25.3.8.zip",
-        "timestamp": "2026-02-01T08:57:55Z"
       }
     ]
   },
@@ -6613,6 +6653,14 @@
     "owner": "luall0",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/luall0/Jellynext/jellynext_logo_full.png",
     "versions": [
+      {
+        "version": "1.3.0.0",
+        "checksum": "f3851df3a221c623479fa1c5af4fab76",
+        "changelog": "\n### Features\n\n- **Watchlist Sync**: Automatically add Trakt watchlisted items to download systems (Radarr/Sonarr/Jellyseerr)\n  - New per-user settings:  and  toggles in Trakt user configuration\n  - Fetches movies via  and shows via  with  for genre metadata\n  - Filters out items already in local Jellyfin library and previously processed items\n  - Routes downloads through existing  (supports Native, Jellyseerr, and Webhook modes)\n  - Shows default to Season 1 download (Trakt watchlist doesn't specify seasons)\n  - 1-second throttle between downloads to avoid overwhelming download systems\n  - Individual item failures logged without stopping the sync process\n\n- **Watchlist Sync Scheduled Task**: Background task running every 1 hour\n  - More frequent than content sync (6hr) to respond quickly to watchlist changes\n  - Also triggered on startup via \n\n### Improvements\n\n- **State Tracking**: Persistent tracking of processed watchlist items to prevent re-adding\n  -  (TMDB IDs) and  (TVDB IDs) persisted in configuration\n  - Reset manually by clearing IDs from config to re-trigger downloads\n\n- **Local Library Deduplication**: New  method in  to check movie existence by TMDB ID (excludes virtual items)\n\n- **Trakt API**: New watchlist endpoints\n  - : Fetch user's movie watchlist\n  - : Fetch user's show watchlist\n\n- **Configuration UI**: Added watchlist sync toggles to Trakt user settings tab\n\n### Acknowledgments\n\n- Thanks to [@medallyon](https://github.com/medallyon) for implementing the watchlist sync feature",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/luall0/Jellynext/1.3.0.0/jellynext-v1.3.0.0.zip",
+        "timestamp": "2026-02-24 14:39:39"
+      },
       {
         "version": "1.2.1.1",
         "checksum": "acf4da864123b6910995f13597cdc1f5",
@@ -7425,6 +7473,14 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
+      {
+        "version": "11.1.0.0",
+        "checksum": "6d3b44804f689109701c75f47b93448c",
+        "changelog": "- Create pt-BR.json\n - Pause colored ratings polling during playback\n - feat: add cast/actors support for hidden content system ([#390](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/390))\n - Update ratings.css\n - fix(ratings): update South Korea rating selector to KR-19\n - fix: prevent hide icon from appearing on image editor cards\n - Add 'Show Requested Items Only' calendar setting\n - Jellyseerr Rebranding - 1st pass\n - Add en-US and en-GB identical to en\n - Added dutch locale ([#411](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/411))\n - fix: hidden content page and hide button improvements ([#407](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/407))\n - fix(subtitles): disable custom subtitles now respects default subtitle settings ([#414](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/414))\n - Add en-GB/en-US locales and normalize lang codes\n - Add Jellyseerr request API and TV 'Request More'\n - fix: prevent duplicate Jellyseerr requests from auto-season-request ([#418](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/418))\n - Add isAdmin setting and persist admin status\n - Embed Material Symbols Rounded via @font-face",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/11.1.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-02-27T19:41:54"
+      },
       {
         "version": "11.0.0.0",
         "checksum": "713cb90d1ab10c25f7b6dbc480149418",
@@ -10254,8 +10310,15 @@
     "description": "Adds metadata for anime tv and movies",
     "overview": "Metadata provider for Shikimori",
     "owner": "te9c",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/te9c/Shikimori/glyph.svg",
     "versions": [
+      {
+        "version": "4.4.0.0",
+        "checksum": "6326e1100d08767c63102bdd5daf77f7",
+        "changelog": "Fixed bugs\n",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/te9c/Shikimori/4.4.0.0/shikimori_4.4.0.0.zip",
+        "timestamp": "2026-02-24T18:44:02Z"
+      },
       {
         "version": "4.3.0.0",
         "checksum": "41541e27c5cd815abe2c191328888120",
@@ -10955,6 +11018,17 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/File%20Transformation/logo.png",
     "versions": [
       {
+        "version": "2.5.4.0",
+        "checksum": "f1587697e551a9d7ee6d53a2f743f4a1",
+        "changelog": "🔒 Security\r\n\r\n- Added stricter auth for transformation registration (GHSA-79rj-f7gj-xf33)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue where plugin couldn't generate a UUID on http scheme (PR #44, @PatrickDahlin)",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/File%20Transformation/2.5.4.0/Release-10.11.6.zip",
+        "dependencies": [
+            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+          ],
+        "timestamp": "2026-02-27T12:02:58"
+      },
+      {
         "version": "2.5.3.0",
         "checksum": "12833d51d85da74f3922394bf7856758",
         "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.6",
@@ -11293,6 +11367,14 @@
         "timestamp": "2025-10-20T16:50:32Z"
       },
       {
+        "version": "5.5.1.6",
+        "checksum": "72dfac1d69ff0c4a2e29fe274eb349f4",
+        "changelog": "Maintenance:\n  - Typescript integration for config page\nFix:\n  - Strict mode not working with fetched metadata -- @Maxr1998\n",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lyarenei/ListenBrainz/5.5.1.6/listenbrainz_5.5.1.6.zip",
+        "timestamp": "2026-02-25T20:36:32Z"
+      },
+      {
         "version": "5.4.0.1",
         "checksum": "7fa6031e028dee7a167d47a3fa1e02cf",
         "changelog": "Fix:\n  - Fetch metadata before evaluating strict mode in resubmit listens task\nNew:\n  - Sync playlists from ListenBrainz\n",
@@ -11549,12 +11631,12 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
-        "version": "0.1.4.0",
-        "checksum": "4bcf70b69603dc0d527c66d125fe692f",
+        "version": "0.1.8.0",
+        "checksum": "8085a23807fd035652cacce806878d66",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.4.0/segment-editor-plugin-v0.1.4.0.zip",
-        "timestamp": "2026-02-22T11:25:45Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.8.0/segment-editor-plugin-v0.1.8.0.zip",
+        "timestamp": "2026-02-27T07:58:04Z"
       }
     ]
   },
