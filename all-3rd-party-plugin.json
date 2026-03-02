@@ -810,6 +810,14 @@
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/Jellyfin-Seasonals/refs/heads/main/logo.png",
     "versions": [
       {
+        "version": "2.0.0.0",
+        "checksum": "566942236b253ae2d9d1c803237ef265",
+        "changelog": "feat: add new themes:\n- Birthday (ballons, computer mouse interactive)\n- Earthday\n- Eid al-Fitr (sugar feast/ramadan)\n- Eurovision/Music\n- Film Noir filter\n- Friday the 13\n- Frost\n- Mario Day\n- Matrix\n- Oktoberfest\n- Olympia\n- Oscar Awards\n- Pride\n- Rain\n- Spooky\n- Sports (many selectable balls of ball games like handball, football (soccer) or tennis)\n- Star Wars Day\n- Storm (Epilepsy Warning!!!, Thunderstorm)\nrefactored spring (new lawn with flowers), easter (new easter bunny, new lawn with flowers and ester eggs), halloween (add spiders (computer mouse sensitive), add mice, add fog) \nfix: many improvements and bug fixes e.g. changed top to translate/transform for performance reasons",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v2.0.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-02-28T15:47:38Z"
+      },
+      {
         "version": "1.8.0.0",
         "checksum": "c7d7ae1ec34070bc89811d94493c333c",
         "changelog": "- feat: add summer, spring, carnival and cherry blossom themes\n- fix: some improvements and bug fixes",
@@ -2652,6 +2660,14 @@
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/master/images/logo.jpg",
     "versions": [
       {
+        "version": "10.11.23.0",
+        "checksum": "aa00b67c0fd22f1da7983f6c3ffa195c",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.23.0 -->\n\n## What's Changed\n### New Features\n* Added support for 'Music Album' media type in Collections\n* Added support for configuring Sort Title and Overview.\n* Added Letterboxd support for external lists and optimized fetching logic\n### Bug Fixes\n* Fixed an issue when using multiple external lists\n### Other Changes\n* Modified sorting precision for DateCreated\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.22.0...v10.11.23.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.23.0/Jellyfin.Plugin.SmartLists_v10.11.23.0.zip",
+        "timestamp": "2026-03-01"
+      },
+      {
         "version": "10.11.22.0",
         "checksum": "af3be72e877e376a60ce2be155e01656",
         "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.22.0 -->\n\n## What's Changed\n### New Features\n* Added support for grabbing external lists from MDBList, IMDb, Trakt, and TMDB\n* Added support for sorting by External List Order\n* Added support for including extras\n* Added Last Episode Air Date sorting option\n### Bug Fixes\n* The equal/not equal operators now work properly with list fields, such as Studios.\n### Other Changes\n* Improved music collection cover generation\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.21.0...v10.11.22.0",
@@ -3663,6 +3679,30 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.6.4",
+        "checksum": "3d07e1af2b8ef27a39f154c6a3184f27",
+        "changelog": "## [0.26.6.4] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Try to catch non standard subtitle language fields\n\n### 🚜 Refactor\n\n- Use imdbid for subtitles with fallback to stremioid\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.4/gelato_0.26.6.4.zip",
+        "timestamp": "2026-03-01T21:00:59Z"
+      },
+      {
+        "version": "0.26.6.3",
+        "checksum": "03e10e6cd87ea33aac64dc86a39c9fbc",
+        "changelog": "## [0.26.6.3] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Disable imdbRating from catalogs\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.3/gelato_0.26.6.3.zip",
+        "timestamp": "2026-03-01T17:22:47Z"
+      },
+      {
+        "version": "0.26.6.2",
+        "checksum": "e6083a60b701c75d9dba9ecbf5d88332",
+        "changelog": "## [0.26.6.2] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Introduce new logic to determine if an catalog is importable or not\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.2/gelato_0.26.6.2.zip",
+        "timestamp": "2026-03-01T16:35:12Z"
+      },
+      {
         "version": "0.26.6.1",
         "checksum": "db6db697c46098d9da1e1ba8062f5d55",
         "changelog": "## [0.26.6.1] - 2026-02-26\n\n### 🐛 Bug Fixes\n\n- Return of the delete and download option\n",
@@ -3861,30 +3901,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.3/gelato_0.25.5.3.zip",
         "timestamp": "2026-02-09T11:56:16Z"
-      },
-      {
-        "version": "0.25.5.2",
-        "checksum": "6830d099f3ed784693fc4e97a7b942ca",
-        "changelog": "## [0.25.5.2] - 2026-02-09\n\n### 🐛 Bug Fixes\n\n- Better error handling during import\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.2/gelato_0.25.5.2.zip",
-        "timestamp": "2026-02-09T11:07:13Z"
-      },
-      {
-        "version": "0.25.5.1",
-        "checksum": "63796c8faac70428a0c9fb7601dc9516",
-        "changelog": "## [0.25.5.1] - 2026-02-07\n\n### 🐛 Bug Fixes\n\n- Disable userdata for boxsets\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.1/gelato_0.25.5.1.zip",
-        "timestamp": "2026-02-07T07:29:10Z"
-      },
-      {
-        "version": "0.25.5.0",
-        "checksum": "3ac8ffa31ed3082ec364b9b96193432d",
-        "changelog": "## [0.25.5.0] - 2026-02-06\n\n### 🚀 Features\n\n- Show play button even if unaired\n\n### 🐛 Bug Fixes\n\n- User id parsing returning true when empty (#96)\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.0/gelato_0.25.5.0.zip",
-        "timestamp": "2026-02-06T11:14:36Z"
       }
     ]
   },
@@ -9109,98 +9125,6 @@
         "targetAbi": "10.10.0.0",
         "sourceUrl": "https://repo.xkrivo.net/jellyfin/log-settings/log-settings_1.0.0.0.zip",
         "timestamp": "2026-02-13T12:39:04Z"
-      }
-    ]
-  },
-  {
-    "name": "Intro Skipper",
-    "guid": "c83d86bb-a1e0-4c35-a113-e2101cf4ee6b",
-    "category": "MoviesAndShows",
-    "description": "Analyzes the audio of television episodes and detects introduction sequences.",
-    "overview": "Automatically detect and skip intros in television episodes",
-    "owner": "AbandonedCart, rlauuzo, jumoog (forked from ConfusedPolarBear)",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@a434e00edba70493794e25917cc8d3326d5a85c6/images/intro-skipper/logo.png",
-    "versions": [
-      {
-        "version": "1.10.11.15",
-        "checksum": "72274e68e40858311059a93a19dc7304",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.15)\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.15/intro-skipper-v1.10.11.15.zip",
-        "timestamp": "2026-02-20T19:16:11Z"
-      },
-      {
-        "version": "1.10.11.14",
-        "checksum": "dc5104987d5978008bd86f63934bea4a",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.14)\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.14/intro-skipper-v1.10.11.14.zip",
-        "timestamp": "2026-01-25T20:31:56Z"
-      },
-      {
-        "version": "1.10.11.13",
-        "checksum": "22dfe07e8be11dc58b0257eefa0f5980",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.13)\n",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.13/intro-skipper-v1.10.11.13.zip",
-        "timestamp": "2026-01-16T21:38:26Z"
-      }
-    ]
-  },
-  {
-    "name": "Segment Editor",
-    "guid": "ace21d44-a4e5-4a85-ae75-acd2e24a9574",
-    "category": "MoviesAndShows",
-    "description": "Packages the Segment Editor web app (built from intro-skipper/segment-editor) as a Jellyfin server plugin",
-    "overview": "Segment editing UI embedded as a plugin page",
-    "owner": "Intro Skipper",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/segment-editor-plugin@master/images/logo.png",
-    "versions": [
-      {
-        "version": "0.1.8.0",
-        "checksum": "8085a23807fd035652cacce806878d66",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.8.0/segment-editor-plugin-v0.1.8.0.zip",
-        "timestamp": "2026-02-27T07:58:04Z"
-      }
-    ]
-  },
-  {
-    "name": "EDL Creator",
-    "guid": "6b0e323a-4aee-4b10-813f-1e060488ae90",
-    "category": "MoviesAndShows",
-    "description": "These files can be used by Kodi and other players to skip content like commercials and are stored next to your media. Therefore you need write access.",
-    "overview": "Create .edl files from Media Segments",
-    "owner": "Intro Skipper (forked from Endrl)",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@a434e00edba70493794e25917cc8d3326d5a85c6/images/jellyfin-plugin-edl/logo.png",
-    "versions": [
-      {
-        "version": "0.5.0.0",
-        "checksum": "de00b28cbfe51e1d6665083b3e76d6ec",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-edl/blob/main/CHANGELOG.md)",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/intro-skipper/jellyfin-plugin-edl/releases/download/0.5.0-c0fdd22/Jellyfin.Plugin.Edl-0.5.0.zip",
-        "timestamp": "2025-10-21T21:05:45Z"
-      }
-    ]
-  },
-  {
-    "name": "Chapter Creator",
-    "guid": "e22fb8f5-bc98-4f76-9be4-87de302a97ea",
-    "category": "MoviesAndShows",
-    "description": "This plugin converts existing media segments (like Intros and Outros) into standardized Matroska chapter XML files",
-    "overview": "Automatically convert Jellyfin media segments into Matroska chapter XML files for enhanced media navigation",
-    "owner": "Intro Skipper",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@a434e00edba70493794e25917cc8d3326d5a85c6/images/jellyfin-plugin-ms-chapter/logo.png",
-    "versions": [
-      {
-        "version": "0.5.0.0",
-        "checksum": "ac861165af2a9bdc92109a6d73e34125",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/releases/download/0.5.0-33f16aa/ChapterCreator-0.5.0.zip",
-        "timestamp": "2025-10-21T15:32:37Z"
       }
     ]
   }
