@@ -3284,6 +3284,14 @@
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/Jellyfin-Seasonals/refs/heads/main/logo.png",
     "versions": [
       {
+        "version": "2.0.0.0",
+        "checksum": "566942236b253ae2d9d1c803237ef265",
+        "changelog": "feat: add new themes:\n- Birthday (ballons, computer mouse interactive)\n- Earthday\n- Eid al-Fitr (sugar feast/ramadan)\n- Eurovision/Music\n- Film Noir filter\n- Friday the 13\n- Frost\n- Mario Day\n- Matrix\n- Oktoberfest\n- Olympia\n- Oscar Awards\n- Pride\n- Rain\n- Spooky\n- Sports (many selectable balls of ball games like handball, football (soccer) or tennis)\n- Star Wars Day\n- Storm (Epilepsy Warning!!!, Thunderstorm)\nrefactored spring (new lawn with flowers), easter (new easter bunny, new lawn with flowers and ester eggs), halloween (add spiders (computer mouse sensitive), add mice, add fog) \nfix: many improvements and bug fixes e.g. changed top to translate/transform for performance reasons",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v2.0.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-02-28T15:47:38Z"
+      },
+      {
         "version": "1.8.0.0",
         "checksum": "c7d7ae1ec34070bc89811d94493c333c",
         "changelog": "- feat: add summer, spring, carnival and cherry blossom themes\n- fix: some improvements and bug fixes",
@@ -3406,6 +3414,14 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/refs/heads/main/logo.png",
     "versions": [
+      {
+        "version": "1.7.0.0",
+        "checksum": "8f5c6537ce427db6d0bca8df383e9ceb",
+        "changelog": "- Switched to YouTube no-cookie host and referrer policy for iframe security\n- fix playback issues on iOS/MacOS \n- Disable animations and backdrop filters for TV layout\n- removed list.txt functionality to clean up, use the web ui instead\n- Enhance logging with contextual messages, in order to be able to clearly assign logs to this plugin",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v1.7.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-03-06T03:35:31Z"
+      },
       {
         "version": "1.6.6.0",
         "checksum": "d8f30797ce246212d1ebdd6ffd4aa3ff",
@@ -5126,6 +5142,30 @@
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/master/images/logo.jpg",
     "versions": [
       {
+        "version": "10.11.23.2",
+        "checksum": "c22537abea9d0edd18e224a092602ab7",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.23.2 -->\n\n## What's Changed\n### Bug Fixes\n* Enhanced error handling in backup restore process and increased upload size limit\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.23.1...v10.11.23.2",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.23.2/Jellyfin.Plugin.SmartLists_v10.11.23.2.zip",
+        "timestamp": "2026-03-05"
+      },
+      {
+        "version": "10.11.23.1",
+        "checksum": "655cb5673a4d100aac338007e26e3006",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.23.1 -->\n\n## What's Changed\n### Bug Fixes\n* Fixed an issue with ReleaseDate sorting using multiple sort orders\n* Add support for episode-level sorting in Trakt integration and update documentation\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.23.0...v10.11.23.1",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.23.1/Jellyfin.Plugin.SmartLists_v10.11.23.1.zip",
+        "timestamp": "2026-03-04"
+      },
+      {
+        "version": "10.11.23.0",
+        "checksum": "aa00b67c0fd22f1da7983f6c3ffa195c",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.23.0 -->\n\n## What's Changed\n### New Features\n* Added support for 'Music Album' media type in Collections\n* Added support for configuring Sort Title and Overview.\n* Added Letterboxd support for external lists and optimized fetching logic\n### Bug Fixes\n* Fixed an issue when using multiple external lists\n### Other Changes\n* Modified sorting precision for DateCreated\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.22.0...v10.11.23.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.23.0/Jellyfin.Plugin.SmartLists_v10.11.23.0.zip",
+        "timestamp": "2026-03-01"
+      },
+      {
         "version": "10.11.22.0",
         "checksum": "af3be72e877e376a60ce2be155e01656",
         "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.22.0 -->\n\n## What's Changed\n### New Features\n* Added support for grabbing external lists from MDBList, IMDb, Trakt, and TMDB\n* Added support for sorting by External List Order\n* Added support for including extras\n* Added Last Episode Air Date sorting option\n### Bug Fixes\n* The equal/not equal operators now work properly with list fields, such as Studios.\n### Other Changes\n* Improved music collection cover generation\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.21.0...v10.11.22.0",
@@ -5256,6 +5296,14 @@
     "owner": "jyourstone",
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-musictags-plugin/master/images/logo.jpg",
     "versions": [
+      {
+        "version": "10.11.3.1",
+        "checksum": "10d9b68a786c7fc46894bd7b779de643",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.3.1 -->\n\n## What's Changed\n### Bug Fixes\n* Properly handle array types for Artists, Performers, and Genres\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-musictags-plugin/compare/v10.11.3.0...v10.11.3.1",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-musictags-plugin/releases/download/v10.11.3.1/Jellyfin.Plugin.MusicTags_v10.11.3.1.zip",
+        "timestamp": "2026-03-05"
+      },
       {
         "version": "10.11.3.0",
         "checksum": "398b4681028983cfa71e013696c51568",
@@ -6137,6 +6185,38 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.6.5",
+        "checksum": "7630458165f0ac7ff87c0b7e128cbe75",
+        "changelog": "## [0.26.6.5] - 2026-03-05\n\n### 🚜 Refactor\n\n- Catalog import\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.5/gelato_0.26.6.5.zip",
+        "timestamp": "2026-03-05T14:50:55Z"
+      },
+      {
+        "version": "0.26.6.4",
+        "checksum": "3d07e1af2b8ef27a39f154c6a3184f27",
+        "changelog": "## [0.26.6.4] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Try to catch non standard subtitle language fields\n\n### 🚜 Refactor\n\n- Use imdbid for subtitles with fallback to stremioid\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.4/gelato_0.26.6.4.zip",
+        "timestamp": "2026-03-01T21:00:59Z"
+      },
+      {
+        "version": "0.26.6.3",
+        "checksum": "03e10e6cd87ea33aac64dc86a39c9fbc",
+        "changelog": "## [0.26.6.3] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Disable imdbRating from catalogs\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.3/gelato_0.26.6.3.zip",
+        "timestamp": "2026-03-01T17:22:47Z"
+      },
+      {
+        "version": "0.26.6.2",
+        "checksum": "e6083a60b701c75d9dba9ecbf5d88332",
+        "changelog": "## [0.26.6.2] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Introduce new logic to determine if an catalog is importable or not\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.2/gelato_0.26.6.2.zip",
+        "timestamp": "2026-03-01T16:35:12Z"
+      },
+      {
         "version": "0.26.6.1",
         "checksum": "db6db697c46098d9da1e1ba8062f5d55",
         "changelog": "## [0.26.6.1] - 2026-02-26\n\n### 🐛 Bug Fixes\n\n- Return of the delete and download option\n",
@@ -6327,38 +6407,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.6.1/gelato_0.25.6.1.zip",
         "timestamp": "2026-02-13T13:03:05Z"
-      },
-      {
-        "version": "0.25.5.3",
-        "checksum": "44e3a4f82103665d0ca12d05df40e3f3",
-        "changelog": "## [0.25.5.3] - 2026-02-09\n\n### 🐛 Bug Fixes\n\n- Add latest legacy endpoints to listing routes\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.3/gelato_0.25.5.3.zip",
-        "timestamp": "2026-02-09T11:56:16Z"
-      },
-      {
-        "version": "0.25.5.2",
-        "checksum": "6830d099f3ed784693fc4e97a7b942ca",
-        "changelog": "## [0.25.5.2] - 2026-02-09\n\n### 🐛 Bug Fixes\n\n- Better error handling during import\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.2/gelato_0.25.5.2.zip",
-        "timestamp": "2026-02-09T11:07:13Z"
-      },
-      {
-        "version": "0.25.5.1",
-        "checksum": "63796c8faac70428a0c9fb7601dc9516",
-        "changelog": "## [0.25.5.1] - 2026-02-07\n\n### 🐛 Bug Fixes\n\n- Disable userdata for boxsets\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.1/gelato_0.25.5.1.zip",
-        "timestamp": "2026-02-07T07:29:10Z"
-      },
-      {
-        "version": "0.25.5.0",
-        "checksum": "3ac8ffa31ed3082ec364b9b96193432d",
-        "changelog": "## [0.25.5.0] - 2026-02-06\n\n### 🚀 Features\n\n- Show play button even if unaired\n\n### 🐛 Bug Fixes\n\n- User id parsing returning true when empty (#96)\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.5.0/gelato_0.25.5.0.zip",
-        "timestamp": "2026-02-06T11:14:36Z"
       }
     ]
   },
@@ -8646,6 +8694,22 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "6.5.0.1",
+        "checksum": "14aa61663d8da11a3006b6f6c2a71950",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.5.0.1",
+        "targetAbi": "10.11.6",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.5.0.1/myanimelist_6.5.0.1.zip",
+        "timestamp": "2026-03-05T20:56:12Z"
+      },
+      {
+        "version": "6.5.0.0",
+        "checksum": "ebd195aad45647f3400d4165d527d675",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.5.0.0",
+        "targetAbi": "10.11.6",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.5.0.0/myanimelist_6.5.0.0.zip",
+        "timestamp": "2026-03-04T20:24:51Z"
+      },
       {
         "version": "6.4.0.0",
         "checksum": "b1c24106a0408822c31e3e67f5d1517e",
@@ -11631,12 +11695,12 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/segment-editor-plugin@master/images/logo.png",
     "versions": [
       {
-        "version": "0.1.8.0",
-        "checksum": "8085a23807fd035652cacce806878d66",
+        "version": "0.1.10.0",
+        "checksum": "bc8e8ec495b3550935a7e4578d2feef9",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.8.0/segment-editor-plugin-v0.1.8.0.zip",
-        "timestamp": "2026-02-27T07:58:04Z"
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.10.0/segment-editor-plugin-v0.1.10.0.zip",
+        "timestamp": "2026-02-28T16:16:22Z"
       }
     ]
   },
