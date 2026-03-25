@@ -2482,6 +2482,14 @@
     "owner": "9p4",
     "versions": [
       {
+        "version": "4.0.0.4",
+        "checksum": "1e7908585ebee256203a0869dcdfbaf8",
+        "changelog": "There is a critical security fix for SAML. Please update as soon as possible. Thanks to N.P. for finding the issue.\r\n\r\nAdditional bugfixes are also included.\r\n\r\n## What's Changed\r\n* Add Pocket ID config steps by @mhlas7 in https://github.com/9p4/jellyfin-plugin-sso/pull/312\r\n* fix: invalidate state immediately after auth by @jon4hz in https://github.com/9p4/jellyfin-plugin-sso/pull/343\r\n* Add kanidm config steps by @Joker9944 in https://github.com/9p4/jellyfin-plugin-sso/pull/347\r\n* Update README dead link, add warning for permission overwritten by @ForsakenRei in https://github.com/9p4/jellyfin-plugin-sso/pull/318\r\n* Bugfix: Prevent KeyNotFoundExceptions in OidPost by @mandos21 in https://github.com/9p4/jellyfin-plugin-sso/pull/349\r\n\r\n## New Contributors\r\n* @mhlas7 made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/312\r\n* @jon4hz made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/343\r\n* @Joker9944 made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/347\r\n* @ForsakenRei made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/318\r\n* @mandos21 made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/349\r\n\r\n**Full Changelog**: https://github.com/9p4/jellyfin-plugin-sso/compare/v4.0.0.3...v4.0.0.4",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/9p4/jellyfin-plugin-sso/releases/download/v4.0.0.4/sso-authentication_4.0.0.4.zip",
+        "timestamp": "2026-03-20T03:13:34Z"
+      },
+      {
         "version": "4.0.0.3",
         "checksum": "ea6673c5c9aeddcf01a38604046e7ffc",
         "changelog": "More CI fixes\r\n\r\n## What's Changed\r\n* fix: consistently use OpenID instead of OID on the config page by @CFenner in https://github.com/9p4/jellyfin-plugin-sso/pull/193\r\n* Support DisableHttps/DoNotValidateIssuerName in SSOController.OidChallenge by @andreblanke in https://github.com/9p4/jellyfin-plugin-sso/pull/239\r\n* Allow to disable pushed authorization by @bdovaz in https://github.com/9p4/jellyfin-plugin-sso/pull/244\r\n* Update oddstr13/jellyfin-plugin-repository-manager by @bdovaz in https://github.com/9p4/jellyfin-plugin-sso/pull/247\r\n* Avatar via OIDC Provider by @Estyms in https://github.com/9p4/jellyfin-plugin-sso/pull/202\r\n* Allow port override by @bdovaz in https://github.com/9p4/jellyfin-plugin-sso/pull/246\r\n* Fix artifact names by @bdovaz in https://github.com/9p4/jellyfin-plugin-sso/pull/248\r\n* Prevent force updating username by @FeikoJoosten in https://github.com/9p4/jellyfin-plugin-sso/pull/251\r\n* remove deprecated redirect uri from readme by @hendrik1120 in https://github.com/9p4/jellyfin-plugin-sso/pull/280\r\n* Match the styling of the redirection page with Jellyfin colors and font by @kernelb00t in https://github.com/9p4/jellyfin-plugin-sso/pull/269\r\n* Use punycode URL for redirect page - OIDC by @babbitt in https://github.com/9p4/jellyfin-plugin-sso/pull/265\r\n\r\n## New Contributors\r\n* @CFenner made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/193\r\n* @andreblanke made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/239\r\n* @bdovaz made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/244\r\n* @Estyms made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/202\r\n* @FeikoJoosten made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/251\r\n* @kernelb00t made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/269\r\n* @babbitt made their first contribution in https://github.com/9p4/jellyfin-plugin-sso/pull/265\r\n\r\n**Full Changelog**: https://github.com/9p4/jellyfin-plugin-sso/compare/v3.5.2.4...v4.0.0.3",
@@ -2571,7 +2579,7 @@
       },
       {
         "version": "0.0.0.9000",
-        "checksum": "b0b16a4012d67d935220e0e674cbdc36",
+        "checksum": "cd9b1cf5b8f7c393fb51f429fa049f7d",
         "changelog": "Nightly build\n",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://github.com/9p4/jellyfin-plugin-sso/releases/download/nightly/sso-authentication_0.0.0.9000.zip",
@@ -3414,6 +3422,14 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/refs/heads/main/logo.png",
     "versions": [
+      {
+        "version": "1.9.0.0",
+        "checksum": "d92439ecfd5b7ce4a54169d8f07b6275",
+        "changelog": "- fix pagination dot issue on mobile when showing more than ~10 dots (should now dynamically adjust the max dots threshold based on screen size)\n- add loading screen add failsafe logic\n- add option to delay trailer playback\n- add option to limit the plot width",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v1.9.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-03-24T01:29:16Z"
+      },
       {
         "version": "1.8.0.0",
         "checksum": "4e4c1aa15d03e25e4900294fa7a62974",
@@ -5150,6 +5166,22 @@
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/master/images/logo.jpg",
     "versions": [
       {
+        "version": "10.11.24.0",
+        "checksum": "e7c652bb23027e057bfb6292d2ed8e4b",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.24.0 -->\n\n## What's Changed\n### New Features\n* Added support for IMDb, TMDb, and TVDb IDs\n### Other Changes\n* Added support for IMDb award lists\n* Changed field dropdown to a custom dropdown with a search function plus some other minor styling changes.\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.23.4...v10.11.24.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.24.0/Jellyfin.Plugin.SmartLists_v10.11.24.0.zip",
+        "timestamp": "2026-03-23"
+      },
+      {
+        "version": "10.11.23.4",
+        "checksum": "9bfb355639d3f97a0eb9179618ab2b57",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.23.4 -->\n\n## What's Changed\n### Other Changes\n* Changed IMDb integration to use GraphQL API instead of scraping\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.23.3...v10.11.23.4",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.23.4/Jellyfin.Plugin.SmartLists_v10.11.23.4.zip",
+        "timestamp": "2026-03-21"
+      },
+      {
         "version": "10.11.23.3",
         "checksum": "719ea763a77bf9a0a05f43066bd7114f",
         "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.23.3 -->\n\n## What's Changed\n### New Features\n* Renamed sort option \"No Order\" to \"Default\". When using Default, it can change automatically depending on the rule field selected, for example External List will by default sort by the extern list order.\n### Bug Fixes\n* Playback status now works correctly with albums in collections\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.23.2...v10.11.23.3",
@@ -6209,6 +6241,22 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.7.1",
+        "checksum": "fda7097285a9d8414a3b276b5a94b50b",
+        "changelog": "## [0.26.7.1] - 2026-03-23\n\n### 🐛 Bug Fixes\n\n- Clean up listing filter intent and preserve internal lookups (#138)\n- Clean url encoded subtitle  ames\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.7.1/gelato_0.26.7.1.zip",
+        "timestamp": "2026-03-23T09:15:24Z"
+      },
+      {
+        "version": "0.26.7.0",
+        "checksum": "ebced9771ada1986b2e4ad4f2aa34774",
+        "changelog": "## [0.26.7.0] - 2026-03-19\n\n### 🚀 Features\n\n- Add js injector and local-search-toggle (#139)\n- Make js injection false by default\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.7.0/gelato_0.26.7.0.zip",
+        "timestamp": "2026-03-19T12:10:55Z"
+      },
+      {
         "version": "0.26.6.8",
         "checksum": "6e753f3ce2cdecde3dc6a963078a457a",
         "changelog": "## [0.26.6.8] - 2026-03-14\n\n### 🐛 Bug Fixes\n\n- Revert query filter\n",
@@ -6431,22 +6479,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.1.1/gelato_0.26.1.1.zip",
         "timestamp": "2026-02-18T21:02:17Z"
-      },
-      {
-        "version": "0.26.1.0",
-        "checksum": "49589d0d19b2bf6113b4e577c20920f0",
-        "changelog": "## [0.26.1.0] - 2026-02-18\n\n### 🚀 Features\n\n- Revert strm and add support for playlists (#103)\n- Migrate Palco caching services to Gelato (#102)\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.1.0/gelato_0.26.1.0.zip",
-        "timestamp": "2026-02-18T18:16:35Z"
-      },
-      {
-        "version": "0.25.7.0",
-        "checksum": "5c93fe9a2ad9260bd27b4a46ae47f56d",
-        "changelog": "## [0.25.7.0] - 2026-02-14\n\n### 🚀 Features\n\n- Dont cache if no streams\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.25.7.0/gelato_0.25.7.0.zip",
-        "timestamp": "2026-02-14T11:14:51Z"
       }
     ]
   },
@@ -8506,6 +8538,14 @@
     "owner": "rdpharr",
     "versions": [
       {
+        "version": "0.5.3.0",
+        "checksum": "970ba6e9e74b0c8c92da9d18e296b602",
+        "changelog": "Filter recommendations by user library access (#10)\n- Items from libraries a user cannot access are excluded from recommendations\n- Applies to both personalized and cold-start recommendation paths\n- Respects per-user library permissions including disabled libraries",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/rdpharr/jellyfin-plugin-localrecs/releases/download/v0.5.3/jellyfin-plugin-localrecs-v0.5.3.zip",
+        "timestamp": "2026-03-23T00:00:00Z"
+      },
+      {
         "version": "0.5.2.0",
         "checksum": "b99cd687dc2d9efd0ab92f100b3d34c9",
         "changelog": "Fix playback freeze when playing from recommendation libraries (#8)\n- Never remove virtual library items from event handlers (deferred to next refresh)\n- Ignore PlaybackStart/PlaybackProgress events to prevent DB write storms during playback\n- Only sync play status on meaningful events (PlaybackFinished, TogglePlayed, etc.)\n- Known tradeoff: partially watched items may appear in Continue Watching twice until next refresh",
@@ -8580,6 +8620,22 @@
     "owner": "RomainPierre7",
     "imageUrl": "https://raw.githubusercontent.com/RomainPierre7/jellyfin-plugin-TelegramNotifier/main/assets/banner.png",
     "versions": [
+      {
+        "version": "12.2.0.0",
+        "checksum": "2ca078d8796795428d38ad80008d34c9",
+        "changelog": "### 🚀 New Features\n- Episode posters for added items",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/RomainPierre7/jellyfin-plugin-TelegramNotifier/releases/download/12.2.0.0/TelegramNotifier.zip",
+        "timestamp": "2026-03-22T10:00:00Z"
+      },
+      {
+        "version": "12.1.0.0",
+        "checksum": "7967323984cb3382e147e4dab1ea4952",
+        "changelog": "### 🚀 New Features\n- Added spam filter using an in-memory cache to prevent duplicate notifications\n- New placeholders available for messages (see DefaultMessage.md for details)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/RomainPierre7/jellyfin-plugin-TelegramNotifier/releases/download/12.1.0.0/TelegramNotifier.zip",
+        "timestamp": "2026-03-22T00:00:00Z"
+      },
       {
         "version": "12.0.0.0",
         "checksum": "e9d7ac35efdfdb369f5e0a25d2f53161",
@@ -9578,6 +9634,22 @@
     "owner": "ShokoAnime",
     "imageUrl": "https://raw.githubusercontent.com/ShokoAnime/Shokofin/metadata/banner.png",
     "versions": [
+      {
+        "version": "6.0.5.11",
+        "checksum": "42eeab4935b923a6ba7d2709b5a739f3",
+        "changelog": "Only compatible with **10.11.z**.\n\nSee the [release notes](https://github.com/ShokoAnime/Shokofin/releases/tag/v6.0.5) for more info.",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/ShokoAnime/Shokofin/releases/download/v6.0.5/shoko_6.0.5.0_for_10.11.zip",
+        "timestamp": "2026-03-22T19:56:40Z"
+      },
+      {
+        "version": "6.0.5.10",
+        "checksum": "afcf5113559a9815463d187938600f2e",
+        "changelog": "Only compatible with **10.10.z**.\n\nSee the [release notes](https://github.com/ShokoAnime/Shokofin/releases/tag/v6.0.5) for more info.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://github.com/ShokoAnime/Shokofin/releases/download/v6.0.5/shoko_6.0.5.0_for_10.10.zip",
+        "timestamp": "2026-03-22T19:56:50Z"
+      },
       {
         "version": "6.0.4.11",
         "checksum": "7846d654a3112439e343bc04c6f0e19b",
@@ -11816,6 +11888,14 @@
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.10.0/segment-editor-plugin-v0.1.10.0.zip",
         "timestamp": "2026-02-28T16:16:22Z"
+      },
+      {
+        "version": "0.1.25.0",
+        "checksum": "cf2ba5934128c20194ddd1d0b80d31c0",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.25.0/segment-editor-plugin-v0.1.25.0.zip",
+        "timestamp": "2026-03-20T16:16:22Z"
       }
     ]
   },
