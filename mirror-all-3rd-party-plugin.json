@@ -2270,6 +2270,14 @@
     "owner": "iankiller77",
     "versions": [
       {
+        "version": "1.5.1.0",
+        "checksum": "d5df25c7c7f5ae87f776d96e6eb1b4e8",
+        "changelog": "Updated code to work with jellyfin 10.11.x",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/iankiller77/MyAnimeSync/1.5.1.0/myanimesync_1.5.1.0.zip",
+        "timestamp": "2025-11-27T18:54:00Z"
+      },
+      {
         "version": "1.5.0.1",
         "checksum": "3d4551e5bfbbc33dc5e416d1961f7c99",
         "changelog": "Updated code to work with jellyfin 10.11.x",
@@ -4946,6 +4954,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/icon.png",
     "versions": [
       {
+        "version": "3.4.0.0",
+        "checksum": "a731e2cf0293951e590b06a19912e9c5",
+        "changelog": "- Update README with new badge links and images\n - Update funding.yml\n - Create LICENSE\n - Implement XML sanitization for script entries and enhance configuration UI\n - Update configPage.html",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/3.4.0.0/Jellyfin.Plugin.JavaScriptInjector_10.10.7.zip",
+        "timestamp": "2026-03-28T13:40:44"
+      },
+      {
         "version": "3.3.0.0",
         "checksum": "3e185d54b884ded90ddda901db7571c3",
         "changelog": "- Update README.md\n - Add quick enable/disable and remove buttons for scripts",
@@ -5127,6 +5143,14 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
+      {
+        "version": "11.4.0.0",
+        "checksum": "1d3715e934bc15de9142b60911405093",
+        "changelog": "- docs: installation, troubleshooting, etc ([#475](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/475))\n - fix: prevent plugin from overwriting user's language on every page load ([#469](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/469))\n - feat: add Simplified Chinese (zh-CN) support ([#466](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/466))\n - Update languagetags.js ([#464](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/464))\n - fix: show proper season names and metadata for TheTVDB ([#468](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/468))\n - chore(ci)(deps): bump the github-actions group with 2 updates ([#460](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/460))\n - fix: Jellyseerr search not triggering on Jellyfin 10.11.x ([#473](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/473))\n - Invalidate locales cache when plugin version changes\n - Add Jellyseerr issue indicator to report button\n - Improve pause screen timing, safety checks, and logging\n - chore(ci)(deps): bump the github-actions group with 3 updates ([#483](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/483))\n - fix: scope global .material-icons CSS to prevent volume OSD shrinking ([#484](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/484))\n - docs: fix: Jellyseerr URL mappings clarifications ([#489](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/489))\n - Catalan Translation ([#490](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/490))\n - feat: quality profile mode for auto-movie-request ([#485](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/485))\n - feat: Auto import Jellyfin users to Seerr ([#492](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/492))\n - Rename Jellyseerr references to Seerr in config UI\n - Improve Jellyseerr user import UX and docs\n - Update Discord link in README.md ([#493](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/493))\n - Update ICON_MAP with Catalan TL\n - Separate mappings into languages\n - feat: Config page search & setting dependency enforcement ([#495](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/495))\n - Update activity icons with polish language ([#496](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/496))\n - 4k series requests ([#497](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/497))\n - Update Seerr icon and descriptions in UI and documentation\n - refactor: Update documentation to replace Jellyseerr references with Seerr\n - v11.4.0.0",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/11.4.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-03-28T13:17:45"
+      },
       {
         "version": "11.3.0.0",
         "checksum": "0014c79ec641a027d96198937f585f98",
@@ -5418,6 +5442,14 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/icon.png",
     "versions": [
+      {
+        "version": "3.4.0.0",
+        "checksum": "88a06677733eaccad9d8ce3c94d972d5",
+        "changelog": "- Update README with new badge links and images\n - Update funding.yml\n - Create LICENSE\n - Implement XML sanitization for script entries and enhance configuration UI\n - Update configPage.html",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/3.4.0.0/Jellyfin.Plugin.JavaScriptInjector_10.11.0.zip",
+        "timestamp": "2026-03-28T13:40:37"
+      },
       {
         "version": "3.3.0.0",
         "checksum": "38d83c75282b4e5a51d622e3ff58e4ce",
@@ -9365,6 +9397,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/logo.png",
     "versions": [
       {
+        "version": "1.10.11.17",
+        "checksum": "f14d188bc9c06873bf4b6076efab10f3",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.17)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/1.10.11.17/intro-skipper-v1.10.11.17.zip",
+        "timestamp": "2026-03-28T19:19:08Z"
+      },
+      {
         "version": "1.10.11.16",
         "checksum": "66a8c117cde86ba5dfbe13a946fa4c71",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.16)\n",
@@ -9408,12 +9448,28 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
-        "version": "0.1.10.0",
-        "checksum": "bc8e8ec495b3550935a7e4578d2feef9",
+        "version": "0.1.30.0",
+        "checksum": "8f819946f84836ee0ed0c87ec0d40996",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.10.0/segment-editor-plugin-v0.1.10.0.zip",
-        "timestamp": "2026-02-28T16:16:22Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.30.0/segment-editor-plugin-v0.1.30.0.zip",
+        "timestamp": "2026-03-28T17:08:04Z"
+      },
+      {
+        "version": "0.1.29.0",
+        "checksum": "f18bc9610a308e3b3f48df0ca4633f56",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.29.0/segment-editor-plugin-v0.1.29.0.zip",
+        "timestamp": "2026-03-27T20:32:59Z"
+      },
+      {
+        "version": "0.1.27.0",
+        "checksum": "ce7b08dc7114484010daeb16bdf76b03",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.27.0/segment-editor-plugin-v0.1.27.0.zip",
+        "timestamp": "2026-03-25T16:43:46Z"
       },
       {
         "version": "0.1.25.0",
@@ -9422,6 +9478,14 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.25.0/segment-editor-plugin-v0.1.25.0.zip",
         "timestamp": "2026-03-20T16:16:22Z"
+      },
+      {
+        "version": "0.1.10.0",
+        "checksum": "bc8e8ec495b3550935a7e4578d2feef9",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.10.0/segment-editor-plugin-v0.1.10.0.zip",
+        "timestamp": "2026-02-28T16:16:22Z"
       }
     ]
   },
