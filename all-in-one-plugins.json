@@ -2058,6 +2058,14 @@
     "owner": "crobibero",
     "versions": [
       {
+        "version": "8.0.0.0",
+        "checksum": "0cef8908b50ad5b2642792de1f233dfe",
+        "changelog": "- Fix invalid operation exception (#59) @balciseri\n- Revert \"Update dependency Microsoft.Extensions.Http to v10\" (#54) @Shadowghost\n\n### Dependency updates ###\n- Update dependency Microsoft.Extensions.Http to v10 (#52) @[renovate[bot]](https://github.com/apps/renovate)\n- Update dependency Microsoft.Extensions.Http to 9.0.11 (#49) @[renovate[bot]](https://github.com/apps/renovate)",
+        "targetAbi": "10.11.7.0",
+        "sourceUrl": "https://repo.jellyfin.org/files/plugin/simkl/simkl_8.0.0.0.zip",
+        "timestamp": "2026-04-05T00:17:08Z"
+      },
+      {
         "version": "7.0.0.0",
         "checksum": "47ee4bf05e00e0f1f19171ede19d6e55",
         "changelog": "- Jellyfin 10.11 support (#47) @crobibero\n- Change Error Logging (#37) @JamsRepos",
@@ -3286,11 +3294,19 @@
     "name": "Seasonals",
     "guid": "ef1e863f-cbb0-4e47-9f23-f0cbb1826ad4",
     "category": "General",
-    "description": "Adds atmospheric, animated seasonal effects like snow, falling leaves, hearts, fireworks and more. The plugin provides a settings page for configuration. If you do not have write permissions to the web folder, please also install the file-transformation plugin.",
+    "description": "✨ Add seasonal magic to your UI! Brings your home screen to life with animated effects like ❄️ Snow, 🍂 Falling Leaves, ❤️ Hearts, 🎆 Fireworks, and more. ★ Fully Configurable: Easily adjust all animations via the plugin settings page. ⚠ Note: Requires the 'file-transformation' plugin if write permissions to the web folder are restricted.",
     "overview": "Atmospheric, configurable seasonal effects for the Jellyfin web interface",
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/Jellyfin-Seasonals/refs/heads/main/logo.png",
     "versions": [
+      {
+        "version": "2.0.1.0",
+        "checksum": "9c7cd3771c0454e60758bcfe681a0afc",
+        "changelog": "Improve config handling for season selection and seasonal rules parsing",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v2.0.1.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-04-07T23:13:01Z"
+      },
       {
         "version": "2.0.0.0",
         "checksum": "566942236b253ae2d9d1c803237ef265",
@@ -3417,11 +3433,43 @@
     "name": "Media Bar Enhanced",
     "guid": "d7e11d57-819b-4bdd-a88d-53c5f5560225",
     "category": "General",
-    "description": "A feature-rich fork of the original Media Bar script by MakD that brings your home screen to life.\n\n-> 100% Configurable via Web UI: Manage all features, lists, and settings effortlessly through the plugin configuration page.\n\nKey Highlights:\n- Cinematic Video Backdrops: Supports local & YouTube trailers (incl. SponsorBlock)\n- Custom Content: Curate your slideshow with specific Collections, Playlists, or seasonal events\n\nAdditional Features:\n- Full-width immersive mode\n- Smart resolution handling (up to 4K)\n- Full keyboard navigation & playback control\n- Wait-for-trailer options\n- Customizable pagination & animations\n\nIf you do not have write permissions to the web folder, please also install the file-transformation plugin.",
+    "description": "▶ Feature-rich Media Bar fork that brings your home screen to life. ★ 100% Web UI control. ★ Backdrops: Cinematic full-width videos (YouTube/Local) with SponsorBlock (skip intros/outros (only YT Trailer)) and smart 'local-first' preference. ★ Dynamic Content: Display Playlists, Collections (Boxsets), or Seasonal holiday items. Sort by Random, Year, or Premiere Date with Parental Rating & Release Year filters. ★ Customization: Customizable overlays (branding/messages), pagination (dots/counter), and client-side settings to allow per-device overrides. ★ Advanced: Many settings for individual configuration. ⚠ Note: Requires 'file-transformation' plugin if write permissions are restricted.",
     "overview": "Transforms your Jellyfin home screen with an immersive, fully configurable media slideshow featuring video backdrops.",
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/refs/heads/main/logo.png",
     "versions": [
+      {
+        "version": "1.9.4.0",
+        "checksum": "dd16f971e3e7a0510098fd1889b597b8",
+        "changelog": "- fix: update image source handling (base url) for logo/icon and overlay in media bar",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v1.9.4.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-04-08T23:27:49Z"
+      },
+      {
+        "version": "1.9.3.0",
+        "checksum": "3e431c24604ab4c18ed20f056b981d0e",
+        "changelog": "- Refactor script loading logic to ensure proper insertion of YouTube API script",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v1.9.3.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-04-07T22:45:05Z"
+      },
+      {
+        "version": "1.9.2.0",
+        "checksum": "308826ee5e7e08d62797a2d635def071",
+        "changelog": "- fix autoplay issue when using url instead of ip to access jellyfin",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v1.9.2.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-04-06T01:04:53Z"
+      },
+      {
+        "version": "1.9.1.0",
+        "checksum": "19362d2aebeb2d6113d16cd10c48b337",
+        "changelog": "- fix some issues with the video backdrop player\n- fix playback issue on iOS",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v1.9.1.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-03-31T20:42:18Z"
+      },
       {
         "version": "1.9.0.0",
         "checksum": "d92439ecfd5b7ce4a54169d8f07b6275",
@@ -4523,6 +4571,14 @@
     "owner": "grandguyjs",
     "versions": [
       {
+        "version": "1.7.0.0",
+        "checksum": "482ff3c3d2c8bfb642b6df460ce67094",
+        "changelog": "1.7 Release - QoL fix",
+        "targetAbi": "10.9.9.0",
+        "sourceUrl": "https://github.com/GrandguyJS/media-upload-plugin/releases/download/1.7/plugin.zip",
+        "timestamp": ""
+      },
+      {
         "version": "1.6.0.0",
         "checksum": "14cb4ee6708b88dd2cd6885ea4de540d",
         "changelog": "1.6 Release - Styling fix",
@@ -4744,9 +4800,17 @@
     "owner": "iankiller77",
     "versions": [
       {
+        "version": "1.5.1.1",
+        "checksum": "d5df25c7c7f5ae87f776d96e6eb1b4e8",
+        "changelog": "Improved logs, UI and better handling of authentication parameters to better support futur issues.\n1. refactor/fixed_warnings_for_TVDB_token_update\n2. refactor/add_more_logs_for_authentication_process\n3. refactor/correct_user_config_client_id_and_secret_before_generating_auth_code_url",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/iankiller77/MyAnimeSync/releases/download/v1.5.1.1/myanimesync_1.5.1.1.zip",
+        "timestamp": "2025-11-27T18:54:00Z"
+      },
+      {
         "version": "1.5.1.0",
         "checksum": "d5df25c7c7f5ae87f776d96e6eb1b4e8",
-        "changelog": "Updated code to work with jellyfin 10.11.x",
+        "changelog": "Added option to search for serie using original name",
         "targetAbi": "10.11.0",
         "sourceUrl": "https://github.com/iankiller77/MyAnimeSync/releases/download/v1.5.1.0/myanimesync_1.5.1.0.zip",
         "timestamp": "2025-11-27T18:54:00Z"
@@ -4770,7 +4834,7 @@
       {
         "version": "1.4.2.2",
         "checksum": "f2c0384475d673ca6e3711f2466fe55a",
-        "changelog": "Fixed an issue with bulk update causing wrong episode number to be updated.",
+        "changelog": "Fixed a bug where updating animelist season 0 (specials) was updating anime list as if it was the first season instead.",
         "targetAbi": "10.9.2",
         "sourceUrl": "https://github.com/iankiller77/MyAnimeSync/releases/download/v1.4.2.2/myanimesync_1.4.2.2.zip",
         "timestamp": "2025-06-10T18:36:00Z"
@@ -5174,6 +5238,14 @@
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/master/images/logo.jpg",
     "versions": [
       {
+        "version": "10.11.25.0",
+        "checksum": "413a215855c8543b3a950bb97ad947b8",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.25.0 -->\n\n## What's Changed\n### New Features\n* Added support for Series Season media type for collections\n* Add Round Robin sorting feature\n* Added new Series Status field\n* Added Random Round Robin sorting option\n* Added support for TMDB Collections\n### Bug Fixes\n* Fixed issue with NotEqual operator\n### Other Changes\n* Create configuration directory for logging.json\n\n## New Contributors\n* @adripo made their first contribution in https://github.com/jyourstone/jellyfin-smartlists-plugin/pull/345\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.24.0...v10.11.25.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.25.0/Jellyfin.Plugin.SmartLists_v10.11.25.0.zip",
+        "timestamp": "2026-04-04"
+      },
+      {
         "version": "10.11.24.0",
         "checksum": "e7c652bb23027e057bfb6292d2ed8e4b",
         "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.24.0 -->\n\n## What's Changed\n### New Features\n* Added support for IMDb, TMDb, and TVDb IDs\n### Other Changes\n* Added support for IMDb award lists\n* Changed field dropdown to a custom dropdown with a search function plus some other minor styling changes.\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.23.4...v10.11.24.0",
@@ -5352,6 +5424,14 @@
     "owner": "jyourstone",
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-musictags-plugin/master/images/logo.jpg",
     "versions": [
+      {
+        "version": "10.11.3.2",
+        "checksum": "6bd6645b22dcaa21a8bf79887c343439",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.3.2 -->\n\n## What's Changed\n### Other Changes\n* Enhance ID3v2 frame handling with fallback support for version compatibility\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-musictags-plugin/compare/v10.11.3.1...v10.11.3.2",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-musictags-plugin/releases/download/v10.11.3.2/Jellyfin.Plugin.MusicTags_v10.11.3.2.zip",
+        "timestamp": "2026-04-04"
+      },
       {
         "version": "10.11.3.1",
         "checksum": "10d9b68a786c7fc46894bd7b779de643",
@@ -6249,6 +6329,38 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.8.0",
+        "checksum": "b925b862d6e9d39d63ab12a7b426a9d1",
+        "changelog": "## [0.26.8.0] - 2026-04-09\n\n### 🚀 Features\n\n- Lazy loading of images (#144)\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.8.0/gelato_0.26.8.0.zip",
+        "timestamp": "2026-04-09T19:41:32Z"
+      },
+      {
+        "version": "0.26.7.4",
+        "checksum": "e8ef7143d62cdd8f84d0f3ffae32fe54",
+        "changelog": "## [0.26.7.4] - 2026-04-08\n\n### 🐛 Bug Fixes\n\n- Allow number and string for realeaseinfo\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.7.4/gelato_0.26.7.4.zip",
+        "timestamp": "2026-04-08T15:31:06Z"
+      },
+      {
+        "version": "0.26.7.3",
+        "checksum": "5b75c1496346a0980438b0fdc0741931",
+        "changelog": "## [0.26.7.3] - 2026-04-03\n\n### 🐛 Bug Fixes\n\n- Insert redirect for queries with ids argument\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.7.3/gelato_0.26.7.3.zip",
+        "timestamp": "2026-04-03T19:53:50Z"
+      },
+      {
+        "version": "0.26.7.2",
+        "checksum": "338bcd12080881985cc4e1e89d01d609",
+        "changelog": "## [0.26.7.2] - 2026-04-01\n\n### 🐛 Bug Fixes\n\n- Handle null subtitle titles in search results (#141)\n- Add seasons to gelato filter\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.7.2/gelato_0.26.7.2.zip",
+        "timestamp": "2026-04-01T22:18:12Z"
+      },
+      {
         "version": "0.26.7.1",
         "checksum": "fda7097285a9d8414a3b276b5a94b50b",
         "changelog": "## [0.26.7.1] - 2026-03-23\n\n### 🐛 Bug Fixes\n\n- Clean up listing filter intent and preserve internal lookups (#138)\n- Clean url encoded subtitle  ames\n",
@@ -6455,38 +6567,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.1.5/gelato_0.26.1.5.zip",
         "timestamp": "2026-02-19T19:26:20Z"
-      },
-      {
-        "version": "0.26.1.4",
-        "checksum": "a9e28aaa59ff6b546b0b86fdcffaa4dd",
-        "changelog": "## [0.26.1.4] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Catalog form\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.1.4/gelato_0.26.1.4.zip",
-        "timestamp": "2026-02-19T18:55:12Z"
-      },
-      {
-        "version": "0.26.1.3",
-        "checksum": "b17043ec8085d1030d7fbd5615d7f61a",
-        "changelog": "## [0.26.1.3] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Also purge 0.25 streams\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.1.3/gelato_0.26.1.3.zip",
-        "timestamp": "2026-02-19T16:26:03Z"
-      },
-      {
-        "version": "0.26.1.2",
-        "checksum": "9b691d550fb50f5a526608c7bbc939ef",
-        "changelog": "## [0.26.1.2] - 2026-02-19\n\n### 🐛 Bug Fixes\n\n- Mark existing stream as a non virtual\n- Remove stale catalog from importer\n\n### 🚜 Refactor\n\n- Import form\n\n### 🎨 Styling\n\n- Typo\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.1.2/gelato_0.26.1.2.zip",
-        "timestamp": "2026-02-19T13:59:32Z"
-      },
-      {
-        "version": "0.26.1.1",
-        "checksum": "54257512efeec787de31f5c41e82aaef",
-        "changelog": "## [0.26.1.1] - 2026-02-18\n\n### 🐛 Bug Fixes\n\n- Force bump\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.1.1/gelato_0.26.1.1.zip",
-        "timestamp": "2026-02-18T21:02:17Z"
       }
     ]
   },
@@ -7617,6 +7697,22 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/master/docs/images/icon.png",
     "versions": [
+      {
+        "version": "11.5.1.0",
+        "checksum": "f05cde2b5a61d1331cf0fdb380bceb88",
+        "changelog": "- fix: prevent plugin UI disappearing after upgrade and crashing at start up ([#531](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/531))",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/11.5.1.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-04-05T19:55:25"
+      },
+      {
+        "version": "11.5.0.0",
+        "checksum": "a0dc4831ad4dccddc4e5485f6d9644dc",
+        "changelog": "- Added Catalan, Basque and Galician flag codes ([#501](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/501))\n - Changed 2 translations that werent working. ([#506](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/506))\n - fix: prevent duplicate avatar downloads filling up browser temp files ([#504](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/504))\n - fix: fall back to show poster for seasons missing artwork ([#505](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/505))\n - 2 more corrections catalan tl ([#507](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/507))\n - chore(ci)(deps): bump the github-actions group with 2 updates ([#508](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/508))\n - chore(ci)(deps): bump actions/configure-pages from 5.0.0 to 6.0.0 ([#509](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/509))\n - chore(ci)(deps): bump actions/deploy-pages from 4.0.5 to 5.0.0 ([#510](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/510))\n - fix: move non-sensitive derived values from private-config to public-config ([#517](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/517))\n - fix: wait for access token before Seerr initialization ([#518](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/518))\n - fix: include primary language in translation fallback chain ([#519](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/519))\n - Fix broken Troubleshooting link in issue template\n - add czech and slovak language ([#521](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/521))\n - fix: Clear stale UseCustomTabs/UsePluginPages flags when plugins not installed ([#522](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/522))\n - fix: Bookmarks tab empty, add sidebar nav and Custom Tabs support ([#523](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/523))\n - refactor: enhance activity icon matching with regex patterns and normalize text from Jellyfin\n - fix: filter download queue by user requests for non-admin users ([#524](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/524))\n - Mismatched ellipsis\n - perf: Consolidate MutationObservers and unify tag systems into single pipeline ([#515](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/515))\n - perf: replace 100+ GitHub HEAD requests with server-side locale enumeration ([#527](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/527))\n - Weblate for translations\n - Add Weblate translation badges",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/11.5.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-04-04T10:23:49"
+      },
       {
         "version": "11.4.0.0",
         "checksum": "1d3715e934bc15de9142b60911405093",
@@ -8846,6 +8942,22 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "6.5.2.1",
+        "checksum": "dd41673b11d939d53b5916fef6da7b73",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.5.2.1",
+        "targetAbi": "10.11.6",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.5.2.1/myanimelist_6.5.2.1.zip",
+        "timestamp": "2026-04-06T18:49:29Z"
+      },
+      {
+        "version": "6.5.2.0",
+        "checksum": "607c3c206c1e09380247838a226756f2",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.5.2.0",
+        "targetAbi": "10.11.6",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.5.2.0/myanimelist_6.5.2.0.zip",
+        "timestamp": "2026-04-04T20:43:16Z"
+      },
       {
         "version": "6.5.1.0",
         "checksum": "5c446fdd3380a064c70c59d5644dd684",
@@ -10790,6 +10902,14 @@
     "imageUrl": "https://raw.githubusercontent.com/TheXaman/jellyfin-plugin-languageTags/refs/heads/main/Images/logo.png",
     "versions": [
       {
+        "version": "0.5.3.0",
+        "checksum": "8b6b11b949e5b4213f446843f2b9e651",
+        "changelog": "- feat: tag only whole TV Show, addresses #35\n- feat: add Tag Series Only checkbox to skip tagging Seasons and Episodes, addresses #35\" fix: added tagSeriesOnly to the scanContext fix: removed manual edits to auto generated files\n- feat: tag only whole TV Show, addresses #35\n- Update build.yaml and manifest.json for release version 0.5.2.2\n- Bump version to 0.5.2.2\n- fix: wrong variable check, addresses #32",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/TheXaman/jellyfin-plugin-languageTags/releases/download/v0.5.3.0/language-tags_0.5.3.0.zip",
+        "timestamp": "2026-03-31T18:25:14Z"
+      },
+      {
         "version": "0.5.2.2",
         "checksum": "b841a2f4883bdda06c01e53604b18e36",
         "changelog": "- Bump version to 0.5.2.2\n- fix: wrong variable check, addresses #32\n- Update build.yaml and manifest.json for release version 0.5.2.1\n- Bump version to 0.5.2.1\n- fix: incorrect variable names\n- Bump version to 0.5.2.0\n- fix: made sure series processing uses the correct language data types (iso, name) where appropriate, fixes #31\n- Merge pull request #30 from Rand0mB0y/patch-3\n- Revise README for LanguageTags plugin details\n- Updated the README to reflect the recent major changes",
@@ -11238,11 +11358,11 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-custom-tabs/main/src/logo.png",
     "versions": [
       {
-        "version": "0.2.6.0",
-        "checksum": "3cadcd0b7554dfb0051d4aa0d1472e81",
-        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.6",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.6.0/Release-10.11.6.zip",
+        "version": "0.2.8.0",
+        "checksum": "b984edb85d289bb74491ea3de39217a7",
+        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.8",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.2.8.0/Release-10.11.8.zip",
         "dependencies": [
             "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
           ],
@@ -11260,11 +11380,11 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-collection-sections/main/src/logo.png",
     "versions": [
       {
-        "version": "2.3.6.0",
-        "checksum": "1f5bf1b07a3fc8133cca80fc6bc5915b",
-        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.6",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.6.0/Release-10.11.6.zip",
+        "version": "2.3.8.0",
+        "checksum": "83bcf13c9b57e05f3e548c2f4ec633f5",
+        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.8",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-collection-sections/releases/download/2.3.8.0/Release-10.11.8.zip",
         "dependencies": [
             "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
           ],
@@ -11282,37 +11402,15 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-file-transformation/main/src/logo.png",
     "versions": [
       {
-        "version": "2.5.5.0",
-        "checksum": "64cf0ac3e9bde83ceacdacfbdcd4e007",
-        "changelog": "🪲 Bug Fixes\r\n \r\n - Fixed issue #46, where server would crash on startup as would dependant plugins (PR #47, @enyineer)",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.5.0/Release-10.11.6.zip",
+        "version": "2.5.7.0",
+        "checksum": "a64f8f73471e74c1e7306bf2b9c97dd2",
+        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.8",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.7.0/Release-10.11.8.zip",
         "dependencies": [
             "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
           ],
         "timestamp": "2026-03-15T13:12:07"
-      },
-      {
-        "version": "2.5.4.0",
-        "checksum": "f1587697e551a9d7ee6d53a2f743f4a1",
-        "changelog": "🔒 Security\r\n\r\n- Added stricter auth for transformation registration (GHSA-79rj-f7gj-xf33)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed issue where plugin couldn't generate a UUID on http scheme (PR #44, @PatrickDahlin)",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.4.0/Release-10.11.6.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-02-27T12:02:58"
-      },
-      {
-        "version": "2.5.3.0",
-        "checksum": "12833d51d85da74f3922394bf7856758",
-        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.6",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/2.5.3.0/Release-10.11.6.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2025-11-28T20:39:29"
       }
     ]
   },
@@ -11326,26 +11424,15 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-media-bar/main/src/logo.png",
     "versions": [
       {
-        "version": "2.4.8.1",
-        "checksum": "9d5c41af003910c190fc82e28349310d",
-        "changelog": "Hotfix to solve issue where trailer enable/disable toggle didn't work",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.8.1/Release-10.11.6.zip",
+        "version": "2.4.10.0",
+        "checksum": "0601b519ceae9ae3a7debdb3f8e3976f",
+        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.8",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.10.0/Release-10.11.8.zip",
         "dependencies": [
             "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
           ],
-        "timestamp": "2026-02-08T11:23:49"
-      },
-      {
-        "version": "2.4.7.0",
-        "checksum": "1dff9b80fcb82598593ff5ae22033181",
-        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.6\r\n- Merged with upstream",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/2.4.7.0/Release-10.11.6.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-01-15T00:19:42"
+        "timestamp": "2026-02-13T14:31:50"
       }
     ]
   },
@@ -11359,11 +11446,11 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-pages/main/src/logo.png",
     "versions": [
       {
-        "version": "2.4.7.0",
-        "checksum": "f091ab05b5778b9e1661586cfe098ce6",
-        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.6\r\n\r\n🪲 Bug Fixes\r\n\r\n- Removed spammy log",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.7.0/Release-10.11.6.zip",
+        "version": "2.4.9.0",
+        "checksum": "8934b4aca1cc8fd84800218112b2667b",
+        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.8",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/2.4.9.0/Release-10.11.8.zip",
         "dependencies": [
             "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
           ],
@@ -11381,48 +11468,15 @@
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-home-sections/main/src/logo.png",
     "versions": [
       {
-        "version": "2.5.6.0",
-        "checksum": "1117a5abab939ff2d39c0de8b4e02e2a",
-        "changelog": "✨ New Features\r\n\r\n- Add support for Jellyfin Enhanced modals for discover cards. Allows users with private Seerr instances to still present the data without taking their user to a site that can't be accessed (PR #202, @n00bcodr)\r\n- Add support for ratings to appear on discover cards, requires [Jellyfin Enhanced](https://github.com/n00bcodr/Jellyfin-Enhanced) (PR #205, @n00bcodr)\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed performance issues with the \"Latest\" sections. These now incrementally request 30 days of content at a time until the library is exhausted.\r\n- Fixed #198; Sort order for combined next up and continue watching section was incorrectly being handled. Additionally performance for this section has improved approx 2.5x (PR #200, @AdamWHY2K)",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.5.6.0/Release-10.11.6.zip",
+        "version": "2.5.9.0",
+        "checksum": "4f5e15f08f94fba570d4c60888a3ebb1",
+        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.8",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.5.9.0/Release-10.11.8.zip",
         "dependencies": [
             "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
           ],
-        "timestamp": "2026-02-13T14:28:32"
-      },
-      {
-        "version": "2.5.5.0",
-        "checksum": "024b6781213090ad1d31eed7cef3cdc7",
-        "changelog": "🪲 Bug Fixes\r\n\r\n- Further fixes to performance issues, this time more wholesale across all the supported sections. I found a different way to get items from the library which seems to be significantly quicker than the old approach.\r\n\r\n🌐 Translations\r\n\r\n- Added Russian translations (PR #191, @gallyamb)\r\n- Added Mexican Spanish translations (PR #194, @josephmora)",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.5.5.0/Release-10.11.6.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-02-03T01:22:11"
-      },
-      {
-        "version": "2.5.4.0",
-        "checksum": "bf2aaeedaa5aa8f6f241514438f3717c",
-        "changelog": "🪲 Bug Fixes\r\n\r\n- Fixed issue where LatestShows/LatestMovies was really really slow. I've personally seen a 15x speed improvement when collecting items from this section",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.5.4.0/Release-10.11.6.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-02-02T23:24:36"
-      },
-      {
-        "version": "2.5.3.0",
-        "checksum": "b051c7c49bf85f5880001a890331c5c1",
-        "changelog": "✨ New Features\r\n\r\n- Added support for 10.11.6\r\n\r\n🪲 Bug Fixes\r\n\r\n- Fixed #177 - Added support for hiding watched episodes in the combined Continue Watching / Next Up section (PR #178, @AdamWHY2K)\r\n\r\n🌐 Translations\r\n\r\n- Added Turkish translations (PR #186, @dgkndemir)\r\n- Added Czech translations (PR #187, @vdobes)",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/2.5.3.0/Release-10.11.6.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-01-19T21:44:05"
+        "timestamp": "2026-03-29T15:27:45"
       }
     ]
   },
@@ -11922,44 +11976,44 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/segment-editor-plugin@master/images/logo.png",
     "versions": [
       {
-        "version": "0.1.30.0",
-        "checksum": "8f819946f84836ee0ed0c87ec0d40996",
+        "version": "0.1.39.0",
+        "checksum": "d8c3946cfe0d033b16fbfc33e9d4076e",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.30.0/segment-editor-plugin-v0.1.30.0.zip",
-        "timestamp": "2026-03-28T17:08:04Z"
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.39.0/segment-editor-plugin-v0.1.39.0.zip",
+        "timestamp": "2026-04-06T15:55:58Z"
       },
       {
-        "version": "0.1.29.0",
-        "checksum": "f18bc9610a308e3b3f48df0ca4633f56",
+        "version": "0.1.37.0",
+        "checksum": "1366b118031f0644226b31515b8bf453",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.29.0/segment-editor-plugin-v0.1.29.0.zip",
-        "timestamp": "2026-03-27T20:32:59Z"
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.37.0/segment-editor-plugin-v0.1.37.0.zip",
+        "timestamp": "2026-04-06T03:24:18Z"
       },
       {
-        "version": "0.1.27.0",
-        "checksum": "ce7b08dc7114484010daeb16bdf76b03",
+        "version": "0.1.36.0",
+        "checksum": "c352c2c99e1e911da393dd5ab666d33e",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.27.0/segment-editor-plugin-v0.1.27.0.zip",
-        "timestamp": "2026-03-25T16:43:46Z"
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.36.0/segment-editor-plugin-v0.1.36.0.zip",
+        "timestamp": "2026-04-04T23:38:46Z"
       },
       {
-        "version": "0.1.25.0",
-        "checksum": "cf2ba5934128c20194ddd1d0b80d31c0",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.25.0/segment-editor-plugin-v0.1.25.0.zip",
-        "timestamp": "2026-03-20T16:16:22Z"
-      },
-      {
-        "version": "0.1.10.0",
-        "checksum": "bc8e8ec495b3550935a7e4578d2feef9",
+        "version": "0.1.35.0",
+        "checksum": "a88a0448dca70ef313ba4fcd06916e54",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.10.0/segment-editor-plugin-v0.1.10.0.zip",
-        "timestamp": "2026-02-28T16:16:22Z"
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.35.0/segment-editor-plugin-v0.1.35.0.zip",
+        "timestamp": "2026-04-04T04:57:22Z"
+      },
+      {
+        "version": "0.1.34.0",
+        "checksum": "20b47969e3326c7d872fc3519f0a1795",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.34.0/segment-editor-plugin-v0.1.34.0.zip",
+        "timestamp": "2026-04-03T03:24:36Z"
       }
     ]
   },
@@ -11998,6 +12052,25 @@
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/releases/download/0.5.0-33f16aa/ChapterCreator-0.5.0.zip",
         "timestamp": "2025-10-21T15:32:37Z"
+      }
+    ]
+  },
+  {
+    "name": "SkipMe.db",
+    "guid": "b2a63e62-0ac5-4575-9ad2-2c7534ccb83d",
+    "category": "MoviesAndShows",
+    "description": "Retrieves a database of crowd-sourced timestamps from the SkipMe.db API and supplies them to Jellyfin as a segment provider",
+    "overview": "Retrieves crowd-sourced segment timestamps from the SkipMe.db API",
+    "owner": "Intro Skipper",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/skipme.db-plugin@master/images/logo.png",
+    "versions": [
+      {
+        "version": "0.1.8.0",
+        "checksum": "9f899813327bb8172a2a9724d74c4741",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/skipme.db-plugin/blob/main/CHANGELOG.md)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/intro-skipper/skipme.db-plugin/releases/download//v0.1.8.0/SkipMe.db-plugin-v0.1.8.0.zip",
+        "timestamp": "2026-04-06T12:00:00Z"
       }
     ]
   }
