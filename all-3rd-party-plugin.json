@@ -494,6 +494,14 @@
     "imageUrl": "https://raw.githubusercontent.com/cedev-1/Jellyfin-Plugin-DiscordNotifier/main/media/banner.png",
     "versions": [
       {
+        "version": "1.6.1.0",
+        "checksum": "f9d06ea5ddd968a8b03bbc2443256741",
+        "changelog": "- New release v1.6.1.0",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://github.com/cedev-1/jellyfin-plugin-DiscordNotifier/releases/download/v1.6.1.0/Jellyfin.Plugin.DiscordNotifier-v1.6.1.0.zip",
+        "timestamp": "2026-04-19T10:39:48Z"
+      },
+      {
         "version": "1.6.0.0",
         "checksum": "6b1f375bb36db2b6d218454559978ab3",
         "changelog": "- New release v1.6.0.0",
@@ -2063,6 +2071,54 @@
     "imageUrl": "https://raw.githubusercontent.com/Fovty/HoverTrailer/refs/heads/master/logo/logo.png",
     "versions": [
       {
+        "version": "0.2.9.1",
+        "checksum": "3d1013e80d544e502cc9a21a812f2467",
+        "changelog": "- feat(loop): opt-in stop-on-end so trailers don't loop forever",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Fovty/HoverTrailer/releases/download/v0.2.9.1/HoverTrailer-0.2.9.1-server.zip",
+        "timestamp": "2026-04-26T19:52:43Z"
+      },
+      {
+        "version": "0.2.9.0",
+        "checksum": "520acdafe619d5d99f2bc3e192b28c91",
+        "changelog": "- feat(controls): trailer controls overlay with HD-aware rounded clipping (#18)\n- fix(youtube): serve HD by rendering iframe at native quality dims\n- fix(iframe): drop double-centering that bled #000 on top+left edges",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Fovty/HoverTrailer/releases/download/v0.2.9.0/HoverTrailer-0.2.9.0-server.zip",
+        "timestamp": "2026-04-25T19:07:20Z"
+      },
+      {
+        "version": "0.2.8.1",
+        "checksum": "a14f2b09880f216d55da5cebf6544eda",
+        "changelog": "- chore(config): update default settings for new installs\n- chore(config): remove dead orphan field, methods, and ghost sizing mode",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Fovty/HoverTrailer/releases/download/v0.2.8.1/HoverTrailer-0.2.8.1-server.zip",
+        "timestamp": "2026-04-23T20:49:37Z"
+      },
+      {
+        "version": "0.2.8.0",
+        "checksum": "6ac4ce1ab9e94e80e768d3a7dfda23be",
+        "changelog": "- feat(anchor): make viewport clamp opt-in via Pin to Viewport\n- fix(halo): drop SVG cutout, let opaque container cover the blur\n- fix(resize): dismiss preview on window resize\n- fix(anchor): clamp AnchorToCard previews inside the viewport\n- fix(halo): re-render mask on size change and drive halo from rAF tick\n- docs: refresh README for v0.2.7.0 features and trim filler\n- fix(release): restore truncated v0.2.7.0 changelog in manifest\n- fix(ci): stop truncating release changelog to 200 chars",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Fovty/HoverTrailer/releases/download/v0.2.8.0/HoverTrailer-0.2.8.0-server.zip",
+        "timestamp": "2026-04-23T08:00:53Z"
+      },
+      {
+        "version": "0.2.7.0",
+        "checksum": "c110f19d1342f56ea2920a33529babce",
+        "changelog": "- feat: optional focus trigger for keyboard / D-pad navigation\n- feat: Halo background blur mode + scroll-smooth tracking\n- feat: AnchorToCard positioning mode and persistent preview\n- fix: clamp hover preview to 90% of viewport\n- fix: restrict hover to real movie/series cards",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Fovty/HoverTrailer/releases/download/v0.2.7.0/HoverTrailer-0.2.7.0-server.zip",
+        "timestamp": "2026-04-22T20:27:16Z"
+      },
+      {
+        "version": "0.2.6.1",
+        "checksum": "14718ad7f803d8d58f43fd53bab4466e",
+        "changelog": "- fix: YouTube trailer autoplay on first hover after fresh load (closes #16)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Fovty/HoverTrailer/releases/download/v0.2.6.1/HoverTrailer-0.2.6.1-server.zip",
+        "timestamp": "2026-04-21T21:01:20Z"
+      },
+      {
         "version": "0.2.6.0",
         "checksum": "1ba98ade8964a28a35eb9461f48e46ad",
         "changelog": "- chore: Remove unused ENABLE_THEME_VIDEO_FALLBACK JS constant\n- fix: Restore Back button & disable on touch devices (closes #15)",
@@ -2391,7 +2447,7 @@
     "versions": [
       {
         "version": "1.5.1.1",
-        "checksum": "d5df25c7c7f5ae87f776d96e6eb1b4e8",
+        "checksum": "98a889d26341268caeb0df01c29d2870",
         "changelog": "Improved logs, UI and better handling of authentication parameters to better support futur issues.\n1. refactor/fixed_warnings_for_TVDB_token_update\n2. refactor/add_more_logs_for_authentication_process\n3. refactor/correct_user_config_client_id_and_secret_before_generating_auth_code_url",
         "targetAbi": "10.11.0",
         "sourceUrl": "https://github.com/iankiller77/MyAnimeSync/releases/download/v1.5.1.1/myanimesync_1.5.1.1.zip",
@@ -3935,6 +3991,22 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.14.2",
+        "checksum": "c9e8b914596f45200024a91b598c0055",
+        "changelog": "## [0.26.14.2] - 2026-04-24\n\n### 🐛 Bug Fixes\n\n- Wrong release date year condition\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.14.2/gelato_0.26.14.2.zip",
+        "timestamp": "2026-04-24T05:42:30Z"
+      },
+      {
+        "version": "0.26.14.1",
+        "checksum": "26aa2467fb106dc93369065a4ecfea78",
+        "changelog": "## [0.26.14.1] - 2026-04-21\r\n\r\n### 🐛 Bug Fixes\r\n\r\n- Dont filter by digital release date for items older then a year\r\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.14.1/gelato_0.26.14.1.zip",
+        "timestamp": "2026-04-21T18:43:14Z"
+      },
+      {
         "version": "0.26.14.0",
         "checksum": "83da7f68c590c1332a89da6c45556246",
         "changelog": "## [0.26.14.0] - 2026-04-16\n\n### 🚀 Features\n\n- Also update future digital release dates\n",
@@ -4149,22 +4221,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.4/gelato_0.26.6.4.zip",
         "timestamp": "2026-03-01T21:00:59Z"
-      },
-      {
-        "version": "0.26.6.3",
-        "checksum": "03e10e6cd87ea33aac64dc86a39c9fbc",
-        "changelog": "## [0.26.6.3] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Disable imdbRating from catalogs\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.3/gelato_0.26.6.3.zip",
-        "timestamp": "2026-03-01T17:22:47Z"
-      },
-      {
-        "version": "0.26.6.2",
-        "checksum": "e6083a60b701c75d9dba9ecbf5d88332",
-        "changelog": "## [0.26.6.2] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Introduce new logic to determine if an catalog is importable or not\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.6.2/gelato_0.26.6.2.zip",
-        "timestamp": "2026-03-01T16:35:12Z"
       }
     ]
   },
@@ -5295,6 +5351,30 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/master/docs/images/icon.png",
     "versions": [
+      {
+        "version": "11.8.1.0",
+        "checksum": "693803a202f9b2ad4fa0c5cbe90bf720",
+        "changelog": "- fix(config): inject configPage.css via ApiClient.getUrl for reverse-proxy support ([#572](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/572))\n - Scope all generic Jellyfin class styles to JellyfinEnhancedPage\n - Update configPage.css",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/11.8.1.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-04-26T21:11:26"
+      },
+      {
+        "version": "11.8.0.0",
+        "checksum": "bacdfe1d28cca909b9ccc093536b049f",
+        "changelog": "- Use helper for external links & add fallback\n - Add Seerr permission audit & enforce perms\n - Fix Lists in Documentation\n - Add 404 page, assets, and fix doc links\n - Add mdx-truly-sane-lists to MkDocs dependencies\n - chore(ci)(deps): bump the github-actions group with 3 updates ([#567](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/567))\n - Update elsewhere.js\n - Settings UI Redesign ([#569](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/569))\n - Change Radarr Icon and z-Index so that backbutton and profile picture are visible\n - Remove loopback addresses from SSRF\n - Fix Active Streams widget styling\n - Update configPage.html\n - fix: resolve multiple requests page polling\n - refactor(config): reorganise settings layout and simplify feature-toggle styling",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/11.8.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-04-25T17:24:53"
+      },
+      {
+        "version": "11.7.0.0",
+        "checksum": "9039649e3fef14dfe3a828c86a88a499",
+        "changelog": "- fix: hidden users could not see their own reviews ([#548](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/548))\n - Fix avatar image source for requests page ([#551](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/551))\n - Clear caches on video change; simplify item ID lookup\n - Update .gitignore\n - feat: Add Active Streams widget and session API\n - chore(ci)(deps): bump trufflesecurity/trufflehog from 3.94.2 to 3.94.3 in the github-actions group ([#553](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/553))\n - chore(ci)(deps): bump actions/upload-pages-artifact from 4.0.0 to 5.0.0 ([#554](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/554))\n - Refactor config UI, stream image & IDs\n - Add configurable pause screen delay\n - Hide IP for non-admins and remove app version\n - feat: multi-instance Sonarr/Radarr support ([#559](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/559))\n - Handle ratings when 0\n - Use <img> icons and themeable ARR dropdown\n - Add external configPage.css and refactor HTML\n - Missed translation key\n - Improve Active Streams Icons\n - Add admin broadcast to Active Streams\n - Improve logging: user display & polling dedup\n - Stop polling when page is not visible\n - Avoid redundant user-settings POSTs\n - Show all instances in calendar labels\n - Docs: Add multi-instance ARR and Active Streams\n - Update JellyfinEnhancedController.cs",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/11.7.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-04-18T17:12:52"
+      },
       {
         "version": "11.6.0.0",
         "checksum": "7ecc3c30f803481c0343077857d1841b",
@@ -6556,6 +6636,14 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "6.6.0.2",
+        "checksum": "aaa986d5b9588dcdf0b2572c874dda87",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.0.2",
+        "targetAbi": "10.11.8",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.6.0.2/myanimelist_6.6.0.2.zip",
+        "timestamp": "2026-04-17T17:11:29Z"
+      },
       {
         "version": "6.6.0.1",
         "checksum": "a15e80184776b9f76e3149e2a0e7d764",
@@ -9644,44 +9732,44 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/segment-editor-plugin@master/images/logo.png",
     "versions": [
       {
+        "version": "0.1.48.0",
+        "checksum": "fbda650a9fa759c79140df19bf53c1f6",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.48.0/segment-editor-plugin-v0.1.48.0.zip",
+        "timestamp": "2026-04-22T17:34:43Z"
+      },
+      {
+        "version": "0.1.47.0",
+        "checksum": "bb901bd402142e9857a8e970eb4861ad",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.47.0/segment-editor-plugin-v0.1.47.0.zip",
+        "timestamp": "2026-04-22T03:26:08Z"
+      },
+      {
+        "version": "0.1.46.0",
+        "checksum": "a392311f36b78a4f6df0fdef4fb6c3be",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.46.0/segment-editor-plugin-v0.1.46.0.zip",
+        "timestamp": "2026-04-20T20:02:58Z"
+      },
+      {
+        "version": "0.1.45.0",
+        "checksum": "064ae103ff16107aa6dfca2f2c29be99",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.45.0/segment-editor-plugin-v0.1.45.0.zip",
+        "timestamp": "2026-04-18T03:38:06Z"
+      },
+      {
         "version": "0.1.44.0",
         "checksum": "7449c7ddf466c5dbb30a8d5cd632f892",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.44.0/segment-editor-plugin-v0.1.44.0.zip",
         "timestamp": "2026-04-15T20:06:48Z"
-      },
-      {
-        "version": "0.1.43.0",
-        "checksum": "914a7d26acf7abd914946aa83e3fcea9",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.43.0/segment-editor-plugin-v0.1.43.0.zip",
-        "timestamp": "2026-04-11T18:56:16Z"
-      },
-      {
-        "version": "0.1.42.0",
-        "checksum": "81213640096e4aa856cbf428f21fad14",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.42.0/segment-editor-plugin-v0.1.42.0.zip",
-        "timestamp": "2026-04-09T14:22:02Z"
-      },
-      {
-        "version": "0.1.39.0",
-        "checksum": "d8c3946cfe0d033b16fbfc33e9d4076e",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.39.0/segment-editor-plugin-v0.1.39.0.zip",
-        "timestamp": "2026-04-06T15:55:58Z"
-      },
-      {
-        "version": "0.1.37.0",
-        "checksum": "1366b118031f0644226b31515b8bf453",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v0.1.37.0/segment-editor-plugin-v0.1.37.0.zip",
-        "timestamp": "2026-04-06T03:24:18Z"
       }
     ]
   },
@@ -9714,12 +9802,12 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@a434e00edba70493794e25917cc8d3326d5a85c6/images/jellyfin-plugin-ms-chapter/logo.png",
     "versions": [
       {
-        "version": "0.5.1.0",
-        "checksum": "2eea7269b8625ff9f26cf4503103774e",
+        "version": "0.5.2.0",
+        "checksum": "533d67a3704a8ebe99e6278897cf6ac8",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/releases/download/0.5.1-2a46182/ChapterCreator-0.5.1.zip",
-        "timestamp": "2026-04-15T20:32:37Z"
+        "sourceUrl": "https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/releases/download/0.5.2.0-4bb370d/ChapterCreator-0.5.2.0.zip",
+        "timestamp": "2026-04-20T20:32:37Z"
       }
     ]
   },
@@ -9733,12 +9821,12 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/skipme.db-plugin@master/images/logo.png",
     "versions": [
       {
-        "version": "0.1.9.0",
-        "checksum": "dda83ce9d644237896872af054d2deb8",
+        "version": "0.1.14.0",
+        "checksum": "92087b61975f001034d80ab0b67af0fc",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/skipme.db-plugin/blob/main/CHANGELOG.md)",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/intro-skipper/skipme.db-plugin/releases/download//v0.1.9.0/SkipMe.db-plugin-v0.1.9.0.zip",
-        "timestamp": "2026-04-13T12:00:00Z"
+        "sourceUrl": "https://github.com/intro-skipper/skipme.db-plugin/releases/download//v0.1.14.0/SkipMe.db-plugin-v0.1.14.0.zip",
+        "timestamp": "2026-04-25T00:00:00Z"
       }
     ]
   }
