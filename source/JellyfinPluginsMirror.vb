@@ -94,11 +94,11 @@ Module JellyfinPluginsMirror
         '====================
         ' Загрузка списка репозиториев
         '====================
+        Url = REPO_URL & "/" & REPO_LIST
         StringLog = String.Format(vbCrLf & "Loading list from {0}", Url)
         Console.WriteLine(StringLog)
         Call OutLog(StringLog)
         '====================
-        Url = REPO_URL & "/" & REPO_LIST
         If DownloadFile(Url, FileName) Then
             Urls = IO.File.ReadAllLines(FileName, System.Text.Encoding.UTF8)
             Console.ForegroundColor = ConsoleColor.White
