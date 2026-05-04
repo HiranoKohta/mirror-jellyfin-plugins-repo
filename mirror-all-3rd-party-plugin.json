@@ -323,6 +323,30 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/meilisearch-logo-dark.svg",
     "versions": [
       {
+        "version": "1.11.1.15",
+        "checksum": "6494d8016ea91f610a4e58e51c8711f0",
+        "changelog": "- [95f5916] fix: replace DbIndexer with EfCoreIndexer to avoid SQLite readonly error 119",
+        "targetAbi": "10.11.7.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.11.1.15/meilisearch_1.11.1.15.zip",
+        "timestamp": "2026-04-28T19:19:12Z"
+      },
+      {
+        "version": "1.11.1.12",
+        "checksum": "4c4f8a43315cab601550e3cf568e745e",
+        "changelog": "- [f31f2a8] fix: deduplicate items by id in MeilisearchMutateFilter (#112)\n- [c0c0fde] Feat: configurable item types for search results (#111)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.11.1.12/meilisearch_1.11.1.12.zip",
+        "timestamp": "2026-04-27T10:09:50Z"
+      },
+      {
+        "version": "1.11.1.11",
+        "checksum": "9677c6b2c8e22e058b50f677cc94a250",
+        "changelog": "- [de593e5] ci(deps): bump actions/upload-artifact from 7.0.0 to 7.0.1 (#107)\n- [e120910] ci(deps): bump ad-m/github-push-action from 1.0.0 to 1.1.0 (#108)\n- [1064e0a] ci(deps): bump actions/download-artifact from 8.0.0 to 8.0.1 (#104)\n- [8f43a19] ci(deps): bump ncipollo/release-action from 1.20.0 to 1.21.0 (#105)\n- [4db069b] ci(deps): bump actions/setup-dotnet from 5.1.0 to 5.2.0 (#103)\n- [f346ede] ci(deps): bump actions/upload-artifact from 6.0.0 to 7.0.0 (#101)\n- [a43dedc] ci(deps): bump actions/download-artifact from 7.0.0 to 8.0.0 (#102)\n- [c51c0e9] refactor(db): use async query and dispose DbContext properly",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.11.1.11/meilisearch_1.11.1.11.zip",
+        "timestamp": "2026-04-27T10:08:47Z"
+      },
+      {
         "version": "1.11.1.10",
         "checksum": "b1b95aabd8607bff3a50ef20c26ef3fd",
         "changelog": "- [2fad775] docs: Setup/usage instructions, clarify, provide examples (#92)\n- [a3c4ca9] ci(deps): bump actions/checkout from 6.0.1 to 6.0.2 (#90)\n- [b3cafe1] feat: add default search types when none specified (#73)\n- [66dc487] ci(deps): Bump actions/setup-dotnet from 5.0.1 to 5.1.0 (#87)\n- [79de4f9] chore: add VSCode configuration files for extensions and settings\n- [907251d] refactor: remove workaround for URL constructor in Meilisearch plugin\n- [a8b531e] chore: update .gitignore to include .vs/ directory",
@@ -493,6 +517,14 @@
     "owner": "cedev-1",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/cedev-1/Discord%20Notifier/banner.png",
     "versions": [
+      {
+        "version": "1.7.0.0",
+        "checksum": "996c8913649257e898552d0ffe421fa9",
+        "changelog": "- New release v1.7.0.0",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/cedev-1/Discord%20Notifier/1.7.0.0/Jellyfin.Plugin.DiscordNotifier-v1.7.0.0.zip",
+        "timestamp": "2026-04-29T21:24:51Z"
+      },
       {
         "version": "1.6.1.0",
         "checksum": "f9d06ea5ddd968a8b03bbc2443256741",
@@ -3991,6 +4023,22 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.14.4",
+        "checksum": "2a69da81349997adbd9e56de6f014555",
+        "changelog": "## [0.26.14.4] - 2026-04-28\n\n### 🐛 Bug Fixes\n\n- Clear dead person filter\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.4/gelato_0.26.14.4.zip",
+        "timestamp": "2026-04-28T08:34:18Z"
+      },
+      {
+        "version": "0.26.14.3",
+        "checksum": "02b4488880685e82e817341776791360",
+        "changelog": "## [0.26.14.3] - 2026-04-27\n\n### 🐛 Bug Fixes\n\n- Replace path with stub on playbackinfo to prevent leaking\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.3/gelato_0.26.14.3.zip",
+        "timestamp": "2026-04-27T19:52:46Z"
+      },
+      {
         "version": "0.26.14.2",
         "checksum": "c9e8b914596f45200024a91b598c0055",
         "changelog": "## [0.26.14.2] - 2026-04-24\n\n### 🐛 Bug Fixes\n\n- Wrong release date year condition\n",
@@ -4205,22 +4253,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.6/gelato_0.26.6.6.zip",
         "timestamp": "2026-03-12T19:22:52Z"
-      },
-      {
-        "version": "0.26.6.5",
-        "checksum": "7630458165f0ac7ff87c0b7e128cbe75",
-        "changelog": "## [0.26.6.5] - 2026-03-05\n\n### 🚜 Refactor\n\n- Catalog import\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.5/gelato_0.26.6.5.zip",
-        "timestamp": "2026-03-05T14:50:55Z"
-      },
-      {
-        "version": "0.26.6.4",
-        "checksum": "3d07e1af2b8ef27a39f154c6a3184f27",
-        "changelog": "## [0.26.6.4] - 2026-03-01\n\n### 🐛 Bug Fixes\n\n- Try to catch non standard subtitle language fields\n\n### 🚜 Refactor\n\n- Use imdbid for subtitles with fallback to stremioid\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.4/gelato_0.26.6.4.zip",
-        "timestamp": "2026-03-01T21:00:59Z"
       }
     ]
   },
@@ -6636,6 +6668,14 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "6.6.1.0",
+        "checksum": "de144d0368dd72ab06316a09d8ee2d95",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.1.0",
+        "targetAbi": "",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/6.6.1.0/myanimelist_6.6.1.0.zip",
+        "timestamp": "2026-04-30T01:19:53Z"
+      },
       {
         "version": "6.6.0.2",
         "checksum": "aaa986d5b9588dcdf0b2572c874dda87",
@@ -9681,6 +9721,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/logo.png",
     "versions": [
       {
+        "version": "1.10.11.19",
+        "checksum": "bafed47c18b5159747e5da9ad777253e",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.19)\n",
+        "targetAbi": "10.11.8.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/1.10.11.19/intro-skipper-v1.10.11.19.zip",
+        "timestamp": "2026-05-02T21:38:46Z"
+      },
+      {
         "version": "1.10.11.17",
         "checksum": "f14d188bc9c06873bf4b6076efab10f3",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.17)\n",
@@ -9732,6 +9780,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
+        "version": "1.0.1.0",
+        "checksum": "fefd19748a081ff96c448e38a27e22bd",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.1.0/segment-editor-plugin-v1.0.1.0.zip",
+        "timestamp": "2026-04-29T14:16:57Z"
+      },
+      {
         "version": "0.1.48.0",
         "checksum": "fbda650a9fa759c79140df19bf53c1f6",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -9762,14 +9818,6 @@
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.45.0/segment-editor-plugin-v0.1.45.0.zip",
         "timestamp": "2026-04-18T03:38:06Z"
-      },
-      {
-        "version": "0.1.44.0",
-        "checksum": "7449c7ddf466c5dbb30a8d5cd632f892",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.44.0/segment-editor-plugin-v0.1.44.0.zip",
-        "timestamp": "2026-04-15T20:06:48Z"
       }
     ]
   },
@@ -9802,12 +9850,12 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/logo.png",
     "versions": [
       {
-        "version": "0.5.2.0",
-        "checksum": "533d67a3704a8ebe99e6278897cf6ac8",
+        "version": "0.5.4.0",
+        "checksum": "de51d3817be16af3811a5745ee4e9032",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.5.2.0/ChapterCreator-0.5.2.0.zip",
-        "timestamp": "2026-04-20T20:32:37Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.5.4.0/ChapterCreator-0.5.4.0.zip",
+        "timestamp": "2026-05-03T20:32:37Z"
       }
     ]
   },
@@ -9821,12 +9869,12 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/logo.png",
     "versions": [
       {
-        "version": "0.1.14.0",
-        "checksum": "92087b61975f001034d80ab0b67af0fc",
+        "version": "0.1.15.0",
+        "checksum": "ed6c6818be1a65c1703b9e857f016a52",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/skipme.db-plugin/blob/main/CHANGELOG.md)",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/0.1.14.0/SkipMe.db-plugin-v0.1.14.0.zip",
-        "timestamp": "2026-04-25T00:00:00Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/0.1.15.0/SkipMe.db-plugin-v0.1.15.0.zip",
+        "timestamp": "2026-05-01T00:00:00Z"
       }
     ]
   }
