@@ -105,7 +105,7 @@
       },
       {
         "version": "0.0.0.9000",
-        "checksum": "cd9b1cf5b8f7c393fb51f429fa049f7d",
+        "checksum": "517d0ece631d5d1ae35dabc8f90b6636",
         "changelog": "Nightly build\n",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/9p4/SSO%20Authentication/0.0.0.9000/sso-authentication_0.0.0.9000.zip",
@@ -1012,6 +1012,30 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/logo.png",
     "versions": [
+      {
+        "version": "2.1.0.0",
+        "checksum": "f45b4844ddcd0d2c30688de6f272d558",
+        "changelog": "- feat: Add title fallback for logo in slides when logo image is unavailable",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/2.1.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-05-11T22:36:52Z"
+      },
+      {
+        "version": "2.0.3.0",
+        "checksum": "8108c856bcbdaf50eeb9918822a5409f",
+        "changelog": "- feat: implement genre/tag filtering in custom id's\n- optimize video backdrop logic and SponsorBlock integration",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/2.0.3.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-05-10T00:37:54Z"
+      },
+      {
+        "version": "2.0.0.0",
+        "checksum": "a0c479779aa6ae94c33002b81da1a17b",
+        "changelog": "- feat: implement genre/tag filtering in custom id's\n- optimize video backdrop logic and SponsorBlock integration",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/2.0.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-05-09T21:10:58Z"
+      },
       {
         "version": "1.9.8.0",
         "checksum": "a510c013e35f4a09579553bd0a3cce30",
@@ -2916,6 +2940,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jyourstone/SmartLists/logo.jpg",
     "versions": [
       {
+        "version": "10.11.26.0",
+        "checksum": "0613abf8f24010e206b2f477e8e3c612",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.26.0 -->\n\n## What's Changed\n### New Features\n* Added support for metadata tags and favorite state\n* Added support for all-user playlists\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.25.1...v10.11.26.0",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jyourstone/SmartLists/10.11.26.0/Jellyfin.Plugin.SmartLists_v10.11.26.0.zip",
+        "timestamp": "2026-05-09"
+      },
+      {
         "version": "10.11.25.1",
         "checksum": "34a0c576b760851e5d61bcb2e39a8d42",
         "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.25.1 -->\n\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.25.0...v10.11.25.1",
@@ -4023,6 +4055,30 @@
     "owner": "lstb1t",
     "versions": [
       {
+        "version": "0.26.14.7",
+        "checksum": "0e4fb500ec0017c612db1280c400ae8c",
+        "changelog": "## [0.26.14.7] - 2026-05-05\n\n### 🐛 Bug Fixes\n\n- Revert stub\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.7/gelato_0.26.14.7.zip",
+        "timestamp": "2026-05-05T16:37:10Z"
+      },
+      {
+        "version": "0.26.14.6",
+        "checksum": "3745ad4779835509c60d62d17557c162",
+        "changelog": "## [0.26.14.6] - 2026-05-05\n\n### 🐛 Bug Fixes\n\n- Return of the purge task\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.6/gelato_0.26.14.6.zip",
+        "timestamp": "2026-05-05T10:50:58Z"
+      },
+      {
+        "version": "0.26.14.5",
+        "checksum": "117f2a4b5daa5bf8e9cfda1653ad012d",
+        "changelog": "## [0.26.14.5] - 2026-05-05\n\n### 🐛 Bug Fixes\n\n- Do not mark items as virtual in listings\n\n### 🚜 Refactor\n\n- Use bulk deleye to speed up purge\n",
+        "targetAbi": "10.11.6.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.5/gelato_0.26.14.5.zip",
+        "timestamp": "2026-05-05T10:10:39Z"
+      },
+      {
         "version": "0.26.14.4",
         "checksum": "2a69da81349997adbd9e56de6f014555",
         "changelog": "## [0.26.14.4] - 2026-04-28\n\n### 🐛 Bug Fixes\n\n- Clear dead person filter\n",
@@ -4229,30 +4285,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.7.0/gelato_0.26.7.0.zip",
         "timestamp": "2026-03-19T12:10:55Z"
-      },
-      {
-        "version": "0.26.6.8",
-        "checksum": "6e753f3ce2cdecde3dc6a963078a457a",
-        "changelog": "## [0.26.6.8] - 2026-03-14\n\n### 🐛 Bug Fixes\n\n- Revert query filter\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.8/gelato_0.26.6.8.zip",
-        "timestamp": "2026-03-14T07:35:07Z"
-      },
-      {
-        "version": "0.26.6.7",
-        "checksum": "9a63f3c98047e81d4dcfeccaba4e402e",
-        "changelog": "## [0.26.6.7] - 2026-03-13\n\n### 🐛 Bug Fixes\n\n- Preserve internal folder lookups during intercepted item search (#133)\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.7/gelato_0.26.6.7.zip",
-        "timestamp": "2026-03-13T15:50:45Z"
-      },
-      {
-        "version": "0.26.6.6",
-        "checksum": "07f4899a72ccc6a4a8ee41d435c5ce7f",
-        "changelog": "## [0.26.6.6] - 2026-03-12\n\n### 🐛 Bug Fixes\n\n- *(repository)* Skip stream exclusion on gelato stream-tag queries (#132)\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.6.6/gelato_0.26.6.6.zip",
-        "timestamp": "2026-03-12T19:22:52Z"
       }
     ]
   },
@@ -5383,6 +5415,14 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
+      {
+        "version": "11.9.0.0",
+        "checksum": "fb51da3c776e510b5191fb31ae1f9074",
+        "changelog": "- chore(ci)(deps): bump trufflesecurity/trufflehog from 3.94.3 to 3.95.2 in the github-actions group ([#575](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/575))\n - Translated using Weblate (Russian)\n - Added translation using Weblate (Bulgarian)\n - i18n: add Bulgarian locale ([#578](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/578))\n - Resolve merge conflict in bg.json\n - Change Issue type translation key\n - feat: add frame-by-frame video controls (, and .) ([#579](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/579))\n - dont gate TMDB collections with API Key\n - Update ratings.css\n - Missed  \"jellyseerr_btn_rejected\" translation\n - Jellyfin Helper favicon.ico ([#584](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/584))\n - Update plugin-icons.js\n - Remove from Continue Watching and Hidden Content: non-destructive, and now work on all devices (no longer DOM-only) Also add hidden content settings to admin page instead of only in the user settings. ([#573](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/573))\n - feat: better Seerr request quota support ([#583](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/583))\n - chore(ci)(deps): bump github/codeql-action from 4.35.2 to 4.35.3 in the github-actions group ([#586](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/586))\n - feat: trigger Seerr recently-added scan on Jellyfin item added ([#588](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/588))\n - feat: split Quality Tags into 6 reorderable categories ([#560](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/560)) ([#585](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/585))\n - Fix and update translations\n - Update configPage.html\n - fix: Click outside the modal to close more-info-modal\n - feat: Add \"Jump to Last Position\" shortcut (Z)\n - feat: Add subtitle position grid and fix vanilla style bleed-through\n - docs: add troubleshooting entries\n - Update bug.md\n - Translated using Weblate (Russian)\n - Translated using Weblate (English (United Kingdom))\n - Translated using Weblate (Polish)\n - Revert \"Translated using Weblate (Polish)\"\n - Revert \"Translated using Weblate (English (United Kingdom))\"\n - Revert \"Translated using Weblate (Russian)\"\n - Translated using Weblate (Russian)\n - Translated using Weblate (Slovak)\n - Translated using Weblate (Hungarian)\n - Translated using Weblate (Chinese (Simplified Han script))\n - Translated using Weblate (Polish)\n - Translated using Weblate (Swedish)\n - Update cs.json\n - fix(seerr): allow re-requesting items with stale Available status\n - Update ui.js\n - feat: user reviews for seasons/episodes + average rating on posters and item details ([#597](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/597))\n - fix: load request-manager before api.js\n - fix(seerr): Cloudflare / reverse-proxy / forward-auth compatibility + cache flush on config save ([#599](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/599))\n - fix: osd-rating not being updated on episode change\n - Add note about subtitle position settings",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/11.9.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-05-10T12:31:01"
+      },
       {
         "version": "11.8.1.0",
         "checksum": "693803a202f9b2ad4fa0c5cbe90bf720",
@@ -6668,6 +6708,30 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "6.6.2.3",
+        "checksum": "50f64b1df76755b08c654be871cfaa6c",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.2.3",
+        "targetAbi": "",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/6.6.2.3/myanimelist_6.6.2.3.zip",
+        "timestamp": "2026-05-11T19:15:51Z"
+      },
+      {
+        "version": "6.6.2.2",
+        "checksum": "3c35b4bc2f16107796b7692d3afbf27e",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.2.2",
+        "targetAbi": "",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/6.6.2.2/myanimelist_6.6.2.2.zip",
+        "timestamp": "2026-05-10T20:10:15Z"
+      },
+      {
+        "version": "6.6.2.1",
+        "checksum": "1a61002e0a633b7aae7fd158ba9e9e53",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.2.1",
+        "targetAbi": "",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/6.6.2.1/myanimelist_6.6.2.1.zip",
+        "timestamp": "2026-05-10T18:44:57Z"
+      },
       {
         "version": "6.6.1.0",
         "checksum": "de144d0368dd72ab06316a09d8ee2d95",
@@ -9780,44 +9844,44 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
-        "version": "1.0.1.0",
-        "checksum": "fefd19748a081ff96c448e38a27e22bd",
+        "version": "1.0.8.0",
+        "checksum": "1e6e02737780a045b58ece9e4cdb6fb1",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.1.0/segment-editor-plugin-v1.0.1.0.zip",
-        "timestamp": "2026-04-29T14:16:57Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.8.0/segment-editor-plugin-v1.0.8.0.zip",
+        "timestamp": "2026-05-10T05:07:17Z"
       },
       {
-        "version": "0.1.48.0",
-        "checksum": "fbda650a9fa759c79140df19bf53c1f6",
+        "version": "1.0.7.0",
+        "checksum": "220102dc6a4fe188c3108df50d33a56f",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.48.0/segment-editor-plugin-v0.1.48.0.zip",
-        "timestamp": "2026-04-22T17:34:43Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.7.0/segment-editor-plugin-v1.0.7.0.zip",
+        "timestamp": "2026-05-09T11:02:42Z"
       },
       {
-        "version": "0.1.47.0",
-        "checksum": "bb901bd402142e9857a8e970eb4861ad",
+        "version": "1.0.6.0",
+        "checksum": "9d51122a796d37134e8a6ffd5efbd6fe",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.47.0/segment-editor-plugin-v0.1.47.0.zip",
-        "timestamp": "2026-04-22T03:26:08Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.6.0/segment-editor-plugin-v1.0.6.0.zip",
+        "timestamp": "2026-05-08T20:35:48Z"
       },
       {
-        "version": "0.1.46.0",
-        "checksum": "a392311f36b78a4f6df0fdef4fb6c3be",
+        "version": "1.0.5.0",
+        "checksum": "7ff8be875d8032461c26bb354e48a7ae",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.46.0/segment-editor-plugin-v0.1.46.0.zip",
-        "timestamp": "2026-04-20T20:02:58Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.5.0/segment-editor-plugin-v1.0.5.0.zip",
+        "timestamp": "2026-05-07T15:31:47Z"
       },
       {
-        "version": "0.1.45.0",
-        "checksum": "064ae103ff16107aa6dfca2f2c29be99",
+        "version": "1.0.4.0",
+        "checksum": "5a4c852bce94f4b3cb5cbdd6300e4682",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/0.1.45.0/segment-editor-plugin-v0.1.45.0.zip",
-        "timestamp": "2026-04-18T03:38:06Z"
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.4.0/segment-editor-plugin-v1.0.4.0.zip",
+        "timestamp": "2026-05-07T05:01:14Z"
       }
     ]
   },
@@ -9856,6 +9920,38 @@
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.5.4.0/ChapterCreator-0.5.4.0.zip",
         "timestamp": "2026-05-03T20:32:37Z"
+      },
+      {
+        "version": "0.5.3.0",
+        "checksum": "dc8ca32477802607e9bfd7e605e4f921",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.5.3.0/ChapterCreator-0.5.3.0.zip",
+        "timestamp": "2026-05-03T12:54:29Z"
+      },
+      {
+        "version": "0.5.2.0",
+        "checksum": "533d67a3704a8ebe99e6278897cf6ac8",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.5.2.0/ChapterCreator-0.5.2.0.zip",
+        "timestamp": "2026-04-20T17:37:46Z"
+      },
+      {
+        "version": "0.5.1.0",
+        "checksum": "2eea7269b8625ff9f26cf4503103774e",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.5.1.0/ChapterCreator-0.5.1.zip",
+        "timestamp": "2026-04-16T02:36:04Z"
+      },
+      {
+        "version": "0.5.0.0",
+        "checksum": "ac861165af2a9bdc92109a6d73e34125",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.5.0.0/ChapterCreator-0.5.0.zip",
+        "timestamp": "2025-10-21T19:28:18Z"
       }
     ]
   },
@@ -9875,6 +9971,38 @@
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/0.1.15.0/SkipMe.db-plugin-v0.1.15.0.zip",
         "timestamp": "2026-05-01T00:00:00Z"
+      },
+      {
+        "version": "0.1.14.0",
+        "checksum": "92087b61975f001034d80ab0b67af0fc",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/skipme.db-plugin/blob/main/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/0.1.14.0/SkipMe.db-plugin-v0.1.14.0.zip",
+        "timestamp": "2026-04-25T13:28:55Z"
+      },
+      {
+        "version": "0.1.13.0",
+        "checksum": "9e79cf55df5f26271ea1a290bf994824",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/skipme.db-plugin/blob/main/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/0.1.13.0/SkipMe.db-plugin-v0.1.13.0.zip",
+        "timestamp": "2026-04-23T10:54:08Z"
+      },
+      {
+        "version": "0.1.12.0",
+        "checksum": "a805b83e1a30010e6d00e7ea3b06d6fb",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/skipme.db-plugin/blob/main/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/0.1.12.0/SkipMe.db-plugin-v0.1.12.0.zip",
+        "timestamp": "2026-04-22T23:16:40Z"
+      },
+      {
+        "version": "0.1.11.0",
+        "checksum": "715fa615c485d57d721329b99acca451",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/skipme.db-plugin/blob/main/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/SkipMe.db/0.1.11.0/SkipMe.db-plugin-v0.1.11.0.zip",
+        "timestamp": "2026-04-21T13:44:58Z"
       }
     ]
   }
