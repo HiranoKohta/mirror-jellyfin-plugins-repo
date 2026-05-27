@@ -316,6 +316,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/LDAP%20Authentication/jellyfin-plugin-ldapauth.png",
     "versions": [
       {
+        "version": "23.0.0.0",
+        "checksum": "e67eda7dd1b91a71315bd6620c8b03f1",
+        "changelog": "- Backport \"Fix IUserManager.RenameUser signature for Jellyfin 12.x\" for Jellyfin 10.11.9 (#215) @tam1m",
+        "targetAbi": "10.11.9.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/LDAP%20Authentication/23.0.0.0/ldap-authentication_23.0.0.0.zip",
+        "timestamp": "2026-05-22T14:03:42Z"
+      },
+      {
         "version": "22.0.0.0",
         "checksum": "2ee66432cb59540b537bdad3a1162e99",
         "changelog": "- Fix 10.11.2 support (#195) @crobibero",
@@ -646,11 +654,11 @@
     "versions": [
       {
         "version": "17.0.0.0",
-        "checksum": "39575226bed8761f246de3f43183a528",
+        "checksum": "564015681bc44246506ffd068a8d2d89",
         "changelog": "- Jellyfin 10.11 support (#108) @crobibero",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Playback%20Reporting/17.0.0.0/playback-reporting_17.0.0.0.zip",
-        "timestamp": "2025-10-20T01:28:39Z"
+        "timestamp": "2026-05-22T14:04:03Z"
       },
       {
         "version": "16.0.0.0",
@@ -900,6 +908,14 @@
     "owner": "jellyfin",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Trakt/jellyfin-plugin-trakt.png",
     "versions": [
+      {
+        "version": "30.0.0.0",
+        "checksum": "6ba3ddc64e273d9ac9b87a9a14bfb741",
+        "changelog": "-  Fix MissingMethodException on Jellyfin 10.11 (use GetUsers() instead Users) (#292) @lowbit",
+        "targetAbi": "10.11.9.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Trakt/30.0.0.0/trakt_30.0.0.0.zip",
+        "timestamp": "2026-05-22T14:09:42Z"
+      },
       {
         "version": "29.0.0.0",
         "checksum": "c22bc62ec64833291e0235ff90a28a33",
@@ -2341,6 +2357,14 @@
     "overview": "DLNA Service",
     "owner": "jellyfin",
     "versions": [
+      {
+        "version": "11.0.0.0",
+        "checksum": "c1eaee5e02f1e2d51c3fce64175446c7",
+        "changelog": "- Fix IUserManager.Users -> GetUsers() for Jellyfin 10.11.9 (#209) @crobibero",
+        "targetAbi": "10.11.9.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/DLNA/11.0.0.0/dlna_11.0.0.0.zip",
+        "timestamp": "2026-05-22T14:03:42Z"
+      },
       {
         "version": "10.0.0.0",
         "checksum": "c96dbf59c9daf5af1ccc09bea68eca2c",
