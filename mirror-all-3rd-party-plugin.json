@@ -858,6 +858,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/logo.png",
     "versions": [
       {
+        "version": "3.0.0.1",
+        "checksum": "a7c367d5feded03574d47c4ab216e5e4",
+        "changelog": "feat: Add new styling for client-side settings and admin page\n- feat: Add localization support for client-side settings (English, German, Spanish, French, Italian)\n- feat: Add option to move client-side settings to the sidebar",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/3.0.0.1/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-06-22T00:33:33Z"
+      },
+      {
+        "version": "3.0.0.0",
+        "checksum": "6dc39a2937e83e14ba9d856d8b241fff",
+        "changelog": "feat: Add new styling for client-side settings and admin page\n- feat: Add localization support for client-side settings (English, German, Spanish, French, Italian)\n- feat: Add option to move client-side settings to the sidebar",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/3.0.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-06-22T00:14:57Z"
+      },
+      {
         "version": "2.2.0.0",
         "checksum": "12d772586bae9c7c79523332f8de6ec8",
         "changelog": "Add night sky theme with shooting stars, fix space theme shooting star and symbols trajectory",
@@ -1012,6 +1028,14 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/logo.png",
     "versions": [
+      {
+        "version": "3.0.0.0",
+        "checksum": "85af2cb1e141e85a00b05010731ed22e",
+        "changelog": "- feat: Add compact mobile modes (16:9 and 4:3)\n- feat: Add option for client-side menu in the sidebar instead of the navigation bar\n- fix: limits for movies/shows\n- feat: Add volume control for backdrop trailers\n- feat: Add new desgin for the admin page\n- feat: many other improvements and optimizations",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/3.0.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-06-22T00:55:05Z"
+      },
       {
         "version": "2.2.0.0",
         "checksum": "9b8c063894e21101cd899d72ce85ed0b",
@@ -1887,6 +1911,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/logo.png",
     "versions": [
       {
+        "version": "1.5.1.0",
+        "checksum": "8156d04667739f69a65e43c37d25f5e1",
+        "changelog": "Fix played counting",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/1.5.1.0/PlaylistGenerator_1.5.1.0.zip",
+        "timestamp": "2026-06-19T18:39:33Z"
+      },
+      {
         "version": "1.5.0.1",
         "checksum": "b6109a711fa7e6ea1a65d027772c113f",
         "changelog": "Fix crash when missing enough similar songs",
@@ -2516,7 +2548,16 @@
     "description": "This is a longer description that can span more than one line and include details about your plugin.\n",
     "overview": "Synchronise watch status on myanimelist.",
     "owner": "iankiller77",
+    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/iankiller77/MyAnimeSync/jellyfin-plugin-myanimesync.png",
     "versions": [
+      {
+        "version": "1.6.1.0",
+        "checksum": "fcd3be4fa1adad843b1cfbc7284950cd",
+        "changelog": "### :tada: New features and improvements\n- feature/copy api url on click (#51) @iankiller77\n### :bug: Bug Fixes\n- bug/wrong_edit_window_location_on_jellyfin_app (#53) @iankiller77\n- bug/label_first_button_function_bleeding_into_the_label (#52) @iankiller77\n- bug/fix_search_regression_with_unidentified_season_number (#50) @iankiller77",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/iankiller77/MyAnimeSync/1.6.1.0/myanimesync_1.6.1.0.zip",
+        "timestamp": "2026-06-16T05:10:23Z"
+      },
       {
         "version": "1.6.0.0",
         "checksum": "d1ff8c305bf3985f2bcd8f7b8cde350b",
@@ -7550,6 +7591,54 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/shemanaev/Media%20Cleaner/media-cleaner.png",
     "versions": [
       {
+        "version": "2.27.0.101109",
+        "checksum": "c59df61670022c018d2d7e0e3486dc3b",
+        "changelog": "- Fix ci versioning\n",
+        "targetAbi": "10.11.9.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/shemanaev/Media%20Cleaner/2.27.0.101109/MediaCleaner-10.11.9.zip",
+        "timestamp": "2026-06-21T18:59:18Z"
+      },
+      {
+        "version": "2.27.0.101100",
+        "checksum": "f34b5f76e98ad7e319c3228ade53a10b",
+        "changelog": "- Fix ci versioning\n",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/shemanaev/Media%20Cleaner/2.27.0.101100/MediaCleaner-10.11.0.zip",
+        "timestamp": "2026-06-21T18:59:11Z"
+      },
+      {
+        "version": "2.27.0.101007",
+        "checksum": "62adf4eb14b5c5b6a495b0bb06812841",
+        "changelog": "- Fix ci versioning\n",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/shemanaev/Media%20Cleaner/2.27.0.101007/MediaCleaner-10.10.7.zip",
+        "timestamp": "2026-06-21T18:59:25Z"
+      },
+      {
+        "version": "2.24.0.101109",
+        "checksum": "f8e27dbb1bcb9b93f4489c9bf6d0d91c",
+        "changelog": "- Add jellyfin compatibility layer\n",
+        "targetAbi": "10.11.9.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/shemanaev/Media%20Cleaner/2.24.0.101109/MediaCleaner-10.11.9.zip",
+        "timestamp": "2026-06-21T18:27:16Z"
+      },
+      {
+        "version": "2.24.0.101100",
+        "checksum": "4be53296e30420e307301e412f9b4131",
+        "changelog": "- Add jellyfin compatibility layer\n",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/shemanaev/Media%20Cleaner/2.24.0.101100/MediaCleaner-10.11.0.zip",
+        "timestamp": "2026-06-21T18:27:23Z"
+      },
+      {
+        "version": "2.24.0.101007",
+        "checksum": "26d425dedae9bf00f4026b680f6d06b4",
+        "changelog": "- Add jellyfin compatibility layer\n",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/shemanaev/Media%20Cleaner/2.24.0.101007/MediaCleaner-10.10.7.zip",
+        "timestamp": "2026-06-21T18:27:09Z"
+      },
+      {
         "version": "2.24.0.0",
         "checksum": "d5a8fdcb531553f8c6e9e677cd7522cb",
         "changelog": "Add the ability to keep the first/last episode/season of the show\n",
@@ -8219,6 +8308,14 @@
     "owner": "lostb1t",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lostb1t/Streamyfin/logo.png",
     "versions": [
+      {
+        "version": "0.67.0.0",
+        "checksum": "c23c53c1a0173868ba28eecd49d9c465",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.67.0.0)\n",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lostb1t/Streamyfin/0.67.0.0/streamyfin-0.67.0.0.zip",
+        "timestamp": "2026-06-20T16:28:14Z"
+      },
       {
         "version": "0.66.0.0",
         "checksum": "6c4daa669154318ba2b73ba2289ecf2c",
@@ -10038,6 +10135,30 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
+        "version": "1.0.46.0",
+        "checksum": "95e8e120f62de11e57c6277749d64414",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.46.0/segment-editor-plugin-v1.0.46.0.zip",
+        "timestamp": "2026-06-20T10:11:29Z"
+      },
+      {
+        "version": "1.0.45.0",
+        "checksum": "e5b8713f7712eedfc4297805c1b1a468",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.45.0/segment-editor-plugin-v1.0.45.0.zip",
+        "timestamp": "2026-06-20T06:37:00Z"
+      },
+      {
+        "version": "1.0.44.0",
+        "checksum": "3d580d13cd9da9056dc41ee66cc75472",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.44.0/segment-editor-plugin-v1.0.44.0.zip",
+        "timestamp": "2026-06-19T21:46:40Z"
+      },
+      {
         "version": "1.0.43.0",
         "checksum": "9dda4fab54e5a4b75b96f5ec78a62fb2",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -10052,30 +10173,6 @@
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.42.0/segment-editor-plugin-v1.0.42.0.zip",
         "timestamp": "2026-06-12T16:49:40Z"
-      },
-      {
-        "version": "1.0.40.0",
-        "checksum": "522790e73e1c20cee0f40f695aa9f033",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.40.0/segment-editor-plugin-v1.0.40.0.zip",
-        "timestamp": "2026-06-04T18:52:19Z"
-      },
-      {
-        "version": "1.0.39.0",
-        "checksum": "d0b7043641b09c0cf6b3ae31ceb69506",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.39.0/segment-editor-plugin-v1.0.39.0.zip",
-        "timestamp": "2026-06-04T17:31:18Z"
-      },
-      {
-        "version": "1.0.38.0",
-        "checksum": "0657751474e2b2a7db0c0e798ba32739",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.38.0/segment-editor-plugin-v1.0.38.0.zip",
-        "timestamp": "2026-06-04T14:06:55Z"
       }
     ]
   },
