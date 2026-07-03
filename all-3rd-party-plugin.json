@@ -858,20 +858,28 @@
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/Jellyfin-Seasonals/refs/heads/main/logo.png",
     "versions": [
       {
-        "version": "3.0.0.1",
-        "checksum": "a7c367d5feded03574d47c4ab216e5e4",
-        "changelog": "feat: Add new styling for client-side settings and admin page\n- feat: Add localization support for client-side settings (English, German, Spanish, French, Italian)\n- feat: Add option to move client-side settings to the sidebar",
+        "version": "3.0.3.0",
+        "checksum": "8edd7348aa55a0ad6b32322a254b5520",
+        "changelog": "feat: Add mobile client settings menu location option\n- fix: Pride visibility toggle logic",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v3.0.0.1/Jellyfin.Plugin.Seasonals.zip",
-        "timestamp": "2026-06-22T00:33:33Z"
+        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v3.0.3.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-06-28T16:22:20Z"
       },
       {
-        "version": "3.0.0.0",
-        "checksum": "6dc39a2937e83e14ba9d856d8b241fff",
+        "version": "3.0.2.0",
+        "checksum": "0d2022d92c6a72cfc4216caeeb11eee4",
         "changelog": "feat: Add new styling for client-side settings and admin page\n- feat: Add localization support for client-side settings (English, German, Spanish, French, Italian)\n- feat: Add option to move client-side settings to the sidebar",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v3.0.0.0/Jellyfin.Plugin.Seasonals.zip",
-        "timestamp": "2026-06-22T00:14:57Z"
+        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v3.0.2.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-06-27T17:20:11Z"
+      },
+      {
+        "version": "3.0.1.0",
+        "checksum": "cf6af07d94f485940e6c149026471fc6",
+        "changelog": "feat: Add new styling for client-side settings and admin page\n- feat: Add localization support for client-side settings (English, German, Spanish, French, Italian)\n- feat: Add option to move client-side settings to the sidebar",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v3.0.1.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-06-22T14:04:55Z"
       },
       {
         "version": "2.2.0.0",
@@ -1029,12 +1037,20 @@
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/refs/heads/main/logo.png",
     "versions": [
       {
-        "version": "3.0.0.0",
-        "checksum": "85af2cb1e141e85a00b05010731ed22e",
+        "version": "3.0.2.0",
+        "checksum": "e9668147dcc9563eca71a7e1ad427826",
+        "changelog": "- feat: Add option for mobile client-side menu",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v3.0.2.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-06-28T16:24:46Z"
+      },
+      {
+        "version": "3.0.1.0",
+        "checksum": "8ba94b5efaa5b5fa6a49c42c175f8fb3",
         "changelog": "- feat: Add compact mobile modes (16:9 and 4:3)\n- feat: Add option for client-side menu in the sidebar instead of the navigation bar\n- fix: limits for movies/shows\n- feat: Add volume control for backdrop trailers\n- feat: Add new desgin for the admin page\n- feat: many other improvements and optimizations",
         "targetAbi": "10.11.0.0",
-        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v3.0.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
-        "timestamp": "2026-06-22T00:55:05Z"
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v3.0.1.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-06-22T14:09:59Z"
       },
       {
         "version": "2.2.0.0",
@@ -2167,6 +2183,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Fovty/HoverTrailer/refs/heads/master/logo/logo.png",
     "versions": [
       {
+        "version": "0.3.1.0",
+        "checksum": "3b5bc42fbd5190984e446477dd736aae",
+        "changelog": "- feat(hover): don't replace a playing trailer on accidental hover (#23)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/Fovty/HoverTrailer/releases/download/v0.3.1.0/HoverTrailer-0.3.1.0-server.zip",
+        "timestamp": "2026-06-29T23:29:23Z"
+      },
+      {
         "version": "0.3.0.0",
         "checksum": "ebaf41298d43ce8752207dc0ddc2c0ad",
         "changelog": "- feat(ui): persistent volume/mute, Fix Position mode, drag move/resize, local-trailer controls (#20)",
@@ -3004,6 +3028,22 @@
     "owner": "jyourstone",
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/master/images/logo.jpg",
     "versions": [
+      {
+        "version": "10.11.30.2",
+        "checksum": "b4a0ff668d4e296b179fe46438f7a09f",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.30.2 -->\n\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.30.1...v10.11.30.2",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.30.2/Jellyfin.Plugin.SmartLists_v10.11.30.2.zip",
+        "timestamp": "2026-06-28"
+      },
+      {
+        "version": "10.11.30.1",
+        "checksum": "02d5bda7bdfd09edce400324b70ecce9",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.30.1 -->\n\n## What's Changed\n### Other Changes\n* Enhanced support for virtual folders in movie libraries\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-smartlists-plugin/compare/v10.11.30.0...v10.11.30.1",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v10.11.30.1/Jellyfin.Plugin.SmartLists_v10.11.30.1.zip",
+        "timestamp": "2026-06-23"
+      },
       {
         "version": "10.11.30.0",
         "checksum": "dfec6ea8e7b05b9dd1cd36ad420d2597",
@@ -6862,6 +6902,30 @@
     "owner": "Ryan Dash",
     "versions": [
       {
+        "version": "6.6.5.8",
+        "checksum": "ef8b9797fe6985a8c3661f19ae0f4a5c",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.5.8",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.6.5.8/myanimelist_6.6.5.8.zip",
+        "timestamp": "2026-06-25T22:49:13Z"
+      },
+      {
+        "version": "6.6.5.7",
+        "checksum": "4ae4c25455210e5835871176001d71e0",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.5.7",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.6.5.7/myanimelist_6.6.5.7.zip",
+        "timestamp": "2026-06-24T04:41:27Z"
+      },
+      {
+        "version": "6.6.5.6",
+        "checksum": "f9f5c8d26f7bb8df96a4ff41e925db96",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.5.6",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v6.6.5.6/myanimelist_6.6.5.6.zip",
+        "timestamp": "2026-06-23T16:12:53Z"
+      },
+      {
         "version": "6.6.5.5",
         "checksum": "c20b8e7296a8e34964747b787e96490b",
         "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.5.5",
@@ -7590,6 +7654,30 @@
     "owner": "shemanaev",
     "imageUrl": "https://raw.githubusercontent.com/shemanaev/jellyfin-plugin-repo/master/images/media-cleaner.png",
     "versions": [
+      {
+        "version": "3.0.0.101109",
+        "checksum": "83c70aae4d8feb36f9f637868976987a",
+        "changelog": "- 3.0 rewrite\n",
+        "targetAbi": "10.11.9.0",
+        "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v3.0.0.0/MediaCleaner-10.11.9.zip",
+        "timestamp": "2026-07-01T17:35:44Z"
+      },
+      {
+        "version": "3.0.0.101100",
+        "checksum": "d748f729c63276764583b394d7d730ad",
+        "changelog": "- 3.0 rewrite\n",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v3.0.0.0/MediaCleaner-10.11.0.zip",
+        "timestamp": "2026-07-01T17:35:55Z"
+      },
+      {
+        "version": "3.0.0.101007",
+        "checksum": "bf00be59cdd92c5831145d80f6802bb0",
+        "changelog": "- 3.0 rewrite\n",
+        "targetAbi": "10.10.7.0",
+        "sourceUrl": "https://github.com/shemanaev/jellyfin-plugin-media-cleaner/releases/download/v3.0.0.0/MediaCleaner-10.10.7.zip",
+        "timestamp": "2026-07-01T17:35:44Z"
+      },
       {
         "version": "2.27.0.101109",
         "checksum": "c59df61670022c018d2d7e0e3486dc3b",
@@ -9807,6 +9895,14 @@
     "imageUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/image.svg",
     "versions": [
       {
+        "version": "6.3.1.2",
+        "checksum": "b1eaf19fc170aebea4aea49861c797a3",
+        "changelog": "This version contains the following changes:\n  - Config page redesign\n  - General maintenance - code cleanup\n",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_6.3.1.2.zip",
+        "timestamp": "2026-06-22T11:23:45Z"
+      },
+      {
         "version": "6.2.0.3",
         "checksum": "ea5fd1f48cc0c513c93f13da8030858d",
         "changelog": "New features:\n - Strict mode option for ListenBrainz submissions\n - Sync playlists from ListenBrainz\n",
@@ -10135,44 +10231,44 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/segment-editor-plugin@master/images/logo.png",
     "versions": [
       {
+        "version": "1.0.50.0",
+        "checksum": "569ddc64e1e53ed3b7665d746eaf32cd",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.50.0/segment-editor-plugin-v1.0.50.0.zip",
+        "timestamp": "2026-06-24T18:20:16Z"
+      },
+      {
+        "version": "1.0.49.0",
+        "checksum": "e9c6868f60b3253b1bef9c382364fd5c",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.49.0/segment-editor-plugin-v1.0.49.0.zip",
+        "timestamp": "2026-06-24T16:26:12Z"
+      },
+      {
+        "version": "1.0.48.0",
+        "checksum": "966b20e660829e1015afb7bee7d0b2b0",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.48.0/segment-editor-plugin-v1.0.48.0.zip",
+        "timestamp": "2026-06-22T18:51:35Z"
+      },
+      {
+        "version": "1.0.47.0",
+        "checksum": "5b332beb5f221b75a923f9bdc9963145",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.47.0/segment-editor-plugin-v1.0.47.0.zip",
+        "timestamp": "2026-06-22T14:47:29Z"
+      },
+      {
         "version": "1.0.46.0",
         "checksum": "95e8e120f62de11e57c6277749d64414",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.46.0/segment-editor-plugin-v1.0.46.0.zip",
         "timestamp": "2026-06-20T10:11:29Z"
-      },
-      {
-        "version": "1.0.45.0",
-        "checksum": "e5b8713f7712eedfc4297805c1b1a468",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.45.0/segment-editor-plugin-v1.0.45.0.zip",
-        "timestamp": "2026-06-20T06:37:00Z"
-      },
-      {
-        "version": "1.0.44.0",
-        "checksum": "3d580d13cd9da9056dc41ee66cc75472",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.44.0/segment-editor-plugin-v1.0.44.0.zip",
-        "timestamp": "2026-06-19T21:46:40Z"
-      },
-      {
-        "version": "1.0.43.0",
-        "checksum": "9dda4fab54e5a4b75b96f5ec78a62fb2",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.43.0/segment-editor-plugin-v1.0.43.0.zip",
-        "timestamp": "2026-06-13T15:18:38Z"
-      },
-      {
-        "version": "1.0.42.0",
-        "checksum": "a0017daa8e4d98d714a584899fe92b31",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.42.0/segment-editor-plugin-v1.0.42.0.zip",
-        "timestamp": "2026-06-12T16:49:40Z"
       }
     ]
   },
