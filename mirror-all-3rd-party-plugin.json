@@ -323,6 +323,30 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/meilisearch-logo-dark.svg",
     "versions": [
       {
+        "version": "1.12.1.3",
+        "checksum": "e5b55a7105a56e6cb048b7a20755b706",
+        "changelog": "\n- [6950046] fix: update API call to use getJSON for improved status handling",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.12.1.3/meilisearch_1.12.1.3.zip",
+        "timestamp": "2026-07-05T15:05:31Z"
+      },
+      {
+        "version": "1.12.1.2",
+        "checksum": "9406c1d91354f1efff29c150e9cf357a",
+        "changelog": "\n- [6271f9d] fix: prevent indexing crash and eliminate concurrency races",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.12.1.2/meilisearch_1.12.1.2.zip",
+        "timestamp": "2026-07-05T11:25:23Z"
+      },
+      {
+        "version": "1.12.1.1",
+        "checksum": "8da00529ad332a5f2ad8546ec4c5b685",
+        "changelog": "\n- [081467e] ci(deps): bump actions/setup-dotnet from 5.3.0 to 5.4.0 (#128)\n- [690b962] chore: Bump MeiliSearch from 0.19.0 to 0.20.0 (#129)\n- [709354c] feat: add GitHub Actions workflow for building Jellyfin plugin\n- [c7afd97] more dot net 10\n- [9917355] fix: update Jellyfin package references to use wildcard versioning for better compatibility\n- [a480b5f] feat: update target framework to net10.0 and upgrade Jellyfin dependencies to version 12.0.0-rc2; implement Meilisearch search provider\n- [a94b89c] ci(deps): bump actions/checkout from 6.0.3 to 7.0.0 (#126)\n- [9e6f4f1] chore: Bump MeiliSearch from 0.18.0 to 0.19.0 (#127)\n- [b758af0] ci(deps): bump actions/setup-dotnet from 5.2.0 to 5.3.0 (#124)\n- [66f5f6b] ci(deps): bump actions/checkout from 6.0.2 to 6.0.3 (#125)\n- [156350d] ci(deps): bump ad-m/github-push-action from 1.1.0 to 1.3.0 (#123)",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.12.1.1/meilisearch_1.12.1.1.zip",
+        "timestamp": "2026-07-04T20:01:25Z"
+      },
+      {
         "version": "1.11.1.15",
         "checksum": "6494d8016ea91f610a4e58e51c8711f0",
         "changelog": "- [95f5916] fix: replace DbIndexer with EfCoreIndexer to avoid SQLite readonly error 119",
@@ -857,6 +881,14 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/logo.png",
     "versions": [
+      {
+        "version": "3.0.4.0",
+        "checksum": "7b4faa655d492f489d0f61cb619370c3",
+        "changelog": "feat: Add option to disable effects on TVs by default",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/3.0.4.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-07-05T17:14:55Z"
+      },
       {
         "version": "3.0.3.0",
         "checksum": "8edd7348aa55a0ad6b32322a254b5520",
@@ -2574,6 +2606,30 @@
     "owner": "iankiller77",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/iankiller77/MyAnimeSync/jellyfin-plugin-myanimesync.png",
     "versions": [
+      {
+        "version": "1.6.2.2",
+        "checksum": "5806acad17201afc201b4f511d24abcc",
+        "changelog": "### :bug: Bug Fixes\n- Bugfix/wrong season identification with tv special between seasons (#70) @iankiller77\n- bugfix/missing_serie_season_from_user_list_when_season_marked_as_nsfw (#68) @iankiller77",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/iankiller77/MyAnimeSync/1.6.2.2/myanimesync_1.6.2.2.zip",
+        "timestamp": "2026-07-08T02:58:17Z"
+      },
+      {
+        "version": "1.6.2.1",
+        "checksum": "849b082c3f35d9630403350ae003e19c",
+        "changelog": "### :bug: Bug Fixes\n- Bugfix/unable to copy api url from insecure http context (#66) @iankiller77",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/iankiller77/MyAnimeSync/1.6.2.1/myanimesync_1.6.2.1.zip",
+        "timestamp": "2026-07-06T05:08:23Z"
+      },
+      {
+        "version": "1.6.2.0",
+        "checksum": "87a37c884ef43def34b6269658e2b1d4",
+        "changelog": "### :tada: New features and improvements\n- Refactor/improve_code_coverage (#60) @iankiller77\n- feature/consider_serie_production_year_and_type_for_search (#57) @iankiller77\n- refactor/streamlined_update_entry_generation_and_use_for_episode (#56) @iankiller77\n- feature/image_for_plugin_page (#55) @iankiller77\n### :bug: Bug Fixes\n- bugfix/episode_mismatch_on_ONA_in_between_seasons (#62) @iankiller77\n- bugfix/fix_special_episode_issue_introduced_in_#56 (#59) @iankiller77",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/iankiller77/MyAnimeSync/1.6.2.0/myanimesync_1.6.2.0.zip",
+        "timestamp": "2026-07-05T05:50:29Z"
+      },
       {
         "version": "1.6.1.0",
         "checksum": "fcd3be4fa1adad843b1cfbc7284950cd",
@@ -6708,6 +6764,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/RomainPierre7/Telegram%20Notifier/banner.png",
     "versions": [
       {
+        "version": "12.3.0.0",
+        "checksum": "7e9f9e623009ae3554f4988d2ae87f53",
+        "changelog": "### 🚀 New Features\n- Server display URL\n- Http Proxy configuration",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/RomainPierre7/Telegram%20Notifier/12.3.0.0/TelegramNotifier.zip",
+        "timestamp": "2026-07-07T10:00:00Z"
+      },
+      {
         "version": "12.2.0.0",
         "checksum": "2ca078d8796795428d38ad80008d34c9",
         "changelog": "### 🚀 New Features\n- Episode posters for added items",
@@ -6901,6 +6965,14 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "6.6.6.0",
+        "checksum": "b794a9f38849c6b66638403842c821d7",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v6.6.6.0",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/6.6.6.0/myanimelist_6.6.6.0.zip",
+        "timestamp": "2026-07-06T22:55:38Z"
+      },
       {
         "version": "6.6.5.8",
         "checksum": "ef8b9797fe6985a8c3661f19ae0f4a5c",
@@ -10164,6 +10236,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/logo.png",
     "versions": [
       {
+        "version": "1.10.11.22",
+        "checksum": "7507b1915039c94cf67c450e4612fb37",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.22)\n",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/1.10.11.22/intro-skipper-v1.10.11.22.zip",
+        "timestamp": "2026-07-04T17:40:15Z"
+      },
+      {
         "version": "1.10.11.21",
         "checksum": "e069712209a4e8310f600a157d405829",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.21)\n",
@@ -10231,6 +10311,30 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
+        "version": "1.0.53.0",
+        "checksum": "a51913187a14573eb982b1d4530d9f54",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.53.0/segment-editor-plugin-v1.0.53.0.zip",
+        "timestamp": "2026-07-04T09:38:31Z"
+      },
+      {
+        "version": "1.0.52.0",
+        "checksum": "49611b799f83c5bd3a3b0999953e3578",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.52.0/segment-editor-plugin-v1.0.52.0.zip",
+        "timestamp": "2026-07-03T07:47:40Z"
+      },
+      {
+        "version": "1.0.51.0",
+        "checksum": "83be725e9c8308e8c83d29374996fb5d",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.51.0/segment-editor-plugin-v1.0.51.0.zip",
+        "timestamp": "2026-07-02T11:10:30Z"
+      },
+      {
         "version": "1.0.50.0",
         "checksum": "569ddc64e1e53ed3b7665d746eaf32cd",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -10245,30 +10349,6 @@
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.49.0/segment-editor-plugin-v1.0.49.0.zip",
         "timestamp": "2026-06-24T16:26:12Z"
-      },
-      {
-        "version": "1.0.48.0",
-        "checksum": "966b20e660829e1015afb7bee7d0b2b0",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.48.0/segment-editor-plugin-v1.0.48.0.zip",
-        "timestamp": "2026-06-22T18:51:35Z"
-      },
-      {
-        "version": "1.0.47.0",
-        "checksum": "5b332beb5f221b75a923f9bdc9963145",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.47.0/segment-editor-plugin-v1.0.47.0.zip",
-        "timestamp": "2026-06-22T14:47:29Z"
-      },
-      {
-        "version": "1.0.46.0",
-        "checksum": "95e8e120f62de11e57c6277749d64414",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.46.0/segment-editor-plugin-v1.0.46.0.zip",
-        "timestamp": "2026-06-20T10:11:29Z"
       }
     ]
   },
