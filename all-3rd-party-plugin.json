@@ -550,6 +550,14 @@
     "imageUrl": "https://raw.githubusercontent.com/cedev-1/Jellyfin-Plugin-DiscordNotifier/main/media/banner.png",
     "versions": [
       {
+        "version": "1.8.0.0",
+        "checksum": "78c1941929221517fcfe2d71a5c2263b",
+        "changelog": "- New release v1.8.0.0",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/cedev-1/jellyfin-plugin-DiscordNotifier/releases/download/v1.8.0.0/Jellyfin.Plugin.DiscordNotifier-v1.8.0.0.zip",
+        "timestamp": "2026-07-28T14:11:16Z"
+      },
+      {
         "version": "1.7.0.0",
         "checksum": "996c8913649257e898552d0ffe421fa9",
         "changelog": "- New release v1.7.0.0",
@@ -898,12 +906,12 @@
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/Jellyfin-Seasonals/refs/heads/main/logo.png",
     "versions": [
       {
-        "version": "3.0.7.0",
-        "checksum": "2c42a4b1fced8c755c4c414f92ad9609",
-        "changelog": "feat: Add colored logo to admin page\n- feat: Add support for Jellyfin 12.0",
-        "targetAbi": "12.0.0.0",
-        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v3.0.7.0/Jellyfin.Plugin.Seasonals.zip",
-        "timestamp": "2026-07-17T00:23:20Z"
+        "version": "3.1.0.0",
+        "checksum": "c166e4563b319e977421d6fe2be29ab4",
+        "changelog": "feat/fix: Fixed and add support for Jellyfin 12.0",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/Jellyfin-Seasonals/releases/download/v3.1.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-07-26T23:34:14Z"
       },
       {
         "version": "3.0.7.0",
@@ -1117,12 +1125,12 @@
     "imageUrl": "https://raw.githubusercontent.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/refs/heads/main/logo.png",
     "versions": [
       {
-        "version": "3.2.0.0",
-        "checksum": "d18787d915d5457f103a08706d21970d",
-        "changelog": "- feat: Add SponsorBlock categories configuration\n- fix: Improve fetching of excluded libraries (update views URL to include CollectionFolder type for user-specific items)\n- feat: Support Jellyfin 12.0 layout changes\n- fix: Adjust container positioning to work in both 10.11.11 and 12.0 layouts",
-        "targetAbi": "12.0.0.0",
-        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v3.2.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
-        "timestamp": "2026-07-17T00:48:46Z"
+        "version": "3.3.0.0",
+        "checksum": "7cea94ee0fe5d1a537bee20760328ca1",
+        "changelog": "- feat: Add Hover Audio Fade option (fade sound in/out when hovering media bar while muted)\n- feat: Add Random Trailer Start Offset option for greater playback variety\n- feat: Add Trailer Start Offset option to skip intros and studio logos manually\n- feat: Add Trailer End Offset option to trim outros and end credits manually\n- feat: Improve Admin UI layout with grouped controls for SponsorBlock and Trailer Offsets\n- fix: Jellyfin 12.X layout fixes and other improvements",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/CodeDevMLH/jellyfin-plugin-media-bar-enhanced/releases/download/v3.3.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-07-26T23:31:14Z"
       },
       {
         "version": "3.2.0.0",
@@ -1447,6 +1455,14 @@
     "owner": "danieladov",
     "imageUrl": "https://raw.githubusercontent.com/danieladov/JellyfinPluginManifest/master/resources/MergeVersions/thumb.png",
     "versions": [
+      {
+        "version": "12.0.0",
+        "checksum": "b8a8b75010b807581e9548fa5d09f6d1",
+        "changelog": "Upgrade to 12.0 version",
+        "targetAbi": "12.0",
+        "sourceUrl": "https://github.com/danieladov/jellyfin-plugin-mergeversions/releases/download/12.0.0/Jellyfin.Plugin.MergeVersions.zip",
+        "timestamp": "2026-07-25T19:15:00"
+      },
       {
         "version": "10.11.0.1",
         "checksum": "ea467eb9aabbdfc12fafe313c281f30e",
@@ -2441,6 +2457,14 @@
     "owner": "grandguyjs",
     "versions": [
       {
+        "version": "1.8.0.0",
+        "checksum": "321ea03065937dac4812b9df2d00feb4",
+        "changelog": "1.8 Release - Decode URL encoded strings",
+        "targetAbi": "10.9.9.0",
+        "sourceUrl": "https://github.com/GrandguyJS/media-upload-plugin/releases/download/1.8/plugin.zip",
+        "timestamp": ""
+      },
+      {
         "version": "1.7.0.0",
         "checksum": "482ff3c3d2c8bfb642b6df460ce67094",
         "changelog": "1.7 Release - QoL fix",
@@ -3423,6 +3447,14 @@
     "owner": "jyourstone",
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-musictags-plugin/master/images/logo.jpg",
     "versions": [
+      {
+        "version": "10.11.3.3",
+        "checksum": "563a5d82c50f8eb2f6b526d0448f7f18",
+        "changelog": "<!-- Release notes generated using configuration in .github/release.yml at v10.11.3.3 -->\n\n## What's Changed\n### Other Changes\n* Extracts every value from multi-value tags instead of only the first one, so delimiter splitting produces all expected Jellyfin tags.\n\n\n**Full Changelog**: https://github.com/jyourstone/jellyfin-musictags-plugin/compare/v10.11.3.2...v10.11.3.3",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-musictags-plugin/releases/download/v10.11.3.3/Jellyfin.Plugin.MusicTags_v10.11.3.3.zip",
+        "timestamp": "2026-07-23"
+      },
       {
         "version": "10.11.3.2",
         "checksum": "6bd6645b22dcaa21a8bf79887c343439",
@@ -5721,6 +5753,14 @@
     "imageUrl": "https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/master/docs/images/icon.png",
     "versions": [
       {
+        "version": "12.0.0.0",
+        "checksum": "6b52d47a302c244ff6d256389a055413",
+        "changelog": "- fix: duplicate approval notifications and un-approvable pending requests on available shows ([#658](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/658))\n - feat: centralize Seerr status logic in seerr-status.js\n - README: fix: Seerr URL ([#664](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/664))\n - docs: Formatting fixes ([#666](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/666))\n - fix: pick richest audio layout instead of first match in getChannelTag\n - fix: skip synthetic je:navigate event for no-op pushState/replaceState calls ([#657](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/657))\n - fix: allow Administrator API keys to access any user's settings files\n - feat: add admin-scoped write endpoints for reviews and bookmarks\n - chore(ci)(deps): bump actions/checkout from 6.0.3 to 7.0.0 ([#671](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/671))\n - chore(ci)(deps): bump trufflesecurity/trufflehog from 3.95.5 to 3.95.6 in the github-actions group ([#670](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/670))\n - fix: show Request More button when only specials season is unrequested\n - feat: add letterboxd link for people details pages\n - feat: show release/air date chip on item detail pages ([#661](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/661))\n - fix: show MusicVideo bookmarks in the Bookmarks Library\n - fix: skip Report Issue button entirely for non-reportable item types\n - feat: Jellyfin 12 compatibility ([#681](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/681))\n - Load Material Symbols Rounded for release icons\n - Show API keys in config form\n - chore(ci)(deps): bump the github-actions group with 2 updates ([#682](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/682))\n - chore(ci)(deps): bump actions/cache from 5.0.5 to 6.1.0 ([#683](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/683))\n - Admin visibility and management of user-hidden content + bug fixes ([#684](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/684))\n - feat: reliable Remove from Continue Watching + add Remove from Next Up (multi-select & confirm) ([#685](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/685))\n - fix: don't require both Sonarr and Radarr for Requests Page ([#689](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/689))\n - feat(spoiler-guard): per-user opt-in spoiler protection for unwatched content (Jellyfin 10.11 + 12) ([#691](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/691))\n - chore(ci)(deps): bump the github-actions group with 4 updates ([#696](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/696))\n - Fix MutationObserver leak in addUserPreferencesLink (one observer piled up per navigation) ([#694](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/694))\n - feat: serve third-party assets from a local CDN cache (+ off-thread tag-cache updates) ([#692](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/692))\n - feat(spoiler-guard): per-user image identity tags for native clients ([#700](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/700))\n - fix(jellyseerr): stop runaway search requests after leaving search page\n - fix(requests-tab): stop polling when a sibling home tab becomes active\n - fix(native-tabs): only log \"not on home page\" once per transition\n - fix(jellyseerr): sort server dropdown alphabetically, fix default selection\n - style(jellyseerr): restyle season/collection checkboxes as toggle switches\n - chore(ci)(deps): bump the github-actions group with 6 updates ([#703](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/703))\n - fix(tag-cache): stop re-saving the whole cache on no-op library events ([#704](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/704))\n - fix(tags): fix ignore-selector checks matching the wrong element\n - fix(perf): cap concurrent requests for provider and review fetches\n - feat(shortcuts): allow disabling individual keyboard shortcuts\n - feat(jellyseerr): add Seerr detail-page link with More Info modal integration\n - chore(ci)(deps): bump actions/setup-python from 6.3.0 to 7.0.0 ([#710](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/710))\n - chore(ci)(deps): bump the github-actions group with 3 updates ([#709](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/709))\n - chore(ci)(deps): bump actions/setup-dotnet from 5.4.0 to 6.0.0 ([#712](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/712))\n - chore(ci)(deps): bump actions/setup-node from 6.4.0 to 7.0.0 ([#711](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/711))\n - Fix rating normalization logic\n - fix(tags): memory-bounded tag cache builds + honor Server-Side Tag Cache setting (startup OOM crash loop) ([#713](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/713))\n - docs: API overhaul ([#668](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/668))\n - docs: fix bookmark JSON casing and auth header per live server verification",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/12.0.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-07-23T16:48:39"
+      },
+      {
         "version": "11.12.0.0",
         "checksum": "32e3d02b8f46414c02243b1c47209557",
         "changelog": "- docs: add images and expand features/settings\n - chore(ci)(deps): bump actions/setup-dotnet from 5.2.0 to 5.3.0 in the github-actions group ([#643](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/643))\n - Show transcode buffer, codec badges & refresh\n - fix: Improve bookmark modal\n - fix: Add missed size hints and labels to branding inputs\n - feat: Sync Jellyfin Watchlist to Seerr\n - feat: Approve/decline request buttons on downloads page with localized status chips\n - feat: add Maintenance Mode ([#638](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/638))\n - fix: improve Custom Tabs mount resilience and compat diagnostics\n - docs: update Seerr docs for request status, approve/decline, and watchlist sync\n - chore(ci)(deps): bump the github-actions group with 3 updates ([#651](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/651))",
@@ -7061,6 +7101,14 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "11.11.1.1",
+        "checksum": "177ed69fac0d40b5bf22f81a76bc9014",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.1.1",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v11.11.1.1/myanimelist_11.11.1.1.zip",
+        "timestamp": "2026-07-28T18:24:34Z"
+      },
       {
         "version": "6.6.6.0",
         "checksum": "b794a9f38849c6b66638403842c821d7",
@@ -10455,6 +10503,22 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/segment-editor-plugin@master/images/logo.png",
     "versions": [
       {
+        "version": "1.0.59.0",
+        "checksum": "a8cb8241331cc749453d9fdb9ef8addc",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.59.0/segment-editor-plugin-v1.0.59.0.zip",
+        "timestamp": "2026-07-31T07:14:33Z"
+      },
+      {
+        "version": "1.0.58.0",
+        "checksum": "6ade65e3a087e32d3e9ee1e7acb6ce30",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.58.0/segment-editor-plugin-v1.0.58.0.zip",
+        "timestamp": "2026-07-28T06:41:10Z"
+      },
+      {
         "version": "1.0.57.0",
         "checksum": "aa98aa5c0802a05b3c36f7e8a6efaa48",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -10477,22 +10541,6 @@
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.55.0/segment-editor-plugin-v1.0.55.0.zip",
         "timestamp": "2026-07-14T16:22:49Z"
-      },
-      {
-        "version": "1.0.54.0",
-        "checksum": "e6be84580076df1186686c29eba12002",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.54.0/segment-editor-plugin-v1.0.54.0.zip",
-        "timestamp": "2026-07-14T11:08:57Z"
-      },
-      {
-        "version": "1.0.53.0",
-        "checksum": "a51913187a14573eb982b1d4530d9f54",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.53.0/segment-editor-plugin-v1.0.53.0.zip",
-        "timestamp": "2026-07-04T09:38:31Z"
       }
     ]
   },
