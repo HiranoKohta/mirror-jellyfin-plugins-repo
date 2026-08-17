@@ -3484,6 +3484,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/logo.png",
     "versions": [
       {
+        "version": "3.2.0.0",
+        "checksum": "78489c82686c3e567ca82b317c4e6a7b",
+        "changelog": "feat: Add full TV mode D-pad navigation & accessibility focus management\n- fix: Hide settings button during active video playback\n- fix: Improve user menu injection by ignoring hidden/inactive DOM elements\n- feat: Add Smart TV client menu support",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/3.2.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-08-10T00:16:13Z"
+      },
+      {
         "version": "3.1.0.0",
         "checksum": "c166e4563b319e977421d6fe2be29ab4",
         "changelog": "feat/fix: Fixed and add support for Jellyfin 12.0",
@@ -3702,6 +3710,38 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/logo.png",
     "versions": [
+      {
+        "version": "3.5.2.0",
+        "checksum": "344e806cbcddde9e41927b9dd9fec8bd",
+        "changelog": "- feat: Add Sync Page Backdrop option to mirror active slide background in Jellyfin's page background (from upstream with fixes)\n- feat: Add parent series backdrop image fallback for Season and Episode slides\n- fix: Prevent TV mode autofocus from stealing focus when returning from details pages\n- fix: Prevent unintended close events in client settings popup",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/3.5.2.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-08-17T00:04:01Z"
+      },
+      {
+        "version": "3.5.1.0",
+        "checksum": "b82e527e2981f73eb22b3c5e35bd512e",
+        "changelog": "- feat: Add child Season local trailer fallback for Series items without direct series-level trailers",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/3.5.1.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-08-15T15:00:12Z"
+      },
+      {
+        "version": "3.5.0.0",
+        "checksum": "afc70a3536cba6c8e94babe45840205b",
+        "changelog": "- feat: Add TV Series Season and Episode local trailer support\n- feat: Inherit parent Series Logo, Genres, Ratings, and formatted Title for Season and Episode slides\n- feat: Smart remote trailer ranking to prioritize Official/Main trailers over teasers and alternate cuts (from upstream)\n- feat: Unify YouTube URL parsing across all video endpoints\n- fix: Enhance SponsorBlock API with retries, 3.5s timeout controller, 404 caching, and early pre-fetching\n- fix: Match 'Ends at' time display to the viewer's native device system clock format (12h/24h) (from upstream)",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/3.5.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-08-12T23:57:40Z"
+      },
+      {
+        "version": "3.4.0.0",
+        "checksum": "fd75302f449f6ebabf1c8636be5f2b58",
+        "changelog": "- feat: Implement full D-pad TV navigation engine and remote hotkeys (Play/Pause/Mute) with OSD toasts\n- feat: Enhance client settings modal with full TV remote control support and back button handling\n- fix: Update user views API endpoint for library fetching in client settings for v12\n- fix: Improve user avatar menu injection detection for modern Jellyfin themes\n- fix: Hide navbar client menu inside video player\n- fix: Changed default setting for 'RandomTrailerStartOffset ' to false to keep original behavior",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/3.4.0.0/Jellyfin.Plugin.MediaBarEnhanced.zip",
+        "timestamp": "2026-08-10T00:32:37Z"
+      },
       {
         "version": "3.3.0.0",
         "checksum": "7cea94ee0fe5d1a537bee20760328ca1",
@@ -5034,14 +5074,6 @@
     "overview": "remoteupload",
     "owner": "grandguyjs",
     "versions": [
-      {
-        "version": "1.8.0.0",
-        "checksum": "321ea03065937dac4812b9df2d00feb4",
-        "changelog": "1.8 Release - Decode URL encoded strings",
-        "targetAbi": "10.9.9.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/grandguyjs/RemoteUpload/1.8.0.0/plugin.zip",
-        "timestamp": ""
-      },
       {
         "version": "1.7.0.0",
         "checksum": "482ff3c3d2c8bfb642b6df460ce67094",
@@ -8331,6 +8363,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
       {
+        "version": "12.2.0.0",
+        "checksum": "56c7be6ca0519245bf1aeb18b9042913",
+        "changelog": "- Translations update from Hosted Weblate ([#737](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/737))\n - Update translation_validation.yml\n - fix(player): harden OSD track cycling (waits for the menu, stops matching English UI text) ([#738](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/738))\n - Update translation_validation.yml\n - Update translation_validation.yml\n - fix(tags): preserve explicit language regions in flag resolution (pt-BR, es-419, zh-Hant…) ([#739](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/739))\n - fix: re-scope all per-user state when switching users without a page reload ([#740](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/740))\n - Translations update from Hosted Weblate ([#743](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/743))\n - Player shortcuts without opening panels (API-driven track cycling, aspect ratio, playback info, segment skip) ([#742](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/742))\n - feat(player): auto-skip intros/outros from Jellyfin's media segments ([#744](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/744))\n - fix(pausescreen): apply delay setting live and stop digit keys from leaking to OSD seek\n - feat(jellyseerr): default Seerr results to open in the More Info modal\n - Add official German FSK colors and normalization ([#748](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/748))\n - fix(elsewhere): make Default Region a dropdown and honor per-user override",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.2.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-08-08T22:41:14"
+      },
+      {
         "version": "12.1.0.0",
         "checksum": "9a1e552d19b112c2f33d6925f6e14872",
         "changelog": "- Update Jellyfin version badges in README\n - fix(jellyseerr): stop duplicate search results row\n - Revert \"fix(jellyseerr): stop duplicate search results row\"\n - fix(jellyseerr): stop duplicate search results row\n - fix: don't add sidebar links to dashboardDocument\n - chore(ci)(deps): bump the github-actions group with 6 updates ([#720](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/720))\n - feat(jellyseerr): add Seerr Recommendations page\n - fix(maintenance-mode): stop unchecked account/remote toggles reverting to disable_accounts\n - fix(maintenance-mode): reconcile account/remote state when Action changes while active\n - fix: Seerr results row cannot be touch-scrolled on phones ([#721](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/721))\n - feat(requests-page): track ARR import lifecycle and add bounded download history ([#717](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/717))\n - feat(panel): searchable section navigation for the user settings panel ([#722](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/722))\n - Update ratings.css\n - refactor: modularize the client by feature ([#723](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/723))\n - feat(panel): dynamic subtitle styling warnings and live preview fixes\n - feat(header): collapse native-tabs fallback links into a native-styled menu on mobile\n - Translations update from Hosted Weblate ([#728](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/728))\n - fix(i18n): validate {{icon:xxx}} placeholders and fix Norwegian typo ([#729](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/729))\n - chore(ci): migrate dependency-review to allow-licenses\n - chore(docs): Update Star History badges to new chart endpoint\n - feat(i18n): complete Hebrew and Finnish translations, refresh Continue Watching wording\n - fix(i18n): translate remaining stale strings in he.json and fi.json\n - fix(i18n): translate remaining real gaps flagged by Weblate checks\n - fix(i18n): translate 4 more real gaps found in a second Weblate check pass\n - Translations update from Hosted Weblate ([#730](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/730))\n - fix(panel): subtitle preset selection not applying or highlighting\n - feat(awards): add Wikidata-sourced award wins/nominations ([#654](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/654))\n - fix(qualitytags): Detect 8K/4320p and use width-based fallback\n - chore(ci)(deps): bump actions/stale from 10.4.0 to 11.0.0 ([#734](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/734))\n - chore(ci)(deps): bump the github-actions group across 1 directory with 3 updates ([#733](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/733))\n - fix(bookmarks): add Others tab for non-movie/TV bookmarks",
@@ -8726,6 +8766,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/icon.png",
     "versions": [
       {
+        "version": "4.0.0.0",
+        "checksum": "d00392134b71dc10fc625c6a19d839f8",
+        "changelog": "- Add Jellyfin 12 support via IStartupFilter, drop 10.10.7\n - Add CodeMirror code editor with JSHint linting to config page",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/4.0.0.0/Jellyfin.Plugin.JavaScriptInjector_10.11.0.zip",
+        "timestamp": "2026-08-12T15:53:47"
+      },
+      {
         "version": "3.5.0.0",
         "checksum": "af0d6c50f02595974f5fa509974133c8",
         "changelog": "- Add search, drag-reorder, import/export, and unsaved-changes guard to config page",
@@ -8792,6 +8840,14 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/thumb.png",
     "versions": [
+      {
+        "version": "4.0.0.0",
+        "checksum": "c5b74f0a4da9cda6bd991e78c8580445",
+        "changelog": "- Update README with new badges and links\n - Update README.md\n - Update funding.yml\n - Add GNU General Public License v3\n - Jellyfin v12 Support and drop support for Jellyfin 10.10",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/4.0.0.0/Jellyfin.Plugin.JellyTweaks_10.11.0.zip",
+        "timestamp": "2026-08-12T15:43:13"
+      },
       {
         "version": "3.1.0.0",
         "checksum": "0bc862688c9045d7c2793cbda0aa8446",
@@ -9687,6 +9743,94 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "11.11.6.2",
+        "checksum": "818cd2b15a542007c520bca907cae66b",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.6.2",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.6.2/myanimelist_11.11.6.2.zip",
+        "timestamp": "2026-08-14T22:38:22Z"
+      },
+      {
+        "version": "11.11.6.1",
+        "checksum": "f06239fcc74f30ed0aa53d9cd2cc963a",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.6.1",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.6.1/myanimelist_11.11.6.1.zip",
+        "timestamp": "2026-08-14T20:47:31Z"
+      },
+      {
+        "version": "11.11.5.1",
+        "checksum": "06b97ca81b63bb8d136bb8f0de1b0229",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.5.1",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.5.1/myanimelist_11.11.5.1.zip",
+        "timestamp": "2026-08-14T15:21:24Z"
+      },
+      {
+        "version": "11.11.4.5",
+        "checksum": "a73b812d0f2a07df94932cde46fc0789",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.4.5",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.4.5/myanimelist_11.11.4.5.zip",
+        "timestamp": "2026-08-12T20:53:24Z"
+      },
+      {
+        "version": "11.11.4.4",
+        "checksum": "4905df305b3de8cc1a66e4ac593749aa",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.4.4",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.4.4/myanimelist_11.11.4.4.zip",
+        "timestamp": "2026-08-11T04:55:59Z"
+      },
+      {
+        "version": "11.11.4.3",
+        "checksum": "a785d5d6da023b5ad1e5e7292d259b77",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.4.3",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.4.3/myanimelist_11.11.4.3.zip",
+        "timestamp": "2026-08-11T03:51:10Z"
+      },
+      {
+        "version": "11.11.4.2",
+        "checksum": "78e69f8c86e4d9f22e4e3df85585dd2b",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.4.2",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.4.2/myanimelist_11.11.4.2.zip",
+        "timestamp": "2026-08-11T03:32:41Z"
+      },
+      {
+        "version": "11.11.4.1",
+        "checksum": "ba979f7de475d8e1e294efe903b87463",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.4.1",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.4.1/myanimelist_11.11.4.1.zip",
+        "timestamp": "2026-08-11T01:59:10Z"
+      },
+      {
+        "version": "11.11.3.1",
+        "checksum": "98b4876738936d4f8459fa3a2349c11f",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.3.1",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.3.1/myanimelist_11.11.3.1.zip",
+        "timestamp": "2026-08-10T23:37:16Z"
+      },
+      {
+        "version": "11.11.2.2",
+        "checksum": "b4739a80d23c0219d97695eb24498b1d",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.2.2",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.2.2/myanimelist_11.11.2.2.zip",
+        "timestamp": "2026-08-10T01:17:09Z"
+      },
+      {
+        "version": "11.11.2.1",
+        "checksum": "7fe810ca2f694f37b78e700918964ff7",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v11.11.2.1",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/11.11.2.1/myanimelist_11.11.2.1.zip",
+        "timestamp": "2026-08-09T21:13:58Z"
+      },
       {
         "version": "11.11.1.1",
         "checksum": "177ed69fac0d40b5bf22f81a76bc9014",
@@ -13089,6 +13233,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
+        "version": "1.0.60.0",
+        "checksum": "1c779224ed02c2176fa4c9f1803041f9",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.60.0/segment-editor-plugin-v1.0.60.0.zip",
+        "timestamp": "2026-08-09T05:18:54Z"
+      },
+      {
         "version": "1.0.59.0",
         "checksum": "a8cb8241331cc749453d9fdb9ef8addc",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -13119,14 +13271,6 @@
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.56.0/segment-editor-plugin-v1.0.56.0.zip",
         "timestamp": "2026-07-15T08:24:23Z"
-      },
-      {
-        "version": "1.0.55.0",
-        "checksum": "57781daffa444ef46d175a158c3bd51d",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/1.0.55.0/segment-editor-plugin-v1.0.55.0.zip",
-        "timestamp": "2026-07-14T16:22:49Z"
       }
     ]
   },
