@@ -8363,6 +8363,22 @@
     "imageUrl": "https://raw.githubusercontent.com/n00bcodr/Jellyfin-Enhanced/master/docs/images/icon.png",
     "versions": [
       {
+        "version": "12.4.0.0",
+        "checksum": "2d742333cd900f794555a72012e17470",
+        "changelog": "- fix(subtitles): sync position preview with the bottom-anchored render\n - feat(reviews): support half-star ratings\n - feat(jellyseerr): option to link available items' posters straight to Jellyfin\n - feat(config-page): show which tab a What's New setting lives in",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/12.4.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-08-22T09:47:17"
+      },
+      {
+        "version": "12.3.0.0",
+        "checksum": "3cc903395d6a03032bff68f693480301",
+        "changelog": "- Fix German FSK rating colors ([#749](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/749))\n - chore(ci)(deps): bump the github-actions group with 4 updates ([#753](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/753))\n - fix: honour \"Remove from Continue Watching\" on Home Screen Sections rows ([#761](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/761))\n - feat(spoiler-guard): advanced per-category reveals for the next unwatched episode and current season ([#762](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/762))\n - feat(tags): derive collection language tags from member movies ([#607](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/607))\n - feat(activity-feed): add server-wide recent activity page ([#605](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/605))\n - feat(language-tags): add admin-configurable language priority ([#760](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/760))\n - fix(tags): stack same-corner tag containers instead of overlapping\n - Images for MDBlist Ratings\n - chore(ci)(deps): bump the github-actions group with 5 updates ([#764](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/764))\n - feat: add MDBList Ratings\n - fix(qualityTags): Ultra-wide 1080p files show a 4K Quality Tag  [#765](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/765)\n - feat(jellyseerr): show root folder free space in request modal ([#768](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/768))\n - fix(jellyseerr): don't require REQUEST_ADVANCED for basic requests\n - fix(subtitles): anchor position to bottom edge, add gap between cue boxes\n - feat(recommendations): add genre browsing row ([#759](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/759))\n - fix(jellyseerr): keep infinite scroll going on short pages\n - fix(recommendations): register plugin page sidebar link\n - feat(recommendations): add sort and filter to category pages [#759](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/759)\n - feat(requests): add Open in Seerr/Radarr/Sonarr links to request cards ([#759](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/759))\n - fix(custom-tabs): darken home backdrop for Recommendations/Activity/Bookmarks\n - fix(recommendations): align page title and rows with card grid\n - fix(requests): scope card navigation to title and play button only\n - feat(activity): prefer Thumb image over Primary for activity row posters\n - fix(activity): use series image for episodes, show episode number\n - chore(logging): quiet noisy per-item console logs\n - feat(config-page): unsaved-changes indicator, tab-bar scroll fade, section quick-nav\n - feat(whats-new): auto-detect and surface newly added settings\n - fix(seerr): restore dropped cache-clear call after user import\n - docs: document Activity Feed, Maintenance Mode, full API index, CI checks\n - feat(arr): import Sonarr/Radarr instances from Seerr\n - feat(config-page): flash the jump target for What's New and section nav\n - feat(whats-new): name the version in the banner when everything's from one release",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://github.com/n00bcodr/Jellyfin-Enhanced/releases/download/12.3.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-08-19T17:29:22"
+      },
+      {
         "version": "12.2.0.0",
         "checksum": "56c7be6ca0519245bf1aeb18b9042913",
         "changelog": "- Translations update from Hosted Weblate ([#737](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/737))\n - Update translation_validation.yml\n - fix(player): harden OSD track cycling (waits for the menu, stops matching English UI text) ([#738](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/738))\n - Update translation_validation.yml\n - Update translation_validation.yml\n - fix(tags): preserve explicit language regions in flag resolution (pt-BR, es-419, zh-Hant…) ([#739](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/739))\n - fix: re-scope all per-user state when switching users without a page reload ([#740](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/740))\n - Translations update from Hosted Weblate ([#743](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/743))\n - Player shortcuts without opening panels (API-driven track cycling, aspect ratio, playback info, segment skip) ([#742](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/742))\n - feat(player): auto-skip intros/outros from Jellyfin's media segments ([#744](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/744))\n - fix(pausescreen): apply delay setting live and stop digit keys from leaking to OSD seek\n - feat(jellyseerr): default Seerr results to open in the More Info modal\n - Add official German FSK colors and normalization ([#748](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/748))\n - fix(elsewhere): make Default Region a dropdown and honor per-user override",
@@ -8883,6 +8899,30 @@
     "owner": "Namo",
     "imageUrl": "https://raw.githubusercontent.com/Namo2/InPlayerEpisodePreview/refs/heads/master/Images/logo.png",
     "versions": [
+      {
+        "version": "2.0.0.3",
+        "checksum": "c147566119677243e4af7fb8f3e75e9f",
+        "changelog": "- Lazy loaded data.\n- Search for related Collections/Playlists.\n- Show watch count for Seasons and Collection/Playlist groups.\n- Option to only spoiler protect unwatched episodes.\n- Limit description height and allow expanding.\n- Fixed playback sometimes starting in the wrong browser tab or device.\n- Fixed preview UI remaining visible after navigating away from playback.\n- Fixed plugin settings not applying to non-admin users.\n- Bumped frontend dependencies to their latest versions.",
+        "targetAbi": "12.0.0",
+        "sourceUrl": "https://github.com/Namo2/InPlayerEpisodePreview/releases/download/v2.0.0/InPlayerEpisodePreview_2.0.0.3-12.0.0.zip",
+        "timestamp": "2026-08-17T19:35:23Z"
+      },
+      {
+        "version": "2.0.0.2",
+        "checksum": "6e759ef77538df56bfc7d01ca03be5a3",
+        "changelog": "- Lazy loaded data.\n- Search for related Collections/Playlists.\n- Show watch count for Seasons and Collection/Playlist groups.\n- Option to only spoiler protect unwatched episodes.\n- Limit description height and allow expanding.\n- Fixed playback sometimes starting in the wrong browser tab or device.\n- Fixed preview UI remaining visible after navigating away from playback.\n- Fixed plugin settings not applying to non-admin users.\n- Bumped frontend dependencies to their latest versions.",
+        "targetAbi": "10.11.0",
+        "sourceUrl": "https://github.com/Namo2/InPlayerEpisodePreview/releases/download/v2.0.0/InPlayerEpisodePreview_2.0.0.2-10.11.0.zip",
+        "timestamp": "2026-08-17T19:35:23Z"
+      },
+      {
+        "version": "2.0.0.1",
+        "checksum": "34a2011bf57b5be56e37b876063d1ba6",
+        "changelog": "- Lazy loaded data.\n- Search for related Collections/Playlists.\n- Show watch count for Seasons and Collection/Playlist groups.\n- Option to only spoiler protect unwatched episodes.\n- Limit description height and allow expanding.\n- Fixed playback sometimes starting in the wrong browser tab or device.\n- Fixed preview UI remaining visible after navigating away from playback.\n- Fixed plugin settings not applying to non-admin users.\n- Bumped frontend dependencies to their latest versions.",
+        "targetAbi": "10.10.7",
+        "sourceUrl": "https://github.com/Namo2/InPlayerEpisodePreview/releases/download/v2.0.0/InPlayerEpisodePreview_2.0.0.1-10.10.7.zip",
+        "timestamp": "2026-08-17T19:35:23Z"
+      },
       {
         "version": "1.6.1.2",
         "checksum": "94d14a0a95bb3d5d76342ac4e00a26d0",
@@ -11391,6 +11431,22 @@
     "imageUrl": "https://raw.githubusercontent.com/streamyfin/jellyfin-plugin-streamyfin/main/logo.png",
     "versions": [
       {
+        "version": "0.68.1.0",
+        "checksum": "06cc6a067155dc6235c634c197d7191a",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.68.1.0)\n",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.68.1.0/streamyfin-0.68.1.0.zip",
+        "timestamp": "2026-08-17T08:07:38Z"
+      },
+      {
+        "version": "0.68.0.0",
+        "checksum": "91b6326c4a4fdd2914186029fd7c5c21",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.68.0.0)\n",
+        "targetAbi": "10.11.11",
+        "sourceUrl": "https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/download/0.68.0.0/streamyfin-0.68.0.0.zip",
+        "timestamp": "2026-08-17T07:43:07Z"
+      },
+      {
         "version": "0.67.0.0",
         "checksum": "c23c53c1a0173868ba28eecd49d9c465",
         "changelog": "- See the full changelog at [GitHub](https://github.com/streamyfin/jellyfin-plugin-streamyfin/releases/tag/0.67.0.0)\n",
@@ -12707,9 +12763,17 @@
     "imageUrl": "https://raw.githubusercontent.com/firecore/InfuseSync/master/InfuseSync/thumb.png",
     "versions": [
       {
+        "version": "1.5.3.0",
+        "checksum": "ff1105877de64635b0f394c1e72042fa",
+        "changelog": "Added support for Jellyfin 12 and updated dependencies",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.5.3/InfuseSync-jellyfin-1.5.3.zip",
+        "timestamp": "2026-08-21T19:29:22Z"
+      },
+      {
         "version": "1.5.2.0",
         "checksum": "30a7f3533a3f6bc5f900f0a2c1559062",
-        "changelog": "Added support for Jellyfin 10.11 and updated dependencies\n",
+        "changelog": "Added support for Jellyfin 10.11 and updated dependencies",
         "targetAbi": "10.11.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.5.2/InfuseSync-jellyfin-1.5.2.zip",
         "timestamp": "2025-07-29T04:00:00Z"
@@ -12717,7 +12781,7 @@
       {
         "version": "1.5.1.0",
         "checksum": "1614890c15e41f47b73f75f71d9b8a21",
-        "changelog": "Added support for Jellyfin 10.10.\n",
+        "changelog": "Added support for Jellyfin 10.10",
         "targetAbi": "10.10.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.5.1/InfuseSync-jellyfin-1.5.1.zip",
         "timestamp": "2024-11-15T04:00:00Z"
@@ -12725,7 +12789,7 @@
       {
         "version": "1.5.0.0",
         "checksum": "d06fc07571c1a21a53a6d3f74a018ba7",
-        "changelog": "Added support for Jellyfin 10.9.\n",
+        "changelog": "Added support for Jellyfin 10.9",
         "targetAbi": "10.9.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.5.0/InfuseSync-jellyfin-1.5.0.zip",
         "timestamp": "2024-05-28T04:00:00Z"
@@ -12733,7 +12797,7 @@
       {
         "version": "1.4.2.0",
         "checksum": "4f3188f705028682df87a7beb9d606d5",
-        "changelog": "Added support for Jellyfin 10.8.\n",
+        "changelog": "Added support for Jellyfin 10.8",
         "targetAbi": "10.8.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.4.2/InfuseSync-jellyfin-1.4.2.zip",
         "timestamp": "2022-04-12T04:00:00Z"
@@ -12741,7 +12805,7 @@
       {
         "version": "1.4.1.0",
         "checksum": "fece6cb4736503a325592bcee3aea56a",
-        "changelog": "Added support for libraries with shared network folders for non-admin users.\n",
+        "changelog": "Added support for libraries with shared network folders for non-admin users",
         "targetAbi": "10.7.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.4.1/InfuseSync-jellyfin-1.4.1.zip",
         "timestamp": "2021-10-22T06:42:00Z"
@@ -12749,7 +12813,7 @@
       {
         "version": "1.3.3.0",
         "checksum": "e9262894968407f15fc2d92375de8483",
-        "changelog": "Jellyfin 10.7.0 support, packaging fix.\n",
+        "changelog": "Jellyfin 10.7.0 support, packaging fix",
         "targetAbi": "10.7.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.3.3/InfuseSync-jellyfin-1.3.3.zip",
         "timestamp": "2021-03-17T06:42:00Z"
@@ -12757,7 +12821,7 @@
       {
         "version": "1.3.2.0",
         "checksum": "520ffde8b075070cff5185d7453485a0",
-        "changelog": "Jellyfin 10.7.0 support, fixes for Jellyfin endpoints and authorization.\n",
+        "changelog": "Jellyfin 10.7.0 support, fixes for Jellyfin endpoints and authorization",
         "targetAbi": "10.7.0.0",
         "sourceUrl": "https://repo.jellyfin.org/releases/plugin/infusesync/InfuseSync-jellyfin-1.3.2.zip",
         "timestamp": "2021-01-05T08:00:00Z"
@@ -12765,7 +12829,7 @@
       {
         "version": "1.2.4.0",
         "checksum": "7adde11b8c8404fd2923f59d98fb1a30",
-        "changelog": "New Playlist support.\n",
+        "changelog": "New Playlist support",
         "targetAbi": "10.6.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.2.4/InfuseSync-jellyfin-1.2.4.zip",
         "timestamp": "2020-10-12T08:00:00Z"
@@ -12773,7 +12837,7 @@
       {
         "version": "1.2.1.3",
         "checksum": "d8e2c5fe736a302097bb3bac3d04b1c4",
-        "changelog": "changelog\n",
+        "changelog": "changelog",
         "targetAbi": "10.6.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.2.3/InfuseSync-jellyfin-1.2.3.zip",
         "timestamp": "2020-09-18T12:19:00Z"
@@ -12781,7 +12845,7 @@
       {
         "version": "1.2.1.0",
         "checksum": "1a853e926cc422f5d79d398d9ae18ee8",
-        "changelog": "changelog\n",
+        "changelog": "changelog",
         "targetAbi": "10.6.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.2.1/InfuseSync-jellyfin-1.2.1.zip",
         "timestamp": "2020-08-21T10:48:00Z"
@@ -12789,7 +12853,7 @@
       {
         "version": "1.2.0.0",
         "checksum": "2d3c7859852695a7f05adc6d3fcbc783",
-        "changelog": "changelog\n",
+        "changelog": "changelog",
         "targetAbi": "10.6.0.0",
         "sourceUrl": "https://github.com/firecore/InfuseSync/releases/download/v1.2.0/InfuseSync-jellyfin-1.2.0.zip",
         "timestamp": "2020-07-20T11:51:00Z"
@@ -12888,6 +12952,14 @@
     "owner": "lyarenei",
     "imageUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/image.svg",
     "versions": [
+      {
+        "version": "6.4.2.3",
+        "checksum": "4d909df29b5adc888e970ef08867e639",
+        "changelog": "This version contains the following changes:\n  - Synced playlists now have ListenBrainz tag\n  - Fix for stale data on plugin config page\n  - Overhaul of syncing weekly/yearly ListenBrainz playlists\n  - Fix for playback time tracking in alternative mode\n",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://repo.xkrivo.net/jellyfin/listenbrainz/listenbrainz_6.4.2.3.zip",
+        "timestamp": "2026-08-20T10:23:55Z"
+      },
       {
         "version": "6.3.1.2",
         "checksum": "b1eaf19fc170aebea4aea49861c797a3",
@@ -13158,6 +13230,14 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/manifest@a434e00edba70493794e25917cc8d3326d5a85c6/images/intro-skipper/logo.png",
     "versions": [
       {
+        "version": "1.10.11.23",
+        "checksum": "fde137ca0b6632f6986ac50d669e1b76",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.23)\n",
+        "targetAbi": "10.11.11.0",
+        "sourceUrl": "https://github.com/intro-skipper/intro-skipper/releases/download/10.11/v1.10.11.23/intro-skipper-v1.10.11.23.zip",
+        "timestamp": "2026-08-22T12:18:41Z"
+      },
+      {
         "version": "1.10.11.22",
         "checksum": "7507b1915039c94cf67c450e4612fb37",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/10.11/v1.10.11.22)\n",
@@ -13233,6 +13313,22 @@
     "imageUrl": "https://cdn.jsdelivr.net/gh/intro-skipper/segment-editor-plugin@master/images/logo.png",
     "versions": [
       {
+        "version": "1.0.63.0",
+        "checksum": "95c7a03bd9e954ecc6356747e49df013",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.63.0/segment-editor-plugin-v1.0.63.0.zip",
+        "timestamp": "2026-08-22T04:50:10Z"
+      },
+      {
+        "version": "1.0.62.0",
+        "checksum": "a8381600c6aeb6c72e191998f9064804",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "10.11.5.0",
+        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.62.0/segment-editor-plugin-v1.0.62.0.zip",
+        "timestamp": "2026-08-20T04:53:43Z"
+      },
+      {
         "version": "1.0.60.0",
         "checksum": "1c779224ed02c2176fa4c9f1803041f9",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -13247,30 +13343,6 @@
         "targetAbi": "10.11.5.0",
         "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.59.0/segment-editor-plugin-v1.0.59.0.zip",
         "timestamp": "2026-07-31T07:14:33Z"
-      },
-      {
-        "version": "1.0.58.0",
-        "checksum": "6ade65e3a087e32d3e9ee1e7acb6ce30",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.58.0/segment-editor-plugin-v1.0.58.0.zip",
-        "timestamp": "2026-07-28T06:41:10Z"
-      },
-      {
-        "version": "1.0.57.0",
-        "checksum": "aa98aa5c0802a05b3c36f7e8a6efaa48",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.57.0/segment-editor-plugin-v1.0.57.0.zip",
-        "timestamp": "2026-07-17T09:28:10Z"
-      },
-      {
-        "version": "1.0.56.0",
-        "checksum": "6a7e7268baa2efb210a8fca8a54e6571",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "10.11.5.0",
-        "sourceUrl": "https://github.com/intro-skipper/segment-editor-plugin/releases/download/v1.0.56.0/segment-editor-plugin-v1.0.56.0.zip",
-        "timestamp": "2026-07-15T08:24:23Z"
       }
     ]
   },
