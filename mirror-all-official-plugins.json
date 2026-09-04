@@ -1366,14 +1366,6 @@
         "timestamp": "2022-01-08T17:25:42Z"
       },
       {
-        "version": "7.0.0.0",
-        "checksum": "7ae213ac5c4d86ee968a0b7c69755393",
-        "changelog": "- 10.8 support (#52) @crobibero",
-        "targetAbi": "10.8.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/TheTVDB/7.0.0.0/thetvdb_7.0.0.0.zip",
-        "timestamp": "2021-11-01T21:04:06Z"
-      },
-      {
         "version": "6.0.0.0",
         "checksum": "0d2bcfa13da7e10efa8874b445f92ba6",
         "changelog": "### Bug Fixes ###\n- Changed NormalizationForm to FormC (#45) @sushilicious\n\n### CI & build changes ###\n- Update ci (#42) @h1dden-da3m0n",
