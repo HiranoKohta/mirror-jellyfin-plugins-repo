@@ -432,7 +432,7 @@ Module JellyfinPluginsMirror
             ' Ответ сервера
             'Если неопределена, значит это запрос версии
             If IsNothing(JellyfinVer) Then
-                JellyfinVer = RegularExpressions.Regex.Match(MyHttpWebResponse.ResponseUri.ToString, "v(\d+\.\d+\.\d+)").Groups(1).Value
+                JellyfinVer = RegularExpressions.Regex.Match(MyHttpWebResponse.ResponseUri.ToString, "v(\d+\.\d+(\.\d+)*)").Groups(1).Value
             End If
             'Загрузка файла
             Using reader As New BinaryReader(MyHttpWebResponse.GetResponseStream())
