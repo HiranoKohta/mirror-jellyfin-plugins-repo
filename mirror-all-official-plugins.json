@@ -190,6 +190,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/IMVDb/jellyfin-plugin-imvdb.png",
     "versions": [
       {
+        "version": "7.0.0.0",
+        "checksum": "a1c89a035556e9c96a94d9ac22ca0eb2",
+        "changelog": "- Maintenance (#40) @Shadowghost, @crobibero",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/IMVDb/7.0.0.0/imvdb_7.0.0.0.zip",
+        "timestamp": "2026-09-15T22:39:43Z"
+      },
+      {
         "version": "6.0.0.0",
         "checksum": "78c75ce34cbd9f43632fcc32de65651e",
         "changelog": "- Unstable: Update to latest Jellyfin preview packages (#37) @crobibero, @jellyfin-bot\n- Revert \"Update dependency Microsoft.Extensions.Http to v10\" (#33) @Shadowghost\n\n### Dependency updates ###\n- Update dependency Microsoft.Extensions.Http to 9.0.11 (#22) [@renovate[bot]](https://github.com/apps/renovate)\n- Update dependency Microsoft.Extensions.Http to v10 (#31) [@renovate[bot]](https://github.com/apps/renovate)",
@@ -486,6 +494,14 @@
     "owner": "jellyfin",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/NextPVR/jellyfin-plugin-nextpvr.png",
     "versions": [
+      {
+        "version": "15.0.0.0",
+        "checksum": "06fc689c679fd0fa3113ee34daa21164",
+        "changelog": "- Maintenance (#82) @Shadowghost, @crobibero",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/NextPVR/15.0.0.0/nextpvr_15.0.0.0.zip",
+        "timestamp": "2026-09-15T22:37:37Z"
+      },
       {
         "version": "14.0.0.0",
         "checksum": "e8e2710f7d2e4ac967bf5ab3f7ac4df5",
@@ -898,6 +914,14 @@
     "owner": "jellyfin",
     "versions": [
       {
+        "version": "15.0.0.0",
+        "checksum": "a09e829c3fd2cf088b323c807e8b4403",
+        "changelog": "- Fix queue handling (#134) @Shadowghost, @crobibero",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/TMDb%20Box%20Sets/15.0.0.0/tmdb-box-sets_15.0.0.0.zip",
+        "timestamp": "2026-09-15T22:42:27Z"
+      },
+      {
         "version": "14.0.0.0",
         "checksum": "530421b2cb5f2a0afd7a4ae65839dd62",
         "changelog": "- Unstable: Update to latest Jellyfin preview packages (#127) @crobibero, @claude, @jellyfin-bot",
@@ -980,6 +1004,14 @@
     "owner": "jellyfin",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Trakt/jellyfin-plugin-trakt.png",
     "versions": [
+      {
+        "version": "33.0.0.0",
+        "checksum": "209aa134acff0e0049c093f0f461ece6",
+        "changelog": "- Optimize syncing and reduce trakt request volume (#311) @StefanFriptu, @crobibero",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/Trakt/33.0.0.0/trakt_33.0.0.0.zip",
+        "timestamp": "2026-09-15T22:37:38Z"
+      },
       {
         "version": "31.0.0.0",
         "checksum": "e9f4e8d9831efd77a82fb97adb9a2db8",
@@ -1659,6 +1691,14 @@
     "owner": "jellyfin",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/AniList/jellyfin-plugin-anilist.png",
     "versions": [
+      {
+        "version": "15.0.0.0",
+        "checksum": "7894285e510f2e22b2364df570a546b3",
+        "changelog": "- Use RateLimiter from AniDb plugin, fix GraphQL (#117) @Shadowghost, @crobibero",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/AniList/15.0.0.0/anilist_15.0.0.0.zip",
+        "timestamp": "2026-09-15T22:42:33Z"
+      },
       {
         "version": "14.0.0.0",
         "checksum": "84e2fea7cfd20a7fbd040f79a37ec123",
@@ -2590,6 +2630,14 @@
     "owner": "jellyfin",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/DLNA/jellyfin-plugin-dlna.png",
     "versions": [
+      {
+        "version": "14.0.0.0",
+        "checksum": "32bcfdeec406a81b5d1448f3042c438e",
+        "changelog": "- Fix track changes that renderers ignore or overrun (#245) @Shadowghost, @crobibero",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/DLNA/14.0.0.0/dlna_14.0.0.0.zip",
+        "timestamp": "2026-09-15T22:34:11Z"
+      },
       {
         "version": "13.0.0.0",
         "checksum": "9db33dfe8a4c5321a03f4a1c57b00001",
