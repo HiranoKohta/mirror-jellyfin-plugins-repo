@@ -287,36 +287,38 @@ Module JellyfinPluginsMirror
                             End If
                         End If
                     Else
-                        IsVersion = True
-                        Console.ForegroundColor = ConsoleColor.Cyan
-                        '====================
-                        StringLog = String.Format(vbCrLf & vbTab & "{0}: {1}", Plugins(I).Owner, Plugins(I).Name)
-                        Console.WriteLine(StringLog)
-                        Call OutLog(StringLog)
-                        '====================
-                        PathName = Path.Combine(PLUGINS_PATH, Plugins(I).Owner, Plugins(I).Name)
-                        Directory.CreateDirectory(PathName)
-                        If Not IsNothing(Plugins(I).ImageUrl) Then
-                            If Plugins(I).ImageUrl.Trim.Length > 0 Then
-                                Url = Plugins(I).ImageUrl
-                                FileName = Path.Combine(PathName, Path.GetFileName(GetFileName(Url)))
-                                If Not File.Exists(FileName) Then
-                                    If DownloadFile(Url, FileName) Then
-                                        Console.ForegroundColor = ConsoleColor.Green
-                                        Message = "OK."
-                                    Else
-                                        Console.ForegroundColor = ConsoleColor.Red
-                                        Message = "Failed download!"
+                        If Item(1).Trim <> "[]" Then
+                            IsVersion = True
+                            Console.ForegroundColor = ConsoleColor.Cyan
+                            '====================
+                            StringLog = String.Format(vbCrLf & vbTab & "{0}: {1}", Plugins(I).Owner, Plugins(I).Name)
+                            Console.WriteLine(StringLog)
+                            Call OutLog(StringLog)
+                            '====================
+                            PathName = Path.Combine(PLUGINS_PATH, Plugins(I).Owner, Plugins(I).Name)
+                            Directory.CreateDirectory(PathName)
+                            If Not IsNothing(Plugins(I).ImageUrl) Then
+                                If Plugins(I).ImageUrl.Trim.Length > 0 Then
+                                    Url = Plugins(I).ImageUrl
+                                    FileName = Path.Combine(PathName, Path.GetFileName(GetFileName(Url)))
+                                    If Not File.Exists(FileName) Then
+                                        If DownloadFile(Url, FileName) Then
+                                            Console.ForegroundColor = ConsoleColor.Green
+                                            Message = "OK."
+                                        Else
+                                            Console.ForegroundColor = ConsoleColor.Red
+                                            Message = "Failed download!"
+                                        End If
+                                        '====================
+                                        StringLog = String.Format(vbTab & vbTab & "{0} - {1}", Url, Message)
+                                        Console.WriteLine(StringLog)
+                                        Call OutLog(StringLog)
+                                        '====================
                                     End If
-                                    '====================
-                                    StringLog = String.Format(vbTab & vbTab & "{0} - {1}", Url, Message)
-                                    Console.WriteLine(StringLog)
-                                    Call OutLog(StringLog)
-                                    '====================
                                 End If
                             End If
+                            '=============================
                         End If
-                        '=============================
                     End If
                 Else
                     If Item(0) = "{" Then
@@ -508,91 +510,93 @@ Module JellyfinPluginsMirror
         Dim P As Single = 0
         Call ConsoleProgressBar(0)
         For Each Plugin In Plugins
-            Select Case Rep
-                Case Repositori.Official
-                    If Not Plugin.Versions(0).SourceUrl.Contains(OFFICIAL_REPO) Then
-                        Continue For
-                    End If
-                    TotalVersion = OfficialVersion
-                Case Repositori.UnOffical
-                    If Plugin.Versions(0).SourceUrl.Contains(OFFICIAL_REPO) Then
-                        Continue For
-                    End If
-                    TotalVersion = UnOfficialVersion
-                Case Else
-                    TotalVersion = OfficialVersion + UnOfficialVersion
-            End Select
-            Json = Json & Space(Tab * TabCount) & "{" & vbCrLf
-            TabCount = TabCount + 1
-            Json = Json & Space(Tab * TabCount) & GetQuote("name") & ": " & GetQuote(Plugin.Name) & "," & vbCrLf
-            Json = Json & Space(Tab * TabCount) & GetQuote("guid") & ": " & GetQuote(Plugin.Guid) & "," & vbCrLf
-            Json = Json & Space(Tab * TabCount) & GetQuote("category") & ": " & GetQuote(Plugin.Category) & "," & vbCrLf
-            Json = Json & Space(Tab * TabCount) & GetQuote("description") & ": " & GetQuote(Plugin.Description) & "," & vbCrLf
-            Json = Json & Space(Tab * TabCount) & GetQuote("overview") & ": " & GetQuote(Plugin.Overview) & "," & vbCrLf
-            Json = Json & Space(Tab * TabCount) & GetQuote("owner") & ": " & GetQuote(Plugin.Owner) & "," & vbCrLf
-            If Not IsNothing(Plugin.Artifacts) Then
-                If Plugin.Artifacts.Trim.Length > 0 Then
-                    Json = Json & Space(Tab * TabCount) & GetQuote("artifacts") & ": [" & vbCrLf
-                    TabCount = TabCount + 2
-                    Json = Json & Space(Tab * TabCount) & GetQuote(Plugin.Artifacts) & vbCrLf
-                    TabCount = TabCount - 1
-                    Json = Json & Space(Tab * TabCount) & "]," & vbCrLf
-                    TabCount = TabCount - 1
-                End If
-            End If
-            If Not IsNothing(Plugin.ImageUrl) Then
-                If Plugin.ImageUrl.Trim.Length > 0 Then
-                    '===================================
-                    If IsMirror Then
-                        Url = Join({REPO_URL, "files", HttpUtility.UrlPathEncode(Plugin.Owner), HttpUtility.UrlPathEncode(Plugin.Name), HttpUtility.UrlPathEncode(Path.GetFileName(GetFileName(Plugin.ImageUrl)))}, "/")
-                    Else
-                        Url = Plugin.ImageUrl
-                    End If
-                    Json = Json & Space(Tab * TabCount) & GetQuote("imageUrl") & ": " & GetQuote(Url) & "," & vbCrLf
-                End If
-            End If
-            Json = Json & Space(Tab * TabCount) & GetQuote("versions") & ": [" & vbCrLf
-            TabCount = TabCount + 1
-            For Each Version In Plugin.Versions
-                PathName = Path.Combine(PLUGINS_PATH, Plugin.Owner, Plugin.Name)
-                FileName = Path.Combine(PathName, Version.Version, Path.GetFileName(GetFileName(Version.SourceUrl)))
-                If File.Exists(FileName) Then
-                    Json = Json & Space(Tab * TabCount) & "{" & vbCrLf
-                    TabCount = TabCount + 1
-                    Json = Json & Space(Tab * TabCount) & GetQuote("version") & ": " & GetQuote(Version.Version) & "," & vbCrLf
-                    Json = Json & Space(Tab * TabCount) & GetQuote("checksum") & ": " & GetQuote(Version.CheckSum) & "," & vbCrLf
-                    Json = Json & Space(Tab * TabCount) & GetQuote("changelog") & ": " & GetQuote(Version.ChangeLog) & "," & vbCrLf
-                    Json = Json & Space(Tab * TabCount) & GetQuote("targetAbi") & ": " & GetQuote(Version.TargetAbi) & "," & vbCrLf
-                    '===================================
-                    If IsMirror Then
-                        Url = Join({REPO_URL, "files", HttpUtility.UrlPathEncode(Plugin.Owner), HttpUtility.UrlPathEncode(Plugin.Name), HttpUtility.UrlPathEncode(Version.Version), HttpUtility.UrlPathEncode(Path.GetFileName(GetFileName(Version.SourceUrl)))}, "/")
-                    Else
-                        Url = Version.SourceUrl
-                    End If
-                    Json = Json & Space(Tab * TabCount) & GetQuote("sourceUrl") & ": " & GetQuote(Url) & "," & vbCrLf
-                    If Not IsNothing(Version.Dependencies) Then
-                        If Version.Dependencies.Trim.Length > 0 Then
-                            Json = Json & Space(Tab * TabCount) & GetQuote("dependencies") & ": [" & vbCrLf
-                            TabCount = TabCount + 2
-                            Json = Json & Space(Tab * TabCount) & GetQuote(Version.Dependencies) & vbCrLf
-                            TabCount = TabCount - 1
-                            Json = Json & Space(Tab * TabCount) & "]," & vbCrLf
-                            TabCount = TabCount - 1
+            If Plugin.Versions.Length > 0 Then
+                Select Case Rep
+                    Case Repositori.Official
+                        If Not Plugin.Versions(0).SourceUrl.Contains(OFFICIAL_REPO) Then
+                            Continue For
                         End If
+                        TotalVersion = OfficialVersion
+                    Case Repositori.UnOffical
+                        If Plugin.Versions(0).SourceUrl.Contains(OFFICIAL_REPO) Then
+                            Continue For
+                        End If
+                        TotalVersion = UnOfficialVersion
+                    Case Else
+                        TotalVersion = OfficialVersion + UnOfficialVersion
+                End Select
+                Json = Json & Space(Tab * TabCount) & "{" & vbCrLf
+                TabCount = TabCount + 1
+                Json = Json & Space(Tab * TabCount) & GetQuote("name") & ": " & GetQuote(Plugin.Name) & "," & vbCrLf
+                Json = Json & Space(Tab * TabCount) & GetQuote("guid") & ": " & GetQuote(Plugin.Guid) & "," & vbCrLf
+                Json = Json & Space(Tab * TabCount) & GetQuote("category") & ": " & GetQuote(Plugin.Category) & "," & vbCrLf
+                Json = Json & Space(Tab * TabCount) & GetQuote("description") & ": " & GetQuote(Plugin.Description) & "," & vbCrLf
+                Json = Json & Space(Tab * TabCount) & GetQuote("overview") & ": " & GetQuote(Plugin.Overview) & "," & vbCrLf
+                Json = Json & Space(Tab * TabCount) & GetQuote("owner") & ": " & GetQuote(Plugin.Owner) & "," & vbCrLf
+                If Not IsNothing(Plugin.Artifacts) Then
+                    If Plugin.Artifacts.Trim.Length > 0 Then
+                        Json = Json & Space(Tab * TabCount) & GetQuote("artifacts") & ": [" & vbCrLf
+                        TabCount = TabCount + 2
+                        Json = Json & Space(Tab * TabCount) & GetQuote(Plugin.Artifacts) & vbCrLf
+                        TabCount = TabCount - 1
+                        Json = Json & Space(Tab * TabCount) & "]," & vbCrLf
+                        TabCount = TabCount - 1
                     End If
-                    Json = Json & Space(Tab * TabCount) & GetQuote("timestamp") & ": " & GetQuote(Version.TimeStamp) & vbCrLf
-                    TabCount = TabCount - 1
-                    Json = Json & Space(Tab * TabCount) & "}," & vbCrLf
                 End If
-                CountVersion += 1
-                P = CountVersion / TotalVersion * 100
-                Call ConsoleProgressBar(P)
-            Next
-            Json = Json.Substring(0, Json.Length - 3) & vbCrLf
-            TabCount = TabCount - 1
-            Json = Json & Space(Tab * TabCount) & "]" & vbCrLf
-            TabCount = TabCount - 1
-            Json = Json & Space(Tab * TabCount) & "}," & vbCrLf
+                If Not IsNothing(Plugin.ImageUrl) Then
+                    If Plugin.ImageUrl.Trim.Length > 0 Then
+                        '===================================
+                        If IsMirror Then
+                            Url = Join({REPO_URL, "files", HttpUtility.UrlPathEncode(Plugin.Owner), HttpUtility.UrlPathEncode(Plugin.Name), HttpUtility.UrlPathEncode(Path.GetFileName(GetFileName(Plugin.ImageUrl)))}, "/")
+                        Else
+                            Url = Plugin.ImageUrl
+                        End If
+                        Json = Json & Space(Tab * TabCount) & GetQuote("imageUrl") & ": " & GetQuote(Url) & "," & vbCrLf
+                    End If
+                End If
+                Json = Json & Space(Tab * TabCount) & GetQuote("versions") & ": [" & vbCrLf
+                TabCount = TabCount + 1
+                For Each Version In Plugin.Versions
+                    PathName = Path.Combine(PLUGINS_PATH, Plugin.Owner, Plugin.Name)
+                    FileName = Path.Combine(PathName, Version.Version, Path.GetFileName(GetFileName(Version.SourceUrl)))
+                    If File.Exists(FileName) Then
+                        Json = Json & Space(Tab * TabCount) & "{" & vbCrLf
+                        TabCount = TabCount + 1
+                        Json = Json & Space(Tab * TabCount) & GetQuote("version") & ": " & GetQuote(Version.Version) & "," & vbCrLf
+                        Json = Json & Space(Tab * TabCount) & GetQuote("checksum") & ": " & GetQuote(Version.CheckSum) & "," & vbCrLf
+                        Json = Json & Space(Tab * TabCount) & GetQuote("changelog") & ": " & GetQuote(Version.ChangeLog) & "," & vbCrLf
+                        Json = Json & Space(Tab * TabCount) & GetQuote("targetAbi") & ": " & GetQuote(Version.TargetAbi) & "," & vbCrLf
+                        '===================================
+                        If IsMirror Then
+                            Url = Join({REPO_URL, "files", HttpUtility.UrlPathEncode(Plugin.Owner), HttpUtility.UrlPathEncode(Plugin.Name), HttpUtility.UrlPathEncode(Version.Version), HttpUtility.UrlPathEncode(Path.GetFileName(GetFileName(Version.SourceUrl)))}, "/")
+                        Else
+                            Url = Version.SourceUrl
+                        End If
+                        Json = Json & Space(Tab * TabCount) & GetQuote("sourceUrl") & ": " & GetQuote(Url) & "," & vbCrLf
+                        If Not IsNothing(Version.Dependencies) Then
+                            If Version.Dependencies.Trim.Length > 0 Then
+                                Json = Json & Space(Tab * TabCount) & GetQuote("dependencies") & ": [" & vbCrLf
+                                TabCount = TabCount + 2
+                                Json = Json & Space(Tab * TabCount) & GetQuote(Version.Dependencies) & vbCrLf
+                                TabCount = TabCount - 1
+                                Json = Json & Space(Tab * TabCount) & "]," & vbCrLf
+                                TabCount = TabCount - 1
+                            End If
+                        End If
+                        Json = Json & Space(Tab * TabCount) & GetQuote("timestamp") & ": " & GetQuote(Version.TimeStamp) & vbCrLf
+                        TabCount = TabCount - 1
+                        Json = Json & Space(Tab * TabCount) & "}," & vbCrLf
+                    End If
+                    CountVersion += 1
+                    P = CountVersion / TotalVersion * 100
+                    Call ConsoleProgressBar(P)
+                Next
+                Json = Json.Substring(0, Json.Length - 3) & vbCrLf
+                TabCount = TabCount - 1
+                Json = Json & Space(Tab * TabCount) & "]" & vbCrLf
+                TabCount = TabCount - 1
+                Json = Json & Space(Tab * TabCount) & "}," & vbCrLf
+            End If
         Next
         Call ConsoleProgressBar(100)
         Json = Json.Substring(0, Json.Length - 3) & vbCrLf
