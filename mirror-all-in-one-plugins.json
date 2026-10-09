@@ -2933,11 +2933,19 @@
   {
     "name": "OpenLibrary",
     "guid": "a4df60c5-6ab4-412a-8f79-2cab93fb2bc5",
-    "category": "Metadata",
+    "category": "Books",
     "description": "Provides book and author metadata from OpenLibrary.org for your Jellyfin book libraries. Automatically fetches book descriptions, series information, publication dates, genres, and author biographies from the OpenLibrary API.\n",
     "overview": "OpenLibrary metadata provider for Jellyfin",
     "owner": "jellyfin",
     "versions": [
+      {
+        "version": "2.0.0.0",
+        "checksum": "8d5dbc80e566847827b1693ae5e53509",
+        "changelog": "- Fix: Set ClientSideRateLimitedHandler to public (#9) @jordanmichaelrushing, @crobibero",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/OpenLibrary/2.0.0.0/openlibrary_2.0.0.0.zip",
+        "timestamp": "2026-10-06T00:41:44Z"
+      },
       {
         "version": "1.0.0.0",
         "checksum": "d34550be03d0aa2e8b43b70a47507c5f",
@@ -4108,6 +4116,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/logo.png",
     "versions": [
       {
+        "version": "3.9.1.0",
+        "checksum": "4ced149925dbecef5694dc94bb362c80",
+        "changelog": "- fix: Stop MutationObserver feedback loop freezing the browser tab when video player opens\n- fix: Add DOM diffing guards to visibility updates to prevent redundant attribute mutations",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/3.9.1.0/Jellyfin.Plugin.MediaBarEnhanced_v3.9.1.0.zip",
+        "timestamp": "2026-10-03T11:47:15Z"
+      },
+      {
         "version": "3.9.0.0",
         "checksum": "8333929a531d588494522394bd07c319",
         "changelog": "- feat: Add split-screen trailer view with fade and metadata alignment\n- feat: Add interactive video hover focus bringing trailers forward with backdrop dimming on split-screen view\n- feat: Add Pause Slideshow on Hover option with timer freeze and paused progress bar\n- feat: Add Release Year range expressions, decade filters, and Max Days Since Release\n- feat: Add negative genre and tag blacklist filters (for family-friendly media bars)\n- feat: Add studio, person, actor, director, and rating filters to Custom Media IDs\n- fix: Adjust Jellyfin 12 desktop home section positioning to prevent overlap\n- fix: Prevent Media Bar frame from intercepting clicks in Jellyfin Dashboard\n- fix: Eliminate initial grey flash by gating visibility until first slide rendering\n- fix: Fix portrait mobile full-width video letterboxing with explicit video selector",
@@ -5093,6 +5109,14 @@
     "owner": "Eeeeelias",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/logo.png",
     "versions": [
+      {
+        "version": "1.5.2.0",
+        "checksum": "627291f8b026304e70e808b6f81e9aeb",
+        "changelog": "Update to Jellyfin 12",
+        "targetAbi": "12.1",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Eeeeelias/Playlist%20Generator/1.5.2.0/PlaylistGenerator_1.5.2.0.zip",
+        "timestamp": "2026-10-03T08:46:41Z"
+      },
       {
         "version": "1.5.1.0",
         "checksum": "8156d04667739f69a65e43c37d25f5e1",
@@ -7560,6 +7584,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/banner.png",
     "versions": [
       {
+        "version": "0.26.22.1",
+        "checksum": "989d1c62fd788e71a4beb45a9a041ee1",
+        "changelog": "## [0.26.22.1] - 2026-10-09\n\n### 🐛 Bug Fixes\n\n- Pre-probe only opened pages and probe a source once (#262)\n- Answer a movie/episode's segments with those of the stream it plays (#263)\n- Order stream sync and reset by a sequence (#268)\n- Share a prepared playback source from the end of its preparation (#267)\n- List a local episode once in an extended series tree (#270)\n- Take search results into the collection or playlist they are added to (#269)\n- Find the stream listed under the item's id by its own id too (#271)\n- Report one search total on every page (#272)\n- Offer a subtitle saved on a movie's or episode's page with its streams (#273)\n\n### ⚡ Performance\n\n- Cache playback source preperation once for its streaming requests (#264)\n- Faster listings, search and opening a movie from search (#274)\n",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.22.1/gelato_0.26.22.1.zip",
+        "timestamp": "2026-10-09T21:19:49Z"
+      },
+      {
         "version": "0.26.22.0",
         "checksum": "d9410d90eb42eaebac87a2b7af78fc14",
         "changelog": "## [0.26.22.0] - 2026-10-02\n\n### 🚀 Features\n\n- Probe streams before playback (#257)\n\n### 🐛 Bug Fixes\n\n- Fetch intro segments before the first play of a remuxdb stream (#256)\n\n### ⚡ Performance\n\n- Fetch a movie's tmdb id and release dates in one request (#259)\n- Find stream rows and stremio ids through indexes (#258)\n",
@@ -7790,14 +7822,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.13.5/gelato_0.26.13.5.zip",
         "timestamp": "2026-04-11T16:51:49Z"
-      },
-      {
-        "version": "0.26.13.4",
-        "checksum": "141edc7abda7d28c2d8bf0236e3c0bb1",
-        "changelog": "## [0.26.13.4] - 2026-04-11\n\n### ⚙️ Miscellaneous Tasks\n\n- Bump\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.13.4/gelato_0.26.13.4.zip",
-        "timestamp": "2026-04-11T15:40:00Z"
       }
     ]
   },
@@ -8239,6 +8263,38 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
+      {
+        "version": "12.11.0.0",
+        "checksum": "167bdebb473cfefe7dfc0b4f2ee0df38",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Improve community analytics table sorting\n - fix(seerr): hide advanced request options from users without REQUEST_ADVANCED\n - feat(item-details): link audio languages to synced language tags\n - Translations update from Hosted Weblate ([#902](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/902))\n - fix(tabs): native Home tabs coexist with Custom Tabs (positions, stable links, live reconciliation) ([#901](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/901))\n - fix(people-tags): lay out age and birthplace tags inside circular cast portraits\n - fix(icons): flatten Letterboxd, Seerr and Arr buttons to match metadata icons\n - feat(seerr): polish cards, more-info modal and season request modal\n - fix(recommendations): remove double side padding that left a gap before the first card\n - refactor(helpers): share Jellyfin header measurement via JE.helpers.getHeaderBottom\n - feat(recommendations): polish page title, rows, tiles and sticky category bar\n - Add Jellium Desktop to excluded clients for native poster tags ([#906](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/906))\n - fix(ui): scope JE's Material Symbols rules to JE-private classes so theme and plugin icons keep the full font ([#904](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/904))\n - feat(analytics): attest release builds and warn on build/host mismatch",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.11.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-10-04T14:30:13"
+      },
+      {
+        "version": "12.11.0.0",
+        "checksum": "f6313934f57173a34e7d7caa459b686b",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Improve community analytics table sorting\n - fix(seerr): hide advanced request options from users without REQUEST_ADVANCED\n - feat(item-details): link audio languages to synced language tags\n - Translations update from Hosted Weblate ([#902](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/902))\n - fix(tabs): native Home tabs coexist with Custom Tabs (positions, stable links, live reconciliation) ([#901](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/901))\n - fix(people-tags): lay out age and birthplace tags inside circular cast portraits\n - fix(icons): flatten Letterboxd, Seerr and Arr buttons to match metadata icons\n - feat(seerr): polish cards, more-info modal and season request modal\n - fix(recommendations): remove double side padding that left a gap before the first card\n - refactor(helpers): share Jellyfin header measurement via JE.helpers.getHeaderBottom\n - feat(recommendations): polish page title, rows, tiles and sticky category bar\n - Add Jellium Desktop to excluded clients for native poster tags ([#906](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/906))\n - fix(ui): scope JE's Material Symbols rules to JE-private classes so theme and plugin icons keep the full font ([#904](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/904))\n - feat(analytics): attest release builds and warn on build/host mismatch",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.11.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-10-04T14:30:03"
+      },
+      {
+        "version": "12.10.0.0",
+        "checksum": "df54ba07e98dfb4a3497c260b5d89ceb",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Translations update from Hosted Weblate ([#885](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/885))\n - chore(ci)(deps): bump the github-actions group with 4 updates ([#886](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/886))\n - fix(config): don't show Custom Tabs sync alert when Custom Tabs isn't installed ([#889](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/889))\n - feat(seerr): All | Movies | Series on studio and network pages (Recommendations tiles and \"More from\") ([#881](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/881))\n - feat(subtitles): text effect presets (outline / drop shadow) ([#882](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/882))\n - feat(seerr): manual TVDB match for series TMDB cannot auto-match ([#653](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/653)) ([#874](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/874))\n - feat(spoiler-guard): auto-enable on library add, scoped by content type and library ([#877](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/877))\n - feat(random-button): scope Random to a playlist or collection ([#794](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/794)) ([#876](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/876))\n - fix(settings): resolve casing mismatch when merging server plugin defaults ([#884](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/884))\n - feat(maintenance): countdown, playback reminders and daily scheduled window ([#880](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/880))\n - feat(media-tags): age rating badges, rating tag scope, preferred audio language, full-series language flags, and a tidier Media Tags fieldset ([#887](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/887))\n - Translations update from Hosted Weblate ([#890](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/890))\n - perf: faster startup, browser-cached tag cache, faster details pages and smoother UI ([#891](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/891))\n - fix(ui): give JE's Material Symbols subsets private font names so themes keep the full icon set ([#895](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/895))\n - feat(tags): native poster tags for clients without the web UI (experimental) ([#894](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/894))\n - docs(readme): showcase README with screenshots, recordings and a fact-checked feature tour ([#896](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/896))\n - Translations update from Hosted Weblate ([#897](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/897))\n - Translations with AI Friend\n - feat(reviews): optional Jellyfin rating mirror and admin list-all endpoint ([#841](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/841))\n - fix(ui): host header tray in its own container when a foreign button precedes the user menu\n - fix(tabs): avoid native tab index collisions with Custom Tabs and block enabling both for one page",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.10.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-10-03T11:21:07"
+      },
+      {
+        "version": "12.10.0.0",
+        "checksum": "e07dca8899981b9c97605dd086dec426",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Translations update from Hosted Weblate ([#885](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/885))\n - chore(ci)(deps): bump the github-actions group with 4 updates ([#886](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/886))\n - fix(config): don't show Custom Tabs sync alert when Custom Tabs isn't installed ([#889](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/889))\n - feat(seerr): All | Movies | Series on studio and network pages (Recommendations tiles and \"More from\") ([#881](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/881))\n - feat(subtitles): text effect presets (outline / drop shadow) ([#882](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/882))\n - feat(seerr): manual TVDB match for series TMDB cannot auto-match ([#653](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/653)) ([#874](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/874))\n - feat(spoiler-guard): auto-enable on library add, scoped by content type and library ([#877](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/877))\n - feat(random-button): scope Random to a playlist or collection ([#794](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/794)) ([#876](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/876))\n - fix(settings): resolve casing mismatch when merging server plugin defaults ([#884](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/884))\n - feat(maintenance): countdown, playback reminders and daily scheduled window ([#880](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/880))\n - feat(media-tags): age rating badges, rating tag scope, preferred audio language, full-series language flags, and a tidier Media Tags fieldset ([#887](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/887))\n - Translations update from Hosted Weblate ([#890](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/890))\n - perf: faster startup, browser-cached tag cache, faster details pages and smoother UI ([#891](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/891))\n - fix(ui): give JE's Material Symbols subsets private font names so themes keep the full icon set ([#895](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/895))\n - feat(tags): native poster tags for clients without the web UI (experimental) ([#894](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/894))\n - docs(readme): showcase README with screenshots, recordings and a fact-checked feature tour ([#896](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/896))\n - Translations update from Hosted Weblate ([#897](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/897))\n - Translations with AI Friend\n - feat(reviews): optional Jellyfin rating mirror and admin list-all endpoint ([#841](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/841))\n - fix(ui): host header tray in its own container when a foreign button precedes the user menu\n - fix(tabs): avoid native tab index collisions with Custom Tabs and block enabling both for one page",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.10.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-10-03T11:20:47"
+      },
       {
         "version": "12.9.0.0",
         "checksum": "2fb67b79a1a780b03796dfb2570bc269",
@@ -9640,6 +9696,38 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
+      {
+        "version": "12.11.0.0",
+        "checksum": "167bdebb473cfefe7dfc0b4f2ee0df38",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Improve community analytics table sorting\n - fix(seerr): hide advanced request options from users without REQUEST_ADVANCED\n - feat(item-details): link audio languages to synced language tags\n - Translations update from Hosted Weblate ([#902](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/902))\n - fix(tabs): native Home tabs coexist with Custom Tabs (positions, stable links, live reconciliation) ([#901](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/901))\n - fix(people-tags): lay out age and birthplace tags inside circular cast portraits\n - fix(icons): flatten Letterboxd, Seerr and Arr buttons to match metadata icons\n - feat(seerr): polish cards, more-info modal and season request modal\n - fix(recommendations): remove double side padding that left a gap before the first card\n - refactor(helpers): share Jellyfin header measurement via JE.helpers.getHeaderBottom\n - feat(recommendations): polish page title, rows, tiles and sticky category bar\n - Add Jellium Desktop to excluded clients for native poster tags ([#906](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/906))\n - fix(ui): scope JE's Material Symbols rules to JE-private classes so theme and plugin icons keep the full font ([#904](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/904))\n - feat(analytics): attest release builds and warn on build/host mismatch",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.11.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-10-04T14:30:13"
+      },
+      {
+        "version": "12.11.0.0",
+        "checksum": "f6313934f57173a34e7d7caa459b686b",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Improve community analytics table sorting\n - fix(seerr): hide advanced request options from users without REQUEST_ADVANCED\n - feat(item-details): link audio languages to synced language tags\n - Translations update from Hosted Weblate ([#902](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/902))\n - fix(tabs): native Home tabs coexist with Custom Tabs (positions, stable links, live reconciliation) ([#901](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/901))\n - fix(people-tags): lay out age and birthplace tags inside circular cast portraits\n - fix(icons): flatten Letterboxd, Seerr and Arr buttons to match metadata icons\n - feat(seerr): polish cards, more-info modal and season request modal\n - fix(recommendations): remove double side padding that left a gap before the first card\n - refactor(helpers): share Jellyfin header measurement via JE.helpers.getHeaderBottom\n - feat(recommendations): polish page title, rows, tiles and sticky category bar\n - Add Jellium Desktop to excluded clients for native poster tags ([#906](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/906))\n - fix(ui): scope JE's Material Symbols rules to JE-private classes so theme and plugin icons keep the full font ([#904](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/904))\n - feat(analytics): attest release builds and warn on build/host mismatch",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.11.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-10-04T14:30:03"
+      },
+      {
+        "version": "12.10.0.0",
+        "checksum": "df54ba07e98dfb4a3497c260b5d89ceb",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Translations update from Hosted Weblate ([#885](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/885))\n - chore(ci)(deps): bump the github-actions group with 4 updates ([#886](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/886))\n - fix(config): don't show Custom Tabs sync alert when Custom Tabs isn't installed ([#889](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/889))\n - feat(seerr): All | Movies | Series on studio and network pages (Recommendations tiles and \"More from\") ([#881](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/881))\n - feat(subtitles): text effect presets (outline / drop shadow) ([#882](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/882))\n - feat(seerr): manual TVDB match for series TMDB cannot auto-match ([#653](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/653)) ([#874](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/874))\n - feat(spoiler-guard): auto-enable on library add, scoped by content type and library ([#877](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/877))\n - feat(random-button): scope Random to a playlist or collection ([#794](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/794)) ([#876](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/876))\n - fix(settings): resolve casing mismatch when merging server plugin defaults ([#884](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/884))\n - feat(maintenance): countdown, playback reminders and daily scheduled window ([#880](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/880))\n - feat(media-tags): age rating badges, rating tag scope, preferred audio language, full-series language flags, and a tidier Media Tags fieldset ([#887](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/887))\n - Translations update from Hosted Weblate ([#890](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/890))\n - perf: faster startup, browser-cached tag cache, faster details pages and smoother UI ([#891](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/891))\n - fix(ui): give JE's Material Symbols subsets private font names so themes keep the full icon set ([#895](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/895))\n - feat(tags): native poster tags for clients without the web UI (experimental) ([#894](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/894))\n - docs(readme): showcase README with screenshots, recordings and a fact-checked feature tour ([#896](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/896))\n - Translations update from Hosted Weblate ([#897](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/897))\n - Translations with AI Friend\n - feat(reviews): optional Jellyfin rating mirror and admin list-all endpoint ([#841](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/841))\n - fix(ui): host header tray in its own container when a foreign button precedes the user menu\n - fix(tabs): avoid native tab index collisions with Custom Tabs and block enabling both for one page",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.10.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-10-03T11:21:07"
+      },
+      {
+        "version": "12.10.0.0",
+        "checksum": "e07dca8899981b9c97605dd086dec426",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Translations update from Hosted Weblate ([#885](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/885))\n - chore(ci)(deps): bump the github-actions group with 4 updates ([#886](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/886))\n - fix(config): don't show Custom Tabs sync alert when Custom Tabs isn't installed ([#889](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/889))\n - feat(seerr): All | Movies | Series on studio and network pages (Recommendations tiles and \"More from\") ([#881](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/881))\n - feat(subtitles): text effect presets (outline / drop shadow) ([#882](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/882))\n - feat(seerr): manual TVDB match for series TMDB cannot auto-match ([#653](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/653)) ([#874](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/874))\n - feat(spoiler-guard): auto-enable on library add, scoped by content type and library ([#877](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/877))\n - feat(random-button): scope Random to a playlist or collection ([#794](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/794)) ([#876](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/876))\n - fix(settings): resolve casing mismatch when merging server plugin defaults ([#884](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/884))\n - feat(maintenance): countdown, playback reminders and daily scheduled window ([#880](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/880))\n - feat(media-tags): age rating badges, rating tag scope, preferred audio language, full-series language flags, and a tidier Media Tags fieldset ([#887](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/887))\n - Translations update from Hosted Weblate ([#890](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/890))\n - perf: faster startup, browser-cached tag cache, faster details pages and smoother UI ([#891](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/891))\n - fix(ui): give JE's Material Symbols subsets private font names so themes keep the full icon set ([#895](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/895))\n - feat(tags): native poster tags for clients without the web UI (experimental) ([#894](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/894))\n - docs(readme): showcase README with screenshots, recordings and a fact-checked feature tour ([#896](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/896))\n - Translations update from Hosted Weblate ([#897](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/897))\n - Translations with AI Friend\n - feat(reviews): optional Jellyfin rating mirror and admin list-all endpoint ([#841](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/841))\n - fix(ui): host header tray in its own container when a foreign button precedes the user menu\n - fix(tabs): avoid native tab index collisions with Custom Tabs and block enabling both for one page",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.10.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-10-03T11:20:47"
+      },
       {
         "version": "12.9.0.0",
         "checksum": "2fb67b79a1a780b03796dfb2570bc269",
@@ -15076,116 +15164,6 @@
     ]
   },
   {
-    "name": "Custom Tabs",
-    "guid": "fbacd0b6-fd46-4a05-b0a4-2045d6a135b0",
-    "category": "General",
-    "description": "Adds support for custom tabs to be added to the Jellyfin webpage. Commonly used to add Requests tab.",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Custom%20Tabs/logo.png",
-    "versions": [
-      {
-        "version": "0.3.1.0",
-        "checksum": "3f4464fb4eb11f1d9f48cf6d06460bc2",
-        "changelog": "Patch to make work on 12.1.0 as released on 12.0.1 (which doesn't exist) by accident. If you're not on 12.1.0 this is exactly the same version as 0.3.0.0",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Custom%20Tabs/0.3.1.0/Release-12.1.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-21T10:32:00"
-      }
-    ]
-  },
-  {
-    "name": "File Transformation",
-    "guid": "5e87cc92-571a-4d8d-8d98-d2d4147f9f90",
-    "category": "General",
-    "description": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/File%20Transformation/logo.png",
-    "versions": [
-      {
-        "version": "3.0.1.0",
-        "checksum": "1451642c8dc6f036cb00aa703a9f0834",
-        "changelog": "Add support for 12.1",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/File%20Transformation/3.0.1.0/Release-12.1.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-08T09:02:53"
-      }
-    ]
-  },
-  {
-    "name": "Media Bar",
-    "guid": "08f615ea-2107-4f04-89cc-091035f54448",
-    "category": "General",
-    "description": "Adds a media bar element at the top of the homepage on Jellyfin web",
-    "overview": "",
-    "owner": "IAmParadox27 & M0RPH3US",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27%20&%20M0RPH3US/Media%20Bar/logo.png",
-    "versions": [
-      {
-        "version": "3.0.0.0",
-        "checksum": "fd60f661b8d1448eb2311240d8044154",
-        "changelog": "# 🎬 Media Bar Arrives on Jellyfin 12\r\n\r\nMedia Bar **3.0.0.0** brings support for **Jellyfin 12**, including compatibility with both the classic desktop experience and Jellyfin's newer modern web layout.\r\n\r\n> ## 🙌 Huge thanks to MakD and the upstream contributors\r\n>\r\n> Media Bar itself is the work of **MakD and the contributors to the upstream Media Bar project**. The plugin I maintain is primarily a Jellyfin wrapper around that work, exposing configuration and integration points so it can be installed and managed cleanly as a Jellyfin plugin.\r\n>\r\n> A huge amount of effort has gone into keeping Media Bar working across Jellyfin's changing web interface, especially for Jellyfin 12. The features, UI work and frontend improvements in this release are built on that upstream work, and the credit for that belongs to **MakD and everyone contributing there**.\r\n>\r\n> My part is largely packaging, integrating and exposing that work through Jellyfin's plugin system.\r\n\r\n## ✨ New Features\r\n\r\n* Added support for **Jellyfin 12**.\r\n* Added support for Jellyfin 12's **modern React/MUI home screen layout**, alongside the existing classic desktop layout.\r\n* Updated the bundled Media Bar frontend to the latest Jellyfin 12-compatible upstream version.\r\n* Added Jellyfin 12-specific styling so Media Bar integrates correctly with the new web-client shell while retaining the existing appearance on the classic layout.\r\n* Media Bar continues to ship its frontend assets directly with the plugin, ensuring the version displayed in Jellyfin matches the plugin version you've installed.\r\n\r\n## 🛠️ Improvements\r\n\r\n* Synced Media Bar with the latest Jellyfin 12-compatible upstream work.\r\n* Improved Media Bar placement within the Jellyfin 12 home screen across both supported layouts.\r\n* Improved layout behaviour on taller displays, ensuring Jellyfin's home-screen rows remain below the Media Bar content rather than overlapping its controls.\r\n* Improved localisation handling when loading Jellyfin's translation chunks.\r\n* Retained support for the **Get updates early** option for users who explicitly want to track unreleased upstream Media Bar changes.\r\n\r\n## 🪲 Bug Fixes\r\n\r\n* Fixed Media Bar being inserted in the wrong position when using Jellyfin 12's modern layout (#181).\r\n* Fixed translated Media Bar strings falling back to English or producing JSON decoding errors for some languages (#185).\r\n* Fixed home-screen rows overlapping Media Bar buttons on taller viewports.\r\n* Fixed Jellyfin 12 layout differences that could cause Media Bar to render incorrectly compared with Jellyfin 10.11.\r\n\r\n## ⚠️ Compatibility\r\n\r\n* **Media Bar 3.0.0.0 supports Jellyfin 10.11.11 and Jellyfin 12.**\r\n* Users on older Jellyfin 10.x versions should remain on a compatible **2.x** Media Bar release.\r\n* Jellyfin 12 support includes both the **classic Desktop layout** and the newer **modern React/MUI layout**.\r\n* A compatible **File Transformation 3.x** release is required.\r\n* If you're using the **Get updates early** option, unreleased upstream Media Bar changes may behave differently from the frontend bundled and tested with this plugin release.\r\n\r\n## Contributors\r\n\r\n* austinnorgaard\r\n* judarange\r\n\r\n## ❤️ Support\r\n\r\nIf you enjoy using my Jellyfin plugins and want to support the time that goes into building, maintaining, and improving them, you can do so on [Ko-fi](https://ko-fi.com/IAmParadox27).\r\n\r\nThank you for using the plugins and being part of the community.",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27%20&%20M0RPH3US/Media%20Bar/3.0.0.0/Release-12.1.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-15T20:41:11"
-      }
-    ]
-  },
-  {
-    "name": "Plugin Pages",
-    "guid": "5b6550fa-a014-4f4c-8a2c-59a43680ac6d",
-    "category": "General",
-    "description": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Plugin%20Pages/logo.png",
-    "versions": [
-      {
-        "version": "3.0.1.0",
-        "checksum": "f74c03ced8c78112893e0d31ef4b649e",
-        "changelog": "## 🪲 Bug Fixes\r\n\r\n* Fixed injected menu items not closing the Jellyfin user-menu popover after navigation (PR #20, @n00bcodr).\r\n* Fixed Plugin Pages injection sometimes failing on clients where jQuery had not finished loading, including affected Android clients (PR #20, @n00bcodr).\r\n* Added cache-busting to the injected script so clients reliably receive updated versions.\r\n\r\n## ⚠️ Compatibility\r\n\r\n* Dropped support for Jellyfin 10.11 releases prior to 10.11.11. Jellyfin 10.11.11 remains supported.\r\n\r\n### Contributors\r\n\r\n* n00bcodr",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Plugin%20Pages/3.0.1.0/Release-12.1.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-15T10:18:14"
-      }
-    ]
-  },
-  {
-    "name": "Home Screen Sections",
-    "guid": "b8298e01-2697-407a-b44d-aa8dc795e850",
-    "category": "General",
-    "description": "Adds support for server provided home screen sections",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Home%20Screen%20Sections/logo.png",
-    "versions": [
-      {
-        "version": "3.0.2.0",
-        "checksum": "c71a9bbf5456a377f14d9653ca41db99",
-        "changelog": "Fixed issue caused by 3.0.1.0 on JF 12.1. \r\n\r\nThat release has been removed - this is identical to 3.0.1.0 except with this fix",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Home%20Screen%20Sections/3.0.2.0/Release-12.1.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-15T11:27:53"
-      }
-    ]
-  },
-  {
     "name": "InfuseSync",
     "guid": "022a3003-993f-45f1-8565-87d12af2e12a",
     "category": "General",
@@ -15694,6 +15672,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/logo.png",
     "versions": [
       {
+        "version": "12.0.5.0",
+        "checksum": "d3fc1c17efa61ed85e86228f3c2c940f",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/12.0/v12.0.5.0)\n",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/AbandonedCart,%20rlauuzo,%20jumoog%20(forked%20from%20ConfusedPolarBear)/Intro%20Skipper/12.0.5.0/intro-skipper-v12.0.5.0.zip",
+        "timestamp": "2026-10-09T19:44:43Z"
+      },
+      {
         "version": "12.0.4.0",
         "checksum": "de89ee9cf3e05d41bb02e584769ba1b0",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/intro-skipper/releases/tag/12.0/v12.0.4.0)\n",
@@ -15737,6 +15723,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
+        "version": "12.0.17.0",
+        "checksum": "334e56c3f51677e91ce848b87ea07f8f",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.17.0/segment-editor-plugin-v12.0.17.0.zip",
+        "timestamp": "2026-10-09T11:20:32Z"
+      },
+      {
+        "version": "12.0.16.0",
+        "checksum": "bd923e08abcc1b55ec724c43b233c392",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.16.0/segment-editor-plugin-v12.0.16.0.zip",
+        "timestamp": "2026-10-05T00:12:15Z"
+      },
+      {
         "version": "12.0.15.0",
         "checksum": "0e39a7c46d8eaf6ecd3ed5a6f94cf683",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -15759,22 +15761,6 @@
         "targetAbi": "12.1.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.13.0/segment-editor-plugin-v12.0.13.0.zip",
         "timestamp": "2026-09-24T15:19:55Z"
-      },
-      {
-        "version": "12.0.12.0",
-        "checksum": "5eaff5cb7133a2d45e77074b2ce6c394",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.12.0/segment-editor-plugin-v12.0.12.0.zip",
-        "timestamp": "2026-09-24T14:47:39Z"
-      },
-      {
-        "version": "12.0.11.0",
-        "checksum": "ba7af0a87d8ef4c7898b360418e6404a",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.11.0/segment-editor-plugin-v12.0.11.0.zip",
-        "timestamp": "2026-09-24T09:19:16Z"
       }
     ]
   },

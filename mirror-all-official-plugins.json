@@ -2933,11 +2933,19 @@
   {
     "name": "OpenLibrary",
     "guid": "a4df60c5-6ab4-412a-8f79-2cab93fb2bc5",
-    "category": "Metadata",
+    "category": "Books",
     "description": "Provides book and author metadata from OpenLibrary.org for your Jellyfin book libraries. Automatically fetches book descriptions, series information, publication dates, genres, and author biographies from the OpenLibrary API.\n",
     "overview": "OpenLibrary metadata provider for Jellyfin",
     "owner": "jellyfin",
     "versions": [
+      {
+        "version": "2.0.0.0",
+        "checksum": "8d5dbc80e566847827b1693ae5e53509",
+        "changelog": "- Fix: Set ClientSideRateLimitedHandler to public (#9) @jordanmichaelrushing, @crobibero",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/jellyfin/OpenLibrary/2.0.0.0/openlibrary_2.0.0.0.zip",
+        "timestamp": "2026-10-06T00:41:44Z"
+      },
       {
         "version": "1.0.0.0",
         "checksum": "d34550be03d0aa2e8b43b70a47507c5f",
