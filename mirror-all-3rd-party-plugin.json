@@ -323,6 +323,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/meilisearch-logo-dark.svg",
     "versions": [
       {
+        "version": "1.12.1.5",
+        "checksum": "4efd0b1c543da292a9f7c46f720cb98a",
+        "changelog": "\n- [13faf4b] fix: remove documents of deleted items from the index (#142)\n- [f1ab9fa] ci(deps): bump actions/download-artifact from 8.0.1 to 8.0.2 (#139)\n- [1955481] ci(deps): bump actions/upload-artifact from 7.0.1 to 7.0.2 (#140)\n- [85ae32d] ci(deps): bump actions/checkout from 7.0.0 to 7.0.1 (#135)\n- [531da07] ci(deps): bump actions/setup-dotnet from 5.4.0 to 6.0.0 (#136)\n- [1dd1a59] update README",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.12.1.5/meilisearch_1.12.1.5.zip",
+        "timestamp": "2026-10-19T16:36:29Z"
+      },
+      {
         "version": "1.12.1.4",
         "checksum": "1491849543d4a588555371a767c61908",
         "changelog": "\n- [73d7ee2] fix: harden AverageSearchTime tracking and purge conn-string leftovers\n- [9da8856] fix: reload on IndexName change, real search timing, drop conn-string leak (#134)\n- [6d2766f] fix(config): build status URL with ApiClient.getUrl for base-path installs (#133)\n- [d0e488f] ci(deps): bump actions/setup-dotnet from 5.3.0 to 5.4.0 (#130)",
@@ -906,6 +914,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/logo.png",
     "versions": [
       {
+        "version": "3.4.0.0",
+        "checksum": "631e41c973a11a0c24b17bb795a0c21e",
+        "changelog": "- feat: Add configurable seasonal effect play duration timeout with automatic fade-out\n- feat: Add client-side play duration override\n- feat: Add Jellyfin v12 MUI AppBar gradient support to Pride theme\n- fix: Ensure immediate suppression of seasonal effects during video playback route navigation (additional fallback)\n- fix: Increase Film Noir overlay z-index to properly cover Jellyfin v12 UI layers",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Seasonals/3.4.0.0/Jellyfin.Plugin.Seasonals.zip",
+        "timestamp": "2026-10-22T01:01:14Z"
+      },
+      {
         "version": "3.3.0.0",
         "checksum": "bb16a3b231cc21ac92aa50a923b4f3c7",
         "changelog": "fix/feat: Add Jellyfin v12 support for latest RC7\n- feat: Add options to layer underwater background and swimmers behind media cards\n- fix: Increase modal z-index and fix settings popup focus/click bubbling\n- chore: Standardize console logging with '🎉 Seasonals' prefix across all themes",
@@ -1140,6 +1156,14 @@
     "owner": "CodeDevMLH",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/logo.png",
     "versions": [
+      {
+        "version": "3.10.0.0",
+        "checksum": "da1ec9c6bdc8a8a8362950443630930d",
+        "changelog": "- feat: Add Weighted Random sorting prioritizing recently added titles\n- feat: Scope per-library API queries to matching item types (Movie/Series) and disable total record counting for performance\n- feat: Enforce Max Parental Rating globally across Custom Media IDs, Collections, and Seasonal content\n- fix: Disable split-screen hover dimming and pointer interception when slideshow is paused\n- fix: Unload auto-generated YouTube captions/cc during trailer playback",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/CodeDevMLH/Media%20Bar%20Enhanced/3.10.0.0/Jellyfin.Plugin.MediaBarEnhanced_v3.10.0.0.zip",
+        "timestamp": "2026-10-22T00:33:15Z"
+      },
       {
         "version": "3.9.2.0",
         "checksum": "382ab3d7f6191c0232d908d525ead2dc",
@@ -4433,6 +4457,30 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/banner.png",
     "versions": [
       {
+        "version": "0.26.28.0",
+        "checksum": "f80ada08800e4f0cdd5dc8da73b9f992",
+        "changelog": "## [0.26.28.0] - 2026-10-22\n\n### 🚀 Features\n\n- Take settings and addon changes without a restart (#320)\n- Show the cast on a title's first open (#327)\n\n### 🐛 Bug Fixes\n\n- Run the other segment providers when gelato introdb is disabled (#322)\n- An empty addon url in a per-user override means the global addon (#323)\n- Honor a user's parental in search and insert (#324)\n- Support more meta providers for series (#325)\n- Show actors with any meta provider (#326)\n- Keep your place in a movie after a short stream (#328)\n- Get skip credits back for a title added again (#329)\n",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.28.0/gelato_0.26.28.0.zip",
+        "timestamp": "2026-10-22T19:42:24Z"
+      },
+      {
+        "version": "0.26.27.0",
+        "checksum": "bb1ce7a767266e25c69d971ac9a60436",
+        "changelog": "## [0.26.27.0] - 2026-10-19\n\n### 🚀 Features\n\n- Syncplay source syncing (#120)\n- Look up IntroDB's end credits for movies (#310)\n- List movie and series search results by rank (#311)\n- List a person's titles outside the library on their page (#314)\n- Hide titles opened from search until someone plays them (#316)\n- Sync series trees when extending local series is switched (#318)\n\n### 🐛 Bug Fixes\n\n- Offer every version in a playback info that names none (#313)\n- List upcoming episodes with the unreleased filter on (#315)\n- Move playback on from a short clip without taking it for a dead stream (#317)\n\n### 📚 Documentation\n\n- Reword the settings page and the README in one voice (#319)\n\n### ⚡ Performance\n\n- Build an owned title's sources once per search (#312)\n",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.27.0/gelato_0.26.27.0.zip",
+        "timestamp": "2026-10-19T22:53:09Z"
+      },
+      {
+        "version": "0.26.26.0",
+        "checksum": "02d8f65ae173ec6ad013cd11549822d6",
+        "changelog": "## [0.26.26.0] - 2026-10-18\n\n### 🚀 Features\n\n- Skip segments from a stream's named chapters with RemuxDB on (#300)\n- Look segments up again and read chapters of rows probed before (#303)\n- List a stream that probed to a short clip after the others (#304)\n- Add a title to the library when its request is approved in Seerr (#306)\n- Show how to set up the seerr webhook on the settings page and in the readme (#307)\n\n### 🐛 Bug Fixes\n\n- Keep an episode edit made while its series refresh runs (#301)\n- Leave a local series that is being scanned to the next tree sync run (#302)\n- Keep a title deleted right after it was added from coming back (#308)\n- List a catalog's moved movies in its library at once (#309)\n\n### ⚡ Performance\n\n- Leave a probed short stream and a placeholder unprobed at play (#305)\n",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.26.0/gelato_0.26.26.0.zip",
+        "timestamp": "2026-10-18T11:26:58Z"
+      },
+      {
         "version": "0.26.25.0",
         "checksum": "45f4755156b1409ce3abfa9bfc0c3bf9",
         "changelog": "## [0.26.25.0] - 2026-10-16\n\n### 🚀 Features\n\n- Settings page in tabs, with a setup assistant for a new install (#294)\n- Play the next stream when the first one does not start (#206)\n\n### 🐛 Bug Fixes\n\n- Stop listing a stream's subtitle once its file is deleted (#295)\n- Leave a title in a library the user cannot open out of their search (#296)\n- Keep a library's movies when its folder is reported leaving twice (#297)\n- Keep a subtitle's index when an older subtitle file is deleted (#298)\n- Keep an inserted title's streams linked after its first refresh (#299)\n",
@@ -4647,30 +4695,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.1/gelato_0.26.14.1.zip",
         "timestamp": "2026-04-21T18:43:14Z"
-      },
-      {
-        "version": "0.26.14.0",
-        "checksum": "83da7f68c590c1332a89da6c45556246",
-        "changelog": "## [0.26.14.0] - 2026-04-16\n\n### 🚀 Features\n\n- Also update future digital release dates\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.0/gelato_0.26.14.0.zip",
-        "timestamp": "2026-04-16T06:57:20Z"
-      },
-      {
-        "version": "0.26.13.9",
-        "checksum": "b15071bf67f07713f22680d0fcd9e965",
-        "changelog": "## [0.26.13.9] - 2026-04-14\n\n### 🐛 Bug Fixes\n\n- Duplicates on import\n\n### ⚙️ Miscellaneous Tasks\n\n- Linting\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.13.9/gelato_0.26.13.9.zip",
-        "timestamp": "2026-04-14T14:48:43Z"
-      },
-      {
-        "version": "0.26.13.8",
-        "checksum": "cedb8ea60663359e3a63b86f53b96c59",
-        "changelog": "## [0.26.13.8] - 2026-04-12\n\n### 🐛 Bug Fixes\n\n- Only apply enddate to selected types\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.13.8/gelato_0.26.13.8.zip",
-        "timestamp": "2026-04-12T06:53:06Z"
       }
     ]
   },
@@ -5113,6 +5137,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
       {
+        "version": "12.13.0.0",
+        "checksum": "70bd7c83d8439d1b842af2ae49a28602",
+        "changelog": "**Build for Jellyfin 12.**\n\n- chore(ci)(deps): bump the github-actions group with 6 updates ([#943](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/943))\n - chore(ci)(deps): bump actions/upload-artifact from 4.6.2 to 7.0.2 ([#944](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/944))\n - chore(ci)(deps): bump actions/github-script from d746ffe35508b1917358783b479e04febd2b8f71 to 3a2844b7e9c422d3c10d287c895573f7108da1b3 ([#945](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/945))\n - fix(compat): detect a stale plugin build left in memory after a dashboard restart ([#949](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/949))\n - fix(header): keep all JE header buttons left of SyncPlay/Cast/Search on a cold load ([#951](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/951))\n - fix(recommendations): ship studio/network logos instead of fetching them ([#908](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/908))\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - chore(tests): regenerate production inventory\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - fix(api): rename UserSettings DTO to avoid duplicate OpenAPI schema id\n - fix(language-tags): include series members in collection language flags\n - chore(tests): regenerate production inventory\n - feat(seerr): option to only allow requesting one season at a time\n - chore(tests): regenerate production inventory\n - docs: complete documentation overhaul — every page checked against the code, 150 screenshots and 26 recordings, new JE-style site ([#946](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/946))\n - fix(tests): seed tag cache snapshots with schema 8\n - fix(requests): honor Filter Downloads by User Requests in the request list\n - feat(ddd): DoesTheDogDie content warnings with per-user trigger picker\n - fix(spoiler-guard): let admins and users turn off trickplay seek-preview protection ([#960](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/960))\n - Keep the mobile menu usable with extra header links ([#957](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/957))\n - Native tab labels not using their localized versions ([#954](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/954))\n - fix: apply Hide Tags on Hover admin default to new and overwritten user settings\n - Translations update from Hosted Weblate ([#965](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/965))\n - feat(active-streams): refresh the header counter once per page navigation\n - chore(ci)(deps): bump the github-actions group with 5 updates ([#969](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/969))\n - fix(tv): keep remote navigation inside the pause screen and Seerr cards ([#971](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/971))\n - fix(pause-screen): never describe a previous item after the source changes\n - feat(tasks): hide scheduled tasks for features that are turned off\n - feat(language-tags): option to merge regional variants into one flag\n - feat(anilist reviews): show top AniList reviews on anime pages\n - fix(config): show the TMDB key hint on Show Release/Air Date\n - chore(docs): rename the Elsewhere tab to Elsewhere & Reviews\n - Translations update from Hosted Weblate ([#972](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/972))\n - fix(reviews): accept 0.5 star ratings\n - fix(native tags): skip Jellyfin iOS and iPadOS, they run the web overlays",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.13.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-10-20T20:50:26"
+      },
+      {
+        "version": "12.13.0.0",
+        "checksum": "4352acb78836d5dd6972b0fa97f5a2b9",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- chore(ci)(deps): bump the github-actions group with 6 updates ([#943](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/943))\n - chore(ci)(deps): bump actions/upload-artifact from 4.6.2 to 7.0.2 ([#944](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/944))\n - chore(ci)(deps): bump actions/github-script from d746ffe35508b1917358783b479e04febd2b8f71 to 3a2844b7e9c422d3c10d287c895573f7108da1b3 ([#945](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/945))\n - fix(compat): detect a stale plugin build left in memory after a dashboard restart ([#949](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/949))\n - fix(header): keep all JE header buttons left of SyncPlay/Cast/Search on a cold load ([#951](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/951))\n - fix(recommendations): ship studio/network logos instead of fetching them ([#908](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/908))\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - chore(tests): regenerate production inventory\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - fix(api): rename UserSettings DTO to avoid duplicate OpenAPI schema id\n - fix(language-tags): include series members in collection language flags\n - chore(tests): regenerate production inventory\n - feat(seerr): option to only allow requesting one season at a time\n - chore(tests): regenerate production inventory\n - docs: complete documentation overhaul — every page checked against the code, 150 screenshots and 26 recordings, new JE-style site ([#946](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/946))\n - fix(tests): seed tag cache snapshots with schema 8\n - fix(requests): honor Filter Downloads by User Requests in the request list\n - feat(ddd): DoesTheDogDie content warnings with per-user trigger picker\n - fix(spoiler-guard): let admins and users turn off trickplay seek-preview protection ([#960](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/960))\n - Keep the mobile menu usable with extra header links ([#957](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/957))\n - Native tab labels not using their localized versions ([#954](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/954))\n - fix: apply Hide Tags on Hover admin default to new and overwritten user settings\n - Translations update from Hosted Weblate ([#965](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/965))\n - feat(active-streams): refresh the header counter once per page navigation\n - chore(ci)(deps): bump the github-actions group with 5 updates ([#969](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/969))\n - fix(tv): keep remote navigation inside the pause screen and Seerr cards ([#971](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/971))\n - fix(pause-screen): never describe a previous item after the source changes\n - feat(tasks): hide scheduled tasks for features that are turned off\n - feat(language-tags): option to merge regional variants into one flag\n - feat(anilist reviews): show top AniList reviews on anime pages\n - fix(config): show the TMDB key hint on Show Release/Air Date\n - chore(docs): rename the Elsewhere tab to Elsewhere & Reviews\n - Translations update from Hosted Weblate ([#972](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/972))\n - fix(reviews): accept 0.5 star ratings\n - fix(native tags): skip Jellyfin iOS and iPadOS, they run the web overlays",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.13.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-10-20T20:50:11"
+      },
+      {
         "version": "12.12.0.0",
         "checksum": "6e3d8fa5ffd21afa722dd4f10895f4bb",
         "changelog": "**Build for Jellyfin 12.**\n\n- Translations update from Hosted Weblate ([#914](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/914))\n - fix(playback): Auto PiP only closes a PiP window it opened itself ([#913](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/913))\n - fix(seerr): size the Request icon on phones and scale the card status badge\n - fix(tabs): darken the home backdrop behind plugin tabs on Jellyfin 12\n - feat(requests): size each page to whole grid rows\n - fix(requests): make Processing exclude Coming Soon requests\n - feat(requests): label approved requests that Radarr/Sonarr no longer have as orphaned\n - feat(requests): update list sections in place and add section heading icons\n - feat(ratings): cover all Jellyfin and TMDB/Seerr ratings\n - Translations update from Hosted Weblate ([#918](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/918))\n - feat(plugin-pages): register pages live via Plugin Pages 3.0 PluginInterface, no restart needed\n - feat(catchup): add Catch Up page for marking titles watched, dismissed or watchlisted\n - fix(jellyseerr-search): don't show the no-results message when KefinTweaks search has results ([#920](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/920))\n - chore(i18n): translate Catch Up strings and remaining English strings across all locales\n - feat(tags): add excluded libraries option for the tag cache\n - feat(seerr): add SIMKL external link to the more info modal\n - feat(shortcuts): rebuild the admin shortcut overrides as a click-to-record grid\n - chore: address code scanning findings ([#926](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/926))\n - feat(maintenance): let users dismiss the maintenance banner until the next page load\n - fix(shortcuts): match shifted symbol keys like + on US layouts\n - Add organized regression suites and fix persistence, privacy, and lifecycle bugs ([#912](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/912))\n - feat(elsewhere): show streaming providers per season\n - ci(tests): keep the production inventory in sync automatically ([#932](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/932))\n - chore(ci): use Jellyfin Enhanced - Bot app token and add more-info-needed workflow\n - Translations update from Hosted Weblate ([#928](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/928))\n - fix(translation): issue reporting modal selection translation ([#930](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/930))\n - feat(config): mask API key fields until focused\n - ci(codeql): stop reporting recommendation-level style notes ([#935](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/935))\n - feat(tags): admin tag colour overrides for web overlays and native poster images\n - feat(mdblist): choose rating source and fallback for Jellyfin rating sync ([#937](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/937), [#938](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/938))\n - ci(tests): authenticate the inventory-sync bot with its client id\n - chore(tests): regenerate production inventory\n - perf: tag cache, Seerr search and discovery, playback, fewer requests per page load (round 2) ([#911](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/911))",
@@ -6220,6 +6260,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/icon.png",
     "versions": [
       {
+        "version": "4.1.0.0",
+        "checksum": "2c0af54ddf603599b294e307f75e434d",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Make config page save button floating with unsaved-changes state\n - Add module and external URL support for scripts\n - Update README for unified manifest and module/external scripts",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/4.1.0.0/Jellyfin.Plugin.JavaScriptInjector_12.0.0.zip",
+        "timestamp": "2026-10-20T21:02:47"
+      },
+      {
+        "version": "4.1.0.0",
+        "checksum": "6c95df9c2dd8c26be9de3ea066e3a2c2",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Make config page save button floating with unsaved-changes state\n - Add module and external URL support for scripts\n - Update README for unified manifest and module/external scripts",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/4.1.0.0/Jellyfin.Plugin.JavaScriptInjector_10.11.0.zip",
+        "timestamp": "2026-10-20T21:02:38"
+      },
+      {
         "version": "4.0.0.0",
         "checksum": "e9b247e1cbd473b02cc71bd6e3dae369",
         "changelog": "**Build for Jellyfin 12.**\n\n- Add Jellyfin 12 support via IStartupFilter, drop 10.10.7\n - Add CodeMirror code editor with JSHint linting to config page",
@@ -6398,6 +6454,22 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/thumb.png",
     "versions": [
+      {
+        "version": "5.1.0.0",
+        "checksum": "6f3550040c7a3374338f66be89ecfc91",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Fix Home Screen Sections resetting after restart\n - Resolve the Playlists home screen toggle per user\n - Apply landing screens to Jellyfin 12 browser storage\n - Resolve Playlists and Live TV in Library Order per user\n - Don't force desktop/mobile layout on TV devices\n - Rewrite README with compatibility matrix and settings overview",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/5.1.0.0/Jellyfin.Plugin.JellyTweaks_12.0.0.zip",
+        "timestamp": "2026-10-20T21:09:37"
+      },
+      {
+        "version": "5.1.0.0",
+        "checksum": "4afb10eeb30aa398fb9b4ecbb49b01d8",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Fix Home Screen Sections resetting after restart\n - Resolve the Playlists home screen toggle per user\n - Apply landing screens to Jellyfin 12 browser storage\n - Resolve Playlists and Live TV in Library Order per user\n - Don't force desktop/mobile layout on TV devices\n - Rewrite README with compatibility matrix and settings overview",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/5.1.0.0/Jellyfin.Plugin.JellyTweaks_10.11.0.zip",
+        "timestamp": "2026-10-20T21:09:31"
+      },
       {
         "version": "5.0.0.0",
         "checksum": "5c04623f939af41fd2432e08dc87895b",
@@ -6562,6 +6634,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
       {
+        "version": "12.13.0.0",
+        "checksum": "70bd7c83d8439d1b842af2ae49a28602",
+        "changelog": "**Build for Jellyfin 12.**\n\n- chore(ci)(deps): bump the github-actions group with 6 updates ([#943](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/943))\n - chore(ci)(deps): bump actions/upload-artifact from 4.6.2 to 7.0.2 ([#944](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/944))\n - chore(ci)(deps): bump actions/github-script from d746ffe35508b1917358783b479e04febd2b8f71 to 3a2844b7e9c422d3c10d287c895573f7108da1b3 ([#945](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/945))\n - fix(compat): detect a stale plugin build left in memory after a dashboard restart ([#949](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/949))\n - fix(header): keep all JE header buttons left of SyncPlay/Cast/Search on a cold load ([#951](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/951))\n - fix(recommendations): ship studio/network logos instead of fetching them ([#908](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/908))\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - chore(tests): regenerate production inventory\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - fix(api): rename UserSettings DTO to avoid duplicate OpenAPI schema id\n - fix(language-tags): include series members in collection language flags\n - chore(tests): regenerate production inventory\n - feat(seerr): option to only allow requesting one season at a time\n - chore(tests): regenerate production inventory\n - docs: complete documentation overhaul — every page checked against the code, 150 screenshots and 26 recordings, new JE-style site ([#946](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/946))\n - fix(tests): seed tag cache snapshots with schema 8\n - fix(requests): honor Filter Downloads by User Requests in the request list\n - feat(ddd): DoesTheDogDie content warnings with per-user trigger picker\n - fix(spoiler-guard): let admins and users turn off trickplay seek-preview protection ([#960](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/960))\n - Keep the mobile menu usable with extra header links ([#957](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/957))\n - Native tab labels not using their localized versions ([#954](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/954))\n - fix: apply Hide Tags on Hover admin default to new and overwritten user settings\n - Translations update from Hosted Weblate ([#965](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/965))\n - feat(active-streams): refresh the header counter once per page navigation\n - chore(ci)(deps): bump the github-actions group with 5 updates ([#969](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/969))\n - fix(tv): keep remote navigation inside the pause screen and Seerr cards ([#971](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/971))\n - fix(pause-screen): never describe a previous item after the source changes\n - feat(tasks): hide scheduled tasks for features that are turned off\n - feat(language-tags): option to merge regional variants into one flag\n - feat(anilist reviews): show top AniList reviews on anime pages\n - fix(config): show the TMDB key hint on Show Release/Air Date\n - chore(docs): rename the Elsewhere tab to Elsewhere & Reviews\n - Translations update from Hosted Weblate ([#972](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/972))\n - fix(reviews): accept 0.5 star ratings\n - fix(native tags): skip Jellyfin iOS and iPadOS, they run the web overlays",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.13.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-10-20T20:50:26"
+      },
+      {
+        "version": "12.13.0.0",
+        "checksum": "4352acb78836d5dd6972b0fa97f5a2b9",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- chore(ci)(deps): bump the github-actions group with 6 updates ([#943](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/943))\n - chore(ci)(deps): bump actions/upload-artifact from 4.6.2 to 7.0.2 ([#944](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/944))\n - chore(ci)(deps): bump actions/github-script from d746ffe35508b1917358783b479e04febd2b8f71 to 3a2844b7e9c422d3c10d287c895573f7108da1b3 ([#945](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/945))\n - fix(compat): detect a stale plugin build left in memory after a dashboard restart ([#949](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/949))\n - fix(header): keep all JE header buttons left of SyncPlay/Cast/Search on a cold load ([#951](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/951))\n - fix(recommendations): ship studio/network logos instead of fetching them ([#908](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/908))\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - chore(tests): regenerate production inventory\n - feat(activity): option to limit non-admins to their own Activity Feed entries\n - fix(api): rename UserSettings DTO to avoid duplicate OpenAPI schema id\n - fix(language-tags): include series members in collection language flags\n - chore(tests): regenerate production inventory\n - feat(seerr): option to only allow requesting one season at a time\n - chore(tests): regenerate production inventory\n - docs: complete documentation overhaul — every page checked against the code, 150 screenshots and 26 recordings, new JE-style site ([#946](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/946))\n - fix(tests): seed tag cache snapshots with schema 8\n - fix(requests): honor Filter Downloads by User Requests in the request list\n - feat(ddd): DoesTheDogDie content warnings with per-user trigger picker\n - fix(spoiler-guard): let admins and users turn off trickplay seek-preview protection ([#960](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/960))\n - Keep the mobile menu usable with extra header links ([#957](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/957))\n - Native tab labels not using their localized versions ([#954](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/954))\n - fix: apply Hide Tags on Hover admin default to new and overwritten user settings\n - Translations update from Hosted Weblate ([#965](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/965))\n - feat(active-streams): refresh the header counter once per page navigation\n - chore(ci)(deps): bump the github-actions group with 5 updates ([#969](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/969))\n - fix(tv): keep remote navigation inside the pause screen and Seerr cards ([#971](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/971))\n - fix(pause-screen): never describe a previous item after the source changes\n - feat(tasks): hide scheduled tasks for features that are turned off\n - feat(language-tags): option to merge regional variants into one flag\n - feat(anilist reviews): show top AniList reviews on anime pages\n - fix(config): show the TMDB key hint on Show Release/Air Date\n - chore(docs): rename the Elsewhere tab to Elsewhere & Reviews\n - Translations update from Hosted Weblate ([#972](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/972))\n - fix(reviews): accept 0.5 star ratings\n - fix(native tags): skip Jellyfin iOS and iPadOS, they run the web overlays",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.13.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-10-20T20:50:11"
+      },
+      {
         "version": "12.12.0.0",
         "checksum": "6e3d8fa5ffd21afa722dd4f10895f4bb",
         "changelog": "**Build for Jellyfin 12.**\n\n- Translations update from Hosted Weblate ([#914](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/914))\n - fix(playback): Auto PiP only closes a PiP window it opened itself ([#913](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/913))\n - fix(seerr): size the Request icon on phones and scale the card status badge\n - fix(tabs): darken the home backdrop behind plugin tabs on Jellyfin 12\n - feat(requests): size each page to whole grid rows\n - fix(requests): make Processing exclude Coming Soon requests\n - feat(requests): label approved requests that Radarr/Sonarr no longer have as orphaned\n - feat(requests): update list sections in place and add section heading icons\n - feat(ratings): cover all Jellyfin and TMDB/Seerr ratings\n - Translations update from Hosted Weblate ([#918](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/918))\n - feat(plugin-pages): register pages live via Plugin Pages 3.0 PluginInterface, no restart needed\n - feat(catchup): add Catch Up page for marking titles watched, dismissed or watchlisted\n - fix(jellyseerr-search): don't show the no-results message when KefinTweaks search has results ([#920](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/920))\n - chore(i18n): translate Catch Up strings and remaining English strings across all locales\n - feat(tags): add excluded libraries option for the tag cache\n - feat(seerr): add SIMKL external link to the more info modal\n - feat(shortcuts): rebuild the admin shortcut overrides as a click-to-record grid\n - chore: address code scanning findings ([#926](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/926))\n - feat(maintenance): let users dismiss the maintenance banner until the next page load\n - fix(shortcuts): match shifted symbol keys like + on US layouts\n - Add organized regression suites and fix persistence, privacy, and lifecycle bugs ([#912](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/912))\n - feat(elsewhere): show streaming providers per season\n - ci(tests): keep the production inventory in sync automatically ([#932](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/932))\n - chore(ci): use Jellyfin Enhanced - Bot app token and add more-info-needed workflow\n - Translations update from Hosted Weblate ([#928](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/928))\n - fix(translation): issue reporting modal selection translation ([#930](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/930))\n - feat(config): mask API key fields until focused\n - ci(codeql): stop reporting recommendation-level style notes ([#935](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/935))\n - feat(tags): admin tag colour overrides for web overlays and native poster images\n - feat(mdblist): choose rating source and fallback for Jellyfin rating sync ([#937](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/937), [#938](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/938))\n - ci(tests): authenticate the inventory-sync bot with its client id\n - chore(tests): regenerate production inventory\n - perf: tag cache, Seerr search and discovery, playback, fewer requests per page load (round 2) ([#911](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/911))",
@@ -7669,6 +7757,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/icon.png",
     "versions": [
       {
+        "version": "4.1.0.0",
+        "checksum": "2c0af54ddf603599b294e307f75e434d",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Make config page save button floating with unsaved-changes state\n - Add module and external URL support for scripts\n - Update README for unified manifest and module/external scripts",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/4.1.0.0/Jellyfin.Plugin.JavaScriptInjector_12.0.0.zip",
+        "timestamp": "2026-10-20T21:02:47"
+      },
+      {
+        "version": "4.1.0.0",
+        "checksum": "6c95df9c2dd8c26be9de3ea066e3a2c2",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Make config page save button floating with unsaved-changes state\n - Add module and external URL support for scripts\n - Update README for unified manifest and module/external scripts",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/JavaScript%20Injector/4.1.0.0/Jellyfin.Plugin.JavaScriptInjector_10.11.0.zip",
+        "timestamp": "2026-10-20T21:02:38"
+      },
+      {
         "version": "4.0.0.0",
         "checksum": "e9b247e1cbd473b02cc71bd6e3dae369",
         "changelog": "**Build for Jellyfin 12.**\n\n- Add Jellyfin 12 support via IStartupFilter, drop 10.10.7\n - Add CodeMirror code editor with JSHint linting to config page",
@@ -7847,6 +7951,22 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/thumb.png",
     "versions": [
+      {
+        "version": "5.1.0.0",
+        "checksum": "6f3550040c7a3374338f66be89ecfc91",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Fix Home Screen Sections resetting after restart\n - Resolve the Playlists home screen toggle per user\n - Apply landing screens to Jellyfin 12 browser storage\n - Resolve Playlists and Live TV in Library Order per user\n - Don't force desktop/mobile layout on TV devices\n - Rewrite README with compatibility matrix and settings overview",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/5.1.0.0/Jellyfin.Plugin.JellyTweaks_12.0.0.zip",
+        "timestamp": "2026-10-20T21:09:37"
+      },
+      {
+        "version": "5.1.0.0",
+        "checksum": "4afb10eeb30aa398fb9b4ecbb49b01d8",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Fix Home Screen Sections resetting after restart\n - Resolve the Playlists home screen toggle per user\n - Apply landing screens to Jellyfin 12 browser storage\n - Resolve Playlists and Live TV in Library Order per user\n - Don't force desktop/mobile layout on TV devices\n - Rewrite README with compatibility matrix and settings overview",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Tweaks/5.1.0.0/Jellyfin.Plugin.JellyTweaks_10.11.0.zip",
+        "timestamp": "2026-10-20T21:09:31"
+      },
       {
         "version": "5.0.0.0",
         "checksum": "5c04623f939af41fd2432e08dc87895b",
@@ -12045,116 +12165,6 @@
     ]
   },
   {
-    "name": "Custom Tabs",
-    "guid": "fbacd0b6-fd46-4a05-b0a4-2045d6a135b0",
-    "category": "General",
-    "description": "Adds support for custom tabs to be added to the Jellyfin webpage. Commonly used to add Requests tab.",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Custom%20Tabs/logo.png",
-    "versions": [
-      {
-        "version": "0.3.2.0",
-        "checksum": "dac56e534ad74faa2a92f428dbca4231",
-        "changelog": "Added support for 12.2",
-        "targetAbi": "12.2.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Custom%20Tabs/0.3.2.0/Release-12.2.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-10-05T21:36:57"
-      }
-    ]
-  },
-  {
-    "name": "File Transformation",
-    "guid": "5e87cc92-571a-4d8d-8d98-d2d4147f9f90",
-    "category": "General",
-    "description": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/File%20Transformation/logo.png",
-    "versions": [
-      {
-        "version": "3.0.2.0",
-        "checksum": "76eae3b09a42dba7992820fa8f6a4584",
-        "changelog": "Added support for 12.2",
-        "targetAbi": "12.2.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/File%20Transformation/3.0.2.0/Release-12.2.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-08T09:02:53"
-      }
-    ]
-  },
-  {
-    "name": "Media Bar",
-    "guid": "08f615ea-2107-4f04-89cc-091035f54448",
-    "category": "General",
-    "description": "Adds a media bar element at the top of the homepage on Jellyfin web",
-    "overview": "",
-    "owner": "IAmParadox27 & M0RPH3US",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27%20&%20M0RPH3US/Media%20Bar/logo.png",
-    "versions": [
-      {
-        "version": "3.0.1.0",
-        "checksum": "d7933bb3bc0af65e1516015a5ce9f6c5",
-        "changelog": "Added support for 12.2",
-        "targetAbi": "12.2.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27%20&%20M0RPH3US/Media%20Bar/3.0.1.0/Release-12.2.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-15T20:41:11"
-      }
-    ]
-  },
-  {
-    "name": "Plugin Pages",
-    "guid": "5b6550fa-a014-4f4c-8a2c-59a43680ac6d",
-    "category": "General",
-    "description": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Plugin%20Pages/logo.png",
-    "versions": [
-      {
-        "version": "3.0.2.0",
-        "checksum": "4f839efbd6897817bcaf1dd19369bf3b",
-        "changelog": "Added support for 12.2",
-        "targetAbi": "12.2.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Plugin%20Pages/3.0.2.0/Release-12.2.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-09-16T09:19:40"
-      }
-    ]
-  },
-  {
-    "name": "Home Screen Sections",
-    "guid": "b8298e01-2697-407a-b44d-aa8dc795e850",
-    "category": "General",
-    "description": "Adds support for server provided home screen sections",
-    "overview": "",
-    "owner": "IAmParadox27",
-    "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Home%20Screen%20Sections/logo.png",
-    "versions": [
-      {
-        "version": "3.0.3.0",
-        "checksum": "95fe9be2d988c794288e5b7ef2bc916d",
-        "changelog": "✨ New Features\r\n\r\n* Added Studio / Network, Decade, Hidden Gems and Finish These Collections sections, and enabled the previously developed Starring and Directed By sections (PR #292, @n00bcodr).\r\n* Added per-section previews to the admin configuration page, allowing section results to be previewed before saving (PR #288, @n00bcodr).\r\n* Added a new Add/Remove section workflow to make managing enabled sections easier (PR #288, @n00bcodr).\r\n\r\n🛠️ Improvements\r\n\r\n* Reworked section ordering in the admin configuration page with drag-and-drop support, including support for moving groups of sections that share the same order (PR #288, @n00bcodr).\r\n* Added section information popovers using the new admin descriptions (PR #288, @n00bcodr).\r\n* Improved section naming fallbacks and fixed missing Genre section localisation in the admin interface (PR #288, @n00bcodr).\r\n* Escaped section metadata when rendering the home screen and settings interface so titles and names containing markup are displayed safely as text (PR #304, @4eh5xitv6787h645ebv).\r\n\r\n🪲 Bug Fixes\r\n\r\n* Fixed #297 where users on Jellyfin 12 could receive items from libraries they did not have access to in Latest Movies, Latest Shows, Recently Added and Genre sections (PR #301, @4eh5xitv6787h645ebv).\r\n* Fixed #298 where authenticated users could access another user’s Home Screen Sections data by supplying that user’s ID. User-scoped endpoints are now bound to the authenticated user (PR #302, @4eh5xitv6787h645ebv).\r\n* Fixed #298 by restricting section registration to administrators and limiting registered section result endpoints to the originating server (PR #303, @4eh5xitv6787h645ebv).\r\n\r\n🌐 Translations\r\n\r\n* Completed missing Spanish and Catalan translations (PR #293, @GospelBG).\r\n* Added Greek translations (PR #299, @KaliDarkzy).\r\n\r\n⚠️ Compatibility\r\n\r\n* Added support for Jellyfin 12.2.\r\n* Jellyfin 10.11.11 remains supported.\r\n\r\nContributors\r\n\r\n* n00bcodr\r\n* GospelBG\r\n* KaliDarkzy\r\n* 4eh5xitv6787h645ebv",
-        "targetAbi": "12.2.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/IAmParadox27/Home%20Screen%20Sections/3.0.3.0/Release-12.2.0.zip",
-        "dependencies": [
-            "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
-          ],
-        "timestamp": "2026-10-05T21:33:44"
-      }
-    ]
-  },
-  {
     "name": "InfuseSync",
     "guid": "022a3003-993f-45f1-8565-87d12af2e12a",
     "category": "General",
@@ -12722,6 +12732,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/logo.png",
     "versions": [
       {
+        "version": "12.0.18.0",
+        "checksum": "eaf7a37da8a285dbd1a96b4803ac0647",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.18.0/segment-editor-plugin-v12.0.18.0.zip",
+        "timestamp": "2026-10-22T09:25:26Z"
+      },
+      {
         "version": "12.0.17.0",
         "checksum": "334e56c3f51677e91ce848b87ea07f8f",
         "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
@@ -12752,14 +12770,6 @@
         "targetAbi": "12.1.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.14.0/segment-editor-plugin-v12.0.14.0.zip",
         "timestamp": "2026-09-25T09:37:27Z"
-      },
-      {
-        "version": "12.0.13.0",
-        "checksum": "20f4d0a74ba0b63c9b748ec68b5bdad6",
-        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/segment-editor-plugin/blob/master/CHANGELOG.md)",
-        "targetAbi": "12.1.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Segment%20Editor/12.0.13.0/segment-editor-plugin-v12.0.13.0.zip",
-        "timestamp": "2026-09-24T15:19:55Z"
       }
     ]
   },
@@ -12772,6 +12782,14 @@
     "owner": "Intro Skipper",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/logo.png",
     "versions": [
+      {
+        "version": "0.6.4.0",
+        "checksum": "28156008fb61d8705e9d2fd536b1e3f6",
+        "changelog": "- See the full changelog at [GitHub](https://github.com/intro-skipper/jellyfin-plugin-ms-chapter/blob/master/CHANGELOG.md)",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Intro%20Skipper/Chapter%20Creator/0.6.4.0/ChapterCreator-0.6.4.0.zip",
+        "timestamp": "2026-10-19T16:28:18Z"
+      },
       {
         "version": "0.6.3.0",
         "checksum": "051deb4907761ce06b956701657180c5",
