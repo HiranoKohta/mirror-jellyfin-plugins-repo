@@ -323,6 +323,14 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/meilisearch-logo-dark.svg",
     "versions": [
       {
+        "version": "1.12.1.6",
+        "checksum": "60bce3f0c93e8e06beb0580c344fea49",
+        "changelog": "\n- [44518d7] fix: tag API controller for OpenAPI generation (#143)",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/a.sac./Meilisearch/1.12.1.6/meilisearch_1.12.1.6.zip",
+        "timestamp": "2026-11-02T22:16:29Z"
+      },
+      {
         "version": "1.12.1.5",
         "checksum": "4efd0b1c543da292a9f7c46f720cb98a",
         "changelog": "\n- [13faf4b] fix: remove documents of deleted items from the index (#142)\n- [f1ab9fa] ci(deps): bump actions/download-artifact from 8.0.1 to 8.0.2 (#139)\n- [1955481] ci(deps): bump actions/upload-artifact from 7.0.1 to 7.0.2 (#140)\n- [85ae32d] ci(deps): bump actions/checkout from 7.0.0 to 7.0.1 (#135)\n- [531da07] ci(deps): bump actions/setup-dotnet from 5.4.0 to 6.0.0 (#136)\n- [1dd1a59] update README",
@@ -4561,6 +4569,22 @@
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/banner.png",
     "versions": [
       {
+        "version": "0.26.30.2",
+        "checksum": "0527e38f1b0f24d4e2eb3fe85b945637",
+        "changelog": "## [0.26.30.2] - 2026-11-06\n\n### 🐛 Bug Fixes\n\n- Find subtitles in more language variants (#364)\n\n### 🚜 Refactor\n\n- One client per outside service (#361)\n- Keep every memo in one size-limited cache (#362)\n",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.30.2/gelato_0.26.30.2.zip",
+        "timestamp": "2026-11-06T21:02:41Z"
+      },
+      {
+        "version": "0.26.30.1",
+        "checksum": "45299dce1a8a6ac9b2550db68e930446",
+        "changelog": "## [0.26.30.1] - 2026-11-02\n\n### 🐛 Bug Fixes\n\n- Remove the unauthenticated subtitles route (#358)\n- Stop the server fetching streams from link-local hosts (#359)\n\n### 📚 Documentation\n\n- Explain RemuxDB and how to turn it off (#357)\n",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.30.1/gelato_0.26.30.1.zip",
+        "timestamp": "2026-11-02T20:52:34Z"
+      },
+      {
         "version": "0.26.30.0",
         "checksum": "6129acb59341e30fa8fd8d34bc3a0463",
         "changelog": "## [0.26.30.0] - 2026-10-30\n\n### 🚀 Features\n\n- Show recommended titles that aren't in the library (#349)\n\n### 🐛 Bug Fixes\n\n- Undated watched/resume state migration (#348)\n- Keep the subtitle task from searching every stream (#352)\n\n### ⚙️ Miscellaneous Tasks\n\n- Remove the unused Palco cache API (#353)\n",
@@ -4783,22 +4807,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.5/gelato_0.26.14.5.zip",
         "timestamp": "2026-05-05T10:10:39Z"
-      },
-      {
-        "version": "0.26.14.4",
-        "checksum": "2a69da81349997adbd9e56de6f014555",
-        "changelog": "## [0.26.14.4] - 2026-04-28\n\n### 🐛 Bug Fixes\n\n- Clear dead person filter\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.4/gelato_0.26.14.4.zip",
-        "timestamp": "2026-04-28T08:34:18Z"
-      },
-      {
-        "version": "0.26.14.3",
-        "checksum": "02b4488880685e82e817341776791360",
-        "changelog": "## [0.26.14.3] - 2026-04-27\n\n### 🐛 Bug Fixes\n\n- Replace path with stub on playbackinfo to prevent leaking\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lstb1t/Gelato/0.26.14.3/gelato_0.26.14.3.zip",
-        "timestamp": "2026-04-27T19:52:46Z"
       }
     ]
   },
@@ -5240,6 +5248,22 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
+      {
+        "version": "12.15.0.0",
+        "checksum": "aa90f70add9bf1c1dfc195485b6bb42d",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Translations update from Hosted Weblate ([#980](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/980))\n - Translations update from Hosted Weblate ([#982](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/982))\n - feat(calendar): group same-day episodes, persist filters, mark finales\n - fix(tags): cache Matroska language reads per file and follow the SeekHead ([#984](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/984))\n - fix(calendar): show finale marker and render the collapse icon\n - Translations update from Hosted Weblate ([#988](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/988))\n - fix(tags): use video width in resolution fallback so cropped 1080p isn't tagged 720p\n - feat(tags): quality badges follow the selected version of a merged movie\n - chore(tags): bump tag cache schema to v9 for [#990](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/990) and [#991](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/991)\n - Translations update from Hosted Weblate ([#994](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/994))\n - chore(ci)(deps): bump step-security/harden-runner from 2.22.2 to 2.22.3 in the github-actions group ([#996](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/996))\n - fix(cdn): bundle fixed logos and icons in the plugin instead of fetching them ([#998](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/998))\n - fix(plugin-pages): skip live page update before Plugin Pages is constructed ([#999](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/999))\n - fix(tags): match priority languages across two- and three-letter codes ([#1005](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1005))\n - fix(seerr): report season and episode issues against the series ([#1007](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1007))\n - test: fix red CI on main (tag cache fixtures, casing parity, issue 55 mutation) ([#1008](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1008))\n - fix: episode preview close, docs theme security bump, long review translations ([#1009](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1009))\n - fix(compat): warn on Jellyfin 13 instead of treating it as 12; document the 10.11 support policy ([#1010](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1010))\n - fix: add comma separator before text-mode Seerr and Arr detail links\n - fix: add comma separator before text-mode Seerr and Arr detail links ([#1006](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1006))\n - feat(seerr): support Seerr's CSRF Protection setting on write requests\n - chore(tests): regenerate production inventory\n - feat(config): rebuild the admin config page from a schema\n - docs: update admin tab names, labels and the apply-to-users flow\n - docs: refresh the admin page screenshots\n - Translations update from Hosted Weblate ([#1002](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1002))\n - chore: merge main into feat/config-page-redesign\n - fix(seerr): send is4k for 4K Radarr servers in auto-movie custom mode ([#1015](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1015))\n - fix(tests): point asset test at the renamed admin stylesheet endpoint\n - fix(config): keep branding preview images inside their dropzone\n - Merge branch 'main' into feat/config-page-redesign\n - feat(config): rebuild the admin config page from a schema ([#1014](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1014))\n - fix(spoiler-guard): keep external links on guarded series and movies ([#1018](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1018))\n - Media Tags redesign: layouts, rules, colours, a per-item editor, the Media Tags hub and configuration tab ([#992](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/992))\n - feat(player): add keyboard shortcuts for subtitle offset",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.15.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-11-07T22:35:45"
+      },
+      {
+        "version": "12.15.0.0",
+        "checksum": "0783590dbc0c2ae35ba9a854c956c932",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Translations update from Hosted Weblate ([#980](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/980))\n - Translations update from Hosted Weblate ([#982](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/982))\n - feat(calendar): group same-day episodes, persist filters, mark finales\n - fix(tags): cache Matroska language reads per file and follow the SeekHead ([#984](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/984))\n - fix(calendar): show finale marker and render the collapse icon\n - Translations update from Hosted Weblate ([#988](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/988))\n - fix(tags): use video width in resolution fallback so cropped 1080p isn't tagged 720p\n - feat(tags): quality badges follow the selected version of a merged movie\n - chore(tags): bump tag cache schema to v9 for [#990](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/990) and [#991](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/991)\n - Translations update from Hosted Weblate ([#994](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/994))\n - chore(ci)(deps): bump step-security/harden-runner from 2.22.2 to 2.22.3 in the github-actions group ([#996](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/996))\n - fix(cdn): bundle fixed logos and icons in the plugin instead of fetching them ([#998](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/998))\n - fix(plugin-pages): skip live page update before Plugin Pages is constructed ([#999](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/999))\n - fix(tags): match priority languages across two- and three-letter codes ([#1005](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1005))\n - fix(seerr): report season and episode issues against the series ([#1007](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1007))\n - test: fix red CI on main (tag cache fixtures, casing parity, issue 55 mutation) ([#1008](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1008))\n - fix: episode preview close, docs theme security bump, long review translations ([#1009](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1009))\n - fix(compat): warn on Jellyfin 13 instead of treating it as 12; document the 10.11 support policy ([#1010](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1010))\n - fix: add comma separator before text-mode Seerr and Arr detail links\n - fix: add comma separator before text-mode Seerr and Arr detail links ([#1006](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1006))\n - feat(seerr): support Seerr's CSRF Protection setting on write requests\n - chore(tests): regenerate production inventory\n - feat(config): rebuild the admin config page from a schema\n - docs: update admin tab names, labels and the apply-to-users flow\n - docs: refresh the admin page screenshots\n - Translations update from Hosted Weblate ([#1002](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1002))\n - chore: merge main into feat/config-page-redesign\n - fix(seerr): send is4k for 4K Radarr servers in auto-movie custom mode ([#1015](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1015))\n - fix(tests): point asset test at the renamed admin stylesheet endpoint\n - fix(config): keep branding preview images inside their dropzone\n - Merge branch 'main' into feat/config-page-redesign\n - feat(config): rebuild the admin config page from a schema ([#1014](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1014))\n - fix(spoiler-guard): keep external links on guarded series and movies ([#1018](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1018))\n - Media Tags redesign: layouts, rules, colours, a per-item editor, the Media Tags hub and configuration tab ([#992](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/992))\n - feat(player): add keyboard shortcuts for subtitle offset",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.15.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-11-07T22:35:18"
+      },
       {
         "version": "12.14.0.0",
         "checksum": "660c85181bd853c3fb403ab22dd211bb",
@@ -6753,6 +6777,22 @@
     "owner": "n00bcodr",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/icon.png",
     "versions": [
+      {
+        "version": "12.15.0.0",
+        "checksum": "aa90f70add9bf1c1dfc195485b6bb42d",
+        "changelog": "**Build for Jellyfin 12.**\n\n- Translations update from Hosted Weblate ([#980](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/980))\n - Translations update from Hosted Weblate ([#982](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/982))\n - feat(calendar): group same-day episodes, persist filters, mark finales\n - fix(tags): cache Matroska language reads per file and follow the SeekHead ([#984](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/984))\n - fix(calendar): show finale marker and render the collapse icon\n - Translations update from Hosted Weblate ([#988](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/988))\n - fix(tags): use video width in resolution fallback so cropped 1080p isn't tagged 720p\n - feat(tags): quality badges follow the selected version of a merged movie\n - chore(tags): bump tag cache schema to v9 for [#990](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/990) and [#991](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/991)\n - Translations update from Hosted Weblate ([#994](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/994))\n - chore(ci)(deps): bump step-security/harden-runner from 2.22.2 to 2.22.3 in the github-actions group ([#996](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/996))\n - fix(cdn): bundle fixed logos and icons in the plugin instead of fetching them ([#998](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/998))\n - fix(plugin-pages): skip live page update before Plugin Pages is constructed ([#999](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/999))\n - fix(tags): match priority languages across two- and three-letter codes ([#1005](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1005))\n - fix(seerr): report season and episode issues against the series ([#1007](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1007))\n - test: fix red CI on main (tag cache fixtures, casing parity, issue 55 mutation) ([#1008](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1008))\n - fix: episode preview close, docs theme security bump, long review translations ([#1009](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1009))\n - fix(compat): warn on Jellyfin 13 instead of treating it as 12; document the 10.11 support policy ([#1010](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1010))\n - fix: add comma separator before text-mode Seerr and Arr detail links\n - fix: add comma separator before text-mode Seerr and Arr detail links ([#1006](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1006))\n - feat(seerr): support Seerr's CSRF Protection setting on write requests\n - chore(tests): regenerate production inventory\n - feat(config): rebuild the admin config page from a schema\n - docs: update admin tab names, labels and the apply-to-users flow\n - docs: refresh the admin page screenshots\n - Translations update from Hosted Weblate ([#1002](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1002))\n - chore: merge main into feat/config-page-redesign\n - fix(seerr): send is4k for 4K Radarr servers in auto-movie custom mode ([#1015](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1015))\n - fix(tests): point asset test at the renamed admin stylesheet endpoint\n - fix(config): keep branding preview images inside their dropzone\n - Merge branch 'main' into feat/config-page-redesign\n - feat(config): rebuild the admin config page from a schema ([#1014](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1014))\n - fix(spoiler-guard): keep external links on guarded series and movies ([#1018](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1018))\n - Media Tags redesign: layouts, rules, colours, a per-item editor, the Media Tags hub and configuration tab ([#992](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/992))\n - feat(player): add keyboard shortcuts for subtitle offset",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.15.0.0/Jellyfin.Plugin.JellyfinEnhanced_12.0.0.zip",
+        "timestamp": "2026-11-07T22:35:45"
+      },
+      {
+        "version": "12.15.0.0",
+        "checksum": "0783590dbc0c2ae35ba9a854c956c932",
+        "changelog": "**Build for Jellyfin 10.11.** On Jellyfin 12 the catalog installs the Jellyfin 12 build of this version automatically.\n\n- Translations update from Hosted Weblate ([#980](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/980))\n - Translations update from Hosted Weblate ([#982](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/982))\n - feat(calendar): group same-day episodes, persist filters, mark finales\n - fix(tags): cache Matroska language reads per file and follow the SeekHead ([#984](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/984))\n - fix(calendar): show finale marker and render the collapse icon\n - Translations update from Hosted Weblate ([#988](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/988))\n - fix(tags): use video width in resolution fallback so cropped 1080p isn't tagged 720p\n - feat(tags): quality badges follow the selected version of a merged movie\n - chore(tags): bump tag cache schema to v9 for [#990](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/990) and [#991](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/991)\n - Translations update from Hosted Weblate ([#994](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/994))\n - chore(ci)(deps): bump step-security/harden-runner from 2.22.2 to 2.22.3 in the github-actions group ([#996](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/996))\n - fix(cdn): bundle fixed logos and icons in the plugin instead of fetching them ([#998](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/998))\n - fix(plugin-pages): skip live page update before Plugin Pages is constructed ([#999](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/999))\n - fix(tags): match priority languages across two- and three-letter codes ([#1005](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1005))\n - fix(seerr): report season and episode issues against the series ([#1007](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1007))\n - test: fix red CI on main (tag cache fixtures, casing parity, issue 55 mutation) ([#1008](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1008))\n - fix: episode preview close, docs theme security bump, long review translations ([#1009](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1009))\n - fix(compat): warn on Jellyfin 13 instead of treating it as 12; document the 10.11 support policy ([#1010](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1010))\n - fix: add comma separator before text-mode Seerr and Arr detail links\n - fix: add comma separator before text-mode Seerr and Arr detail links ([#1006](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1006))\n - feat(seerr): support Seerr's CSRF Protection setting on write requests\n - chore(tests): regenerate production inventory\n - feat(config): rebuild the admin config page from a schema\n - docs: update admin tab names, labels and the apply-to-users flow\n - docs: refresh the admin page screenshots\n - Translations update from Hosted Weblate ([#1002](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1002))\n - chore: merge main into feat/config-page-redesign\n - fix(seerr): send is4k for 4K Radarr servers in auto-movie custom mode ([#1015](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1015))\n - fix(tests): point asset test at the renamed admin stylesheet endpoint\n - fix(config): keep branding preview images inside their dropzone\n - Merge branch 'main' into feat/config-page-redesign\n - feat(config): rebuild the admin config page from a schema ([#1014](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1014))\n - fix(spoiler-guard): keep external links on guarded series and movies ([#1018](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/1018))\n - Media Tags redesign: layouts, rules, colours, a per-item editor, the Media Tags hub and configuration tab ([#992](https://github.com/n00bcodr/Jellyfin-Enhanced/issues/992))\n - feat(player): add keyboard shortcuts for subtitle offset",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/n00bcodr/Jellyfin%20Enhanced/12.15.0.0/Jellyfin.Plugin.JellyfinEnhanced_10.11.0.zip",
+        "timestamp": "2026-11-07T22:35:18"
+      },
       {
         "version": "12.14.0.0",
         "checksum": "660c85181bd853c3fb403ab22dd211bb",
@@ -9295,6 +9335,14 @@
     "owner": "Ryan Dash",
     "versions": [
       {
+        "version": "12.4.1.0",
+        "checksum": "0b47989866d637ac2360e7344c691e7c",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v12.4.1.0",
+        "targetAbi": "12.4.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/Ryan%20Dash/MyAnimeList/12.4.1.0/myanimelist_12.4.1.0.zip",
+        "timestamp": "2026-11-02T22:21:09Z"
+      },
+      {
         "version": "12.4.0.0",
         "checksum": "8a8e3e239e65171f6852fb0b333eb88e",
         "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v12.4.0.0",
@@ -11704,6 +11752,14 @@
     "owner": "te9c",
     "versions": [
       {
+        "version": "5.1.0.0",
+        "checksum": "4e7ea7dcc009329d68d0e6d2526443bb",
+        "changelog": "Update to jellyfin 12.0\n",
+        "targetAbi": "10.12.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/te9c/Shikimori/5.1.0.0/shikimori_5.1.0.0.zip",
+        "timestamp": "2026-11-03T19:04:33Z"
+      },
+      {
         "version": "5.0.0.0",
         "checksum": "eebe29ba8f32a6357beca58b7fc84b69",
         "changelog": "Fixed bugs\n",
@@ -12735,6 +12791,14 @@
     "owner": "lyarenei",
     "imageUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lyarenei/ListenBrainz/image.svg",
     "versions": [
+      {
+        "version": "6.6.2.1",
+        "checksum": "b15d9ce5fedaabab5efdd685b87487ea",
+        "changelog": "This version contains the following changes:\n  - Migration system for plugin configuration file\n  - Re-matching playlists after a set time\n  - Improvements to playlist sync mechanism\n  - Other under-the-hood fixes\n",
+        "targetAbi": "10.11.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/HiranoKohta/mirror-jellyfin-plugins-repo/main/files/lyarenei/ListenBrainz/6.6.2.1/listenbrainz_6.6.2.1.zip",
+        "timestamp": "2026-11-07T17:44:19Z"
+      },
       {
         "version": "6.5.3.4",
         "checksum": "9751e7fad2e7f6ea09c191bb1209ee16",

@@ -2144,6 +2144,14 @@
         "timestamp": "2022-01-08T17:26:30Z"
       },
       {
+        "version": "9.0.0.0",
+        "checksum": "7346b010d59f3833b5f5920ab503063c",
+        "changelog": "### Bug Fixes ###\n- Don't filter on userId for UserCreated notification type (#76) @crobibero\n\n### Code or Repo Maintenance ###\n- Fix CI (#79) @crobibero\n- 10.8 support (#69) @crobibero",
+        "targetAbi": "10.8.0.0",
+        "sourceUrl": "https://repo.jellyfin.org/releases/plugin/webhook/webhook_9.0.0.0.zip",
+        "timestamp": "2021-11-01T14:32:52Z"
+      },
+      {
         "version": "8.0.0.0",
         "checksum": "8a84683a9b52090229b2da2dabcd3d91",
         "changelog": "### New features and improvements ###\n- Add UserDataSaved event handler (#70) @crobibero",
