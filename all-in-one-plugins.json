@@ -3315,6 +3315,14 @@
     "imageUrl": "https://raw.githubusercontent.com/meilisearch/meilisearch/refs/heads/main/assets/meilisearch-logo-dark.svg",
     "versions": [
       {
+        "version": "1.12.1.7",
+        "checksum": "fd57c93ea53197e31ed4e819226d3d39",
+        "changelog": "\n- [7ddbf3a] feat: add a setting to search people by name only (#145)\n- [882fdfa] ci(deps): bump actions/setup-dotnet from 6.0.0 to 6.1.0 (#144)",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/arnesacnussem/jellyfin-plugin-meilisearch/releases/download/1.12.1.7/meilisearch_1.12.1.7.zip",
+        "timestamp": "2026-11-13T20:15:19Z"
+      },
+      {
         "version": "1.12.1.6",
         "checksum": "60bce3f0c93e8e06beb0580c344fea49",
         "changelog": "\n- [44518d7] fix: tag API controller for OpenAPI generation (#143)",
@@ -6485,6 +6493,14 @@
     "imageUrl": "https://raw.githubusercontent.com/jyourstone/jellyfin-smartlists-plugin/main/images/logo.jpg",
     "versions": [
       {
+        "version": "12.2.1.0",
+        "checksum": "e7a9fc4dc01136449a303c8b1b444c44",
+        "changelog": "Features:\n- New Season Number, Episode Number, Track Number and Disc Number rule fields, for example to pick specific episodes of a show or the first track of each album. Specials are season 0.\n- Manage lists can now sort by Sort Title (A-Z / Z-A). Lists without a Sort Title sort by their name.\n- Keeping the Jellyfin playlist or collection when you delete a smart list now removes the smart list badge from its covers.\n\nImprovements:\n- Covers made from two images now place them diagonally, so neither image sits directly above its own copy.\n\nBug Fixes:\n- MDBList lists made up of individual episodes no longer refresh as empty. Your episodes need TMDB IDs to match.\n- Deleting a list from the user page while keeping its Jellyfin playlist or collection could still delete it later, during cleanup. The kept list now stays.\n- A playlist kept after deleting its smart list could still carry the smart list name prefix or suffix.\n- Converting a list between playlist and collection no longer loses its uploaded cover images, and the converted list keeps refreshing automatically without a Jellyfin restart.\n- Collection covers no longer show a black square when one of the item images is missing from disk.\n\nFull changelog: https://jellyfin-smartlists-plugin.dinsten.se/changelog/stable/",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/jyourstone/jellyfin-smartlists-plugin/releases/download/v12.2.1.0/Jellyfin.Plugin.SmartLists_v12.2.1.0_12.0.0.0.zip",
+        "timestamp": "2026-11-14"
+      },
+      {
         "version": "12.1.0.0",
         "checksum": "40dfa44ea3f4b1151980fd68e5e97da3",
         "changelog": "Features:\n- Bumpers per break: a break can now play up to 10 bumpers back to back. The new \"Take turns between bumper rule groups\" option gives each bumper rule group its own pool, so every break can follow a pattern such as ident, commercial, ident (#542).\n- Missing items (admin page): see which entries of a list's external lists are not in your library, with their position, title, type and IDs, and download them as CSV (#544).\n- New Is 3D rule field for videos. Jellyfin detects 3D from tags in the file name, such as [3D MVC] or .3D.hsbs (#538).\n- New Match alternate versions option: rules also check each alternate version of a movie or episode, such as a 3D or 1080p copy behind a 4K version. The video is added when any of its versions matches. The option appears below the rules when a rule checks something that can differ between versions, such as Is 3D, Resolution or File Name (#538).\n- Is Favorite has a new parent favorite option, to match items whose album, season, series or folder is a favorite - for example every track on the albums you have favorited (#535).\n- The SmartLists sidebar entry is now hidden from users who can't use the user page (while it's disabled, or when they're not in Allowed Users). Administrators always see it. Requires Plugin Pages 3.0.0.0 or later (#558).\n\nBug Fixes:\n- Security: smart playlists and user-owned smart collections could include items from libraries the user has no access to. Lists now only contain items from libraries the user can see. The same applies to bumpers: bumpers from a library the playlist's user can't access are left out.\n- When an external list can't be fetched (for example the provider is down or there's a network error), lists that use it are now left unchanged for that refresh instead of being emptied (#555).\n- External List Order could sort by positions from other playlists' external lists when several lists refreshed together, such as with Refresh All (#543).\n- Resolution rules could skip a movie whose alternate version has a higher resolution than its main version (#546).\n- Scheduled playlist refreshes now run through the same refresh queue as every other refresh, so they no longer overlap other refreshes (#539).\n- An all-users playlist with a rule tied to one user (for example Is Favorite for user B) now refreshes every user's copy when that user's data changes, not only that user's own copy.\n- Per-group Max Items and Rule Group Order no longer drop or misplace episodes added through a Collections rule's \"include episodes within series\" option.\n- During a refresh of several lists, a list with a Library Name rule and a list without one could share the same item pool, so one could show missing items or the other could miss them.\n- The list Actions menu now opens upward when it would otherwise be cut off at the bottom of the screen (#561).\n- The page shown to users without access to the user page no longer breaks the Jellyfin layout.\n\nImprovements:\n- Cover images now use the image library built into Jellyfin. Manual installs: delete SixLabors.ImageSharp.dll from the plugin folder; repository installs are not affected. Uploaded GIF, BMP and TIFF covers are no longer badged or cropped, and an animated WebP keeps only its first frame while the badge is on.\n- The refresh status API no longer returns batchCurrentIndex and batchTotalCount; they were always empty.\n\nFull changelog: https://jellyfin-smartlists-plugin.dinsten.se/changelog/stable/",
@@ -7561,6 +7577,14 @@
     "imageUrl": "https://raw.githubusercontent.com/lostb1t/Gelato/main/banner.png",
     "versions": [
       {
+        "version": "0.26.30.4",
+        "checksum": "9cdc209a3769bd6caf7169877c4901bf",
+        "changelog": "## [0.26.30.4] - 2026-11-14\n\n### 🐛 Bug Fixes\n\n- Stop running out of memory on big libraries (#369)\n- Save play state of a played search result (#370)\n",
+        "targetAbi": "12.1.0.0",
+        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.30.4/gelato_0.26.30.4.zip",
+        "timestamp": "2026-11-14T12:39:05Z"
+      },
+      {
         "version": "0.26.30.2",
         "checksum": "0527e38f1b0f24d4e2eb3fe85b945637",
         "changelog": "## [0.26.30.2] - 2026-11-06\n\n### 🐛 Bug Fixes\n\n- Find subtitles in more language variants (#364)\n\n### 🚜 Refactor\n\n- One client per outside service (#361)\n- Keep every memo in one size-limited cache (#362)\n",
@@ -7783,22 +7807,6 @@
         "targetAbi": "10.11.6.0",
         "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.14.7/gelato_0.26.14.7.zip",
         "timestamp": "2026-05-05T16:37:10Z"
-      },
-      {
-        "version": "0.26.14.6",
-        "checksum": "3745ad4779835509c60d62d17557c162",
-        "changelog": "## [0.26.14.6] - 2026-05-05\n\n### 🐛 Bug Fixes\n\n- Return of the purge task\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.14.6/gelato_0.26.14.6.zip",
-        "timestamp": "2026-05-05T10:50:58Z"
-      },
-      {
-        "version": "0.26.14.5",
-        "checksum": "117f2a4b5daa5bf8e9cfda1653ad012d",
-        "changelog": "## [0.26.14.5] - 2026-05-05\n\n### 🐛 Bug Fixes\n\n- Do not mark items as virtual in listings\n\n### 🚜 Refactor\n\n- Use bulk deleye to speed up purge\n",
-        "targetAbi": "10.11.6.0",
-        "sourceUrl": "https://github.com/lostb1t/Gelato/releases/download/v0.26.14.5/gelato_0.26.14.5.zip",
-        "timestamp": "2026-05-05T10:10:39Z"
       }
     ]
   },
@@ -12326,6 +12334,14 @@
     "overview": "MyAnimeList metadata provider",
     "owner": "Ryan Dash",
     "versions": [
+      {
+        "version": "12.4.1.1",
+        "checksum": "15d56c6cde66266263eab3e8f9f6aa94",
+        "changelog": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/tag/v12.4.1.1",
+        "targetAbi": "12.4.0",
+        "sourceUrl": "https://github.com/ryandash/jellyfin-plugin-myanimelist/releases/download/v12.4.1.1/myanimelist_12.4.1.1.zip",
+        "timestamp": "2026-11-11T03:55:43Z"
+      },
       {
         "version": "12.4.1.0",
         "checksum": "0b47989866d637ac2360e7344c691e7c",
